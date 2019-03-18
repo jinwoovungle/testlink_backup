@@ -1,0 +1,1169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite id="" name="" >
+<node_order><![CDATA[]]></node_order>
+<details><![CDATA[]]></details> 
+<testsuite id="44309" name="Flat CPM Application TestCases" >
+<node_order><![CDATA[1]]></node_order>
+<details><![CDATA[]]></details> 
+
+<testcase internalid="44310" name="Create a Placement with Flat CPM activated">
+	<node_order><![CDATA[1000]]></node_order>
+	<externalid><![CDATA[1]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>
+	Create a Placement with Flat CPM activated</p>
+]]></summary>
+	<preconditions><![CDATA[<p>
+	Publisher Application should be created</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<ul>
+	<li>
+		Login to Grow&nbsp;</li>
+	<li>
+		Create an IOS/Android Publisher Application</li>
+	<li>
+		Verifythe Default Placement</li>
+</ul>
+]]></actions>
+	<expectedresults><![CDATA[<ul>
+	<li>
+		User should logged into Grow</li>
+	<li>
+		Publisher Application should be created&nbsp;</li>
+	<li>
+		Default placement should be created with Flat CPM field</li>
+</ul>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<ol>
+	<li>
+		Verify the Flat CPM Field</li>
+</ol>
+]]></actions>
+	<expectedresults><![CDATA[<ol>
+	<li>
+		The Placement should have Flat CPM checkbox</li>
+</ol>
+<ul>
+	<li>
+		By default Flat CPM field,&quot;Is flat CPM enabled&quot; should be unchecked</li>
+	<li>
+		Once checked, following fields should be displayed</li>
+</ul>
+<ol>
+	<li>
+		Text box for &quot;Default Flat CPM&quot;</li>
+	<li>
+		&quot;add Geo-Level Flat CPM&quot; link</li>
+</ol>
+<p>
+	Default CPM Floor field should be grayed out.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>
+	Enter the Default Geo-Level Flat CPM&nbsp;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	Entered valued should be displayed</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[4]]></step_number>
+	<actions><![CDATA[<p>
+	Save the Default Placement&nbsp;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	Placement should be saved and user should be on the Placement details page</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="44312" name="Create a Placement without a Flat CPM ">
+	<node_order><![CDATA[1001]]></node_order>
+	<externalid><![CDATA[2]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>
+	Create a Placement without a Flat CPM&nbsp;</p>
+]]></summary>
+	<preconditions><![CDATA[<p>
+	Publisher Application should be created</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<ul style="font-family: -webkit-standard; text-size-adjust: auto;">
+	<li>
+		Login to Grow&nbsp;</li>
+	<li>
+		Create an IOS/Android Publisher Application</li>
+	<li>
+		Verifythe Default Placement</li>
+</ul>
+]]></actions>
+	<expectedresults><![CDATA[<ul style="font-family: -webkit-standard; text-size-adjust: auto;">
+	<li>
+		User should logged into Grow</li>
+	<li>
+		Publisher Application should be created&nbsp;</li>
+	<li>
+		Default placement should be created with Flat CPM field</li>
+</ul>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>
+	Make sure the Flat CPM check box is unchecked</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	Flat CPMmust not be enabled</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>
+	Click Submit</p>
+]]></actions>
+	<expectedresults><![CDATA[<ul>
+	<li>
+		Placement should be created and user should be directed to the Placement List Page</li>
+	<li>
+		&quot;No&quot; should be displayed in the Flat CPM Field</li>
+</ul>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="44314" name="Edit a a Placement with Flat CPM">
+	<node_order><![CDATA[1002]]></node_order>
+	<externalid><![CDATA[3]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>
+	Edit a a Placement with Flat CPM</p>
+]]></summary>
+	<preconditions><![CDATA[<p>
+	Placement with Flat CPM should exist</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<ul style="font-family: -webkit-standard; text-size-adjust: auto;">
+	<li>
+		Login to Grow&nbsp;</li>
+</ul>
+]]></actions>
+	<expectedresults><![CDATA[<ul style="font-family: -webkit-standard; text-size-adjust: auto;">
+	<li>
+		User should logged into Grow</li>
+</ul>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<ul>
+	<li>
+		Select a Placement with Flat CPM Enable</li>
+</ul>
+]]></actions>
+	<expectedresults><![CDATA[<ul>
+	<li>
+		User should be on the Placement details page</li>
+</ul>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>
+	Update the default Flat CPM Value and save the placement</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	Placement should be saved with the updated Flat cPM Value</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="44316" name="Deactivate Flat CPM">
+	<node_order><![CDATA[1003]]></node_order>
+	<externalid><![CDATA[4]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>
+	Deactivate Flat CPM</p>
+]]></summary>
+	<preconditions><![CDATA[<p>
+	Placement should have Flat CPM Enabled</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<ul style="font-family: -webkit-standard; text-size-adjust: auto;">
+	<li>
+		Login to Grow as Admin</li>
+</ul>
+]]></actions>
+	<expectedresults><![CDATA[<ul style="font-family: -webkit-standard; text-size-adjust: auto;">
+	<li>
+		User should logged into Grow</li>
+</ul>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<ul>
+	<li>
+		Navigate to Placements List Page and select a placement with Flat CPM enable</li>
+	<li>
+		Click Edit</li>
+</ul>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	User must be on the Placement details page</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>
+	Uncheck the Flat CPM field</p>
+]]></actions>
+	<expectedresults><![CDATA[<ul>
+	<li>
+		Default Flat CPM<br />
+		Add Geo Level Flat CPM fileds should not be visible</li>
+	<li>
+		CPM Floors field should be enable</li>
+</ul>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[4]]></step_number>
+	<actions><![CDATA[<p>
+	Save the Placement</p>
+]]></actions>
+	<expectedresults><![CDATA[<ul>
+	<li>
+		Placement should be saved</li>
+	<li>
+		User should be on the list page</li>
+</ul>
+<p>
+	&nbsp;</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="44318" name="Activate a Flat CPM">
+	<node_order><![CDATA[1004]]></node_order>
+	<externalid><![CDATA[5]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>
+	Activate a Flat CPM</p>
+]]></summary>
+	<preconditions><![CDATA[<p>
+	Placement should not have Flat CPM</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<ul style="font-family: -webkit-standard; text-size-adjust: auto;">
+	<li>
+		Login to Grow as Admin</li>
+</ul>
+]]></actions>
+	<expectedresults><![CDATA[<ul style="font-family: -webkit-standard; text-size-adjust: auto;">
+	<li>
+		User should logged into Grow</li>
+</ul>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<ul style="font-family: -webkit-standard; text-size-adjust: auto;">
+	<li>
+		Navigate to Placements List Page and select a placement without Flat CPM&nbsp;</li>
+	<li>
+		Click Edit</li>
+</ul>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	<span style="font-family: -webkit-standard; text-size-adjust: auto;">User must be on the Placement details page</span><span style="font-family: -webkit-standard;">User must be on the Placement details page</span></p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>
+	<span style="font-family: -webkit-standard; text-size-adjust: auto;">Check the Flat CPM field</span></p>
+]]></actions>
+	<expectedresults><![CDATA[<ul style="font-family: -webkit-standard; text-size-adjust: auto;">
+	<li>
+		Default Flat CPM<br />
+		Add Geo Level Flat CPM fileds should&nbsp; be visible</li>
+	<li>
+		CPM Floors field should be disable</li>
+</ul>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[4]]></step_number>
+	<actions><![CDATA[<p>
+	<span style="font-family: -webkit-standard; text-size-adjust: auto;">Save the Placement</span></p>
+]]></actions>
+	<expectedresults><![CDATA[<ul style="font-family: -webkit-standard; text-size-adjust: auto;">
+	<li>
+		Placement should be saved</li>
+	<li>
+		User should be on the list page</li>
+	<li>
+		Flat CPM &quot;yes&quot; should be dispalyed</li>
+</ul>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="44320" name="Verify the Default Flat CPM Value">
+	<node_order><![CDATA[1005]]></node_order>
+	<externalid><![CDATA[6]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>
+	Verify the Default Flat CPM Value</p>
+]]></summary>
+	<preconditions><![CDATA[<p>
+	Placement should have a Flat CPM enabled</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<ul style="font-family: -webkit-standard; text-size-adjust: auto;">
+	<li>
+		Login to Grow as Admin</li>
+	<li>
+		Create an IOS/Android Publisher Application</li>
+	<li>
+		Verifythe Default Placement</li>
+</ul>
+]]></actions>
+	<expectedresults><![CDATA[<ul style="font-family: -webkit-standard; text-size-adjust: auto;">
+	<li>
+		User should logged into Grow</li>
+	<li>
+		Publisher Application should be created&nbsp;</li>
+	<li>
+		Default placement should be created with Flat CPM field</li>
+</ul>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<ul style="font-family: -webkit-standard; text-size-adjust: auto;">
+	<li>
+		Check the Flat CPM Check box</li>
+</ul>
+]]></actions>
+	<expectedresults><![CDATA[<ol style="font-family: -webkit-standard; text-size-adjust: auto;">
+	<li>
+		Text box for &quot;Default Flat CPM&quot;</li>
+	<li>
+		&quot;add Geo-Level Flat CPM&quot; link should eb visible</li>
+</ol>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<ul>
+	<li>
+		Enter the Flat CPM Value as 0.22</li>
+</ul>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	Following error message should be displayed</p>
+<p>
+	&quot;Default flat CPM must be blank or greater than 0.25.&quot;</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="44322" name="Enter the Geo Specific Flat CPM &amp; Verify">
+	<node_order><![CDATA[1006]]></node_order>
+	<externalid><![CDATA[7]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>
+	Enter the Geo Specific Flat CPM &amp; Verify</p>
+]]></summary>
+	<preconditions><![CDATA[<p>
+	Placement should be available</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<ul style="font-family: -webkit-standard; text-size-adjust: auto;">
+	<li>
+		Login to Grow as Admin</li>
+	<li>
+		Create an IOS/Android Publisher Application</li>
+	<li>
+		Verifythe Default Placement</li>
+</ul>
+]]></actions>
+	<expectedresults><![CDATA[<ul style="font-family: -webkit-standard; text-size-adjust: auto;">
+	<li>
+		User should logged into Grow</li>
+	<li>
+		Publisher Application should be created&nbsp;</li>
+	<li>
+		Default placement should be created with Flat CPM field</li>
+</ul>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>
+	Enable the Flat CPM field</p>
+]]></actions>
+	<expectedresults><![CDATA[<ol style="font-family: -webkit-standard; text-size-adjust: auto;">
+	<li>
+		Text box for &quot;Default Flat CPM&quot;</li>
+	<li>
+		&quot;add Geo-Level Flat CPM&quot; link should be visible</li>
+</ol>
+<p style="font-family: -webkit-standard; text-size-adjust: auto;">
+	Default CPM Floor field should be grayed out.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>
+	Click on &quot;add Geo-Level Flat CPM&quot; link</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	A text box to enter Geo location and CPM value should open up</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[4]]></step_number>
+	<actions><![CDATA[<p>
+	Click on First Text box</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	All the available locations should show up for selection</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[5]]></step_number>
+	<actions><![CDATA[<p>
+	Select one or multiple locations</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	Selected locations should be dispalyed</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[6]]></step_number>
+	<actions><![CDATA[<p>
+	Enter the Flat CPM value&nbsp; &gt;0.25 in the second text box</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	Entered value should bed isplayed</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[7]]></step_number>
+	<actions><![CDATA[<p>
+	Save the Placement</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	Placement should be saved and user should be on the placement details page.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="44324" name="Verify the Flat CPM functionality for Non Admin Users">
+	<node_order><![CDATA[1007]]></node_order>
+	<externalid><![CDATA[8]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>
+	Verify Flat CPM for Non Admin Users</p>
+]]></summary>
+	<preconditions><![CDATA[<p>
+	Login as Non Admin user</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+	Login to Legacy Dashboard as Non Admin User</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	User should logged into Dashboard</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>
+	Create a Publisher App and Placement</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	Pub App and Placement should be created</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>
+	Verify Flat CPM by navigating to Placements details page</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	Flat cPM should not be available for the Non admin users</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="44326" name="Verify the Flat CPM field for Invalid Values">
+	<node_order><![CDATA[1008]]></node_order>
+	<externalid><![CDATA[9]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>
+	Verify the Flat CPM field for Invalid Values</p>
+]]></summary>
+	<preconditions><![CDATA[<p>
+	Placement should exist</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<ul style="font-family: -webkit-standard; text-size-adjust: auto;">
+	<li>
+		Login to Grow as Admin</li>
+	<li>
+		Create an IOS/Android Publisher Application</li>
+	<li>
+		Verifythe Default Placement</li>
+</ul>
+]]></actions>
+	<expectedresults><![CDATA[<ul style="font-family: -webkit-standard; text-size-adjust: auto;">
+	<li>
+		User should logged into Grow</li>
+	<li>
+		Publisher Application should be created&nbsp;</li>
+	<li>
+		Default placement should be created with Flat CPM field</li>
+</ul>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<ul style="font-family: -webkit-standard; text-size-adjust: auto;">
+	<li>
+		Check the Flat CPM Check box</li>
+</ul>
+]]></actions>
+	<expectedresults><![CDATA[<ol style="font-family: -webkit-standard; text-size-adjust: auto;">
+	<li>
+		Text box for &quot;Default Flat CPM&quot;</li>
+	<li>
+		&quot;add Geo-Level Flat CPM&quot; link should eb visible</li>
+</ol>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<ul style="font-family: -webkit-standard; text-size-adjust: auto;">
+	<li>
+		Enter the Flat CPM Value as 0.22</li>
+</ul>
+]]></actions>
+	<expectedresults><![CDATA[<p style="font-family: -webkit-standard; text-size-adjust: auto;">
+	Following error message should be displayed</p>
+<p style="font-family: -webkit-standard; text-size-adjust: auto;">
+	&quot;Default flat CPM must be blank or greater than 0.25.&quot;</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="44328" name="Verify the Placement list view">
+	<node_order><![CDATA[1009]]></node_order>
+	<externalid><![CDATA[10]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>
+	Verify the Placement list view</p>
+]]></summary>
+	<preconditions><![CDATA[<p>
+	Placement should have Flat CPM Enable</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<ul>
+	<li>
+		Login to Dashboard as Admin</li>
+</ul>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	User should logged into Dashbaord</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>
+	Click on any Publisher Application</p>
+]]></actions>
+	<expectedresults><![CDATA[<ul>
+	<li>
+		User must be on the details page</li>
+	<li>
+		All the placements under the slected Appshould be displayed on the right side</li>
+</ul>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>
+	Click on List view</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	All the Placements should be displayed in the list view</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[4]]></step_number>
+	<actions><![CDATA[<p>
+	Check for the Flat CPM field</p>
+]]></actions>
+	<expectedresults><![CDATA[<ul>
+	<li>
+		Flat CPM should be &quot;Yes&quot; for the Flat CPM REnable Placements</li>
+	<li>
+		Flat CPM should be &quot;No&quot; for the Flat CPM Disable Placements</li>
+</ul>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+</testsuite><testsuite id="47606" name="Backend Testing" >
+<node_order><![CDATA[2]]></node_order>
+<details><![CDATA[]]></details> 
+
+<testcase internalid="47607" name="Add FlatCPM on placement global level only">
+	<node_order><![CDATA[1000]]></node_order>
+	<externalid><![CDATA[11]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>
+	Add FlatCPM on placement global level only</p>
+]]></summary>
+	<preconditions><![CDATA[<p>
+	Placemnet should be created</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<ul>
+	<li>
+		Login to Grow&nbsp;</li>
+	<li>
+		Create an IOS/Android Publisher Application</li>
+	<li>
+		Verifythe Default Placement</li>
+</ul>
+]]></actions>
+	<expectedresults><![CDATA[<ul>
+	<li>
+		User should logged into Grow</li>
+	<li>
+		Publisher Application should be created&nbsp;</li>
+	<li>
+		Default placement should be created with Flat CPM field</li>
+</ul>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<ol>
+	<li>
+		Verify the Flat CPM Field</li>
+</ol>
+]]></actions>
+	<expectedresults><![CDATA[<ol>
+	<li>
+		The Placement should have Flat CPM checkbox</li>
+</ol>
+<ul>
+	<li>
+		By default Flat CPM field,&quot;Is flat CPM enabled&quot; should be unchecked</li>
+	<li>
+		Once checked, following fields should be displayed</li>
+</ul>
+<ol>
+	<li>
+		Text box for &quot;Default Flat CPM&quot;</li>
+	<li>
+		&quot;add Geo-Level Flat CPM&quot; link</li>
+</ol>
+<p>
+	Default CPM Floor field should be grayed out.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<ol>
+	<li>
+		Enter the FlatCPM on global level only</li>
+</ol>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	Entered valued should be displayed</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[4]]></step_number>
+	<actions><![CDATA[<ol>
+	<li>
+		Save the Default Placement&nbsp;</li>
+	<li>
+		Verify the Flat CPM UI</li>
+	<li>
+		Verify the FlatCPM in DB,RoboMongo</li>
+</ol>
+]]></actions>
+	<expectedresults><![CDATA[<ol>
+	<li>
+		Placement should be saved and user should be on the Placement details page</li>
+	<li>
+		Flat CPM must be checked&nbsp; and Global value should be displayed</li>
+	<li>
+		Flat CPM must be true and Global level should be recorded. default_dynamic_cpm_floor must also be populated in the DB. Those fields are only populated after the model has updated them and populated the fields.
+		<div>
+			&nbsp;</div>
+		<div>
+			So once you make the changes in UI, you need to wait for about an hour, like 12:00, or 1:00, then the model update</div>
+	</li>
+</ol>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="47609" name="Add FlatCPM on placement geo-level only">
+	<node_order><![CDATA[1001]]></node_order>
+	<externalid><![CDATA[12]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>
+	Add FlatCPM on placement geo-level only</p>
+]]></summary>
+	<preconditions><![CDATA[<p>
+	Placement should be created</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+
+</testcase>
+
+<testcase internalid="47611" name="Add FlatCPM on placement global and geo BOTH">
+	<node_order><![CDATA[1002]]></node_order>
+	<externalid><![CDATA[13]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>
+	Add FlatCPM on placement global and geo BOTH</p>
+]]></summary>
+	<preconditions><![CDATA[<p>
+	<span style="font-family: &quot;Trebuchet MS&quot;, Arial, Verdana, sans-serif; font-size: 11.7px; background-color: rgb(238, 238, 238);">Placement should be created</span></p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+
+</testcase>
+
+<testcase internalid="47613" name="Check / Uncheck enabled on global level">
+	<node_order><![CDATA[1003]]></node_order>
+	<externalid><![CDATA[14]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>
+	Check / Uncheck enabled on global level</p>
+]]></summary>
+	<preconditions><![CDATA[<p>
+	Placement should be created</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+
+</testcase>
+
+<testcase internalid="47615" name="remove one geo level while still have global level">
+	<node_order><![CDATA[1004]]></node_order>
+	<externalid><![CDATA[15]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>
+	remove one geo level while still have global level</p>
+]]></summary>
+	<preconditions><![CDATA[<p>
+	Placement should be created</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+
+</testcase>
+
+<testcase internalid="47617" name="remove all geo levels while still have global level">
+	<node_order><![CDATA[1005]]></node_order>
+	<externalid><![CDATA[16]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>
+	remove all geo levels while still have global level</p>
+]]></summary>
+	<preconditions><![CDATA[<p>
+	Placement should be created</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+
+</testcase>
+
+<testcase internalid="47619" name="remove global level while still have geo level">
+	<node_order><![CDATA[1006]]></node_order>
+	<externalid><![CDATA[17]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>
+	remove global level while still have geo level</p>
+]]></summary>
+	<preconditions><![CDATA[<p>
+	Placement should be created</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+
+</testcase>
+
+<testcase internalid="47621" name="remove global level while not having any geo level (while box is checked or unchecked)">
+	<node_order><![CDATA[1007]]></node_order>
+	<externalid><![CDATA[18]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>
+	remove global level while not having any geo level (while box is checked or unchecked)</p>
+]]></summary>
+	<preconditions><![CDATA[<p>
+	Placement should be created</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+
+</testcase>
+
+<testcase internalid="47623" name="remove all geo levels and global levels while checkbox checked">
+	<node_order><![CDATA[1008]]></node_order>
+	<externalid><![CDATA[19]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>
+	remove all geo levels and global levels while checkbox checked</p>
+]]></summary>
+	<preconditions><![CDATA[<p>
+	Placement should be created</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+
+</testcase>
+
+<testcase internalid="47625" name="remove all geo levels and global levels while checkbox unchecked">
+	<node_order><![CDATA[1009]]></node_order>
+	<externalid><![CDATA[20]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>
+	remove all geo levels and global levels while checkbox unchecked</p>
+]]></summary>
+	<preconditions><![CDATA[<p>
+	Placement should be created</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+
+</testcase>
+</testsuite><testsuite id="47627" name="End to End Testing" >
+<node_order><![CDATA[3]]></node_order>
+<details><![CDATA[]]></details> 
+
+<testcase internalid="47628" name="Dynamic floors enabled (geo and default) for ">
+	<node_order><![CDATA[1000]]></node_order>
+	<externalid><![CDATA[21]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>
+	Dynamic floors enabled (geo and default)</p>
+<p>
+	Verify the Bidfloor for the Programmatic users</p>
+<p>
+	<span style="color: rgb(23, 43, 77); font-family: -apple-system, system-ui, &quot;Segoe UI&quot;, Roboto, Oxygen, Ubuntu, &quot;Fira Sans&quot;, &quot;Droid Sans&quot;, &quot;Helvetica Neue&quot;, sans-serif; font-size: 14px; letter-spacing: -0.07px; background-color: rgb(255, 255, 255);">Programmatic (external buyers). These should utilize the Flat CPM value as the CPM Floor rather than the dynamic cpm floor generated by the DataSci Model.</span></p>
+]]></summary>
+	<preconditions><![CDATA[]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+	Verify that the floors are picked by the Jaeger by using steps below&nbsp;</p>
+<p style="margin: 1.142em 0px 0px; padding: 0px; font-size: 14px; line-height: 1.714; letter-spacing: -0.005em; color: rgb(23, 43, 77); font-family: -apple-system, system-ui, &quot;Segoe UI&quot;, Roboto, Oxygen, Ubuntu, &quot;Fira Sans&quot;, &quot;Droid Sans&quot;, &quot;Helvetica Neue&quot;, sans-serif; background-color: rgb(255, 255, 255);">
+	PUB ID:&nbsp;<a class="sc-hGIZiE wasFp" href="http://dashboard.qa.vungle.com/dashboard/applications/5bedc778be47fb42e42e75fd/details" rel="noreferrer noopener" style="color: rgb(0, 82, 204); text-decoration-line: none;" target="_blank" title="http://dashboard.qa.vungle.com/dashboard/applications/5bedc778be47fb42e42e75fd/details">http://dashboard.qa.vungle.com/dashboard/applications/5bedc778be47fb42e42e75fd/details</a></p>
+<p style="margin: 1.142em 0px 0px; padding: 0px; font-size: 14px; line-height: 1.714; letter-spacing: -0.005em; color: rgb(23, 43, 77); font-family: -apple-system, system-ui, &quot;Segoe UI&quot;, Roboto, Oxygen, Ubuntu, &quot;Fira Sans&quot;, &quot;Droid Sans&quot;, &quot;Helvetica Neue&quot;, sans-serif; background-color: rgb(255, 255, 255);">
+	Placement ID:&nbsp;<a class="sc-hGIZiE wasFp" href="http://dashboard.qa.vungle.com/dashboard/placements/5bedc7c41b5b4d42cfe4b7a7/details" rel="noreferrer noopener" style="color: rgb(0, 82, 204); text-decoration-line: none;" target="_blank" title="http://dashboard.qa.vungle.com/dashboard/placements/5bedc7c41b5b4d42cfe4b7a7/details">http://dashboard.qa.vungle.com/dashboard/placements/5bedc7c41b5b4d42cfe4b7a7/details</a></p>
+<p style="margin: 1.142em 0px 0px; padding: 0px; font-size: 14px; line-height: 1.714; letter-spacing: -0.005em; color: rgb(23, 43, 77); font-family: -apple-system, system-ui, &quot;Segoe UI&quot;, Roboto, Oxygen, Ubuntu, &quot;Fira Sans&quot;, &quot;Droid Sans&quot;, &quot;Helvetica Neue&quot;, sans-serif; background-color: rgb(255, 255, 255);">
+	Default Flat CPM -&gt;0.25</p>
+<p style="margin: 1.142em 0px 0px; padding: 0px; font-size: 14px; line-height: 1.714; letter-spacing: -0.005em; color: rgb(23, 43, 77); font-family: -apple-system, system-ui, &quot;Segoe UI&quot;, Roboto, Oxygen, Ubuntu, &quot;Fira Sans&quot;, &quot;Droid Sans&quot;, &quot;Helvetica Neue&quot;, sans-serif; background-color: rgb(255, 255, 255);">
+	Geo level Flat CPM AR-&gt; 0.35</p>
+<p style="margin: 1.142em 0px 0px; padding: 0px; font-size: 14px; line-height: 1.714; letter-spacing: -0.005em; color: rgb(23, 43, 77); font-family: -apple-system, system-ui, &quot;Segoe UI&quot;, Roboto, Oxygen, Ubuntu, &quot;Fira Sans&quot;, &quot;Droid Sans&quot;, &quot;Helvetica Neue&quot;, sans-serif; background-color: rgb(255, 255, 255);">
+	a) For AR Bid Floor is 2.25</p>
+<p style="margin: 1.142em 0px 0px; padding: 0px; font-size: 14px; line-height: 1.714; letter-spacing: -0.005em; color: rgb(23, 43, 77); font-family: -apple-system, system-ui, &quot;Segoe UI&quot;, Roboto, Oxygen, Ubuntu, &quot;Fira Sans&quot;, &quot;Droid Sans&quot;, &quot;Helvetica Neue&quot;, sans-serif; background-color: rgb(255, 255, 255);">
+	Verified this by using max {country_reserved_cost, floor/((1serv_cost)*rev_share)</p>
+<p style="margin: 1.142em 0px 0px; padding: 0px; font-size: 14px; line-height: 1.714; letter-spacing: -0.005em; color: rgb(23, 43, 77); font-family: -apple-system, system-ui, &quot;Segoe UI&quot;, Roboto, Oxygen, Ubuntu, &quot;Fira Sans&quot;, &quot;Droid Sans&quot;, &quot;Helvetica Neue&quot;, sans-serif; background-color: rgb(255, 255, 255);">
+	Max{2.25, 0.35/(1-0.03)*0.45)</p>
+<p style="margin: 1.142em 0px 0px; padding: 0px; font-size: 14px; line-height: 1.714; letter-spacing: -0.005em; color: rgb(23, 43, 77); font-family: -apple-system, system-ui, &quot;Segoe UI&quot;, Roboto, Oxygen, Ubuntu, &quot;Fira Sans&quot;, &quot;Droid Sans&quot;, &quot;Helvetica Neue&quot;, sans-serif; background-color: rgb(255, 255, 255);">
+	Max{2.25, 0.16}</p>
+<p style="margin: 1.142em 0px 0px; padding: 0px; font-size: 14px; line-height: 1.714; letter-spacing: -0.005em; color: rgb(23, 43, 77); font-family: -apple-system, system-ui, &quot;Segoe UI&quot;, Roboto, Oxygen, Ubuntu, &quot;Fira Sans&quot;, &quot;Droid Sans&quot;, &quot;Helvetica Neue&quot;, sans-serif; background-color: rgb(255, 255, 255);">
+	b) For US Bid Floor is 4.28</p>
+<p style="margin: 1.142em 0px 0px; padding: 0px; font-size: 14px; line-height: 1.714; letter-spacing: -0.005em; color: rgb(23, 43, 77); font-family: -apple-system, system-ui, &quot;Segoe UI&quot;, Roboto, Oxygen, Ubuntu, &quot;Fira Sans&quot;, &quot;Droid Sans&quot;, &quot;Helvetica Neue&quot;, sans-serif; background-color: rgb(255, 255, 255);">
+	Verification:</p>
+<p style="margin: 1.142em 0px 0px; padding: 0px; font-size: 14px; line-height: 1.714; letter-spacing: -0.005em; color: rgb(23, 43, 77); font-family: -apple-system, system-ui, &quot;Segoe UI&quot;, Roboto, Oxygen, Ubuntu, &quot;Fira Sans&quot;, &quot;Droid Sans&quot;, &quot;Helvetica Neue&quot;, sans-serif; background-color: rgb(255, 255, 255);">
+	Max{4.28, 0.25/(1-0.03)*0.45)</p>
+<p style="margin: 1.142em 0px 0px; padding: 0px; font-size: 14px; line-height: 1.714; letter-spacing: -0.005em; color: rgb(23, 43, 77); font-family: -apple-system, system-ui, &quot;Segoe UI&quot;, Roboto, Oxygen, Ubuntu, &quot;Fira Sans&quot;, &quot;Droid Sans&quot;, &quot;Helvetica Neue&quot;, sans-serif; background-color: rgb(255, 255, 255);">
+	Max{2.25, 0.115}</p>
+<p style="margin: 1.142em 0px 0px; padding: 0px; font-size: 14px; line-height: 1.714; letter-spacing: -0.005em; color: rgb(23, 43, 77); font-family: -apple-system, system-ui, &quot;Segoe UI&quot;, Roboto, Oxygen, Ubuntu, &quot;Fira Sans&quot;, &quot;Droid Sans&quot;, &quot;Helvetica Neue&quot;, sans-serif; background-color: rgb(255, 255, 255);">
+	c) For China Bid Floor is 13.7</p>
+<p style="margin: 1.142em 0px 0px; padding: 0px; font-size: 14px; line-height: 1.714; letter-spacing: -0.005em; color: rgb(23, 43, 77); font-family: -apple-system, system-ui, &quot;Segoe UI&quot;, Roboto, Oxygen, Ubuntu, &quot;Fira Sans&quot;, &quot;Droid Sans&quot;, &quot;Helvetica Neue&quot;, sans-serif; background-color: rgb(255, 255, 255);">
+	Verification:</p>
+<p style="margin: 1.142em 0px 0px; padding: 0px; font-size: 14px; line-height: 1.714; letter-spacing: -0.005em; color: rgb(23, 43, 77); font-family: -apple-system, system-ui, &quot;Segoe UI&quot;, Roboto, Oxygen, Ubuntu, &quot;Fira Sans&quot;, &quot;Droid Sans&quot;, &quot;Helvetica Neue&quot;, sans-serif; background-color: rgb(255, 255, 255);">
+	Max{1, 6/(1-0.03)*0.45)</p>
+<p style="margin: 1.142em 0px 0px; padding: 0px; font-size: 14px; line-height: 1.714; letter-spacing: -0.005em; color: rgb(23, 43, 77); font-family: -apple-system, system-ui, &quot;Segoe UI&quot;, Roboto, Oxygen, Ubuntu, &quot;Fira Sans&quot;, &quot;Droid Sans&quot;, &quot;Helvetica Neue&quot;, sans-serif; background-color: rgb(255, 255, 255);">
+	Max(1, 13.7}</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	Floors confirmed with Product</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="47630" name="Dynamic floors not enabled (should utilize rev share and existing static cpm floors)">
+	<node_order><![CDATA[1001]]></node_order>
+	<externalid><![CDATA[22]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>
+	Dynamic floors not enabled</p>
+<p>
+	Verify the Bidfloor for the Programmatic users&nbsp;</p>
+<p>
+	<span style="color: rgb(23, 43, 77); font-family: -apple-system, system-ui, &quot;Segoe UI&quot;, Roboto, Oxygen, Ubuntu, &quot;Fira Sans&quot;, &quot;Droid Sans&quot;, &quot;Helvetica Neue&quot;, sans-serif; font-size: 14px; letter-spacing: -0.07px; background-color: rgb(255, 255, 255);">Programmatic (external buyers). These should utilize the Flat CPM value as the CPM Floor rather than the dynamic cpm floor generated by the DataSci Model.</span></p>
+]]></summary>
+	<preconditions><![CDATA[]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p style="margin: 1.142em 0px 0px; padding: 0px; font-size: 14px; line-height: 1.714; letter-spacing: -0.005em; color: rgb(23, 43, 77); font-family: -apple-system, system-ui, &quot;Segoe UI&quot;, Roboto, Oxygen, Ubuntu, &quot;Fira Sans&quot;, &quot;Droid Sans&quot;, &quot;Helvetica Neue&quot;, sans-serif; background-color: rgb(255, 255, 255);">
+	PUB ID:&nbsp;<a class="sc-hGIZiE wasFp" href="http://dashboard.qa.vungle.com/dashboard/applications/5bedc778be47fb42e42e75fd/details" rel="noreferrer noopener" style="color: rgb(0, 82, 204); text-decoration-line: none;" target="_blank" title="http://dashboard.qa.vungle.com/dashboard/applications/5bedc778be47fb42e42e75fd/details">http://dashboard.qa.vungle.com/dashboard/applications/5bedc778be47fb42e42e75fd/details</a></p>
+<p style="margin: 1.142em 0px 0px; padding: 0px; font-size: 14px; line-height: 1.714; letter-spacing: -0.005em; color: rgb(23, 43, 77); font-family: -apple-system, system-ui, &quot;Segoe UI&quot;, Roboto, Oxygen, Ubuntu, &quot;Fira Sans&quot;, &quot;Droid Sans&quot;, &quot;Helvetica Neue&quot;, sans-serif; background-color: rgb(255, 255, 255);">
+	Placement ID :&nbsp;<a class="sc-hGIZiE wasFp" href="http://dashboard.qa.vungle.com/dashboard/applications/5bedc778be47fb42e42e75fd/details" rel="noreferrer noopener" style="color: rgb(0, 82, 204); text-decoration-line: none;" target="_blank" title="http://dashboard.qa.vungle.com/dashboard/applications/5bedc778be47fb42e42e75fd/details">http://dashboard.qa.vungle.com/dashboard/applications/5bedc778be47fb42e42e75fd/details</a></p>
+<p style="margin: 1.142em 0px 0px; padding: 0px; font-size: 14px; line-height: 1.714; letter-spacing: -0.005em; color: rgb(23, 43, 77); font-family: -apple-system, system-ui, &quot;Segoe UI&quot;, Roboto, Oxygen, Ubuntu, &quot;Fira Sans&quot;, &quot;Droid Sans&quot;, &quot;Helvetica Neue&quot;, sans-serif; background-color: rgb(255, 255, 255);">
+	Default and Geo level Flat CPM disable and there is no cpm floor at application and placement level, so</p>
+<p style="margin: 1.142em 0px 0px; padding: 0px; font-size: 14px; line-height: 1.714; letter-spacing: -0.005em; color: rgb(23, 43, 77); font-family: -apple-system, system-ui, &quot;Segoe UI&quot;, Roboto, Oxygen, Ubuntu, &quot;Fira Sans&quot;, &quot;Droid Sans&quot;, &quot;Helvetica Neue&quot;, sans-serif; background-color: rgb(255, 255, 255);">
+	d) Bid Floor for US is 4.28</p>
+<p style="margin: 1.142em 0px 0px; padding: 0px; font-size: 14px; line-height: 1.714; letter-spacing: -0.005em; color: rgb(23, 43, 77); font-family: -apple-system, system-ui, &quot;Segoe UI&quot;, Roboto, Oxygen, Ubuntu, &quot;Fira Sans&quot;, &quot;Droid Sans&quot;, &quot;Helvetica Neue&quot;, sans-serif; background-color: rgb(255, 255, 255);">
+	Verified this by using is max {country_reserved_cost, 0}</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	Confirmed with product</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="47632" name="Programmatic (external buyers) Test">
+	<node_order><![CDATA[1002]]></node_order>
+	<externalid><![CDATA[23]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>
+	&nbsp;</p>
+<p>
+	<span style="color: rgb(23, 43, 77); font-family: -apple-system, system-ui, &quot;Segoe UI&quot;, Roboto, Oxygen, Ubuntu, &quot;Fira Sans&quot;, &quot;Droid Sans&quot;, &quot;Helvetica Neue&quot;, sans-serif; font-size: 14px; letter-spacing: -0.07px; background-color: rgb(255, 255, 255);">Calculation of erpmtarget which is internal</span></p>
+<p>
+	&nbsp;</p>
+]]></summary>
+	<preconditions><![CDATA[]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p style="margin: 1.142em 0px 0px; padding: 0px; font-size: 14px; line-height: 1.714; letter-spacing: -0.005em; color: rgb(23, 43, 77); font-family: -apple-system, system-ui, &quot;Segoe UI&quot;, Roboto, Oxygen, Ubuntu, &quot;Fira Sans&quot;, &quot;Droid Sans&quot;, &quot;Helvetica Neue&quot;, sans-serif; background-color: rgb(255, 255, 255);">
+	PUB ID:&nbsp;<a class="sc-hGIZiE wasFp" href="http://dashboard.qa.vungle.com/dashboard/applications/5bedc778be47fb42e42e75fd/details" rel="noreferrer noopener" style="color: rgb(0, 82, 204); text-decoration-line: none;" target="_blank" title="http://dashboard.qa.vungle.com/dashboard/applications/5bedc778be47fb42e42e75fd/details">http://dashboard.qa.vungle.com/dashboard/applications/5bedc778be47fb42e42e75fd/details</a></p>
+<p style="margin: 1.142em 0px 0px; padding: 0px; font-size: 14px; line-height: 1.714; letter-spacing: -0.005em; color: rgb(23, 43, 77); font-family: -apple-system, system-ui, &quot;Segoe UI&quot;, Roboto, Oxygen, Ubuntu, &quot;Fira Sans&quot;, &quot;Droid Sans&quot;, &quot;Helvetica Neue&quot;, sans-serif; background-color: rgb(255, 255, 255);">
+	Placement ID:&nbsp;<a class="sc-hGIZiE wasFp" href="http://dashboard.qa.vungle.com/dashboard/placements/5bedc7c41b5b4d42cfe4b7a7/details" rel="noreferrer noopener" style="color: rgb(0, 82, 204); text-decoration-line: none;" target="_blank" title="http://dashboard.qa.vungle.com/dashboard/placements/5bedc7c41b5b4d42cfe4b7a7/details">http://dashboard.qa.vungle.com/dashboard/placements/5bedc7c41b5b4d42cfe4b7a7/details</a></p>
+<p style="margin: 1.142em 0px 0px; padding: 0px; font-size: 14px; line-height: 1.714; letter-spacing: -0.005em; color: rgb(23, 43, 77); font-family: -apple-system, system-ui, &quot;Segoe UI&quot;, Roboto, Oxygen, Ubuntu, &quot;Fira Sans&quot;, &quot;Droid Sans&quot;, &quot;Helvetica Neue&quot;, sans-serif; background-color: rgb(255, 255, 255);">
+	e) Erpmtarget is 0.17</p>
+<p style="margin: 1.142em 0px 0px; padding: 0px; font-size: 14px; line-height: 1.714; letter-spacing: -0.005em; color: rgb(23, 43, 77); font-family: -apple-system, system-ui, &quot;Segoe UI&quot;, Roboto, Oxygen, Ubuntu, &quot;Fira Sans&quot;, &quot;Droid Sans&quot;, &quot;Helvetica Neue&quot;, sans-serif; background-color: rgb(255, 255, 255);">
+	Verified this by using floor/((1-serv_cost)*rev_share)</p>
+<p style="margin: 1.142em 0px 0px; padding: 0px; font-size: 14px; line-height: 1.714; letter-spacing: -0.005em; color: rgb(23, 43, 77); font-family: -apple-system, system-ui, &quot;Segoe UI&quot;, Roboto, Oxygen, Ubuntu, &quot;Fira Sans&quot;, &quot;Droid Sans&quot;, &quot;Helvetica Neue&quot;, sans-serif; background-color: rgb(255, 255, 255);">
+	Default_dynamic_cpm_floor is 0.075 for 5bedc7c41b5b4d42cfe4b7a7</p>
+<p style="margin: 1.142em 0px 0px; padding: 0px; font-size: 14px; line-height: 1.714; letter-spacing: -0.005em; color: rgb(23, 43, 77); font-family: -apple-system, system-ui, &quot;Segoe UI&quot;, Roboto, Oxygen, Ubuntu, &quot;Fira Sans&quot;, &quot;Droid Sans&quot;, &quot;Helvetica Neue&quot;, sans-serif; background-color: rgb(255, 255, 255);">
+	0.075/((1-0.03)*0.45) = 0.17</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	Verified with product</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+</testsuite></testsuite>

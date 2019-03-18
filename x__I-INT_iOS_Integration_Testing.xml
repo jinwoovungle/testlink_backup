@@ -1,0 +1,2496 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite id="" name="" >
+<node_order><![CDATA[]]></node_order>
+<details><![CDATA[]]></details> 
+<testsuite id="3917" name="iOS Integration Testing Test Suite" >
+<node_order><![CDATA[1]]></node_order>
+<details><![CDATA[<p>
+	iOS Integration Testing Test Suite</p>
+]]></details> 
+
+<testcase internalid="3918" name="Integration Basic with manual-Follow Integration guide Steps">
+	<node_order><![CDATA[1000]]></node_order>
+	<externalid><![CDATA[1]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>
+	<span style="font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">Follow integration guide steps to build a sample app with test Vungle account.</span></p>
+]]></summary>
+	<preconditions><![CDATA[<p style="margin-top: 0px; font-family: &quot;Trebuchet MS&quot;, Arial, Verdana, sans-serif; font-size: 11.7px; background-color: rgb(238, 238, 238);">
+	<span style="margin: 0px; padding: 0px; font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">1) Create a new Test App from Scratch.</span></p>
+<p style="font-family: &quot;Trebuchet MS&quot;, Arial, Verdana, sans-serif; font-size: 11.7px; background-color: rgb(238, 238, 238);">
+	<span style="margin: 0px; padding: 0px; font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">2) Add Vungle SDK to the app.</span></p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+	<span style="font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">1) Create a new Test App from Scratch. </span></p>
+<p>
+	<span style="font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">2) Add Vungle SDK to the app. </span></p>
+<p>
+	<span style="font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">3) Add play Button to the app and include the Play function to the button click listener.</span></p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	<span style="font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">1) No errors should be encountered. </span></p>
+<p>
+	<span style="font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">2) The Application should play Ad&#39;s from Vungle.</span></p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="3921" name="Integration Basic with Cocoapods">
+	<node_order><![CDATA[1001]]></node_order>
+	<externalid><![CDATA[2]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p style="margin-top: 0px;">
+	<font face="Calibri"><span style="font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">Create Sample app With Cocoapods</span></font></p>
+]]></summary>
+	<preconditions><![CDATA[<p style="margin-top: 0px; font-family: &quot;Trebuchet MS&quot;, Arial, Verdana, sans-serif; font-size: 11.7px; background-color: rgb(238, 238, 238);">
+	<span style="margin: 0px; padding: 0px; font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">1) Create a new Test App from Scratch with Cocoapods.</span></p>
+<p style="font-family: &quot;Trebuchet MS&quot;, Arial, Verdana, sans-serif; font-size: 11.7px; background-color: rgb(238, 238, 238);">
+	<span style="margin: 0px; padding: 0px; font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">2) Add Vungle SDK to the app.</span></p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+	<span style="font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">1)Install Cocoapods in your Mac using following command in terminal command:- sudo gem install cocoapods( if cocopods is already install skip step 1)</span></p>
+<p>
+	<span style="font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">2)Create New project and create new file as &quot;Podfile&quot; </span></p>
+<p>
+	<span style="font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">3) Add following code of line in podfile Platform:iOS, &quot;8.1&quot; target &quot;YourApplicationName here&quot; pod &quot;VungleSDK-iOS&quot; end</span></p>
+<p>
+	<span style="font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">4) Locate your project path in terminal </span></p>
+<p>
+	<span style="font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">5) Enter following command &quot;pod install&quot; in terminal </span></p>
+<p>
+	<span style="font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">6)Close Xcode and open your project by .xcworkspace file in your project. </span></p>
+<p>
+	<span style="font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">7)Follow integration guide steps to build a sample app with test Vungle account.</span></p>
+<p>
+	&nbsp;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	<span style="font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">App should work well and play the Ads</span></p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="3924" name="Check all API calls from SDK">
+	<node_order><![CDATA[1002]]></node_order>
+	<externalid><![CDATA[3]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>
+	Check &quot;new&quot; API Call is Sent</p>
+]]></summary>
+	<preconditions><![CDATA[<p style="margin-top: 0px; font-family: &quot;Trebuchet MS&quot;, Arial, Verdana, sans-serif; font-size: 11.7px; background-color: rgb(238, 238, 238);">
+	<span style="margin: 0px; padding: 0px; font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">1) Create a new Test App from Scratch.</span></p>
+<p style="font-family: &quot;Trebuchet MS&quot;, Arial, Verdana, sans-serif; font-size: 11.7px; background-color: rgb(238, 238, 238);">
+	<span style="margin: 0px; padding: 0px; font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">2) Add Vungle SDK to the app.</span></p>
+<p style="font-family: &quot;Trebuchet MS&quot;, Arial, Verdana, sans-serif; font-size: 11.7px; background-color: rgb(238, 238, 238);">
+	<span style="margin: 0px; padding: 0px; font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">3)Set charles proxy </span></p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+	<span style="font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">1) Start the sample app. </span></p>
+<p>
+	<span style="font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">2 )Check API call with CharlesProxy. </span></p>
+<p>
+	<span style="font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">3)Start an App</span></p>
+<p>
+	&nbsp;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	<span style="font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">This API is called when an app is launched after install (ONLY for the first time).</span></p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="3927" name="Check all API calls from SDK-Check &quot;config&quot; API call">
+	<node_order><![CDATA[1003]]></node_order>
+	<externalid><![CDATA[4]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>
+	<span style="font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">Check &quot;config&quot; API call is sent</span></p>
+]]></summary>
+	<preconditions><![CDATA[<p style="margin-top: 0px; font-family: &quot;Trebuchet MS&quot;, Arial, Verdana, sans-serif; font-size: 11.7px; background-color: rgb(238, 238, 238);">
+	<span style="margin: 0px; padding: 0px; font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">1) Create a new Test App from Scratch.</span></p>
+<p style="font-family: &quot;Trebuchet MS&quot;, Arial, Verdana, sans-serif; font-size: 11.7px; background-color: rgb(238, 238, 238);">
+	<span style="margin: 0px; padding: 0px; font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">2) Add Vungle SDK to the app.</span></p>
+<p style="font-family: &quot;Trebuchet MS&quot;, Arial, Verdana, sans-serif; font-size: 11.7px; background-color: rgb(238, 238, 238);">
+	<span style="margin: 0px; padding: 0px; font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">3)Set charles proxy </span></p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+	<span style="font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">1) Start the sample app. </span></p>
+<p>
+	<span style="font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">2 )Check API call with CharlesProxy. </span></p>
+<p>
+	<span style="font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">3)Start an App</span></p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	<span style="font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">This API should called every time an app is launched.</span></p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="3930" name="Check all API calls from SDK-Check &quot;requestAd&quot; API call">
+	<node_order><![CDATA[1004]]></node_order>
+	<externalid><![CDATA[5]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>
+	<span style="font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">Check &quot;requestAd&quot; API call is sent</span></p>
+]]></summary>
+	<preconditions><![CDATA[<div>
+	1) Create a new Test App from Scratch.</div>
+<div>
+	&nbsp;</div>
+<div>
+	2) Add Vungle SDK to the app.</div>
+<div>
+	&nbsp;</div>
+<div>
+	3)Set charles proxy</div>
+<div>
+	&nbsp;</div>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+	<span style="font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">1) Start the sample app. </span></p>
+<p>
+	<span style="font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">2 )Check API call with CharlesProxy. </span></p>
+<p>
+	<span style="font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">3)Start an App</span></p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	<span style="font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">This API should called after config call is succeeded.</span></p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="3933" name="Check all API calls from SDK-Check &quot;requestStreamingAd&quot; API call">
+	<node_order><![CDATA[1005]]></node_order>
+	<externalid><![CDATA[6]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>
+	<span style="font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">Check &quot;requestStreamingAd&quot; API call is sent</span></p>
+]]></summary>
+	<preconditions><![CDATA[<div>
+	1) Create a new Test App from Scratch.</div>
+<div>
+	&nbsp;</div>
+<div>
+	2) Add Vungle SDK to the app.</div>
+<div>
+	&nbsp;</div>
+<div>
+	3)Set charles proxy</div>
+<div>
+	&nbsp;</div>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+	<span style="font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">1) Start the sample app </span></p>
+<p>
+	<span style="font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">2 )Check API call with CharlesProxy. </span></p>
+<p>
+	<span style="font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">3)Start an App. </span></p>
+<p>
+	<span style="font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">4)after an ad is cached. </span></p>
+<p>
+	<span style="font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">5)play an ad</span></p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	<span style="font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">This API is called when &quot;playAd&quot; is called.</span></p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="3936" name="Check all API calls from SDK-Check &quot;reportAd&quot; API call">
+	<node_order><![CDATA[1006]]></node_order>
+	<externalid><![CDATA[7]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>
+	<span style="font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">Check &quot;reportAd&quot; API call is sent </span></p>
+]]></summary>
+	<preconditions><![CDATA[<div>
+	1) Create a new Test App from Scratch.</div>
+<div>
+	&nbsp;</div>
+<div>
+	2) Add Vungle SDK to the app.</div>
+<div>
+	&nbsp;</div>
+<div>
+	3)Set charles proxy</div>
+<div>
+	&nbsp;</div>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+	<span style="font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">1) Start the sample app. </span></p>
+<p>
+	<span style="font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">2 )Check API call with CharlesProxy. </span></p>
+<p>
+	<span style="font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">3)Start an App. </span></p>
+<p>
+	<span style="font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">4)after an ad is cached. </span></p>
+<p>
+	<span style="font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">5)play an ad. </span></p>
+<p>
+	<span style="font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">6)Close end card.</span></p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	<span style="font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">ReportAd should call in Charles after close end card.</span></p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="3939" name="Check all API calls from SDK-check &quot;incentivized&quot; parameter">
+	<node_order><![CDATA[1007]]></node_order>
+	<externalid><![CDATA[8]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>
+	<span style="font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">check &quot;incentivized&quot; parameter in reportAd</span></p>
+]]></summary>
+	<preconditions><![CDATA[<div>
+	1) Create a new Test App from Scratch.</div>
+<div>
+	&nbsp;</div>
+<div>
+	2) Add Vungle SDK to the app.</div>
+<div>
+	&nbsp;</div>
+<div>
+	3)Set charles proxy</div>
+<div>
+	&nbsp;</div>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+	<span style="font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">1) Start the sample app </span></p>
+<p>
+	<span style="font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">2 )Check API call with CharlesProxy. </span></p>
+<p>
+	<span style="font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">3)Start an App. </span></p>
+<p>
+	<span style="font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">4)after an ad is cached. </span></p>
+<p>
+	<span style="font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">5)play an ad. </span></p>
+<p>
+	<span style="font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">6)Close end card and observe the reportAd.</span></p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	<span style="font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">&quot;incentivized&quot; parameter should send correctly in reportAd</span></p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="3942" name="Check all API calls from SDK-check &quot;user&quot; parameter">
+	<node_order><![CDATA[1008]]></node_order>
+	<externalid><![CDATA[9]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>
+	<span style="font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">check &quot;user&quot; parameter in reportAd</span></p>
+]]></summary>
+	<preconditions><![CDATA[<div>
+	1) Create a new Test App from Scratch.</div>
+<div>
+	&nbsp;</div>
+<div>
+	2) Add Vungle SDK to the app.</div>
+<div>
+	&nbsp;</div>
+<div>
+	3)Set charles proxy</div>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+	<span style="font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">1) Start the sample app. </span></p>
+<p>
+	<span style="font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">2 )Check API call with CharlesProxy. </span></p>
+<p>
+	<span style="font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">3)Start an App. </span></p>
+<p>
+	<span style="font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">4)after an ad is cached. </span></p>
+<p>
+	<span style="font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">5)play an ad. </span></p>
+<p>
+	<span style="font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">6)Close end card and observe the reportAd.</span></p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	<span style="font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">&quot;user&quot; parameter should send correctly in reportAd Note: &quot;user will be displayed only in case the ad is an Incentivised Ad&quot;&quot;user&quot; parameter should send correctly in reportAd</span></p>
+<p>
+	<span style="font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">Note: &quot;user will be displayed only in case the ad is an Incentivised Ad&quot;</span></p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="3945" name="Check all callbacks in client side">
+	<node_order><![CDATA[1009]]></node_order>
+	<externalid><![CDATA[10]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>
+	<span style="font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">Check if all callbacks in client side are fired correctly</span></p>
+<p>
+	<span style="font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">i.e</span></p>
+<p>
+	<span style="background-color: rgb(255, 255, 255); font-family: Calibri; font-size: 15px; white-space: pre-wrap;">Callbacks (VungleSDKDelegate) [(void)vungleSDKAdPlayableChanged:(BOOL)isAdPlayable]</span></p>
+]]></summary>
+	<preconditions><![CDATA[<div>
+	1) Create a new Test App from Scratch.</div>
+<div>
+	&nbsp;</div>
+<div>
+	2) Add Vungle SDK to the app.</div>
+<div>
+	&nbsp;</div>
+<div>
+	3)Set charles proxy</div>
+<div>
+	&nbsp;</div>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+	<span style="font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">1) First set VungleSDKDelegate protocol in viewdidload method of FirstViewController.m and then Add new [(void)vungleSDKAdPlayableChanged:(BOOL)isAdPlayable] method in FirstViewController.m with NSLog. </span></p>
+<p>
+	<span style="font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">2)Build the App/ run the Application. </span></p>
+<p>
+	<span style="font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">3)Now go to View option in the menu of Xcode and Activate console from Debug Area. </span></p>
+<p>
+	<span style="font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">4) Start the sample app in the simulator. </span></p>
+<p>
+	<span style="font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">5)Check the console log of Xcode.</span></p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	<span style="font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">When Ad is download and ready for play this method should call with correct NSLog</span></p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="3948" name="Check all callbacks in client side-vungleSDKwillShowAd">
+	<node_order><![CDATA[1010]]></node_order>
+	<externalid><![CDATA[11]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>
+	<span style="font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">Check if all callbacks in client side are fired correctly</span></p>
+<p>
+	<span style="font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">i.e</span></p>
+<p>
+	<span style="font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">Callbacks (VungleSDKDelegate) (void)vungleSDKwillShowAd</span></p>
+]]></summary>
+	<preconditions><![CDATA[<div>
+	1) Create a new Test App from Scratch.</div>
+<div>
+	&nbsp;</div>
+<div>
+	2) Add Vungle SDK to the app.</div>
+<div>
+	&nbsp;</div>
+<div>
+	3)Set charles proxy</div>
+<div>
+	&nbsp;</div>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+	<span style="font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">1) First set VungleSDKDelegate protocol in viewdidload method of FirstViewController.m and then Add new [(void)vungleSDKwillShowAd] method in FirstViewController.m with NSLog. </span></p>
+<p>
+	<span style="font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">2)Build the App/ run the Application. </span></p>
+<p>
+	<span style="font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">3)Now go to View option in the menu of Xcode and Activate console from Debug Area. </span></p>
+<p>
+	<span style="font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">4) Start the sample app in simulator. </span></p>
+<p>
+	<span style="font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">5)Check the console log of Xcode.</span></p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	<span style="font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">When user click on playAd button and Ad is played, this method should call with correct NSLog Also check if Assets are getting downloaded via Charles, A Callback should be fired as soon as SDK finishes downloading.When user clcik on playAd button and Ad is played, this method should call with correct NSLog Also check if Assets are getting downloaded via Charles, A Callback should be fired as soon as SDK finishes downloading.</span></p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="3951" name="Check Callbacks(VungleSDKDelegate)(void)vungleSDKwillCloseAdWithViewInfo: willPresentProductSheet:">
+	<node_order><![CDATA[1011]]></node_order>
+	<externalid><![CDATA[12]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>
+	<span style="font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">Check if all callbacks in client side are fired correctly</span></p>
+]]></summary>
+	<preconditions><![CDATA[<div>
+	1) Create a new Test App from Scratch.</div>
+<div>
+	&nbsp;</div>
+<div>
+	2) Add Vungle SDK to the app.</div>
+<div>
+	&nbsp;</div>
+<div>
+	3)Set charles proxy</div>
+<div>
+	&nbsp;</div>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+	<span style="font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">1) First set VungleSDKDelegate protocol in viewdidload method of FirstViewController.m and then Add new [(void)vungleSDKwillCloseAdWithViewInfo: willPresentProductSheet:] method in FirstViewController.m with NSLog. </span></p>
+<p>
+	<span style="font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">2)Build the App/ run the Application.</span></p>
+<p>
+	<span style="font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">3)Now go to View option in the menu of Xcode and Activate console from Debug Area. </span></p>
+<p>
+	<span style="font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">4) Start the sample app in the simulator. </span></p>
+<p>
+	<span style="font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">5)Check the console log of Xcode.</span></p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	<span style="font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">When Ad is close by user /fully viewed and close end card , this method should call with correct NSLog</span></p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="3954" name="Check all TPAT call">
+	<node_order><![CDATA[1012]]></node_order>
+	<externalid><![CDATA[13]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>
+	<span style="font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">Check if all TPAT call is sent with right data</span></p>
+]]></summary>
+	<preconditions><![CDATA[<div>
+	1) Create a new Test App from Scratch.</div>
+<div>
+	&nbsp;</div>
+<div>
+	2) Add Vungle SDK to the app.</div>
+<div>
+	&nbsp;</div>
+<div>
+	3)Set charles proxy</div>
+<div>
+	&nbsp;</div>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+	<span style="font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">1) Start the sample app. </span></p>
+<p>
+	<span style="font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">2)Check API call with CharlesProxy.</span></p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	<span style="font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">TPAT api&#39;s should be called after requestAD(defined in &quot;requestAd&quot; call response) and send with right data. for example:- TPAT for zip file:- https://cdn-lib.vungle.com/bundles/-1.zip. TPAT for Video:- https://cdn-lib.vungle.com/zen/MIP_promo...mp4.</span></p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="3957" name="Check current ads will start in a muted state or unmuted state.-(Only for Legacy Ad)">
+	<node_order><![CDATA[1013]]></node_order>
+	<externalid><![CDATA[14]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>
+	<span style="font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">Check current ads will start in a muted state or unmuted state.</span></p>
+<p>
+	<span style="font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">i.e</span></p>
+<p>
+	Instance Properties muted (BOOL): &nbsp; &nbsp; (Only for Legacy Ad) &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</p>
+]]></summary>
+	<preconditions><![CDATA[<div>
+	1) Create a new Test App from Scratch.</div>
+<div>
+	&nbsp;</div>
+<div>
+	2) Add Vungle SDK to the app.</div>
+<div>
+	&nbsp;</div>
+<div>
+	3)Set charles proxy</div>
+<div>
+	&nbsp;</div>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+	<span style="font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">1) Before playAd ,Add mute function in firstView Controller.m file in button Action method. </span></p>
+<p>
+	<span style="font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">2)Set it&#39;s valued true/false. </span></p>
+<p>
+	<span style="font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">3)Build the App/ run the Application. </span></p>
+<p>
+	<span style="font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">4) Start the sample app in the simulator. </span></p>
+<p>
+	<span style="font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">5)Play the Ad and observe the audio of Ad.</span></p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	<span style="font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">Current ads should start in a muted state or unmuted state.</span></p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="3960" name="Customized Ad Experience - AdwithOption">
+	<node_order><![CDATA[1014]]></node_order>
+	<externalid><![CDATA[15]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>
+	<span style="font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">Check VunglePlayAdOptionKeyOrientations </span></p>
+<p>
+	<span style="font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);"><strong>(Note:- Not applicable for iPad &#39;s)</strong></span></p>
+]]></summary>
+	<preconditions><![CDATA[<div>
+	1) Create a new Test App from Scratch.</div>
+<div>
+	&nbsp;</div>
+<div>
+	2) Add Vungle SDK to the app.</div>
+<div>
+	&nbsp;</div>
+<div>
+	3)Set charles proxy</div>
+<div>
+	&nbsp;</div>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+	<span style="font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">1) Before PlayAds follow the below steps. </span></p>
+<p>
+	<span style="font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">2)Add new button in App, name the button as <strong>&quot;AdwithOption&quot;</strong> in main.storyboard and in the firstViewcontroller.m file. </span></p>
+<p>
+	<span style="font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">3)Add this parameter in button action and set it&#39;s value. </span></p>
+<p>
+	<span style="font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">4) values:- UIInterfaceOrientationMaskAll/UIInterfaceOrientationMaskLandscape/UIInterfaceOrientationMaskPortrait. </span></p>
+<p>
+	<span style="font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">5)Run the build . </span></p>
+<p>
+	<span style="font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">6)Start the Sample App in the simulator. </span></p>
+<p>
+	<span style="font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">7)Observe the orientation of Ad .</span></p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	<span style="font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">a)UIInterfaceOrientationMaskAll:- any orientation. b)UIInterfaceOrientationMaskLandscape:- Ad should play in landscape mode. </span></p>
+<p>
+	<span style="font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">c)UIInterfaceOrientationMaskPortrait:- Ad should play in portrait mode.</span></p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="3963" name="Customized Ad Experience for AdwithOption-PlayAdOptionKeyPlacement">
+	<node_order><![CDATA[1015]]></node_order>
+	<externalid><![CDATA[16]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>
+	<span style="font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">VunglePlayAdOptionKeyPlacement</span></p>
+]]></summary>
+	<preconditions><![CDATA[<div>
+	1) Create a new Test App from Scratch.</div>
+<div>
+	&nbsp;</div>
+<div>
+	2) Add Vungle SDK to the app.</div>
+<div>
+	&nbsp;</div>
+<div>
+	3)Set charles proxy</div>
+<div>
+	&nbsp;</div>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+	<span style="font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">1) Before PlayAds follow the below steps. </span></p>
+<p>
+	<span style="font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">2)Add this parameter in &quot;AdwithOption&quot; Action button in main.storyboard and in the firstViewcontroller.m file. </span></p>
+<p>
+	<span style="font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">3)And Set value for this parameter. </span></p>
+<p>
+	<span style="font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">4) values nil/NSString. </span></p>
+<p>
+	<span style="font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">5)Run the build. </span></p>
+<p>
+	<span style="font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">6)Start the Sample App in the simulator.</span></p>
+<p>
+	<span style="background-color: rgb(255, 255, 255); font-family: Calibri; font-size: 15px; white-space: pre-wrap;">7)Close the endcard and observe the reportAd charlesproxy.</span></p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	<span style="font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">&quot;Placement&quot; parameter should send correctly in reportAd</span></p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="3966" name="Customized Ad Experience for AdwithOption-VunglePlayAdOptionKeyExtraInfo">
+	<node_order><![CDATA[1016]]></node_order>
+	<externalid><![CDATA[17]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>
+	<span style="font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">Check VunglePlayAdOptionKeyExtraInfoDictionary. </span></p>
+]]></summary>
+	<preconditions><![CDATA[<div>
+	1) Create a new Test App from Scratch.</div>
+<div>
+	&nbsp;</div>
+<div>
+	2) Add Vungle SDK to the app.</div>
+<div>
+	&nbsp;</div>
+<div>
+	3)Set charles proxy</div>
+<div>
+	&nbsp;</div>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+	<span style="font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">1) Before PlayAds follow the below steps. </span></p>
+<p>
+	<span style="font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">2)Add this parameter in &quot;AdwithOption&quot; Action button in main.storyboard and in the firstViewcontroller.m file. </span></p>
+<p>
+	<span style="font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">3)And Set value for this parameter. </span></p>
+<p>
+	<span style="font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">4) values:- nil/NSString. </span></p>
+<p>
+	<span style="font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">5)Run the build. </span></p>
+<p>
+	<span style="font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">6)Start the Sample App in the simulator. </span></p>
+<p>
+	<span style="font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">7)Close the endcard and observe the reportAd charlesproxy.</span></p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	<span style="font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">This is metadata dictionary and it should keep track of metrics such as age group, gender, etc.</span></p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="3969" name="Customized Ad Experience for AdwithOption">
+	<node_order><![CDATA[1017]]></node_order>
+	<externalid><![CDATA[18]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>
+	<span style="font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">check VunglePlayAdOptionKeyExtra1..8</span></p>
+]]></summary>
+	<preconditions><![CDATA[<div>
+	1) Create a new Test App from Scratch.</div>
+<div>
+	&nbsp;</div>
+<div>
+	2) Add Vungle SDK to the app.</div>
+<div>
+	&nbsp;</div>
+<div>
+	3)Set charles proxy</div>
+<div>
+	&nbsp;</div>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+	<span style="font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">1) Before PlayAds follow the below steps. </span></p>
+<p>
+	<span style="font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">2)Add this parameter in &quot;AdwithOption&quot; Action button in main.storyboard of firstViewcontroller.m file. </span></p>
+<p>
+	<span style="font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">3)And Set value for this parameter. </span></p>
+<p>
+	<span style="font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">4)There are 8 Extra infoDictionary put the value in any four/five of them or all of them. Value for example &quot;female/front/background&quot;. </span></p>
+<p>
+	<span style="font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">5)Run the build . </span></p>
+<p>
+	<span style="font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">6)Start the Sample App in simulator. </span></p>
+<p>
+	<span style="font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">7)close end card and observe the reportAd charlesproxy.</span></p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	<span style="font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">All &quot;Extra info Keys&quot; parameter should send correctly in reportAd This functionality is Implemented only at the SDK side, the parameters are not used by the server yet.</span></p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="3972" name="Customized Ad Experience for incentivized">
+	<node_order><![CDATA[1018]]></node_order>
+	<externalid><![CDATA[19]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>
+	Check customized Ad Experiance for&nbsp;<span style="background-color: rgb(255, 255, 255); font-family: Calibri; font-size: 15px; white-space: pre-wrap;">VunglePlayAdOptionKeyIncentivized</span></p>
+]]></summary>
+	<preconditions><![CDATA[<div>
+	1) Create a new Test App from Scratch.</div>
+<div>
+	&nbsp;</div>
+<div>
+	2) Add Vungle SDK to the app.</div>
+<div>
+	&nbsp;</div>
+<div>
+	3)Set charles proxy</div>
+<div>
+	&nbsp;</div>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+	<span style="font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">1) ) Before PlayAds follow the below steps. </span></p>
+<p>
+	<span style="font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">2)Add new button in App, name the button as &quot;AdWithIncentivized&quot; in main.storyboard of firstViewcontroller.m file. </span></p>
+<p>
+	<span style="font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">3)Add this parameter in button action &quot;AdWithIncentivized&quot; and set it&#39;s value as YES/NO. </span></p>
+<p>
+	<span style="font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">4)Run the build . </span></p>
+<p>
+	<span style="font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">5)Start the Sample App in the simulator. </span></p>
+<p>
+	<span style="font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">6)close end card and observe the reportAd charlesproxy.</span></p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	<span style="font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">a) Video should play with incentivized/non-incentivized Ad. </span></p>
+<p>
+	<span style="font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">b) &quot;incentivized&quot; parameter should display in reportAd correctly.</span></p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="3975" name="Customized Ad Experience for incentivized-PlayAdOptionKeyUser">
+	<node_order><![CDATA[1019]]></node_order>
+	<externalid><![CDATA[20]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>
+	<span style="font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">Customized Ad Experience for incentivized VunglePlayAdOptionKeyUser</span></p>
+]]></summary>
+	<preconditions><![CDATA[<div>
+	1) Create a new Test App from Scratch.</div>
+<div>
+	&nbsp;</div>
+<div>
+	2) Add Vungle SDK to the app.</div>
+<div>
+	&nbsp;</div>
+<div>
+	3)Set charles proxy</div>
+<div>
+	&nbsp;</div>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+	<span style="font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">1) Before PlayAds follow the below steps. </span></p>
+<p>
+	<span style="font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">2)Add this parameter in &quot;AdWithIncentivized&quot; button action and set it&#39;s value. </span></p>
+<p>
+	<span style="font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">3) Value:- nil or any NSString. </span></p>
+<p>
+	<span style="font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">4)Keep &quot;VunglePlayAdOptionKeyIncentivized&quot; value as Yes. </span></p>
+<p>
+	<span style="font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">5)Run the build . </span></p>
+<p>
+	<span style="font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">6)Start the Sample App in simulator. </span></p>
+<p>
+	<span style="font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">7)close end card and observe the reportAd charlesproxy .</span></p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	<span style="font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">&quot;user&quot; parameter should send correct value in reportAd (Note:- User parameter display in reportAd only for incentivized Ad)</span></p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="3978" name="Customized Ad Experience for incentivized-PlayAdOptionKeyIncentivizedAlertTitleText">
+	<node_order><![CDATA[1020]]></node_order>
+	<externalid><![CDATA[21]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>
+	<span style="font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">Check Vungle Play Ad Option Key Incentivized Alert Title Text </span></p>
+]]></summary>
+	<preconditions><![CDATA[<div>
+	1) Create a new Test App from Scratch.</div>
+<div>
+	&nbsp;</div>
+<div>
+	2) Add Vungle SDK to the app.</div>
+<div>
+	&nbsp;</div>
+<div>
+	3)Set charles proxy</div>
+<div>
+	&nbsp;</div>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+	<span style="font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">1) Before PlayAds follow the below steps. </span></p>
+<p>
+	<span style="font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">2)Add this parameter in &quot;AdWithIncentivized&quot; button action and set it&#39;s value. </span></p>
+<p>
+	<span style="font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">3) Value:- nil or any NSString.</span></p>
+<p>
+	<span style="font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">4)Keep &quot;VunglePlayAdOptionKeyIncentivized&quot; value as Yes. </span></p>
+<p>
+	<span style="font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">5)Run the build . </span></p>
+<p>
+	<span style="font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">6)Start the Sample App in simulator. </span></p>
+<p>
+	<span style="font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">7)close end card and observe the reportAd charlesproxy .</span></p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	<span style="font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">String should the title of the alert dialog box, when a user closes an incentivized ad experience.</span></p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="3981" name="Customized Ad Experience">
+	<node_order><![CDATA[1021]]></node_order>
+	<externalid><![CDATA[22]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>
+	<span style="font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">check Vungle Play Ad Option Key Incentivized Alert Body Text.</span></p>
+]]></summary>
+	<preconditions><![CDATA[<div>
+	1) Create a new Test App from Scratch.</div>
+<div>
+	&nbsp;</div>
+<div>
+	2) Add Vungle SDK to the app.</div>
+<div>
+	&nbsp;</div>
+<div>
+	3)Set charles proxy</div>
+<div>
+	&nbsp;</div>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+	<span style="font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">1)) Before PlayAds follow the below steps. </span></p>
+<p>
+	<span style="font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">2)Add this parameter in &quot;AdWithIncentivized&quot; button action and set it&#39;s value. </span></p>
+<p>
+	<span style="font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">3) Value:- Are you sure you want to skip this ad? If you do, you might not get your reward / any NSString </span></p>
+<p>
+	<span style="font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">4)Keep &quot;VunglePlayAdOptionKeyIncentivized&quot; value as Yes. </span></p>
+<p>
+	<span style="font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">5)Run the build . </span></p>
+<p>
+	<span style="font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">6)Start the Sample App in the simulator. </span></p>
+<p>
+	<span style="font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">7)close end card and observe the reportAd charlesproxy.</span></p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	<span style="font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">String should display on the body text of the alert dialog box when a user closes an incentivized ad experience .</span></p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="3984" name="Customized Ad Experience for incentivized-Play Ad Option Key Incentivized Alert Close Button Text">
+	<node_order><![CDATA[1022]]></node_order>
+	<externalid><![CDATA[23]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>
+	Check&nbsp;<span style="background-color: rgb(255, 255, 255); font-family: Calibri; font-size: 15px; white-space: pre-wrap;">VunglePlay Ad Option Key Incentivized Alert Close Button Text</span></p>
+]]></summary>
+	<preconditions><![CDATA[<div>
+	1) Create a new Test App from Scratch.</div>
+<div>
+	&nbsp;</div>
+<div>
+	2) Add Vungle SDK to the app.</div>
+<div>
+	&nbsp;</div>
+<div>
+	3)Set charles proxy</div>
+<div>
+	&nbsp;</div>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+	<span style="font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">1)) Before PlayAds follow the below steps. </span></p>
+<p>
+	<span style="font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">2)Add this parameter in &quot;AdWithIncentivized&quot; button action and set it&#39;s value. </span></p>
+<p>
+	<span style="font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">3) Value:- Close / any NSString </span></p>
+<p>
+	<span style="font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">4)Keep &quot;VunglePlayAdOptionKeyIncentivized&quot; value as Yes. </span></p>
+<p>
+	<span style="font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">5)Run the build . </span></p>
+<p>
+	<span style="font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">6)Start the Sample App in the simulator. </span></p>
+<p>
+	<span style="font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">7)close end card and observe the reportAd in charlesproxy.</span></p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	<span style="font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">String should display on the close button text of the alert dialog box when a user closes an incentivized ad experience .</span></p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="3987" name="Customized Ad Experience for incentivized-Play Ad Option Key Incentivized Alert Continue Button Text">
+	<node_order><![CDATA[1023]]></node_order>
+	<externalid><![CDATA[24]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>
+	<span style="font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">Check Vungle Play Ad Option Key Incentivized Alert Continue Button Text</span></p>
+]]></summary>
+	<preconditions><![CDATA[<div>
+	1) Create a new Test App from Scratch.</div>
+<div>
+	&nbsp;</div>
+<div>
+	2) Add Vungle SDK to the app.</div>
+<div>
+	&nbsp;</div>
+<div>
+	3)Set charles proxy</div>
+<div>
+	&nbsp;</div>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+	<span style="font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">1)) Before PlayAds follow the below steps. </span></p>
+<p>
+	<span style="font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">2)Add this parameter in &quot;AdWithIncentivized&quot; button action and set it&#39;s value. </span></p>
+<p>
+	<span style="font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">3) Value:- Continue / any NSString </span></p>
+<p>
+	<span style="font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">4)Keep &quot;VunglePlayAdOptionKeyIncentivized&quot; value as Yes. </span></p>
+<p>
+	<span style="font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">5)Run the build . </span></p>
+<p>
+	<span style="font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">6)Start the Sample App in the simulator. </span></p>
+<p>
+	<span style="font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">7)close end card and observe the reportAd in charlesproxy.</span></p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	<span style="font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">String should display on the continue button text of the alert dialog box when a user closes an incentivized ad experience .</span></p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="3990" name="Dashboard">
+	<node_order><![CDATA[1024]]></node_order>
+	<externalid><![CDATA[25]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>
+	<span style="font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">Publisher Settings</span></p>
+]]></summary>
+	<preconditions><![CDATA[<div>
+	1) Create a new Test App from Scratch.</div>
+<div>
+	&nbsp;</div>
+<div>
+	2) Add Vungle SDK to the app.</div>
+<div>
+	&nbsp;</div>
+<div>
+	3)Set charles proxy</div>
+<div>
+	&nbsp;</div>
+<div>
+	4) Change Dashboard Setting(URL :&nbsp;<span style="background-color: rgb(255, 255, 255); font-family: Calibri; font-size: 15px; white-space: pre-wrap;">https://v.vungle.com</span>)</div>
+<div>
+	&nbsp;</div>
+<div>
+	&nbsp;</div>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+	<span style="font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">Does sample app follow skippable/non-skippable option for non-incentivized ads? </span></p>
+<p>
+	<span style="font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">1) &quot;overrideConfig.setIncentivized(false)&quot; set this parameter as false in MainActivity.java file </span></p>
+<p>
+	<span style="font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">2) Collect app_id from MainActivity.java file and put that PubApp ID on vungle dashboard and edit force view settings in publisher setting for non-incentivized ads<br />
+	for example:- Check/uncheck the (Remove a user&#39;s ability to skip the video for non-incentivized ads</span></p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	<span style="font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">1) If user check the force view for non-incentivized Ad , Close button should be skip. </span></p>
+<p>
+	<span style="font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">2) If user uncheck the force view for non-incentivized Ad , Close button should be display after 5 sec.</span></p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="3993" name="Verify if ad is showing properly after upgrading">
+	<node_order><![CDATA[1026]]></node_order>
+	<externalid><![CDATA[26]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>
+	<span style="font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">Verify if ad is showing properly after upgrading Vungle SDK</span></p>
+]]></summary>
+	<preconditions><![CDATA[<div>
+	1) Create a new Test App from Scratch.</div>
+<div>
+	&nbsp;</div>
+<div>
+	2) Add Vungle SDK to the app.</div>
+<div>
+	&nbsp;</div>
+<div>
+	3)Set charles proxy</div>
+<div>
+	&nbsp;</div>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+	<span style="font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">1) Built app with SDK in previous version, play some ads </span></p>
+<p>
+	<span style="font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">2) upgrade SDK (Swap the new SDK files with old SDK files) to the version being tested. See if ads are showing ok.</span></p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	<span style="font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">Ads are showing ok with callbacks being called on time after upgrading SDK</span></p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="3996" name="Dashboard-Publisher Setting">
+	<node_order><![CDATA[1027]]></node_order>
+	<externalid><![CDATA[27]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>
+	Change Dashboard-Publisher Setting</p>
+]]></summary>
+	<preconditions><![CDATA[<div>
+	1) Create a new Test App from Scratch.</div>
+<div>
+	&nbsp;</div>
+<div>
+	2) Add Vungle SDK to the app.</div>
+<div>
+	&nbsp;</div>
+<div>
+	3)Set charles proxy</div>
+<div>
+	&nbsp;</div>
+<div>
+	4) Change Dashboard Setting(URL : https://v.vungle.com)</div>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+	<span style="font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">Does sample app follow skippable/non-skippable option for incentivized ads? </span></p>
+<p>
+	<span style="font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">1) &quot;overrideConfig.setIncentivized(true)&quot; set this parameter as true in MainActivity.java file </span></p>
+<p>
+	<span style="font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">2)Collect app_id from MainActivity.java file and put that PubApp ID on vungle dashboard and edit force view settings in publisher setting for incentivized ads </span></p>
+<p>
+	<span style="font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">for example:- Check/uncheck the (Remove a user&#39;s ability to skip an incentivized advideo) for incentivized ads</span></p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	<span style="font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">1) If user check the force view for incentivized Ad , Incentivized button should be skipped. </span></p>
+<p>
+	<span style="font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">2) If user uncheck the force view for incentivized Ad , Incentivized button should be display after 5 sec .</span></p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+</testsuite><testsuite id="3999" name="iOS mopub integration testing" >
+<node_order><![CDATA[2]]></node_order>
+<details><![CDATA[<p>
+	iOS mopub integration testing</p>
+]]></details> 
+<testsuite id="4000" name="Interstatial Ads" >
+<node_order><![CDATA[1]]></node_order>
+<details><![CDATA[<p>
+	<strong>Interstatial Ads</strong></p>
+]]></details> 
+
+<testcase internalid="4001" name="Check Vungle SDK initialization">
+	<node_order><![CDATA[1000]]></node_order>
+	<externalid><![CDATA[28]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>
+	<span style="color: rgb(51, 51, 51); font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">Verify Vungle SDK should initialized by getting &quot;Interstitial&quot; ad</span></p>
+]]></summary>
+	<preconditions><![CDATA[<p>
+	<span style="color: rgb(51, 51, 51); font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">1)Set charles proxy. </span></p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+	<span style="color: rgb(51, 51, 51); font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">1)Set charles proxy.</span></p>
+<p>
+	<span style="color: rgb(51, 51, 51); font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">2)Start the MoPub sample app </span></p>
+<p>
+	<span style="background-color: rgb(255, 255, 255); color: rgb(51, 51, 51); font-family: Calibri; font-size: 15px; white-space: pre-wrap;">3) Open Charles Proxy and observe API calls.</span></p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	<span style="color: rgb(51, 51, 51); font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">1)After MoPub SDK is initialized, Vungle SDK should initialized. </span></p>
+<p>
+	<span style="color: rgb(51, 51, 51); font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">2)Check API calls </span></p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="4004" name="Check &quot;new&quot; API calls from SDK">
+	<node_order><![CDATA[1001]]></node_order>
+	<externalid><![CDATA[29]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>
+	<span style="font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">Verify &quot;new&quot; API call should sent</span></p>
+]]></summary>
+	<preconditions><![CDATA[<p>
+	<span style="background-color: rgb(255, 255, 255); color: rgb(51, 51, 51); font-family: Calibri; font-size: 15px; white-space: pre-wrap;">1)create MoPub sample app</span></p>
+<p>
+	<span style="background-color: rgb(255, 255, 255); color: rgb(51, 51, 51); font-family: Calibri; font-size: 15px; white-space: pre-wrap;">2)Set charles proxy. </span></p>
+<div>
+	&nbsp;</div>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+	<span style="color: rgb(51, 51, 51); font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">1)Set charles proxy. </span></p>
+<p>
+	<span style="color: rgb(51, 51, 51); font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">2)Start the MoPub sample app </span></p>
+<p>
+	<span style="color: rgb(51, 51, 51); font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">3) Open Charles Proxy and observe API calls.</span></p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	<span style="color: rgb(51, 51, 51); font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">&quot;new&quot; API should call when an app is launched after install (ONLY 1 time).</span></p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="4007" name="Check &quot;config&quot; API calls from SDK">
+	<node_order><![CDATA[1002]]></node_order>
+	<externalid><![CDATA[30]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>
+	<span style="color: rgb(51, 51, 51); font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">Verify &quot;config&quot; API call should sent</span></p>
+]]></summary>
+	<preconditions><![CDATA[<p>
+	<span style="background-color: rgb(255, 255, 255); color: rgb(51, 51, 51); font-family: Calibri; font-size: 15px; white-space: pre-wrap;">1)create MoPub sample app</span></p>
+<p>
+	<span style="color: rgb(51, 51, 51); font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">2)Set charles proxy. </span></p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<div>
+	1)Set charles proxy.&nbsp;</div>
+<div>
+	&nbsp;</div>
+<div>
+	2)Start the MoPub sample app&nbsp;</div>
+<div>
+	&nbsp;</div>
+<div>
+	3) Open Charles Proxy and observe API calls.</div>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	<span style="color: rgb(51, 51, 51); font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">&quot;config&quot; API should call every time an app is launched.</span></p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="4010" name="Check &quot;requestAd&quot; API calls from SDK">
+	<node_order><![CDATA[1003]]></node_order>
+	<externalid><![CDATA[31]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>
+	<span style="color: rgb(51, 51, 51); font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">Verify &quot;requestAd&quot; API call should sent</span></p>
+]]></summary>
+	<preconditions><![CDATA[<div>
+	1)create MoPub sample app</div>
+<div>
+	&nbsp;</div>
+<div>
+	2)Set charles proxy.&nbsp;</div>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<div>
+	1)Set charles proxy.&nbsp;</div>
+<div>
+	&nbsp;</div>
+<div>
+	2)Start the MoPub sample app&nbsp;</div>
+<div>
+	&nbsp;</div>
+<div>
+	3) Open Charles Proxy and observe API calls.</div>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	<span style="color: rgb(51, 51, 51); font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">&quot;requestAd&quot;API should call after config call is succeeded.</span></p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="4013" name="Check &quot;request Streaming&quot; API calls from SDK">
+	<node_order><![CDATA[1004]]></node_order>
+	<externalid><![CDATA[32]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>
+	<span style="color: rgb(51, 51, 51); font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">Verify &quot;request Streaming&quot; API call should sent</span></p>
+]]></summary>
+	<preconditions><![CDATA[<div>
+	1)create MoPub sample app</div>
+<div>
+	&nbsp;</div>
+<div>
+	2)Set charles proxy.&nbsp;</div>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+	<span style="color: rgb(51, 51, 51); font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">1)Set charles proxy. </span></p>
+<p>
+	<span style="color: rgb(51, 51, 51); font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">2)Start the MoPub sample app </span></p>
+<p>
+	<span style="color: rgb(51, 51, 51); font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">3)After an Ad is cached , tap on play button. </span></p>
+<p>
+	<span style="color: rgb(51, 51, 51); font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">4)Open Charles Proxy and observe API calls. </span></p>
+<div>
+	&nbsp;</div>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	<span style="color: rgb(51, 51, 51); font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">&quot;requestStreamingAd&quot; API should call when &quot;playAd&quot; is called.</span></p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="4016" name="Check &quot;reportAd&quot; API calls from SDK">
+	<node_order><![CDATA[1005]]></node_order>
+	<externalid><![CDATA[33]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>
+	<span style="color: rgb(51, 51, 51); font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">Verify &quot;reportAd&quot; API call should sent </span></p>
+<div>
+	&nbsp;</div>
+]]></summary>
+	<preconditions><![CDATA[<div>
+	1)create MoPub sample app</div>
+<div>
+	&nbsp;</div>
+<div>
+	2)Set charles proxy.&nbsp;</div>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+	<span style="color: rgb(51, 51, 51); font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">1)Set charles proxy. </span></p>
+<p>
+	<span style="color: rgb(51, 51, 51); font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">2)Start the MoPub sample app </span></p>
+<p>
+	<span style="color: rgb(51, 51, 51); font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">3)After an Ad is cached , tap on play button. </span></p>
+<p>
+	<span style="color: rgb(51, 51, 51); font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">4)Play the Ad and close the end card. </span></p>
+<p>
+	<span style="color: rgb(51, 51, 51); font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">5)Open Charles Proxy and observe API calls. </span></p>
+<div>
+	&nbsp;</div>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	<span style="color: rgb(51, 51, 51); font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">&quot;requestAd&quot; API should call when an Ad is played successfully. </span></p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="4019" name="Check all API calls from SDK">
+	<node_order><![CDATA[1006]]></node_order>
+	<externalid><![CDATA[34]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>
+	<span style="color: rgb(51, 51, 51); font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">Verify &quot;incentivized&quot; flag set correctly and Verify &quot;user&quot; ID set correctly(for incentivized Ad only) in &quot;reportAd&quot; API </span></p>
+]]></summary>
+	<preconditions><![CDATA[<div>
+	1)create MoPub sample app</div>
+<div>
+	&nbsp;</div>
+<div>
+	2)Set charles proxy.&nbsp;</div>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+	<span style="color: rgb(51, 51, 51); font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">1)Set charles proxy. </span></p>
+<p>
+	<span style="color: rgb(51, 51, 51); font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">2)Start the MoPub sample app </span></p>
+<p>
+	<span style="color: rgb(51, 51, 51); font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">3)After an Ad is cached , tap on play button. </span></p>
+<p>
+	<span style="color: rgb(51, 51, 51); font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">4)Play the Ad and close the end card. </span></p>
+<p>
+	<span style="color: rgb(51, 51, 51); font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">5)Open Charles Proxy and observe API calls. </span></p>
+<div>
+	&nbsp;</div>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	<span style="color: rgb(51, 51, 51); font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">1. For &quot;Interstitial&quot; Ad, &quot;incentivized&quot; data should sent correctly in reportAd&quot; API. </span></p>
+<p>
+	<span style="color: rgb(51, 51, 51); font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">2. For &quot;Interstitial&quot; Ad, &quot;user&quot;ID data should sent correctly in reportAd&quot; API.</span></p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="4022" name="Playback/ Play normally on Sample App">
+	<node_order><![CDATA[1007]]></node_order>
+	<externalid><![CDATA[35]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>
+	<span style="color: rgb(51, 51, 51); font-family: Calibri; font-size: 15px; text-align: center; white-space: pre-wrap; background-color: rgb(255, 255, 255);">Check Vungle ads playback correctly under MoPub mediation</span></p>
+]]></summary>
+	<preconditions><![CDATA[<p>
+	<span style="color: rgb(51, 51, 51); font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">Verify Vungle &quot;Interstitial&quot; Ad should play normally on Sample App</span></p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+	<span style="color: rgb(51, 51, 51); font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">1)Set charles proxy. </span></p>
+<p>
+	<span style="color: rgb(51, 51, 51); font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">2)Start the MoPub sample app </span></p>
+<p>
+	<span style="color: rgb(51, 51, 51); font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">3)After an Ad is cached , tap on play button. </span></p>
+<p>
+	<span style="color: rgb(51, 51, 51); font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">4)Play the Ad and close the end card. </span></p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	<span style="color: rgb(51, 51, 51); font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">Vungle Ad should play normally under MoPub mediation on Sample App.</span></p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="4025" name="Check if all callbacks in client side are fired correctly - Interstitial">
+	<node_order><![CDATA[1008]]></node_order>
+	<externalid><![CDATA[36]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>
+	<span style="color: rgb(51, 51, 51); font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">Verify &quot;adPlaybaleChange&quot; events - COMPLICATED BEHAVIOR</span></p>
+]]></summary>
+	<preconditions><![CDATA[]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+	<span style="color: rgb(51, 51, 51); font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">1)Set MPLogInfo in MPVungleRouter.m file for following methods: </span></p>
+<p>
+	<span style="color: rgb(51, 51, 51); font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">a)(void)requestAdWithCustomEventInfo:(NSDictionary *)info delegate:(id&lt;MPVungleRouterDelegate&gt;)delegate MPLogInfo (@&quot;Ad is Playable&quot;); b) rarely hit this method (void)vungleSDKAdPlayableChanged:(BOOL)isAdPlayable MPLogInfo (@&quot;Ad PlayableChanged&quot;); </span></p>
+<p>
+	<span style="color: rgb(51, 51, 51); font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">2)Set MPLogInfo in MPInterstitialAdDetailViewController.m </span></p>
+<p>
+	<span style="color: rgb(51, 51, 51); font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">a)(void)interstitialDidLoadAd:(MPInterstitialAdController *)interstitial MPLogInfo(@&quot;Ad did load&quot;); </span></p>
+<p>
+	<span style="color: rgb(51, 51, 51); font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">b)(void)interstitialDidFailToLoadAd:(MPInterstitialAdController *)interstitial MPLogInfo (@&quot;Ad fail to load&quot;); </span></p>
+<p>
+	<span style="color: rgb(51, 51, 51); font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">3)Build the App/ run the Application. </span></p>
+<p>
+	<span style="color: rgb(51, 51, 51); font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">4)Now go to View option in the menu of Xcode and Activate console from Debug Area. </span></p>
+<p>
+	<span style="color: rgb(51, 51, 51); font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">5) Start the sample app in the simulator. 6)Check callbacks fired according and correctly in Console log of Xcode. </span></p>
+<div>
+	&nbsp;</div>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	<span style="font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">All callbacks should call in console log </span></p>
+<p>
+	<span style="font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">1)When Ad is download and ready for play (void)requestAdWithCustomEventInfo:(NSDictionary *)info delegate:(id&lt;MPVungleRouterDelegate&gt;)delegate method should call with correct MPLogInfo. </span></p>
+<p>
+	<span style="font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">2)Or when Ad is not download (void)interstitialDidFailToLoadAd method should call with correct MPLogInfo</span></p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="4028" name="Check if all TPAT call is sent with right data">
+	<node_order><![CDATA[1009]]></node_order>
+	<externalid><![CDATA[37]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>
+	<span style="font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">Verify all TPAT call should sent with right data</span></p>
+]]></summary>
+	<preconditions><![CDATA[<div>
+	1)create MoPub sample app</div>
+<div>
+	&nbsp;</div>
+<div>
+	2)Set charles proxy.&nbsp;</div>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+	<span style="color: rgb(51, 51, 51); font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">1)Set charles proxy. </span></p>
+<p>
+	<span style="color: rgb(51, 51, 51); font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">2)Start the MoPub sample app </span></p>
+<p>
+	<span style="color: rgb(51, 51, 51); font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">3)After an Ad is cached , tap on play button. </span></p>
+<p>
+	<span style="color: rgb(51, 51, 51); font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">4)Play the Ad and close the end card. </span></p>
+<p>
+	<span style="color: rgb(51, 51, 51); font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">5)Open Charles Proxy and observe API calls. </span></p>
+<div>
+	&nbsp;</div>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	<span style="font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">TPAT api&#39;s should be called after requestAD(defined in &quot;requestAd&quot; call response) and send with right data. for example:- TPAT for zip file:- https://cdn-lib.vungle.com/bundles/-1.zip. TPAT for Video:- https://cdn-lib.vungle.com/zen/MIP_promo...mp4.</span></p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="4031" name="Check &quot;AdClose&quot; callbacks in client side are fired correctly - Interstitial">
+	<node_order><![CDATA[1010]]></node_order>
+	<externalid><![CDATA[38]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>
+	<span style="color: rgb(51, 51, 51); font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">Check &quot;AdClose&quot; events</span></p>
+]]></summary>
+	<preconditions><![CDATA[<p>
+	1)create MoPub sample app</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+	<span style="color: rgb(51, 51, 51); font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">1)Set MPLogInfo in MPVungleRouter.m file for follwing methods: </span></p>
+<p>
+	<span style="color: rgb(51, 51, 51); font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">a)(void)vungleSDKwillCloseAdWithViewInfo: willPresentProductSheet: MPLogInfo(@&quot;Ad is closed&quot;): </span></p>
+<p>
+	<span style="color: rgb(51, 51, 51); font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">2)Set MPLogInfoin MPInterstitialAdDetailViewController.m file for follwing methods: </span></p>
+<p>
+	<span style="color: rgb(51, 51, 51); font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">a)(void)interstitialWillDisappear:(MPInterstitialAdController *)interstitial MPLogInfo (@&quot;Ad will disappear&quot;); </span></p>
+<p>
+	<span style="color: rgb(51, 51, 51); font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">b)(void)interstitialDidDisappear:(MPInterstitialAdController *)interstitial MPLogInfo (@&quot;Ad didl disappear&quot;); after an ad is cached play an ad close end card </span></p>
+<p>
+	<span style="color: rgb(51, 51, 51); font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">3)Build the App/ run the Application. </span></p>
+<p>
+	<span style="color: rgb(51, 51, 51); font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">4)Now go to View option in the menu of Xcode and Activate console from Debug Area. </span></p>
+<p>
+	<span style="color: rgb(51, 51, 51); font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">5) Start the sample app in the simulator. </span></p>
+<p>
+	<span style="color: rgb(51, 51, 51); font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">6) After an Ad is cached , tap on play button. </span></p>
+<p>
+	<span style="color: rgb(51, 51, 51); font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">7)Play the Ad and close the end card. </span></p>
+<p>
+	<span style="color: rgb(51, 51, 51); font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">8)Check callbacks fired according and correctly in Console log of Xcode.</span></p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	<span style="color: rgb(51, 51, 51); font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">All callbacks should be called. callback should called when ad (endcard) is closed</span></p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="4034" name="Check &quot;download Tapped&quot; events callbacks in client side are fired correctly - Interstitial">
+	<node_order><![CDATA[1011]]></node_order>
+	<externalid><![CDATA[39]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>
+	<span style="color: rgb(51, 51, 51); font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">Check &quot;download Tapped&quot; events</span></p>
+]]></summary>
+	<preconditions><![CDATA[<div>
+	1)create MoPub sample app</div>
+<div>
+	&nbsp;</div>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+	<span style="color: rgb(51, 51, 51); font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">1)Set MPLogInfo in MPVungleRouter.m file for follwing methods: </span></p>
+<p>
+	<span style="color: rgb(51, 51, 51); font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">a)(void)vungleSDKwillCloseAdWithViewInfo: willPresentProductSheet: MPLogInfo(@&quot;Ad close with view&quot;): </span></p>
+<p>
+	<span style="color: rgb(51, 51, 51); font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">2)Set MPLogInfo in MPInterstitialAdDetailViewController.m file for follwing methods: </span></p>
+<p>
+	<span style="color: rgb(51, 51, 51); font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">b)(void)interstitialDidReceiveTapEvent:(MPInterstitialAdController *)interstitial MPLogInfo(@&quot;Interstitial Did receive&quot;); </span></p>
+<p>
+	<span style="color: rgb(51, 51, 51); font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">3)Build the App/ run the Application. </span></p>
+<p>
+	<span style="color: rgb(51, 51, 51); font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">4)Now go to View option in the menu of Xcode and Activate console from Debug Area. </span></p>
+<p>
+	<span style="color: rgb(51, 51, 51); font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">5) Start the sample app in the simulator. </span></p>
+<p>
+	<span style="color: rgb(51, 51, 51); font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">6) After an Ad is cached , tap on play button. </span></p>
+<p>
+	<span style="color: rgb(51, 51, 51); font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">7)Play the Ad and tap on download button, and then close the end card. 8)Check callbacks fired according and correctly in Console log of Xcode.</span></p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	<span style="color: rgb(51, 51, 51); font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">All callbacks should be called. callback should called if &quot;Download&quot; button is tapped.</span></p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="4037" name="Check&quot;ShowAd&quot; events callbacks in client side are fired correctly - Interstitial">
+	<node_order><![CDATA[1012]]></node_order>
+	<externalid><![CDATA[40]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>
+	<span style="color: rgb(51, 51, 51); font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">Verify &quot;ShowAd&quot; events</span></p>
+]]></summary>
+	<preconditions><![CDATA[<p>
+	1)create MoPub sample app</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+	<span style="color: rgb(51, 51, 51); font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">1)Set MPLogInfo in MPVungleRouter.m file for follwing methods: </span></p>
+<p>
+	<span style="color: rgb(51, 51, 51); font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">a)(void)vungleSDKwillShowAd MPLogInfo(@&quot;Ad is Play&quot;); </span></p>
+<p>
+	<span style="color: rgb(51, 51, 51); font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">2)Set MPLogInfo in MPInterstitialAdDetailViewController.m file for following methods: </span></p>
+<p>
+	<span style="color: rgb(51, 51, 51); font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">a)(void)interstitialWillAppear:(MPInterstitialAdController *)interstitial MPLogInfo(@&quot;Interstitial Ad will is Appear&quot;); </span></p>
+<p>
+	<span style="color: rgb(51, 51, 51); font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">b)(void)interstitialDidAppear:(MPInterstitialAdController *)interstitial MPLogInfo(@&quot;Interstitial Ad did is Appear&quot;); after an ad is cached play an ad </span></p>
+<p>
+	<span style="color: rgb(51, 51, 51); font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">3)Build the App/ run the Application. </span></p>
+<p>
+	<span style="color: rgb(51, 51, 51); font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">4)Now go to View option in the menu of Xcode and Activate console from Debug Area. </span></p>
+<p>
+	<span style="color: rgb(51, 51, 51); font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">5) Start the sample app in the simulator. </span></p>
+<p>
+	<span style="color: rgb(51, 51, 51); font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">6) After an Ad is cached , tap on play button. </span></p>
+<p>
+	<span style="color: rgb(51, 51, 51); font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">7)Play the Ad and close the end card. </span></p>
+<p>
+	<span style="color: rgb(51, 51, 51); font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">8)Check callbacks fired according and correctly in Console log of Xcode. </span></p>
+<div>
+	&nbsp;</div>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	<span style="color: rgb(51, 51, 51); font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">All callbacks should be called. When user click on play button and Ad is played, this method should call with correct MPLogInfo.</span></p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="4040" name="MoPub Waterfall">
+	<node_order><![CDATA[1013]]></node_order>
+	<externalid><![CDATA[41]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>
+	<span style="color: rgb(51, 51, 51); font-family: Calibri; font-size: 15px; text-align: center; white-space: pre-wrap; background-color: rgb(255, 255, 255);">Check MoPub&#39;s waterfall Note:- Check this link for other networks integration: https://github.com/mopub/mopub-ios-sdk/wiki/Integrating-Third-Party-Ad-Networks</span></p>
+]]></summary>
+	<preconditions><![CDATA[<p>
+	<span style="color: rgb(51, 51, 51); font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">Check Vungle is work among other networks with MoPub mediation</span></p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+	<span style="color: rgb(51, 51, 51); font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">1)Set other networks in MoPub Dashboard like Adcolony, Applovin set the priority for networks. </span></p>
+<p>
+	<span style="color: rgb(51, 51, 51); font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">2)Implement those networks in MoPub Sample app (includes Vungle). 3)Set charles proxy. and set breakpoint on vungle API&#39;s. </span></p>
+<p>
+	<span style="color: rgb(51, 51, 51); font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">4)Start the Sample App. </span></p>
+<p>
+	<span style="color: rgb(51, 51, 51); font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">5)After an Ad is cached , tap on Play button. </span></p>
+<p>
+	<span style="color: rgb(51, 51, 51); font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">6)Observe the Charles proxy.</span></p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	<span style="color: rgb(51, 51, 51); font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">When Vungle can&#39;t fill with reasons (sleep, DVL, etc,,), MoPub should move down to the next network.</span></p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+</testsuite><testsuite id="4043" name="Rewarded Ads" >
+<node_order><![CDATA[2]]></node_order>
+<details><![CDATA[<p>
+	<strong>Rewarded Ads</strong></p>
+]]></details> 
+
+<testcase internalid="4044" name="Check Vungle SDK initialization">
+	<node_order><![CDATA[1000]]></node_order>
+	<externalid><![CDATA[42]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>
+	<span style="color: rgb(51, 51, 51); font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">Verify Vungle SDK should initialized by getting &quot;Interstitial&quot; ad</span></p>
+]]></summary>
+	<preconditions><![CDATA[<p>
+	<span style="color: rgb(51, 51, 51); font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">1)Set charles proxy. </span></p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+	<span style="color: rgb(51, 51, 51); font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">1)Set charles proxy.</span></p>
+<p>
+	<span style="color: rgb(51, 51, 51); font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">2)Start the MoPub sample app </span></p>
+<p>
+	<span style="background-color: rgb(255, 255, 255); color: rgb(51, 51, 51); font-family: Calibri; font-size: 15px; white-space: pre-wrap;">3) Open Charles Proxy and observe API calls.</span></p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	<span style="color: rgb(51, 51, 51); font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">1)After MoPub SDK is initialized, Vungle SDK should initialized. </span></p>
+<p>
+	<span style="color: rgb(51, 51, 51); font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">2)Check API calls </span></p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="4047" name="Check &quot;new&quot; API calls from SDK">
+	<node_order><![CDATA[1001]]></node_order>
+	<externalid><![CDATA[43]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>
+	<span style="font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">Verify &quot;new&quot; API call should sent</span></p>
+]]></summary>
+	<preconditions><![CDATA[<p>
+	<span style="background-color: rgb(255, 255, 255); color: rgb(51, 51, 51); font-family: Calibri; font-size: 15px; white-space: pre-wrap;">1)create MoPub sample app</span></p>
+<p>
+	<span style="background-color: rgb(255, 255, 255); color: rgb(51, 51, 51); font-family: Calibri; font-size: 15px; white-space: pre-wrap;">2)Set charles proxy. </span></p>
+<div>
+	&nbsp;</div>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+	<span style="color: rgb(51, 51, 51); font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">1)Set charles proxy. </span></p>
+<p>
+	<span style="color: rgb(51, 51, 51); font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">2)Start the MoPub sample app </span></p>
+<p>
+	<span style="color: rgb(51, 51, 51); font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">3) Open Charles Proxy and observe API calls.</span></p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	<span style="color: rgb(51, 51, 51); font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">&quot;new&quot; API should call when an app is launched after install (ONLY 1 time).</span></p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="4050" name="Check &quot;config&quot; API calls from SDK">
+	<node_order><![CDATA[1002]]></node_order>
+	<externalid><![CDATA[44]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>
+	<span style="color: rgb(51, 51, 51); font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">Verify &quot;config&quot; API call should sent</span></p>
+]]></summary>
+	<preconditions><![CDATA[<p>
+	<span style="background-color: rgb(255, 255, 255); color: rgb(51, 51, 51); font-family: Calibri; font-size: 15px; white-space: pre-wrap;">1)create MoPub sample app</span></p>
+<p>
+	<span style="color: rgb(51, 51, 51); font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">2)Set charles proxy. </span></p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<div>
+	1)Set charles proxy.&nbsp;</div>
+<div>
+	&nbsp;</div>
+<div>
+	2)Start the MoPub sample app&nbsp;</div>
+<div>
+	&nbsp;</div>
+<div>
+	3) Open Charles Proxy and observe API calls.</div>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	<span style="color: rgb(51, 51, 51); font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">&quot;config&quot; API should call every time an app is launched.</span></p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="4053" name="Check &quot;requestAd&quot; API calls from SDK">
+	<node_order><![CDATA[1003]]></node_order>
+	<externalid><![CDATA[45]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>
+	<span style="color: rgb(51, 51, 51); font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">Verify &quot;requestAd&quot; API call should sent</span></p>
+]]></summary>
+	<preconditions><![CDATA[<div>
+	1)create MoPub sample app</div>
+<div>
+	&nbsp;</div>
+<div>
+	2)Set charles proxy.&nbsp;</div>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<div>
+	1)Set charles proxy.&nbsp;</div>
+<div>
+	&nbsp;</div>
+<div>
+	2)Start the MoPub sample app&nbsp;</div>
+<div>
+	&nbsp;</div>
+<div>
+	3) Open Charles Proxy and observe API calls.</div>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	<span style="color: rgb(51, 51, 51); font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">&quot;requestAd&quot;API should call after config call is succeeded.</span></p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="4056" name="Check &quot;request Streaming&quot; API calls from SDK">
+	<node_order><![CDATA[1004]]></node_order>
+	<externalid><![CDATA[46]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>
+	<span style="color: rgb(51, 51, 51); font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">Verify &quot;request Streaming&quot; API call should sent</span></p>
+]]></summary>
+	<preconditions><![CDATA[<div>
+	1)create MoPub sample app</div>
+<div>
+	&nbsp;</div>
+<div>
+	2)Set charles proxy.&nbsp;</div>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+	<span style="color: rgb(51, 51, 51); font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">1)Set charles proxy. </span></p>
+<p>
+	<span style="color: rgb(51, 51, 51); font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">2)Start the MoPub sample app </span></p>
+<p>
+	<span style="color: rgb(51, 51, 51); font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">3)After an Ad is cached , tap on play button. </span></p>
+<p>
+	<span style="color: rgb(51, 51, 51); font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">4)Open Charles Proxy and observe API calls. </span></p>
+<div>
+	&nbsp;</div>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	<span style="color: rgb(51, 51, 51); font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">&quot;requestStreamingAd&quot; API should call when &quot;playAd&quot; is called.</span></p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="4059" name="Check &quot;reportAd&quot; API calls from SDK">
+	<node_order><![CDATA[1005]]></node_order>
+	<externalid><![CDATA[47]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>
+	<span style="color: rgb(51, 51, 51); font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">Verify &quot;reportAd&quot; API call should sent </span></p>
+<div>
+	&nbsp;</div>
+]]></summary>
+	<preconditions><![CDATA[<div>
+	1)create MoPub sample app</div>
+<div>
+	&nbsp;</div>
+<div>
+	2)Set charles proxy.&nbsp;</div>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+	<span style="color: rgb(51, 51, 51); font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">1)Set charles proxy. </span></p>
+<p>
+	<span style="color: rgb(51, 51, 51); font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">2)Start the MoPub sample app </span></p>
+<p>
+	<span style="color: rgb(51, 51, 51); font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">3)After an Ad is cached , tap on play button. </span></p>
+<p>
+	<span style="color: rgb(51, 51, 51); font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">4)Play the Ad and close the end card. </span></p>
+<p>
+	<span style="color: rgb(51, 51, 51); font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">5)Open Charles Proxy and observe API calls. </span></p>
+<div>
+	&nbsp;</div>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	<span style="color: rgb(51, 51, 51); font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">&quot;requestAd&quot; API should call when an Ad is played successfully. </span></p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="4062" name="Check all API calls from SDK">
+	<node_order><![CDATA[1006]]></node_order>
+	<externalid><![CDATA[48]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>
+	<span style="color: rgb(51, 51, 51); font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">Verify &quot;incentivized&quot; flag set correctly and Verify &quot;user&quot; ID set correctly(for incentivized Ad only) in &quot;reportAd&quot; API </span></p>
+]]></summary>
+	<preconditions><![CDATA[<div>
+	1)create MoPub sample app</div>
+<div>
+	&nbsp;</div>
+<div>
+	2)Set charles proxy.&nbsp;</div>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+	<span style="color: rgb(51, 51, 51); font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">1)Set charles proxy. </span></p>
+<p>
+	<span style="color: rgb(51, 51, 51); font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">2)Start the MoPub sample app </span></p>
+<p>
+	<span style="color: rgb(51, 51, 51); font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">3)After an Ad is cached , tap on play button. </span></p>
+<p>
+	<span style="color: rgb(51, 51, 51); font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">4)Play the Ad and close the end card. </span></p>
+<p>
+	<span style="color: rgb(51, 51, 51); font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">5)Open Charles Proxy and observe API calls. </span></p>
+<div>
+	&nbsp;</div>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	<span style="color: rgb(51, 51, 51); font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">1. For &quot;Interstitial&quot; Ad, &quot;incentivized&quot; data should sent correctly in reportAd&quot; API. </span></p>
+<p>
+	<span style="color: rgb(51, 51, 51); font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">2. For &quot;Interstitial&quot; Ad, &quot;user&quot;ID data should sent correctly in reportAd&quot; API.</span></p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="4065" name="Playback/ Play normally on Sample App">
+	<node_order><![CDATA[1007]]></node_order>
+	<externalid><![CDATA[49]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>
+	<span style="color: rgb(51, 51, 51); font-family: Calibri; font-size: 15px; text-align: center; white-space: pre-wrap; background-color: rgb(255, 255, 255);">Check Vungle ads playback correctly under MoPub mediation</span></p>
+]]></summary>
+	<preconditions><![CDATA[<p>
+	<span style="color: rgb(51, 51, 51); font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">Verify Vungle &quot;Interstitial&quot; Ad should play normally on Sample App</span></p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+	<span style="color: rgb(51, 51, 51); font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">1)Set charles proxy. </span></p>
+<p>
+	<span style="color: rgb(51, 51, 51); font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">2)Start the MoPub sample app </span></p>
+<p>
+	<span style="color: rgb(51, 51, 51); font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">3)After an Ad is cached , tap on play button. </span></p>
+<p>
+	<span style="color: rgb(51, 51, 51); font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">4)Play the Ad and close the end card. </span></p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	<span style="color: rgb(51, 51, 51); font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">Vungle Ad should play normally under MoPub mediation on Sample App.</span></p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="4068" name="Check if all TPAT call is sent with right data">
+	<node_order><![CDATA[1009]]></node_order>
+	<externalid><![CDATA[50]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>
+	<span style="font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">Verify all TPAT call should sent with right data</span></p>
+]]></summary>
+	<preconditions><![CDATA[<div>
+	1)create MoPub sample app</div>
+<div>
+	&nbsp;</div>
+<div>
+	2)Set charles proxy.&nbsp;</div>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+	<span style="color: rgb(51, 51, 51); font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">1)Set charles proxy. </span></p>
+<p>
+	<span style="color: rgb(51, 51, 51); font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">2)Start the MoPub sample app </span></p>
+<p>
+	<span style="color: rgb(51, 51, 51); font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">3)After an Ad is cached , tap on play button. </span></p>
+<p>
+	<span style="color: rgb(51, 51, 51); font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">4)Play the Ad and close the end card. </span></p>
+<p>
+	<span style="color: rgb(51, 51, 51); font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">5)Open Charles Proxy and observe API calls. </span></p>
+<div>
+	&nbsp;</div>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	<span style="font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">TPAT api&#39;s should be called after requestAD(defined in &quot;requestAd&quot; call response) and send with right data. for example:- TPAT for zip file:- https://cdn-lib.vungle.com/bundles/-1.zip. TPAT for Video:- https://cdn-lib.vungle.com/zen/MIP_promo...mp4.</span></p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="4071" name="MoPub Waterfall">
+	<node_order><![CDATA[1013]]></node_order>
+	<externalid><![CDATA[51]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>
+	<span style="color: rgb(51, 51, 51); font-family: Calibri; font-size: 15px; text-align: center; white-space: pre-wrap; background-color: rgb(255, 255, 255);">Check MoPub&#39;s waterfall Note:- Check this link for other networks integration: https://github.com/mopub/mopub-ios-sdk/wiki/Integrating-Third-Party-Ad-Networks</span></p>
+]]></summary>
+	<preconditions><![CDATA[<p>
+	<span style="color: rgb(51, 51, 51); font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">Check Vungle is work among other networks with MoPub mediation</span></p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+	<span style="color: rgb(51, 51, 51); font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">1)Set other networks in MoPub Dashboard like Adcolony, Applovin set the priority for networks. </span></p>
+<p>
+	<span style="color: rgb(51, 51, 51); font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">2)Implement those networks in MoPub Sample app (includes Vungle). 3)Set charles proxy. and set breakpoint on vungle API&#39;s. </span></p>
+<p>
+	<span style="color: rgb(51, 51, 51); font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">4)Start the Sample App. </span></p>
+<p>
+	<span style="color: rgb(51, 51, 51); font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">5)After an Ad is cached , tap on Play button. </span></p>
+<p>
+	<span style="color: rgb(51, 51, 51); font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">6)Observe the Charles proxy.</span></p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	<span style="color: rgb(51, 51, 51); font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">When Vungle can&#39;t fill with reasons (sleep, DVL, etc,,), MoPub should move down to the next network.</span></p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="4074" name="Check if all callbacks in client side are fired correctly - REWARDED">
+	<node_order><![CDATA[1014]]></node_order>
+	<externalid><![CDATA[52]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>
+	<span style="color: rgb(51, 51, 51); font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">Verify &quot;adPlaybaleChange&quot; events - COMPLICATED BEHAVIOR</span></p>
+]]></summary>
+	<preconditions><![CDATA[<p>
+	1)create MoPub sample app</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+	<span style="color: rgb(51, 51, 51); font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">1)Set MPLogInfo in MP Vungle Router.m file for following methods: </span></p>
+<p>
+	<span style="color: rgb(51, 51, 51); font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">a)(void)requestAdWithCustomEventInfo:(NSDictionary *)info delegate:(id&lt;MPVungleRouterDelegate&gt;)delegate MPLogInfo (@&quot;Ad is Playable&quot;); b) rarely hit this method (void)vungleSDKAdPlayableChanged:(BOOL)isAdPlayable MPLogInfo (@&quot;Ad PlayableChanged&quot;); </span></p>
+<p>
+	<span style="color: rgb(51, 51, 51); font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">2)Set MPLogInfo in MPRewardedVideoAdDetailViewController.m </span></p>
+<p>
+	<span style="color: rgb(51, 51, 51); font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">a)(void)rewardedVideoAdDidLoadForAdUnitID:(NSString *)adUnitID MPLogInfo(@&quot;Ad did load&quot;); </span></p>
+<p>
+	<span style="color: rgb(51, 51, 51); font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">b)(void)rewardedVideoAdDidFailToLoadForAdUnitID:(NSString *)adUnitID error:(NSError *)error MPLogInfo (@&quot;Ad fail to load&quot;); </span></p>
+<p>
+	<span style="color: rgb(51, 51, 51); font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">3)Build the App/ run the Application. </span></p>
+<p>
+	<span style="color: rgb(51, 51, 51); font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">4)Now go to View option in the menu of Xcode and Activate console from Debug Area. </span></p>
+<p>
+	<span style="color: rgb(51, 51, 51); font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">5) Start the sample app in the simulator. </span></p>
+<p>
+	<span style="color: rgb(51, 51, 51); font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">6)Check callbacks fired according and correctly in Console log of Xcode. </span></p>
+<div>
+	&nbsp;</div>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	<span style="font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">All callbacks should call in console log </span></p>
+<p>
+	<span style="font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">1)When Ad is download and ready for play )(void)requestAdWithCustomEventInfo:(NSDictionary *)info method should call with correct MPLogInfo. </span></p>
+<p>
+	<span style="font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">2)Or when Ad is not download (void)rewardedVideoAdDidFailToLoadForAdUnitID:(NSString *)adUnitID error:(NSError *)error method should call with correct MPLogInfo.</span></p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="4077" name="Check &quot;ShowAd&quot; events callbacks in client side are fired correctly - REWARDED">
+	<node_order><![CDATA[1015]]></node_order>
+	<externalid><![CDATA[53]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>
+	<span style="color: rgb(51, 51, 51); font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">Verify &quot;ShowAd&quot; events</span></p>
+]]></summary>
+	<preconditions><![CDATA[<div>
+	1)create MoPub sample app</div>
+<div>
+	&nbsp;</div>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+	<span style="color: rgb(51, 51, 51); font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">1)Set MPLogInfo in MPVungleRouter.m file for follwing methods: </span></p>
+<p>
+	<span style="color: rgb(51, 51, 51); font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">a)(void)vungleSDKwillShowAd MPLogInfo(@&quot;Ad is Play&quot;); </span></p>
+<p>
+	<span style="color: rgb(51, 51, 51); font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">2)Set MPLogInfo in MPRewardedVideoAdDetailViewController.m file for following methods: </span></p>
+<p>
+	<span style="color: rgb(51, 51, 51); font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">a)(void)rewardedVideoAdWillAppearForAdUnitID:(NSString *)adUnitID MPLogInfo(@&quot;Interstitial Ad will is Appear&quot;); </span></p>
+<p>
+	<span style="color: rgb(51, 51, 51); font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">b)(void)rewardedVideoAdDidAppearForAdUnitID:(NSString *)adUnitID MPLogInfo(@&quot;Interstitial Ad did is Appear&quot;); after an ad is cached play an ad </span></p>
+<p>
+	<span style="color: rgb(51, 51, 51); font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">3)Build the App/ run the Application. </span></p>
+<p>
+	<span style="color: rgb(51, 51, 51); font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">4)Now go to View option in the menu of Xcode and Activate console from Debug Area. </span></p>
+<p>
+	<span style="color: rgb(51, 51, 51); font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">5) Start the sample app in the simulator. </span></p>
+<p>
+	<span style="color: rgb(51, 51, 51); font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">6) After an Ad is cached , tap on play button. </span></p>
+<p>
+	<span style="color: rgb(51, 51, 51); font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">7)Play the Ad and close the end card. </span></p>
+<p>
+	<span style="color: rgb(51, 51, 51); font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">8)Check callbacks fired according and correctly in Console log of Xcode. </span></p>
+<div>
+	&nbsp;</div>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	<span style="color: rgb(51, 51, 51); font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">All callbacks should be called. When user click on play button and Ad is played, this method should call with correct MPLogInfo.</span></p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="4080" name="Check &quot;AdClose&quot; events callbacks in client side are fired correctly - REWARDED">
+	<node_order><![CDATA[1016]]></node_order>
+	<externalid><![CDATA[54]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>
+	<span style="color: rgb(51, 51, 51); font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">Check &quot;AdClose&quot; events</span></p>
+]]></summary>
+	<preconditions><![CDATA[<p>
+	1)create MoPub sample app</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+	<span style="color: rgb(51, 51, 51); font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">1)Set MPLogInfo in MPVungleRouter.m file for follwing methods: </span></p>
+<p>
+	<span style="color: rgb(51, 51, 51); font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">a)(void)vungleSDKwillCloseAdWithViewInfo: willPresentProductSheet: MPLogInfo(@&quot;Ad is closed&quot;): </span></p>
+<p>
+	<span style="color: rgb(51, 51, 51); font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">2)Set MPLogInfo in MPRewardedVideoAdDetailViewController.m file for following methods: </span></p>
+<p>
+	<span style="color: rgb(51, 51, 51); font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">a)(void)rewardedVideoAdWillDisappearForAdUnitID:(NSString *)adUnitID NSLog (@&quot;Ad will disappear&quot;); </span></p>
+<p>
+	<span style="color: rgb(51, 51, 51); font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">b)(void)rewardedVideoAdDidDisappearForAdUnitID:(NSString *)adUnitID MPLogInfo (@&quot;Ad did disappear&quot;); after an ad is cached play an ad close end card </span></p>
+<p>
+	<span style="color: rgb(51, 51, 51); font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">3)Build the App/ run the Application. </span></p>
+<p>
+	<span style="color: rgb(51, 51, 51); font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">4)Now go to View option in the menu of Xcode and Activate console from Debug Area. </span></p>
+<p>
+	<span style="color: rgb(51, 51, 51); font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">5) Start the sample app in the simulator. </span></p>
+<p>
+	<span style="color: rgb(51, 51, 51); font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">6) After an Ad is cached , tap on play button. </span></p>
+<p>
+	<span style="color: rgb(51, 51, 51); font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">7)Play the Ad and close the end card. </span></p>
+<p>
+	<span style="color: rgb(51, 51, 51); font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">8)Check callbacks fired according and correctly in Console log of Xcode.</span></p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	<span style="color: rgb(51, 51, 51); font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">All callbacks should be called. callback should called when ad (endcard) is closed</span></p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="4083" name="Check &quot;download Tapped&quot; callbacks in client side are fired correctly - REWARDED">
+	<node_order><![CDATA[1017]]></node_order>
+	<externalid><![CDATA[55]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>
+	<span style="color: rgb(51, 51, 51); font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">Check &quot;download Tapped&quot; events</span></p>
+]]></summary>
+	<preconditions><![CDATA[<p>
+	1)create MoPub sample app</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+	<span style="color: rgb(51, 51, 51); font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">1)Set MPLogInfo in MPVungleRouter.m file for follwing methods: </span></p>
+<p>
+	<span style="color: rgb(51, 51, 51); font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">a)(void)vungleSDKwillCloseAdWithViewInfo: willPresentProductSheet: MPLogInfo(@&quot;Ad close with view&quot;): </span></p>
+<p>
+	<span style="color: rgb(51, 51, 51); font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">2)Set MPLogInfo in MPRewardedVideoAdDetailViewController.m file for follwing methods: </span></p>
+<p>
+	<span style="color: rgb(51, 51, 51); font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">a)(void)rewardedVideoAdDidReceiveTapEventForAdUnitID:(NSString *)adUnitID MPLogInfo(@&quot;Interstitial Did receive&quot;); </span></p>
+<p>
+	<span style="color: rgb(51, 51, 51); font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">3)Build the App/ run the Application. </span></p>
+<p>
+	<span style="color: rgb(51, 51, 51); font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">4)Now go to View option in the menu of Xcode and Activate console from Debug Area. </span></p>
+<p>
+	<span style="color: rgb(51, 51, 51); font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">5) Start the sample app in the simulator. </span></p>
+<p>
+	<span style="color: rgb(51, 51, 51); font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">6) After an Ad is cached , tap on play button. </span></p>
+<p>
+	<span style="color: rgb(51, 51, 51); font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">7)Play the Ad and tap on download button, and then close the end card. 8)Check callbacks fired according and correctly in Console log of Xcode.</span></p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	<span style="color: rgb(51, 51, 51); font-family: Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">All callbacks should be called. callback should called if &quot;Download&quot; button is tapped.</span></p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="4086" name="Check &quot;reward User&quot; events">
+	<node_order><![CDATA[1018]]></node_order>
+	<externalid><![CDATA[56]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>
+	<span style="color: rgb(51, 51, 51); font-family: Arial; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">Verify &quot;reward User&quot; events</span></p>
+]]></summary>
+	<preconditions><![CDATA[<p>
+	1)create MoPub sample app</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+	<span style="color: rgb(51, 51, 51); font-family: Arial; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">1)Set NSlog in MPVungleRouter.m file for follwing methods: </span></p>
+<p>
+	<span style="color: rgb(51, 51, 51); font-family: Arial; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">a) (void)vungleSDKwillCloseAdWithViewInfo: willPresentProductSheet: MPLogInfo(@&quot;Ad will close with View info&quot;); </span></p>
+<p>
+	<span style="color: rgb(51, 51, 51); font-family: Arial; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">2)Set NSlog in MP Rewarded Video Ad DetailViewController.m file for following methods: </span></p>
+<p>
+	<span style="color: rgb(51, 51, 51); font-family: Arial; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">a)(void)rewardedVideoAdShouldRewardForAdUnitID:(NSString *)adUnitID reward:(Rewarded Video Reward *)reward MPLogInfo(@&quot;Ad is rewarded&quot;); </span></p>
+<p>
+	<span style="color: rgb(51, 51, 51); font-family: Arial; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">3)Build the App/ run the Application. </span></p>
+<p>
+	<span style="color: rgb(51, 51, 51); font-family: Arial; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">4)Now go to View option in the menu of Xcode and Activate console from Debug Area. </span></p>
+<p>
+	<span style="color: rgb(51, 51, 51); font-family: Arial; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">5) Start the sample app in the simulator. </span></p>
+<p>
+	<span style="color: rgb(51, 51, 51); font-family: Arial; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">6) After an Ad is cached , tap on play button. </span></p>
+<p>
+	<span style="color: rgb(51, 51, 51); font-family: Arial; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">7)Play the Ad and close the end card. </span></p>
+<p>
+	<span style="color: rgb(51, 51, 51); font-family: Arial; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">8)Check callbacks fired according and correctly in Console log of Xcode.</span></p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	<span style="color: rgb(51, 51, 51); font-family: Arial; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">All callbacks should be called. callback should call, when Ad is viewed completely.</span></p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+</testsuite></testsuite></testsuite>

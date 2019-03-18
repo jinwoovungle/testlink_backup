@@ -1,0 +1,2741 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite id="" name="" >
+<node_order><![CDATA[]]></node_order>
+<details><![CDATA[]]></details> 
+<testsuite id="44343" name="UI Test Cases" >
+<node_order><![CDATA[1]]></node_order>
+<details><![CDATA[]]></details> 
+
+<testcase internalid="44345" name="Verify the Automation Page in Mission Ctrl">
+	<node_order><![CDATA[1000]]></node_order>
+	<externalid><![CDATA[1]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>
+	Verify the Automation Page in Mission Ctrl</p>
+]]></summary>
+	<preconditions><![CDATA[<p>
+	User should Login to Mission Ctrl</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+	Login to Mission Ctrl</p>
+<p>
+	https://ctrl-devel.vungle.com/</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	User must logged into Mission Ctrl</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>
+	Goto Left Main Nav and click on Automation tab</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	User should land on Automation page</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>
+	Verify the Automation page</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	Automation page should have the following</p>
+<ul>
+	<li>
+		Search functionality to search the Video</li>
+	<li>
+		&quot;Create Video&quot; Button</li>
+	<li>
+		List view of all Videos with the columns Video, Video Type and the Status&nbsp;</li>
+</ul>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="44388" name="Verify the Game Genre Options">
+	<node_order><![CDATA[1001]]></node_order>
+	<externalid><![CDATA[21]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[]]></summary>
+	<preconditions><![CDATA[]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+	Verify the Game Genre Options</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	Following options should be available</p>
+<ul>
+	<li>
+		Puzzle</li>
+	<li>
+		Strategy</li>
+	<li>
+		Brand</li>
+	<li>
+		Casino</li>
+	<li>
+		Casual</li>
+</ul>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+</testsuite><testsuite id="44344" name="Functional Test Cases" >
+<node_order><![CDATA[2]]></node_order>
+<details><![CDATA[]]></details> 
+
+<testcase internalid="44347" name="Check the Search functionality">
+	<node_order><![CDATA[1000]]></node_order>
+	<externalid><![CDATA[2]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>
+	Check the Search functionality</p>
+]]></summary>
+	<preconditions><![CDATA[<p>
+	User must logged into Mission ctrl</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p style="font-family: -webkit-standard; text-size-adjust: auto;">
+	Login to Mission Ctrl</p>
+<p style="font-family: -webkit-standard; text-size-adjust: auto;">
+	https://ctrl-devel.vungle.com/</p>
+<p>
+	&nbsp;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	<span style="font-family: -webkit-standard; text-size-adjust: auto;">User must logged into Mission Ctrl</span></p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>
+	<span style="font-family: -webkit-standard; text-size-adjust: auto;">Goto Left Main Nav and click on Automation tab</span></p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	<span style="font-family: -webkit-standard; text-size-adjust: auto;">User should land on Automation page</span></p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>
+	Enter the Video file name you want to search in the search bar and click enter</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	Search results displayed should be relevant to search keyword</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="44349" name="Verify the &quot;Publish to assets&quot; link">
+	<node_order><![CDATA[1001]]></node_order>
+	<externalid><![CDATA[3]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>
+	Verify the &quot;Publish to assets&quot; link</p>
+]]></summary>
+	<preconditions><![CDATA[<p>
+	Video should be created</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p style="font-family: -webkit-standard; text-size-adjust: auto;">
+	Login to Mission Ctrl</p>
+<p style="font-family: -webkit-standard; text-size-adjust: auto;">
+	https://ctrl-devel.vungle.com/</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	<span style="font-family: -webkit-standard; text-size-adjust: auto;">User must logged into Mission Ctrl</span></p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>
+	<span style="font-family: -webkit-standard; text-size-adjust: auto;">Goto Left Main Nav and click on Automation tab</span></p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	<span style="font-family: -webkit-standard; text-size-adjust: auto;">User should land on Automation page</span></p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>
+	Verify the &quot;Publish to Assets&quot; link</p>
+]]></actions>
+	<expectedresults><![CDATA[<ul>
+	<li>
+		On the Automation page, List view of all the video files created should be displayed</li>
+	<li>
+		&quot;Publish to Assets&quot; link should be available to the Video files whose status is Active</li>
+</ul>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[4]]></step_number>
+	<actions><![CDATA[<p>
+	Click onthe &quot;publish to Assets&quot; link</p>
+]]></actions>
+	<expectedresults><![CDATA[<ul>
+	<li>
+		User should be directed to the Assets page of the Mission Ctrl</li>
+	<li>
+		Video file created in the Automation page should be listed in the Assets page</li>
+	<li>
+		User must be able to View, Preview and update the file.</li>
+</ul>
+<p>
+	&nbsp;</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[5]]></step_number>
+	<actions><![CDATA[<p>
+	Verify it on the list way on Automation page</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	&quot;Video Published&quot; should be displayed in the list view of the Video file on The Automation Page&nbsp;</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="44351" name="Create a Genre Video by choosing the Video file from Dropdown">
+	<node_order><![CDATA[1002]]></node_order>
+	<externalid><![CDATA[4]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>
+	Create a Genre Video by choosing the Video file from Dropdown with Puzzle Game Option</p>
+]]></summary>
+	<preconditions><![CDATA[<p>
+	User should looged into Mission Ctrl</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p style="font-family: -webkit-standard; text-size-adjust: auto;">
+	Login to Mission Ctrl</p>
+<p style="font-family: -webkit-standard; text-size-adjust: auto;">
+	https://ctrl-devel.vungle.com/</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	<span style="font-family: -webkit-standard; text-size-adjust: auto;">User must logged into Mission Ctrl</span></p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>
+	Navigate to Automation Page and click on &quot;Create Video&quot;button</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	User should be dirceted to the &quot;Create a Dynamic Experience&quot;page</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>
+	Enter the&nbsp;</p>
+<ul>
+	<li>
+		Video name</li>
+	<li>
+		Select the Video Template, Genre Video</li>
+</ul>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	Entered information should be displayed</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[4]]></step_number>
+	<actions><![CDATA[<p>
+	Verify the Genre fields</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	Following fields should show based on the Video type, Genre</p>
+<ul>
+	<li>
+		Video File</li>
+</ul>
+<ol>
+	<li>
+		Choose from Dropdown</li>
+	<li>
+		Upload</li>
+</ol>
+<ul>
+	<li>
+		Game Genre Dropdown</li>
+	<li>
+		Text Slides text boxes</li>
+	<li>
+		Box to select background color for the slides</li>
+	<li>
+		Outro Color theme</li>
+	<li>
+		App Title</li>
+</ul>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[5]]></step_number>
+	<actions><![CDATA[<p>
+	Choose the Video File from Dropdown by selecting the &quot;Choose from Dropdown&quot; radio button</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	Choose from Dropdown should be selected and a text box with all the available videos drop down should be visible</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[6]]></step_number>
+	<actions><![CDATA[<p>
+	Select a Video</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	Selected Video should be dispalyed in the appropriate field</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[7]]></step_number>
+	<actions><![CDATA[<p>
+	Select the Puzzle Game genre</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	Puzzle should be displayed in the Game Genre field</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[8]]></step_number>
+	<actions><![CDATA[<p>
+	Enter the Text Slides for&nbsp;</p>
+<ul>
+	<li>
+		Enter Text for Slide1</li>
+	<li>
+		Enter Text for Slide2</li>
+	<li>
+		Enter Text for Slide3</li>
+</ul>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	Entered text slides should be dispalyed in the appropriate fields</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[9]]></step_number>
+	<actions><![CDATA[<p>
+	Click on color picker to&nbsp; select the background color and click on dark</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	User must able to select the color and selected color, dark&nbsp; should be displayed</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[10]]></step_number>
+	<actions><![CDATA[<p>
+	Enter the &quot;App name&quot; and click Submit</p>
+]]></actions>
+	<expectedresults><![CDATA[<ul>
+	<li>
+		Success message should be displayed and Video file should be created</li>
+	<li>
+		User should be on the list view</li>
+	<li>
+		Newly created Video should have the Processing status</li>
+</ul>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="44353" name="Create a Tutorial Video for Puzzle Game Genre">
+	<node_order><![CDATA[1003]]></node_order>
+	<externalid><![CDATA[5]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>
+	Create a Tutorial Video for Puzzle Game Genre</p>
+]]></summary>
+	<preconditions><![CDATA[<p>
+	User should logged into Mission Ctrl</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+	Login to Mission Ctrl</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	User should logged into Mission and should be on the Campaigns Page</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>
+	Navigate to Automation Page</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	User should be on the Automation page with &quot;Create Video&quot;button</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>
+	Click on &quot;Create Video&quot;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	User should be directed to the Automation Create Page</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[4]]></step_number>
+	<actions><![CDATA[<ul>
+	<li>
+		Enter the Video Name</li>
+	<li>
+		Select Tutorial Video from the Video Template dropdown</li>
+</ul>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	Entered information should be displayed</p>
+<p>
+	&quot;Choose Video File&quot; and &quot;Game Genre&quot; drop down fields should be visible.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[5]]></step_number>
+	<actions><![CDATA[<p>
+	Select the Video from the available Videos</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	Selected video should be dispalyed in the appropriate field</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[6]]></step_number>
+	<actions><![CDATA[<p>
+	Select the &quot;Puzzle&quot; Game Genre</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	Puzzle should be displayed</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[7]]></step_number>
+	<actions><![CDATA[<p>
+	Click Submit</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	Tutorial Automatrion Video should be created and user should be directed to the list view.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="44355" name="Create a Genre Video by Uploading a Video-Puzzle">
+	<node_order><![CDATA[1004]]></node_order>
+	<externalid><![CDATA[6]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>
+	Create a Genre Video by Uploading a Video for&nbsp; Puzzle Game Genre</p>
+]]></summary>
+	<preconditions><![CDATA[]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p style="font-family: -webkit-standard; text-size-adjust: auto;">
+	Login to Mission Ctrl</p>
+<p style="font-family: -webkit-standard; text-size-adjust: auto;">
+	https://ctrl-devel.vungle.com/</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	<span style="font-family: -webkit-standard; text-size-adjust: auto;">User must logged into Mission Ctrl</span></p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>
+	<span style="font-family: -webkit-standard; text-size-adjust: auto;">Navigate to Automation Page and click on &quot;Create Video&quot;button</span></p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	<span style="font-family: -webkit-standard; text-size-adjust: auto;">User should be dirceted to the &quot;Create a Dynamic Experience&quot;page</span></p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p style="font-family: -webkit-standard; text-size-adjust: auto;">
+	Enter the&nbsp;</p>
+<ul style="font-family: -webkit-standard; text-size-adjust: auto;">
+	<li>
+		Video name</li>
+	<li>
+		Select the Video Template, Genre Video</li>
+</ul>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	<span style="font-family: -webkit-standard; text-size-adjust: auto;">Entered information should be displayed</span></p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[4]]></step_number>
+	<actions><![CDATA[<p>
+	<span style="font-family: -webkit-standard; text-size-adjust: auto;">Verify the Genre fields</span></p>
+]]></actions>
+	<expectedresults><![CDATA[<p style="font-family: -webkit-standard; text-size-adjust: auto;">
+	Following fields should show based on the Video type, Genre</p>
+<ul style="font-family: -webkit-standard; text-size-adjust: auto;">
+	<li>
+		Video File</li>
+</ul>
+<ol style="font-family: -webkit-standard; text-size-adjust: auto;">
+	<li>
+		Choose from Dropdown</li>
+	<li>
+		Upload</li>
+</ol>
+<ul style="font-family: -webkit-standard; text-size-adjust: auto;">
+	<li>
+		Game Genre Dropdown</li>
+	<li>
+		Text Slides text boxes</li>
+	<li>
+		Box to select background color for the slides</li>
+	<li>
+		Outro Color theme</li>
+	<li>
+		App Title</li>
+</ul>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[5]]></step_number>
+	<actions><![CDATA[<p>
+	<span style="font-family: -webkit-standard; text-size-adjust: auto;">Upload a&nbsp; Video File from Dropdown by selecting the &quot;Upload&quot; radio button</span></p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	<span style="font-family: -webkit-standard; text-size-adjust: auto;">&quot;Upload&quot; should be selected and a modal window should show up to Browsr or Drag&amp;Drop the Video file from local desktop</span></p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[6]]></step_number>
+	<actions><![CDATA[<p>
+	Upload a Video by</p>
+<ul>
+	<li>
+		Browse for the File and Click Open</li>
+	<li>
+		Select File or Drag &amp;Drop the Video in the Upload Window</li>
+	<li>
+		&nbsp;</li>
+</ul>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	Selected File should be uploaded and displayed under the Upload function</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[7]]></step_number>
+	<actions><![CDATA[<p>
+	<span style="font-family: -webkit-standard; text-size-adjust: auto;">Select the Puzzle Game genre</span></p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	<span style="font-family: -webkit-standard; text-size-adjust: auto;">Puzzle should be displayed in the Game Genre field</span></p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[8]]></step_number>
+	<actions><![CDATA[<p style="font-family: -webkit-standard; text-size-adjust: auto;">
+	Enter the Text Slides for&nbsp;</p>
+<ul style="font-family: -webkit-standard; text-size-adjust: auto;">
+	<li>
+		Enter Text for Slide1</li>
+	<li>
+		Enter Text for Slide2</li>
+	<li>
+		Enter Text for Slide3</li>
+</ul>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	<span style="font-family: -webkit-standard; text-size-adjust: auto;">Entered text slides should be dispalyed in the appropriate fields</span></p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[9]]></step_number>
+	<actions><![CDATA[<p>
+	<span style="font-family: -webkit-standard; text-size-adjust: auto;">Click on the select the backgrounf color box</span></p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	<span style="font-family: -webkit-standard; text-size-adjust: auto;">User must able to select the color and selected color should be displayed</span></p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[10]]></step_number>
+	<actions><![CDATA[<p>
+	<span style="font-family: -webkit-standard; text-size-adjust: auto;">Enter the &quot;App name&quot; and click Submit</span></p>
+]]></actions>
+	<expectedresults><![CDATA[<ul style="font-family: -webkit-standard; text-size-adjust: auto;">
+	<li>
+		Success message should be displayed and Video file should be created</li>
+	<li>
+		User should be on the list view</li>
+	<li>
+		Newly created Video should have the Processing status</li>
+</ul>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="44357" name="Create a Genre Video by choosing the Video file from Dropdown-Startegy">
+	<node_order><![CDATA[1005]]></node_order>
+	<externalid><![CDATA[7]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>
+	Create a Genre Video by choosing the Video file from Dropdown by Startegy Game Genre</p>
+]]></summary>
+	<preconditions><![CDATA[]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p style="font-family: -webkit-standard; text-size-adjust: auto;">
+	Login to Mission Ctrl</p>
+<p style="font-family: -webkit-standard; text-size-adjust: auto;">
+	https://ctrl-devel.vungle.com/</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	<span style="font-family: -webkit-standard; text-size-adjust: auto;">User must logged into Mission Ctrl</span></p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>
+	<span style="font-family: -webkit-standard; text-size-adjust: auto;">Navigate to Automation Page and click on &quot;Create Video&quot;button</span></p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	<span style="font-family: -webkit-standard; text-size-adjust: auto;">User should be dirceted to the &quot;Create a Dynamic Experience&quot;page</span></p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p style="font-family: -webkit-standard; text-size-adjust: auto;">
+	Enter the&nbsp;</p>
+<ul style="font-family: -webkit-standard; text-size-adjust: auto;">
+	<li>
+		Video name</li>
+	<li>
+		Select the Video Template, Genre Video</li>
+</ul>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	<span style="font-family: -webkit-standard; text-size-adjust: auto;">Entered information should be displayed</span></p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[4]]></step_number>
+	<actions><![CDATA[<p>
+	<span style="font-family: -webkit-standard; text-size-adjust: auto;">Verify the Genre fields</span></p>
+]]></actions>
+	<expectedresults><![CDATA[<p style="font-family: -webkit-standard; text-size-adjust: auto;">
+	Following fields should show based on the Video type, Genre</p>
+<ul style="font-family: -webkit-standard; text-size-adjust: auto;">
+	<li>
+		Video File</li>
+</ul>
+<ol style="font-family: -webkit-standard; text-size-adjust: auto;">
+	<li>
+		Choose from Dropdown</li>
+	<li>
+		Upload</li>
+</ol>
+<ul style="font-family: -webkit-standard; text-size-adjust: auto;">
+	<li>
+		Game Genre Dropdown</li>
+	<li>
+		Text Slides text boxes</li>
+	<li>
+		Box to select background color for the slides</li>
+	<li>
+		Outro Color theme</li>
+	<li>
+		App Title</li>
+</ul>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[5]]></step_number>
+	<actions><![CDATA[<p>
+	<span style="font-family: -webkit-standard; text-size-adjust: auto;">Choose the Video File from Dropdown by selecting the &quot;Choose from Dropdown&quot; radio button</span></p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	<span style="font-family: -webkit-standard; text-size-adjust: auto;">Choose from Dropdown should be selected and a text box with all the available videos drop down should be visible</span></p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[6]]></step_number>
+	<actions><![CDATA[<p>
+	<span style="font-family: -webkit-standard; text-size-adjust: auto;">Select a Video</span></p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	<span style="font-family: -webkit-standard; text-size-adjust: auto;">Selected Video should be dispalyed in the appropriate field</span></p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[7]]></step_number>
+	<actions><![CDATA[<p>
+	<span style="font-family: -webkit-standard; text-size-adjust: auto;">Select the Startegy Game genre</span></p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	<span style="font-family: -webkit-standard; text-size-adjust: auto;">Startegy should be displayed in the Game Genre field</span></p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[8]]></step_number>
+	<actions><![CDATA[<p style="font-family: -webkit-standard; text-size-adjust: auto;">
+	Enter the Text Slides for&nbsp;</p>
+<ul style="font-family: -webkit-standard; text-size-adjust: auto;">
+	<li>
+		Enter Text for Slide1</li>
+	<li>
+		Enter Text for Slide2</li>
+	<li>
+		Enter Text for Slide3</li>
+</ul>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	<span style="font-family: -webkit-standard; text-size-adjust: auto;">Entered text slides should be dispalyed in the appropriate fields</span></p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[9]]></step_number>
+	<actions><![CDATA[<p>
+	<span style="font-family: -webkit-standard; text-size-adjust: auto;">Click on the select the backgrounf color box</span></p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	<span style="font-family: -webkit-standard; text-size-adjust: auto;">User must able to select the color and selected color should be displayed</span></p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[10]]></step_number>
+	<actions><![CDATA[<p>
+	<span style="font-family: -webkit-standard; text-size-adjust: auto;">Enter the &quot;App name&quot; and click Submit</span></p>
+]]></actions>
+	<expectedresults><![CDATA[<ul style="font-family: -webkit-standard; text-size-adjust: auto;">
+	<li>
+		Success message should be displayed and Video file should be created</li>
+	<li>
+		User should be on the list view</li>
+	<li>
+		Newly created Video should have the Processing status</li>
+</ul>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="44359" name="Create a Genre Video by choosing the Video file from Dropdown-Brand">
+	<node_order><![CDATA[1006]]></node_order>
+	<externalid><![CDATA[8]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>
+	Create a Genre Video by choosing the Video file from Dropdown by Brand Game Genre</p>
+]]></summary>
+	<preconditions><![CDATA[]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p style="font-family: -webkit-standard; text-size-adjust: auto;">
+	Login to Mission Ctrl</p>
+<p style="font-family: -webkit-standard; text-size-adjust: auto;">
+	https://ctrl-devel.vungle.com/</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	<span style="font-family: -webkit-standard; text-size-adjust: auto;">User must logged into Mission Ctrl</span></p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>
+	<span style="font-family: -webkit-standard; text-size-adjust: auto;">Navigate to Automation Page and click on &quot;Create Video&quot;button</span></p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	<span style="font-family: -webkit-standard; text-size-adjust: auto;">User should be dirceted to the &quot;Create a Dynamic Experience&quot;page</span></p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p style="font-family: -webkit-standard; text-size-adjust: auto;">
+	Enter the&nbsp;</p>
+<ul style="font-family: -webkit-standard; text-size-adjust: auto;">
+	<li>
+		Video name</li>
+	<li>
+		Select the Video Template, Genre Video</li>
+</ul>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	<span style="font-family: -webkit-standard; text-size-adjust: auto;">Entered information should be displayed</span></p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[4]]></step_number>
+	<actions><![CDATA[<p>
+	<span style="font-family: -webkit-standard; text-size-adjust: auto;">Verify the Genre fields</span></p>
+]]></actions>
+	<expectedresults><![CDATA[<p style="font-family: -webkit-standard; text-size-adjust: auto;">
+	Following fields should show based on the Video type, Genre</p>
+<ul style="font-family: -webkit-standard; text-size-adjust: auto;">
+	<li>
+		Video File</li>
+</ul>
+<ol style="font-family: -webkit-standard; text-size-adjust: auto;">
+	<li>
+		Choose from Dropdown</li>
+	<li>
+		Upload</li>
+</ol>
+<ul style="font-family: -webkit-standard; text-size-adjust: auto;">
+	<li>
+		Game Genre Dropdown</li>
+	<li>
+		Text Slides text boxes</li>
+	<li>
+		Box to select background color for the slides</li>
+	<li>
+		Outro Color theme</li>
+	<li>
+		App Title</li>
+</ul>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[5]]></step_number>
+	<actions><![CDATA[<p>
+	<span style="font-family: -webkit-standard; text-size-adjust: auto;">Choose the Video File from Dropdown by selecting the &quot;Choose from Dropdown&quot; radio button</span></p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	<span style="font-family: -webkit-standard; text-size-adjust: auto;">Choose from Dropdown should be selected and a text box with all the available videos drop down should be visible</span></p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[6]]></step_number>
+	<actions><![CDATA[<p>
+	<span style="font-family: -webkit-standard; text-size-adjust: auto;">Select a Video</span></p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	<span style="font-family: -webkit-standard; text-size-adjust: auto;">Selected Video should be dispalyed in the appropriate field</span></p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[7]]></step_number>
+	<actions><![CDATA[<p>
+	<span style="font-family: -webkit-standard; text-size-adjust: auto;">Select the Brand Game genre</span></p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	<span style="font-family: -webkit-standard; text-size-adjust: auto;">Brand should be displayed in the Game Genre field</span></p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[8]]></step_number>
+	<actions><![CDATA[<p style="font-family: -webkit-standard; text-size-adjust: auto;">
+	Enter the Text Slides for&nbsp;</p>
+<ul style="font-family: -webkit-standard; text-size-adjust: auto;">
+	<li>
+		Enter Text for Slide1</li>
+	<li>
+		Enter Text for Slide2</li>
+	<li>
+		Enter Text for Slide3</li>
+</ul>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	<span style="font-family: -webkit-standard; text-size-adjust: auto;">Entered text slides should be dispalyed in the appropriate fields</span></p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[9]]></step_number>
+	<actions><![CDATA[<p>
+	<span style="font-family: -webkit-standard; text-size-adjust: auto;">Click on the select the backgrounf color box</span></p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	<span style="font-family: -webkit-standard; text-size-adjust: auto;">User must able to select the color and selected color should be displayed</span></p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[10]]></step_number>
+	<actions><![CDATA[<p>
+	<span style="font-family: -webkit-standard; text-size-adjust: auto;">Enter the &quot;App name&quot; and click Submit</span></p>
+]]></actions>
+	<expectedresults><![CDATA[<ul style="font-family: -webkit-standard; text-size-adjust: auto;">
+	<li>
+		Success message should be displayed and Video file should be created</li>
+	<li>
+		User should be on the list view</li>
+	<li>
+		Newly created Video should have the Processing status</li>
+</ul>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="44361" name="Create a Genre Video by choosing the Video file from Dropdown-Casino">
+	<node_order><![CDATA[1007]]></node_order>
+	<externalid><![CDATA[9]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>
+	Create a Genre Video by choosing the Video file from Dropdown by Casino Game Genre</p>
+]]></summary>
+	<preconditions><![CDATA[]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p style="font-family: -webkit-standard; text-size-adjust: auto;">
+	Login to Mission Ctrl</p>
+<p style="font-family: -webkit-standard; text-size-adjust: auto;">
+	https://ctrl-devel.vungle.com/</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	<span style="font-family: -webkit-standard; text-size-adjust: auto;">User must logged into Mission Ctrl</span></p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>
+	<span style="font-family: -webkit-standard; text-size-adjust: auto;">Navigate to Automation Page and click on &quot;Create Video&quot;button</span></p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	<span style="font-family: -webkit-standard; text-size-adjust: auto;">User should be dirceted to the &quot;Create a Dynamic Experience&quot;page</span></p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p style="font-family: -webkit-standard; text-size-adjust: auto;">
+	Enter the&nbsp;</p>
+<ul style="font-family: -webkit-standard; text-size-adjust: auto;">
+	<li>
+		Video name</li>
+	<li>
+		Select the Video Template, Genre Video</li>
+</ul>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	<span style="font-family: -webkit-standard; text-size-adjust: auto;">Entered information should be displayed</span></p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[4]]></step_number>
+	<actions><![CDATA[<p>
+	<span style="font-family: -webkit-standard; text-size-adjust: auto;">Verify the Genre fields</span></p>
+]]></actions>
+	<expectedresults><![CDATA[<p style="font-family: -webkit-standard; text-size-adjust: auto;">
+	Following fields should show based on the Video type, Genre</p>
+<ul style="font-family: -webkit-standard; text-size-adjust: auto;">
+	<li>
+		Video File</li>
+</ul>
+<ol style="font-family: -webkit-standard; text-size-adjust: auto;">
+	<li>
+		Choose from Dropdown</li>
+	<li>
+		Upload</li>
+</ol>
+<ul style="font-family: -webkit-standard; text-size-adjust: auto;">
+	<li>
+		Game Genre Dropdown</li>
+	<li>
+		Text Slides text boxes</li>
+	<li>
+		Box to select background color for the slides</li>
+	<li>
+		Outro Color theme</li>
+	<li>
+		App Title</li>
+</ul>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[5]]></step_number>
+	<actions><![CDATA[<p>
+	<span style="font-family: -webkit-standard; text-size-adjust: auto;">Choose the Video File from Dropdown by selecting the &quot;Choose from Dropdown&quot; radio button</span></p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	<span style="font-family: -webkit-standard; text-size-adjust: auto;">Choose from Dropdown should be selected and a text box with all the available videos drop down should be visible</span></p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[6]]></step_number>
+	<actions><![CDATA[<p>
+	<span style="font-family: -webkit-standard; text-size-adjust: auto;">Select a Video</span></p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	<span style="font-family: -webkit-standard; text-size-adjust: auto;">Selected Video should be dispalyed in the appropriate field</span></p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[7]]></step_number>
+	<actions><![CDATA[<p>
+	<span style="font-family: -webkit-standard; text-size-adjust: auto;">Select the Casino Game genre</span></p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	<span style="font-family: -webkit-standard; text-size-adjust: auto;">Casino should be displayed in the Game Genre field</span></p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[8]]></step_number>
+	<actions><![CDATA[<p style="font-family: -webkit-standard; text-size-adjust: auto;">
+	Enter the Text Slides for&nbsp;</p>
+<ul style="font-family: -webkit-standard; text-size-adjust: auto;">
+	<li>
+		Enter Text for Slide1</li>
+	<li>
+		Enter Text for Slide2</li>
+	<li>
+		Enter Text for Slide3</li>
+</ul>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	<span style="font-family: -webkit-standard; text-size-adjust: auto;">Entered text slides should be dispalyed in the appropriate fields</span></p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[9]]></step_number>
+	<actions><![CDATA[<p>
+	<span style="font-family: -webkit-standard; text-size-adjust: auto;">Click on the select the backgrounf color box</span></p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	<span style="font-family: -webkit-standard; text-size-adjust: auto;">User must able to select the color and selected color should be displayed</span></p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[10]]></step_number>
+	<actions><![CDATA[<p>
+	<span style="font-family: -webkit-standard; text-size-adjust: auto;">Enter the &quot;App name&quot; and click Submit</span></p>
+]]></actions>
+	<expectedresults><![CDATA[<ul style="font-family: -webkit-standard; text-size-adjust: auto;">
+	<li>
+		Success message should be displayed and Video file should be created</li>
+	<li>
+		User should be on the list view</li>
+	<li>
+		Newly created Video should have the Processing status</li>
+</ul>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="44363" name="Create a Genre Video by choosing the Video file from Dropdown-Casual">
+	<node_order><![CDATA[1008]]></node_order>
+	<externalid><![CDATA[10]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>
+	Create a Genre Video by choosing the Video file from Dropdown by Casual Game Genre</p>
+]]></summary>
+	<preconditions><![CDATA[]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p style="font-family: -webkit-standard; text-size-adjust: auto;">
+	Login to Mission Ctrl</p>
+<p style="font-family: -webkit-standard; text-size-adjust: auto;">
+	https://ctrl-devel.vungle.com/</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	<span style="font-family: -webkit-standard; text-size-adjust: auto;">User must logged into Mission Ctrl</span></p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>
+	<span style="font-family: -webkit-standard; text-size-adjust: auto;">Navigate to Automation Page and click on &quot;Create Video&quot;button</span></p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	<span style="font-family: -webkit-standard; text-size-adjust: auto;">User should be dirceted to the &quot;Create a Dynamic Experience&quot;page</span></p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p style="font-family: -webkit-standard; text-size-adjust: auto;">
+	Enter the&nbsp;</p>
+<ul style="font-family: -webkit-standard; text-size-adjust: auto;">
+	<li>
+		Video name</li>
+	<li>
+		Select the Video Template, Genre Video</li>
+</ul>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	<span style="font-family: -webkit-standard; text-size-adjust: auto;">Entered information should be displayed</span></p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[4]]></step_number>
+	<actions><![CDATA[<p>
+	<span style="font-family: -webkit-standard; text-size-adjust: auto;">Verify the Genre fields</span></p>
+]]></actions>
+	<expectedresults><![CDATA[<p style="font-family: -webkit-standard; text-size-adjust: auto;">
+	Following fields should show based on the Video type, Genre</p>
+<ul style="font-family: -webkit-standard; text-size-adjust: auto;">
+	<li>
+		Video File</li>
+</ul>
+<ol style="font-family: -webkit-standard; text-size-adjust: auto;">
+	<li>
+		Choose from Dropdown</li>
+	<li>
+		Upload</li>
+</ol>
+<ul style="font-family: -webkit-standard; text-size-adjust: auto;">
+	<li>
+		Game Genre Dropdown</li>
+	<li>
+		Text Slides text boxes</li>
+	<li>
+		Box to select background color for the slides</li>
+	<li>
+		Outro Color theme</li>
+	<li>
+		App Title</li>
+</ul>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[5]]></step_number>
+	<actions><![CDATA[<p>
+	<span style="font-family: -webkit-standard; text-size-adjust: auto;">Choose the Video File from Dropdown by selecting the &quot;Choose from Dropdown&quot; radio button</span></p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	<span style="font-family: -webkit-standard; text-size-adjust: auto;">Choose from Dropdown should be selected and a text box with all the available videos drop down should be visible</span></p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[6]]></step_number>
+	<actions><![CDATA[<p>
+	<span style="font-family: -webkit-standard; text-size-adjust: auto;">Select a Video</span></p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	<span style="font-family: -webkit-standard; text-size-adjust: auto;">Selected Video should be dispalyed in the appropriate field</span></p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[7]]></step_number>
+	<actions><![CDATA[<p>
+	<span style="font-family: -webkit-standard; text-size-adjust: auto;">Select the Casual&nbsp; Game genre</span></p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	<span style="font-family: -webkit-standard; text-size-adjust: auto;">Casual should be displayed in the Game Genre field</span></p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[8]]></step_number>
+	<actions><![CDATA[<p style="font-family: -webkit-standard; text-size-adjust: auto;">
+	Enter the Text Slides for&nbsp;</p>
+<ul style="font-family: -webkit-standard; text-size-adjust: auto;">
+	<li>
+		Enter Text for Slide1</li>
+	<li>
+		Enter Text for Slide2</li>
+	<li>
+		Enter Text for Slide3</li>
+</ul>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	<span style="font-family: -webkit-standard; text-size-adjust: auto;">Entered text slides should be dispalyed in the appropriate fields</span></p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[9]]></step_number>
+	<actions><![CDATA[<p>
+	<span style="font-family: -webkit-standard; text-size-adjust: auto;">Click on the select the backgrounf color box</span></p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	<span style="font-family: -webkit-standard; text-size-adjust: auto;">User must able to select the color and selected color should be displayed</span></p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[10]]></step_number>
+	<actions><![CDATA[<p>
+	<span style="font-family: -webkit-standard; text-size-adjust: auto;">Enter the &quot;App name&quot; and click Submit</span></p>
+]]></actions>
+	<expectedresults><![CDATA[<ul style="font-family: -webkit-standard; text-size-adjust: auto;">
+	<li>
+		Success message should be displayed and Video file should be created</li>
+	<li>
+		User should be on the list view</li>
+	<li>
+		Newly created Video should have the Processing status</li>
+</ul>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="44365" name="Create a Genre Video by Uploading a Video-Strategy">
+	<node_order><![CDATA[1009]]></node_order>
+	<externalid><![CDATA[11]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[]]></summary>
+	<preconditions><![CDATA[]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p style="font-family: -webkit-standard; text-size-adjust: auto;">
+	Login to Mission Ctrl</p>
+<p style="font-family: -webkit-standard; text-size-adjust: auto;">
+	https://ctrl-devel.vungle.com/</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	<span style="font-family: -webkit-standard; text-size-adjust: auto;">User must logged into Mission Ctrl</span></p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>
+	<span style="font-family: -webkit-standard; text-size-adjust: auto;">Navigate to Automation Page and click on &quot;Create Video&quot;button</span></p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	<span style="font-family: -webkit-standard; text-size-adjust: auto;">User should be dirceted to the &quot;Create a Dynamic Experience&quot;page</span></p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p style="font-family: -webkit-standard; text-size-adjust: auto;">
+	Enter the&nbsp;</p>
+<ul style="font-family: -webkit-standard; text-size-adjust: auto;">
+	<li>
+		Video name</li>
+	<li>
+		Select the Video Template, Genre Video</li>
+</ul>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	<span style="font-family: -webkit-standard; text-size-adjust: auto;">Entered information should be displayed</span></p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[4]]></step_number>
+	<actions><![CDATA[<p>
+	<span style="font-family: -webkit-standard; text-size-adjust: auto;">Verify the Genre fields</span></p>
+]]></actions>
+	<expectedresults><![CDATA[<p style="font-family: -webkit-standard; text-size-adjust: auto;">
+	Following fields should show based on the Video type, Genre</p>
+<ul style="font-family: -webkit-standard; text-size-adjust: auto;">
+	<li>
+		Video File</li>
+</ul>
+<ol style="font-family: -webkit-standard; text-size-adjust: auto;">
+	<li>
+		Choose from Dropdown</li>
+	<li>
+		Upload</li>
+</ol>
+<ul style="font-family: -webkit-standard; text-size-adjust: auto;">
+	<li>
+		Game Genre Dropdown</li>
+	<li>
+		Text Slides text boxes</li>
+	<li>
+		Box to select background color for the slides</li>
+	<li>
+		Outro Color theme</li>
+	<li>
+		App Title</li>
+</ul>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[5]]></step_number>
+	<actions><![CDATA[<p>
+	<span style="font-family: -webkit-standard; text-size-adjust: auto;">Upload a&nbsp; Video File from Dropdown by selecting the &quot;Upload&quot; radio button</span></p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	<span style="font-family: -webkit-standard; text-size-adjust: auto;">&quot;Upload&quot; should be selected and a modal window should show up to Browsr or Drag&amp;Drop the Video file from local desktop</span></p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[6]]></step_number>
+	<actions><![CDATA[<p>
+	Upload a Video by</p>
+<ul>
+	<li style="font-family: -webkit-standard; text-size-adjust: auto;">
+		Browse for the File and Click Open</li>
+	<li style="font-family: -webkit-standard; text-size-adjust: auto;">
+		Select File or Drag &amp;Drop the Video in the Upload Window</li>
+	<li>
+		&nbsp;</li>
+</ul>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	<span style="font-family: -webkit-standard; text-size-adjust: auto;">Selected File should be uploaded and displayed under the Upload function</span></p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[7]]></step_number>
+	<actions><![CDATA[<p>
+	<span style="font-family: -webkit-standard; text-size-adjust: auto;">Select the Startegy Game genre</span></p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	<span style="font-family: -webkit-standard; text-size-adjust: auto;">Startegy should be displayed in the Game Genre field</span></p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[8]]></step_number>
+	<actions><![CDATA[<p style="font-family: -webkit-standard; text-size-adjust: auto;">
+	Enter the Text Slides for&nbsp;</p>
+<ul style="font-family: -webkit-standard; text-size-adjust: auto;">
+	<li>
+		Enter Text for Slide1</li>
+	<li>
+		Enter Text for Slide2</li>
+	<li>
+		Enter Text for Slide3</li>
+</ul>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	<span style="font-family: -webkit-standard; text-size-adjust: auto;">Entered text slides should be dispalyed in the appropriate fields</span></p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[9]]></step_number>
+	<actions><![CDATA[<p>
+	<span style="font-family: -webkit-standard; text-size-adjust: auto;">Click on the select the backgrounf color box</span></p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	<span style="font-family: -webkit-standard; text-size-adjust: auto;">User must able to select the color and selected color should be displayed</span></p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[10]]></step_number>
+	<actions><![CDATA[<p>
+	<span style="font-family: -webkit-standard; text-size-adjust: auto;">Enter the &quot;App name&quot; and click Submit</span></p>
+]]></actions>
+	<expectedresults><![CDATA[<ul style="font-family: -webkit-standard; text-size-adjust: auto;">
+	<li>
+		Success message should be displayed and Video file should be created</li>
+	<li>
+		User should be on the list view</li>
+	<li>
+		Newly created Video should have the Processing status</li>
+</ul>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="44367" name="Create a Genre Video by Uploading a Video-Brand">
+	<node_order><![CDATA[1010]]></node_order>
+	<externalid><![CDATA[12]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[]]></summary>
+	<preconditions><![CDATA[]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p style="font-family: -webkit-standard; text-size-adjust: auto;">
+	Login to Mission Ctrl</p>
+<p style="font-family: -webkit-standard; text-size-adjust: auto;">
+	https://ctrl-devel.vungle.com/</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	<span style="font-family: -webkit-standard; text-size-adjust: auto;">User must logged into Mission Ctrl</span></p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>
+	<span style="font-family: -webkit-standard; text-size-adjust: auto;">Navigate to Automation Page and click on &quot;Create Video&quot;button</span></p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	<span style="font-family: -webkit-standard; text-size-adjust: auto;">User should be dirceted to the &quot;Create a Dynamic Experience&quot;page</span></p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p style="font-family: -webkit-standard; text-size-adjust: auto;">
+	Enter the&nbsp;</p>
+<ul style="font-family: -webkit-standard; text-size-adjust: auto;">
+	<li>
+		Video name</li>
+	<li>
+		Select the Video Template, Genre Video</li>
+</ul>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	<span style="font-family: -webkit-standard; text-size-adjust: auto;">Entered information should be displayed</span></p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[4]]></step_number>
+	<actions><![CDATA[<p>
+	<span style="font-family: -webkit-standard; text-size-adjust: auto;">Verify the Genre fields</span></p>
+]]></actions>
+	<expectedresults><![CDATA[<p style="font-family: -webkit-standard; text-size-adjust: auto;">
+	Following fields should show based on the Video type, Genre</p>
+<ul style="font-family: -webkit-standard; text-size-adjust: auto;">
+	<li>
+		Video File</li>
+</ul>
+<ol style="font-family: -webkit-standard; text-size-adjust: auto;">
+	<li>
+		Choose from Dropdown</li>
+	<li>
+		Upload</li>
+</ol>
+<ul style="font-family: -webkit-standard; text-size-adjust: auto;">
+	<li>
+		Game Genre Dropdown</li>
+	<li>
+		Text Slides text boxes</li>
+	<li>
+		Box to select background color for the slides</li>
+	<li>
+		Outro Color theme</li>
+	<li>
+		App Title</li>
+</ul>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[5]]></step_number>
+	<actions><![CDATA[<p>
+	<span style="font-family: -webkit-standard; text-size-adjust: auto;">Upload a&nbsp; Video File from Dropdown by selecting the &quot;Upload&quot; radio button</span></p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	<span style="font-family: -webkit-standard; text-size-adjust: auto;">&quot;Upload&quot; should be selected and a modal window should show up to Browsr or Drag&amp;Drop the Video file from local desktop</span></p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[6]]></step_number>
+	<actions><![CDATA[<p>
+	Upload a Video by</p>
+<ul>
+	<li style="font-family: -webkit-standard; text-size-adjust: auto;">
+		Browse for the File and Click Open</li>
+	<li style="font-family: -webkit-standard; text-size-adjust: auto;">
+		Select File or Drag &amp;Drop the Video in the Upload Window</li>
+	<li>
+		&nbsp;</li>
+</ul>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	<span style="font-family: -webkit-standard; text-size-adjust: auto;">Selected File should be uploaded and displayed under the Upload function</span></p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[7]]></step_number>
+	<actions><![CDATA[<p>
+	<span style="font-family: -webkit-standard; text-size-adjust: auto;">Select the Brand Game genre</span></p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	<span style="font-family: -webkit-standard;">Brand should be displayed in the Game Genre field</span></p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[8]]></step_number>
+	<actions><![CDATA[<p style="font-family: -webkit-standard; text-size-adjust: auto;">
+	Enter the Text Slides for&nbsp;</p>
+<ul style="font-family: -webkit-standard; text-size-adjust: auto;">
+	<li>
+		Enter Text for Slide1</li>
+	<li>
+		Enter Text for Slide2</li>
+	<li>
+		Enter Text for Slide3</li>
+</ul>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	<span style="font-family: -webkit-standard; text-size-adjust: auto;">Entered text slides should be dispalyed in the appropriate fields</span></p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[9]]></step_number>
+	<actions><![CDATA[<p>
+	<span style="font-family: -webkit-standard; text-size-adjust: auto;">Click on the select the backgrounf color box</span></p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	<span style="font-family: -webkit-standard; text-size-adjust: auto;">User must able to select the color and selected color should be displayed</span></p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[10]]></step_number>
+	<actions><![CDATA[<p>
+	<span style="font-family: -webkit-standard; text-size-adjust: auto;">Enter the &quot;App name&quot; and click Submit</span></p>
+]]></actions>
+	<expectedresults><![CDATA[<ul style="font-family: -webkit-standard; text-size-adjust: auto;">
+	<li>
+		Success message should be displayed and Video file should be created</li>
+	<li>
+		User should be on the list view</li>
+	<li>
+		Newly created Video should have the Processing status</li>
+</ul>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="44369" name="Create a Genre Video by Uploading a Video-CAsino">
+	<node_order><![CDATA[1011]]></node_order>
+	<externalid><![CDATA[13]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>
+	Create a Genre Video by Uploading a Video-CAsino</p>
+]]></summary>
+	<preconditions><![CDATA[<p>
+	User should logged into MissionCtrl</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p style="font-family: -webkit-standard; text-size-adjust: auto;">
+	Login to Mission Ctrl</p>
+<p style="font-family: -webkit-standard; text-size-adjust: auto;">
+	https://ctrl-devel.vungle.com/</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	<span style="font-family: -webkit-standard; text-size-adjust: auto;">User must logged into Mission Ctrl</span></p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>
+	<span style="font-family: -webkit-standard; text-size-adjust: auto;">Navigate to Automation Page and click on &quot;Create Video&quot;button</span></p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	<span style="font-family: -webkit-standard; text-size-adjust: auto;">User should be dirceted to the &quot;Create a Dynamic Experience&quot;page</span></p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p style="font-family: -webkit-standard; text-size-adjust: auto;">
+	Enter the&nbsp;</p>
+<ul style="font-family: -webkit-standard; text-size-adjust: auto;">
+	<li>
+		Video name</li>
+	<li>
+		Select the Video Template, Genre Video</li>
+</ul>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	<span style="font-family: -webkit-standard; text-size-adjust: auto;">Entered information should be displayed</span></p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[4]]></step_number>
+	<actions><![CDATA[<p>
+	<span style="font-family: -webkit-standard; text-size-adjust: auto;">Verify the Genre fields</span></p>
+]]></actions>
+	<expectedresults><![CDATA[<p style="font-family: -webkit-standard; text-size-adjust: auto;">
+	Following fields should show based on the Video type, Genre</p>
+<ul style="font-family: -webkit-standard; text-size-adjust: auto;">
+	<li>
+		Video File</li>
+</ul>
+<ol style="font-family: -webkit-standard; text-size-adjust: auto;">
+	<li>
+		Choose from Dropdown</li>
+	<li>
+		Upload</li>
+</ol>
+<ul style="font-family: -webkit-standard; text-size-adjust: auto;">
+	<li>
+		Game Genre Dropdown</li>
+	<li>
+		Text Slides text boxes</li>
+	<li>
+		Box to select background color for the slides</li>
+	<li>
+		Outro Color theme</li>
+	<li>
+		App Title</li>
+</ul>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[5]]></step_number>
+	<actions><![CDATA[<p>
+	<span style="font-family: -webkit-standard; text-size-adjust: auto;">Upload a&nbsp; Video File from Dropdown by selecting the &quot;Upload&quot; radio button</span></p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	<span style="font-family: -webkit-standard; text-size-adjust: auto;">&quot;Upload&quot; should be selected and a modal window should show up to Browsr or Drag&amp;Drop the Video file from local desktop</span></p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[6]]></step_number>
+	<actions><![CDATA[<p>
+	Upload a Video by</p>
+<ul>
+	<li style="font-family: -webkit-standard; text-size-adjust: auto;">
+		Browse for the File and Click Open</li>
+	<li style="font-family: -webkit-standard; text-size-adjust: auto;">
+		Select File or Drag &amp;Drop the Video in the Upload Window</li>
+	<li>
+		&nbsp;</li>
+</ul>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	<span style="font-family: -webkit-standard; text-size-adjust: auto;">Selected File should be uploaded and displayed under the Upload function</span></p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[7]]></step_number>
+	<actions><![CDATA[<p>
+	<span style="font-family: -webkit-standard; text-size-adjust: auto;">Select the Casino Game genre</span></p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	<span style="font-family: -webkit-standard; text-size-adjust: auto;">Casino should be displayed in the Game Genre field</span></p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[8]]></step_number>
+	<actions><![CDATA[<p style="font-family: -webkit-standard; text-size-adjust: auto;">
+	Enter the Text Slides for&nbsp;</p>
+<ul style="font-family: -webkit-standard; text-size-adjust: auto;">
+	<li>
+		Enter Text for Slide1</li>
+	<li>
+		Enter Text for Slide2</li>
+	<li>
+		Enter Text for Slide3</li>
+</ul>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	<span style="font-family: -webkit-standard; text-size-adjust: auto;">Entered text slides should be dispalyed in the appropriate fields</span></p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[9]]></step_number>
+	<actions><![CDATA[<p>
+	<span style="font-family: -webkit-standard; text-size-adjust: auto;">Click on the select the backgrounf color box</span></p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	<span style="font-family: -webkit-standard; text-size-adjust: auto;">User must able to select the color and selected color should be displayed</span></p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[10]]></step_number>
+	<actions><![CDATA[<p>
+	<span style="font-family: -webkit-standard; text-size-adjust: auto;">Enter the &quot;App name&quot; and click Submit</span></p>
+]]></actions>
+	<expectedresults><![CDATA[<ul style="font-family: -webkit-standard; text-size-adjust: auto;">
+	<li>
+		Success message should be displayed and Video file should be created</li>
+	<li>
+		User should be on the list view</li>
+	<li>
+		Newly created Video should have the Processing status</li>
+</ul>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="44371" name="Create a Genre Video by Uploading a Video-Casual">
+	<node_order><![CDATA[1012]]></node_order>
+	<externalid><![CDATA[14]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>
+	Create a Genre Video by Uploading a Video-Casual</p>
+]]></summary>
+	<preconditions><![CDATA[<p>
+	User should logged into Mission Ctrl</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p style="font-family: -webkit-standard; text-size-adjust: auto;">
+	Login to Mission Ctrl</p>
+<p style="font-family: -webkit-standard; text-size-adjust: auto;">
+	https://ctrl-devel.vungle.com/</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	<span style="font-family: -webkit-standard; text-size-adjust: auto;">User must logged into Mission Ctrl</span></p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>
+	<span style="font-family: -webkit-standard; text-size-adjust: auto;">Navigate to Automation Page and click on &quot;Create Video&quot;button</span></p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	<span style="font-family: -webkit-standard; text-size-adjust: auto;">User should be dirceted to the &quot;Create a Dynamic Experience&quot;page</span></p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p style="font-family: -webkit-standard; text-size-adjust: auto;">
+	Enter the&nbsp;</p>
+<ul style="font-family: -webkit-standard; text-size-adjust: auto;">
+	<li>
+		Video name</li>
+	<li>
+		Select the Video Template, Genre Video</li>
+</ul>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	<span style="font-family: -webkit-standard; text-size-adjust: auto;">Entered information should be displayed</span></p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[4]]></step_number>
+	<actions><![CDATA[<p>
+	<span style="font-family: -webkit-standard; text-size-adjust: auto;">Verify the Genre fields</span></p>
+]]></actions>
+	<expectedresults><![CDATA[<p style="font-family: -webkit-standard; text-size-adjust: auto;">
+	Following fields should show based on the Video type, Genre</p>
+<ul style="font-family: -webkit-standard; text-size-adjust: auto;">
+	<li>
+		Video File</li>
+</ul>
+<ol style="font-family: -webkit-standard; text-size-adjust: auto;">
+	<li>
+		Choose from Dropdown</li>
+	<li>
+		Upload</li>
+</ol>
+<ul style="font-family: -webkit-standard; text-size-adjust: auto;">
+	<li>
+		Game Genre Dropdown</li>
+	<li>
+		Text Slides text boxes</li>
+	<li>
+		Box to select background color for the slides</li>
+	<li>
+		Outro Color theme</li>
+	<li>
+		App Title</li>
+</ul>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[5]]></step_number>
+	<actions><![CDATA[<p>
+	<span style="font-family: -webkit-standard; text-size-adjust: auto;">Upload a&nbsp; Video File from Dropdown by selecting the &quot;Upload&quot; radio button</span></p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	<span style="font-family: -webkit-standard; text-size-adjust: auto;">&quot;Upload&quot; should be selected and a modal window should show up to Browsr or Drag&amp;Drop the Video file from local desktop</span></p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[6]]></step_number>
+	<actions><![CDATA[<p>
+	Upload a Video by</p>
+<ul>
+	<li style="font-family: -webkit-standard; text-size-adjust: auto;">
+		Browse for the File and Click Open</li>
+	<li style="font-family: -webkit-standard; text-size-adjust: auto;">
+		Select File or Drag &amp;Drop the Video in the Upload Window</li>
+	<li>
+		&nbsp;</li>
+</ul>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	<span style="font-family: -webkit-standard; text-size-adjust: auto;">Selected File should be uploaded and displayed under the Upload function</span></p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[7]]></step_number>
+	<actions><![CDATA[<p>
+	<span style="font-family: -webkit-standard; text-size-adjust: auto;">Select the Casual Game genre</span></p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	<span style="font-family: -webkit-standard; text-size-adjust: auto;">Casual should be displayed in the Game Genre field</span></p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[8]]></step_number>
+	<actions><![CDATA[<p style="font-family: -webkit-standard; text-size-adjust: auto;">
+	Enter the Text Slides for&nbsp;</p>
+<ul style="font-family: -webkit-standard; text-size-adjust: auto;">
+	<li>
+		Enter Text for Slide1</li>
+	<li>
+		Enter Text for Slide2</li>
+	<li>
+		Enter Text for Slide3</li>
+</ul>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	<span style="font-family: -webkit-standard; text-size-adjust: auto;">Entered text slides should be dispalyed in the appropriate fields</span></p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[9]]></step_number>
+	<actions><![CDATA[<p>
+	<span style="font-family: -webkit-standard; text-size-adjust: auto;">Click on the select the backgrounf color box</span></p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	<span style="font-family: -webkit-standard; text-size-adjust: auto;">User must able to select the color and selected color should be displayed</span></p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[10]]></step_number>
+	<actions><![CDATA[<p>
+	<span style="font-family: -webkit-standard; text-size-adjust: auto;">Enter the &quot;App name&quot; and click Submit</span></p>
+]]></actions>
+	<expectedresults><![CDATA[<ul style="font-family: -webkit-standard; text-size-adjust: auto;">
+	<li>
+		Success message should be displayed and Video file should be created</li>
+	<li>
+		User should be on the list view</li>
+	<li>
+		Newly created Video should have the Processing status</li>
+</ul>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="44373" name="Create a Tutorial Video for Startegy Game Genre">
+	<node_order><![CDATA[1013]]></node_order>
+	<externalid><![CDATA[15]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>
+	Create a Tutorial Video for Startegy Game Genre</p>
+]]></summary>
+	<preconditions><![CDATA[<p>
+	User should logged into Mission Ctrl</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+	<span style="font-family: -webkit-standard; text-size-adjust: auto;">Login to Mission Ctrl</span></p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	<span style="font-family: -webkit-standard; text-size-adjust: auto;">User should logged into Mission and should be on the Campaigns Page</span></p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>
+	<span style="font-family: -webkit-standard; text-size-adjust: auto;">Navigate to Automation Page</span></p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	<span style="font-family: -webkit-standard; text-size-adjust: auto;">User should be on the Automation page with &quot;Create Video&quot;button</span></p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>
+	<span style="font-family: -webkit-standard; text-size-adjust: auto;">Click on &quot;Create Video&quot;</span></p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	<span style="font-family: -webkit-standard; text-size-adjust: auto;">User should be directed to the Automation Create Page</span></p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[4]]></step_number>
+	<actions><![CDATA[<ul style="font-family: -webkit-standard; text-size-adjust: auto;">
+	<li>
+		Enter the Video Name</li>
+	<li>
+		Select Tutorial Video from the Video Template dropdown</li>
+</ul>
+]]></actions>
+	<expectedresults><![CDATA[<p style="font-family: -webkit-standard; text-size-adjust: auto;">
+	Entered information should be displayed</p>
+<p style="font-family: -webkit-standard; text-size-adjust: auto;">
+	&quot;Choose Video File&quot; and &quot;Game Genre&quot; drop down fields should be visible.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[5]]></step_number>
+	<actions><![CDATA[<p>
+	<span style="font-family: -webkit-standard; text-size-adjust: auto;">Select the Video from the available Videos</span></p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	<span style="font-family: -webkit-standard; text-size-adjust: auto;">Selected video should be dispalyed in the appropriate field</span></p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[6]]></step_number>
+	<actions><![CDATA[<p>
+	<span style="font-family: -webkit-standard; text-size-adjust: auto;">Select the &quot;Strategy&quot; Game Genre</span></p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	<span style="font-family: -webkit-standard; text-size-adjust: auto;">Strategy should be displayed</span></p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[7]]></step_number>
+	<actions><![CDATA[<p>
+	<span style="font-family: -webkit-standard; text-size-adjust: auto;">Click Submit</span></p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	<span style="font-family: -webkit-standard; text-size-adjust: auto;">Tutorial Automatrion Video should be created and user should be directed to the list view.</span></p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="44375" name="Create a Tutorial Video for Brand Game Genre">
+	<node_order><![CDATA[1014]]></node_order>
+	<externalid><![CDATA[16]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>
+	Create a Tutorial Video for Brand Game Genre</p>
+]]></summary>
+	<preconditions><![CDATA[<p>
+	User should logged into Mission Ctrl</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+	<span style="font-family: -webkit-standard; text-size-adjust: auto;">Login to Mission Ctrl</span></p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	<span style="font-family: -webkit-standard; text-size-adjust: auto;">User should logged into Mission and should be on the Campaigns Page</span></p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>
+	<span style="font-family: -webkit-standard; text-size-adjust: auto;">Navigate to Automation Page</span></p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	<span style="font-family: -webkit-standard; text-size-adjust: auto;">User should be on the Automation page with &quot;Create Video&quot;button</span></p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>
+	<span style="font-family: -webkit-standard; text-size-adjust: auto;">Click on &quot;Create Video&quot;</span></p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	<span style="font-family: -webkit-standard; text-size-adjust: auto;">User should be directed to the Automation Create Page</span></p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[4]]></step_number>
+	<actions><![CDATA[<ul style="font-family: -webkit-standard; text-size-adjust: auto;">
+	<li>
+		Enter the Video Name</li>
+	<li>
+		Select Tutorial Video from the Video Template dropdown</li>
+</ul>
+]]></actions>
+	<expectedresults><![CDATA[<p style="font-family: -webkit-standard; text-size-adjust: auto;">
+	Entered information should be displayed</p>
+<p style="font-family: -webkit-standard; text-size-adjust: auto;">
+	&quot;Choose Video File&quot; and &quot;Game Genre&quot; drop down fields should be visible.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[5]]></step_number>
+	<actions><![CDATA[<p>
+	<span style="font-family: -webkit-standard; text-size-adjust: auto;">Select the Video from the available Videos</span></p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	<span style="font-family: -webkit-standard; text-size-adjust: auto;">Selected video should be dispalyed in the appropriate field</span></p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[6]]></step_number>
+	<actions><![CDATA[<p>
+	<span style="font-family: -webkit-standard; text-size-adjust: auto;">Select the &quot;Brand&quot; Game Genre</span></p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	<span style="font-family: -webkit-standard; text-size-adjust: auto;">Brand should be displayed</span></p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[7]]></step_number>
+	<actions><![CDATA[<p>
+	<span style="font-family: -webkit-standard; text-size-adjust: auto;">Click Submit</span></p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	<span style="font-family: -webkit-standard; text-size-adjust: auto;">Tutorial Automatrion Video should be created and user should be directed to the list view.</span></p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="44377" name="Create a Tutorial Video for Casino Game Genre">
+	<node_order><![CDATA[1015]]></node_order>
+	<externalid><![CDATA[17]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>
+	Create a Tutorial Video for Casino Game Genre</p>
+]]></summary>
+	<preconditions><![CDATA[<p>
+	User should logged into Mission Ctrl</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+	<span style="font-family: -webkit-standard; text-size-adjust: auto;">Login to Mission Ctrl</span></p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	<span style="font-family: -webkit-standard; text-size-adjust: auto;">User should logged into Mission and should be on the Campaigns Page</span></p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>
+	<span style="font-family: -webkit-standard; text-size-adjust: auto;">Navigate to Automation Page</span></p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	<span style="font-family: -webkit-standard; text-size-adjust: auto;">User should be on the Automation page with &quot;Create Video&quot;button</span></p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>
+	<span style="font-family: -webkit-standard; text-size-adjust: auto;">Click on &quot;Create Video&quot;</span></p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	<span style="font-family: -webkit-standard; text-size-adjust: auto;">User should be directed to the Automation Create Page</span></p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[4]]></step_number>
+	<actions><![CDATA[<ul style="font-family: -webkit-standard; text-size-adjust: auto;">
+	<li>
+		Enter the Video Name</li>
+	<li>
+		Select Tutorial Video from the Video Template dropdown</li>
+</ul>
+]]></actions>
+	<expectedresults><![CDATA[<p style="font-family: -webkit-standard; text-size-adjust: auto;">
+	Entered information should be displayed</p>
+<p style="font-family: -webkit-standard; text-size-adjust: auto;">
+	&quot;Choose Video File&quot; and &quot;Game Genre&quot; drop down fields should be visible.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[5]]></step_number>
+	<actions><![CDATA[<p>
+	<span style="font-family: -webkit-standard; text-size-adjust: auto;">Select the Video from the available Videos</span></p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	<span style="font-family: -webkit-standard; text-size-adjust: auto;">Selected video should be dispalyed in the appropriate field</span></p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[6]]></step_number>
+	<actions><![CDATA[<p>
+	<span style="font-family: -webkit-standard; text-size-adjust: auto;">Select the &quot;Casino&quot; Game Genre</span></p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	<span style="font-family: -webkit-standard; text-size-adjust: auto;">Casino should be displayed</span></p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[7]]></step_number>
+	<actions><![CDATA[<p>
+	<span style="font-family: -webkit-standard; text-size-adjust: auto;">Click Submit</span></p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	<span style="font-family: -webkit-standard; text-size-adjust: auto;">Tutorial Automatrion Video should be created and user should be directed to the list view.</span></p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="44379" name="Create a Tutorial Video for Casual Game Genre">
+	<node_order><![CDATA[1016]]></node_order>
+	<externalid><![CDATA[18]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>
+	Create a Tutorial Video for Casual Game Genre</p>
+]]></summary>
+	<preconditions><![CDATA[<p>
+	User should logged into Mission Ctrl</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+	<span style="font-family: -webkit-standard; text-size-adjust: auto;">Login to Mission Ctrl</span></p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	<span style="font-family: -webkit-standard; text-size-adjust: auto;">User should logged into Mission and should be on the Campaigns Page</span></p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>
+	<span style="font-family: -webkit-standard; text-size-adjust: auto;">Navigate to Automation Page</span></p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	<span style="font-family: -webkit-standard; text-size-adjust: auto;">User should be on the Automation page with &quot;Create Video&quot;button</span></p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>
+	<span style="font-family: -webkit-standard; text-size-adjust: auto;">Click on &quot;Create Video&quot;</span></p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	<span style="font-family: -webkit-standard; text-size-adjust: auto;">User should be directed to the Automation Create Page</span></p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[4]]></step_number>
+	<actions><![CDATA[<ul style="font-family: -webkit-standard; text-size-adjust: auto;">
+	<li>
+		Enter the Video Name</li>
+	<li>
+		Select Tutorial Video from the Video Template dropdown</li>
+</ul>
+]]></actions>
+	<expectedresults><![CDATA[<p style="font-family: -webkit-standard; text-size-adjust: auto;">
+	Entered information should be displayed</p>
+<p style="font-family: -webkit-standard; text-size-adjust: auto;">
+	&quot;Choose Video File&quot; and &quot;Game Genre&quot; drop down fields should be visible.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[5]]></step_number>
+	<actions><![CDATA[<p>
+	<span style="font-family: -webkit-standard; text-size-adjust: auto;">Select the Video from the available Videos</span></p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	<span style="font-family: -webkit-standard; text-size-adjust: auto;">Selected video should be dispalyed in the appropriate field</span></p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[6]]></step_number>
+	<actions><![CDATA[<p>
+	<span style="font-family: -webkit-standard; text-size-adjust: auto;">Select the &quot;Casual&quot; Game Genre</span></p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	<span style="font-family: -webkit-standard; text-size-adjust: auto;">Casual should be displayed</span></p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[7]]></step_number>
+	<actions><![CDATA[<p>
+	<span style="font-family: -webkit-standard; text-size-adjust: auto;">Click Submit</span></p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	<span style="font-family: -webkit-standard; text-size-adjust: auto;">Tutorial Automatrion Video should be created and user should be directed to the list view.</span></p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="44384" name="Check Submit Functionality">
+	<node_order><![CDATA[1017]]></node_order>
+	<externalid><![CDATA[19]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[]]></summary>
+	<preconditions><![CDATA[]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+	Check the functionality of the &quot;Submit &quot;</p>
+]]></actions>
+	<expectedresults><![CDATA[<ul>
+	<li>
+		Button should be enable</li>
+	<li>
+		<span style="color: rgb(51, 51, 51); font-family: &quot;Open Sans&quot;, OpenSansSemibold, Arial, sans-serif; font-size: 13px; background-color: rgb(255, 255, 255);">Click on submit it should be show confirmation message&quot;submit successfully</span></li>
+</ul>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="44386" name="Check Cancel Functionality">
+	<node_order><![CDATA[1018]]></node_order>
+	<externalid><![CDATA[20]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[]]></summary>
+	<preconditions><![CDATA[]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+	Check the Functionality of Cancel</p>
+]]></actions>
+	<expectedresults><![CDATA[<ul>
+	<li>
+		<span style="color: rgb(51, 51, 51); font-family: &quot;Open Sans&quot;, OpenSansSemibold, Arial, sans-serif; font-size: 13px; background-color: rgb(255, 255, 255);">It should be enable&nbsp;</span></li>
+	<li>
+		<span style="color: rgb(51, 51, 51); font-family: &quot;Open Sans&quot;, OpenSansSemibold, Arial, sans-serif; font-size: 13px; background-color: rgb(255, 255, 255);">Check when clicking on cancel it should it should go to home page, Automation page</span></li>
+</ul>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="44501" name="Verify the &quot;Processing&quot; Status">
+	<node_order><![CDATA[1019]]></node_order>
+	<externalid><![CDATA[22]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>
+	Verify the &quot;Processing&quot; Status</p>
+]]></summary>
+	<preconditions><![CDATA[<p>
+	Video should be created</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+	Login to Mission Ctrl</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	User should logged into Mission Ctrl</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>
+	Create a Video File with valid information&nbsp;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	Video should be created and user should be directed to the list view.</p>
+<p>
+	It should have the Name of the&nbsp;</p>
+<ul>
+	<li>
+		Name of the Video created</li>
+	<li>
+		Type</li>
+	<li>
+		Processing Status</li>
+</ul>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="44503" name="Verify the &quot;Active&quot; status">
+	<node_order><![CDATA[1020]]></node_order>
+	<externalid><![CDATA[23]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>
+	Checkthe Active Status</p>
+]]></summary>
+	<preconditions><![CDATA[<p>
+	Video should be created</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+	Login to Mission Ctrl</p>
+<p>
+	https://ctrl-devel.vungle.com/</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	User should logged into Mission Ctrl</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>
+	Create a Video with valid information&nbsp;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	Video should be created and status of the Video should be &quot;Processing&quot;</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>
+	Verify the Active Status</p>
+]]></actions>
+	<expectedresults><![CDATA[<ul>
+	<li>
+		After few minutes, the status of the Video created should change to &quot;Active&quot;</li>
+	<li>
+		&quot;Publish to Assets&quot; link should appear in the list view</li>
+</ul>
+<p>
+	&nbsp;</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="44505" name="Verify the Error Status">
+	<node_order><![CDATA[1021]]></node_order>
+	<externalid><![CDATA[24]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>
+	Verify the Error Status</p>
+]]></summary>
+	<preconditions><![CDATA[<p>
+	Video should be created</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+	Login to Mission Ctrl</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	User should logged into Mission ctrl</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<ul>
+	<li>
+		Create a Video File using Upload option&nbsp; following the test case MC-CrAu-4.</li>
+	<li>
+		Upload an image instead of a Video</li>
+	<li>
+		Click Submit</li>
+</ul>
+]]></actions>
+	<expectedresults><![CDATA[<ul>
+	<li>
+		Video should be created and user should be dirceted to the listr view.</li>
+	<li>
+		Video should be in &quot;Processing&quot; status</li>
+	<li>
+		After few minutes, the staus should chaange to &quot;Error&quot; and should display Code 760 in red</li>
+</ul>
+<p>
+	&nbsp;</p>
+<p>
+	&nbsp;</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="44514" name="Verify the Pagination">
+	<node_order><![CDATA[1022]]></node_order>
+	<externalid><![CDATA[25]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>
+	Verify the Pagination on the results display page</p>
+<div>
+	&nbsp;</div>
+]]></summary>
+	<preconditions><![CDATA[<p>
+	Page should have atleast 5 records</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+	Verify the Pagination on the Automation Page for the following:</p>
+<ul>
+	<li>
+		<span style="color: rgb(51, 51, 51); font-family: &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size: 14px; background-color: rgb(255, 255, 255);">Check when pagination displaying.</span></li>
+	<li>
+		<span style="color: rgb(51, 51, 51); font-family: &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size: 14px; background-color: rgb(255, 255, 255);">Check the paging &#39;previous&#39; and &#39;Next&#39; link status on first page.&nbsp;</span></li>
+	<li>
+		<span style="color: rgb(51, 51, 51); font-family: &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size: 14px; background-color: rgb(255, 255, 255);">Click on &#39;Previous&#39; link from second or other page, except first.</span></li>
+	<li>
+		<span style="color: rgb(51, 51, 51); font-family: &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size: 14px; background-color: rgb(255, 255, 255);">Check for the page number</span></li>
+</ul>
+]]></actions>
+	<expectedresults><![CDATA[<ul>
+	<li>
+		<font color="#333333" face="Helvetica Neue, Helvetica, Arial, sans-serif"><span style="font-size: 14px; background-color: rgb(255, 255, 255);">Pagination is displaying</span></font></li>
+	<li>
+		<font color="#333333" face="Helvetica Neue, Helvetica, Arial, sans-serif"><span style="font-size: 14px; background-color: rgb(255, 255, 255);">Previous link should be disable and next link should be enable, if the records more than default records per page</span></font></li>
+</ul>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+</testsuite></testsuite>

@@ -1,0 +1,899 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite id="" name="" >
+<node_order><![CDATA[]]></node_order>
+<details><![CDATA[]]></details> 
+<testsuite id="48108" name="UI Testcases" >
+<node_order><![CDATA[1]]></node_order>
+<details><![CDATA[]]></details> 
+
+<testcase internalid="48110" name="Verify the Alerts bell on the Dashboard">
+	<node_order><![CDATA[1000]]></node_order>
+	<externalid><![CDATA[1]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>
+	Verify the Alerts icon on the AdvertiserSelfServe Grow</p>
+]]></summary>
+	<preconditions><![CDATA[<p>
+	User should Login to Grow</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+	Verify the Alerts on Dashboard</p>
+<ol>
+	<li>
+		Login to Dashboard</li>
+</ol>
+]]></actions>
+	<expectedresults><![CDATA[<ol>
+	<li>
+		Bell icon should appear on the homepage with&nbsp;</li>
+</ol>
+<ul>
+	<li>
+		Alerts with red dot which are not read</li>
+</ul>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="48112" name="Verify the Unread Alert">
+	<node_order><![CDATA[1001]]></node_order>
+	<externalid><![CDATA[2]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>
+	Verify the Unread Alert</p>
+]]></summary>
+	<preconditions><![CDATA[<p>
+	User should Login to Grow</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+	Verify the Unread Alert</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	Red dot should appear for Unread Alerts.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="48114" name="Verify the Read Alert">
+	<node_order><![CDATA[1002]]></node_order>
+	<externalid><![CDATA[3]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>
+	Verify the Read Alert</p>
+]]></summary>
+	<preconditions><![CDATA[<p>
+	User should Login to Grow</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<ol>
+	<li>
+		Verify the Alert that is Read and&nbsp; Resolved</li>
+</ol>
+]]></actions>
+	<expectedresults><![CDATA[<ol>
+	<li>
+		Red dot next to the Alert should change the color and Alert should not appear next day</li>
+</ol>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="48116" name="Verify the Navigation of the Total Account funds Alert">
+	<node_order><![CDATA[1003]]></node_order>
+	<externalid><![CDATA[4]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>
+	Check the navigation of Total Account Funds Alert</p>
+]]></summary>
+	<preconditions><![CDATA[<p>
+	User should Lgin to Grow</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+	Verify the Destination of the Total Account funds Alert&nbsp;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	after user click on Total Funds&nbsp; Alert, user should redirected to the Account Info Page&nbsp;</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="48121" name="Verify Alert direct the user to correct Campaign">
+	<node_order><![CDATA[1004]]></node_order>
+	<externalid><![CDATA[5]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>
+	Verify Alert direct the user to correct Campaign</p>
+]]></summary>
+	<preconditions><![CDATA[<p>
+	User should logged into Grow</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+	Verify Alert direct to the correct Campaign</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	When clicked on the Alert user should be directed to the Campaign that specified in the Alert</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="48123" name="Verify the Alert Text">
+	<node_order><![CDATA[1005]]></node_order>
+	<externalid><![CDATA[6]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>
+	Verify the Alert Text</p>
+]]></summary>
+	<preconditions><![CDATA[<p>
+	User shjould Logged into Grow</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+
+</testcase>
+
+<testcase internalid="48156" name="Verify the navigation of the Campaign tracking installs Alert">
+	<node_order><![CDATA[1006]]></node_order>
+	<externalid><![CDATA[15]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>
+	Verify the navigation of the Campaign tracking installs</p>
+]]></summary>
+	<preconditions><![CDATA[<p>
+	User should logged into Grow</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+	Verify the Destination of the Campaign Tracking Installs Alert&nbsp;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	after user click on Campaign Tracking Installs Alert, user should redirected to the Tracking page of the Campaign.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="48158" name="Verify the navigation of the Decrease in Win Rate Alert">
+	<node_order><![CDATA[1007]]></node_order>
+	<externalid><![CDATA[16]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>
+	Verify the navigation of the Decrease in Win Rate Alert</p>
+]]></summary>
+	<preconditions><![CDATA[<p>
+	User should Logged into Grow</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+	Verify the Destinmation of the Win Rate Alert</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	after user click onWin Rate Alert, user should redirected to the Bid/Budget Page.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="48160" name="Verify the navigation of the Decrease in Spend Alert">
+	<node_order><![CDATA[1008]]></node_order>
+	<externalid><![CDATA[17]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>
+	Verify the navigation of the Decrease in Spend Alert</p>
+]]></summary>
+	<preconditions><![CDATA[<p>
+	User should logged into Grow</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+	Verify the Destination of the Decrease in Spend Alert</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	after user click on Decrease in Spend&nbsp; Alert, user should redirected to the Bid/Budget Page.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="48162" name="Verify the navigation Campaign additional funds Alert">
+	<node_order><![CDATA[1009]]></node_order>
+	<externalid><![CDATA[18]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>
+	Verify the navigation Campaign additional funds Alert</p>
+]]></summary>
+	<preconditions><![CDATA[<p>
+	User should logged into Grow</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<ol>
+	<li>
+		Verify the Destination of the Campaign additional Funds Alert</li>
+</ol>
+]]></actions>
+	<expectedresults><![CDATA[<ol>
+	<li>
+		User should be redirected to the Campaign Bid/Budget Page to update the Budget and save the Campaign.</li>
+</ol>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="48164" name="Verify the navigation of the upload new creatives Alert">
+	<node_order><![CDATA[1010]]></node_order>
+	<externalid><![CDATA[19]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>
+	Verify the navigation of the new creatives Alert</p>
+]]></summary>
+	<preconditions><![CDATA[<p>
+	User should logged into Grow</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<ol>
+	<li>
+		Verify the Destination of the New Creatives Alert after user clcik on Alert</li>
+</ol>
+]]></actions>
+	<expectedresults><![CDATA[<ol>
+	<li>
+		User should be redirected to the Creative upload page, and once a Creative is uploaded Alert should not trigger again next day</li>
+</ol>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="48166" name="Verify the navigation of the Daily cap Hit  Alert">
+	<node_order><![CDATA[1011]]></node_order>
+	<externalid><![CDATA[20]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>
+	Verify the navigation of the Daily cap Hit&nbsp; Alert</p>
+]]></summary>
+	<preconditions><![CDATA[<p>
+	<span style="font-family: &quot;Trebuchet MS&quot;, Arial, Verdana, sans-serif; font-size: 11.7px; background-color: rgb(238, 238, 238);">User should Logged into Grow</span></p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+	<span style="font-family: &quot;Trebuchet MS&quot;, Arial, Verdana, sans-serif; font-size: 11.7px; background-color: rgb(238, 238, 238);">Verify the navigation of the Daily cap Hit&nbsp; Alert</span></p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	User should be redirected to the Bid/Budget Page to update the Daily Spend Limit</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+</testsuite><testsuite id="48109" name="Functional TestCases" >
+<node_order><![CDATA[2]]></node_order>
+<details><![CDATA[]]></details> 
+
+<testcase internalid="48125" name="Check the Functionality of Additional Funds to PostPayAccount Alert">
+	<node_order><![CDATA[0]]></node_order>
+	<externalid><![CDATA[7]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>
+	Check the Functionality of Additional Funds to PostPayAccount Alert</p>
+]]></summary>
+	<preconditions><![CDATA[<p>
+	Account should be Postpay Account</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<ol>
+	<li>
+		Verify the Alert for the Post Pay Account</li>
+</ol>
+]]></actions>
+	<expectedresults><![CDATA[<ol>
+	<li>
+		Alerts should not trigger for the post pay account&nbsp;</li>
+</ol>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="48140" name="Check the Functionality of Additional Funds to PrePayAccount Alert">
+	<node_order><![CDATA[1]]></node_order>
+	<externalid><![CDATA[14]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>
+	Check the Functionality of Additional Funds to PrePayAccount Alert</p>
+]]></summary>
+	<preconditions><![CDATA[<p>
+	Account should be Prepay Account.</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<ol>
+	<li>
+		Verify the reasons for the Additional Funds to Account Alert to trigger</li>
+</ol>
+]]></actions>
+	<expectedresults><![CDATA[<ol>
+	<li>
+		Additional Funds Alert should trigger if the Accounts funds are&nbsp;</li>
+</ol>
+<ul>
+	<li>
+		Low (If the Accounts remaining are &lt;$500)</li>
+	<li>
+		Zero</li>
+	<li>
+		Negative</li>
+</ul>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>
+	Check for Alert trigger when the Budget is &lt;$ 500 for Prepay Account by</p>
+<ol>
+	<li>
+		Login to Mission Ctrl</li>
+</ol>
+<ul>
+	<li>
+		Create&nbsp; PrePay&nbsp; Account with $5000 as Lifetime Funds</li>
+	<li>
+		Login to Grow as the user of the above Account&nbsp;</li>
+	<li>
+		Create a Campaign with Bit Type as Impression and Bid Value 0.02</li>
+	<li>
+		Configure the E2E test data and using API testing send the request to point to the above created Campaign until the remaining budget comes down to &lt;500.</li>
+</ul>
+<ol>
+	<li>
+		or Update the &quot;totalspent&quot; field of the Campaign in the DB by&nbsp;</li>
+</ol>
+<ul>
+	<li>
+		Create&nbsp; a Campaign in the above Account, with Total Spend value 5000</li>
+	<li>
+		Update the &quot;totalspent&quot; field &nbsp;to 4600 in the DB so that the Budget Remaining will be 400 which is less tahn &lt;500</li>
+	<li>
+		Wait for 24 hrs and check for the Alert</li>
+</ul>
+<p>
+	Test Data:</p>
+<p>
+	Account ID:&nbsp;5a6100bb72095a0011f36987</p>
+<p>
+	Campaign ID :&nbsp;5c5dfb357732bd001034708a</p>
+<p>
+	Remaining Funds = Lifetime Funds - OverallSpent(All the Campaigns under the Account)</p>
+<p>
+	Need to update the TotalSpent field of the CAmpaign in the DB</p>
+]]></actions>
+	<expectedresults><![CDATA[<ol>
+	<li>
+		Additional funds Alert should trigger.</li>
+	<li>
+		Alert should trigger</li>
+</ol>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>
+	Check the functionality of the Alert after adding funds to the Account.</p>
+<ol>
+	<li>
+		​Click on Alert</li>
+	<li>
+		Add more funds and save</li>
+	<li>
+		Check for the Alert after 24hrs</li>
+</ol>
+]]></actions>
+	<expectedresults><![CDATA[<ol>
+	<li>
+		Alert should be greyed out and User should be directed to the Accounts page</li>
+	<li>
+		Account Funds should be updated</li>
+	<li>
+		Alert should not trigger again next day</li>
+</ol>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="48127" name="Check the functionality of Campaign tracking installs Alert">
+	<node_order><![CDATA[2]]></node_order>
+	<externalid><![CDATA[8]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>
+	Campaign tracking installs Alert</p>
+]]></summary>
+	<preconditions><![CDATA[<p>
+	Create a CPI Campaign</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<ol>
+	<li>
+		Verify the reasons for the Campaign tracking Installs Alert to trigger</li>
+</ol>
+]]></actions>
+	<expectedresults><![CDATA[<ol>
+	<li>
+		Campaign tracking Installs Alert should trigger if&nbsp;<span style="font-size: 11pt; font-family: Arial; font-variant-numeric: normal; font-variant-east-asian: normal; vertical-align: baseline; white-space: pre-wrap;">CPI Campaign with &gt; 100 clicks and exactly 0 installs</span></li>
+</ol>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>
+	Check for the&nbsp; Campaign tracking Installs Alert by</p>
+<ol>
+	<li>
+		Modify the the field &quot;clicks&quot; in the Mongo DB for&nbsp;a Campaign you want to test the Alert&nbsp; to &gt;100 and&nbsp; 0 Installs&nbsp;</li>
+	<li>
+		Configure the testdata on the AdvertiserSelfServe and Perform the E2E test using API Testing&nbsp; and send the request more than 100 times and check</li>
+	<li>
+		Modify the the field &quot;clicks&quot; in the Mongo DB for&nbsp; a Campaign you want to test the Alert&nbsp; to &gt;100 and&nbsp; and Installs &gt;0</li>
+</ol>
+]]></actions>
+	<expectedresults><![CDATA[<ol>
+	<li>
+		Alert should show up and when clicking on Alert should take the user to the tracking page of the Campaign</li>
+	<li>
+		Alert should trigger and user should be directed to the Tracking Page.</li>
+	<li>
+		Alert should not trigger</li>
+</ol>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="48129" name="Check the Functionality of Decrease in Win rate Alert">
+	<node_order><![CDATA[3]]></node_order>
+	<externalid><![CDATA[9]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>
+	Check the Functionality of Decrease in Win rate Alert</p>
+]]></summary>
+	<preconditions><![CDATA[<p>
+	14 days of data should be available to test</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+	Verify the reasons for the Win Rate Alert</p>
+<p>
+	&nbsp;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	WinRate for a campaign has dropped by &gt;30% WoW.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>
+	Verify the Winrate for a Campaign&nbsp; WoW</p>
+<ol>
+	<li>
+		Compare the Average Win Rate of First Week and Second Week and if it is dropped by &gt;30% then&nbsp;</li>
+	<li>
+		Compare the Average Win Rate of First Week and Second Week and if it is dropped by &gt;20% then&nbsp;</li>
+	<li>
+		Compare the Average Win Rate of First Week and Second Week and if it is dropped by &gt;5% then&nbsp;</li>
+</ol>
+]]></actions>
+	<expectedresults><![CDATA[<ol>
+	<li>
+		Win Rate Alert should trigger</li>
+	<li>
+		Alert should not trigger</li>
+</ol>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="48131" name="Check the functionality of Decrease in Spend Alert">
+	<node_order><![CDATA[4]]></node_order>
+	<externalid><![CDATA[10]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>
+	Check the functionality of Decrease in Spend Alert</p>
+]]></summary>
+	<preconditions><![CDATA[<p>
+	14 days of data should be available to test this Alert</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<ol>
+	<li>
+		Verify the reasons for the Alert to trigger</li>
+</ol>
+]]></actions>
+	<expectedresults><![CDATA[<ol>
+	<li>
+		If the spend for a Campaign has dropped by a large amount</li>
+</ol>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>
+	Verify the steps&nbsp; to test for the Decrease in Spend Alert</p>
+<ol>
+	<li>
+		Compare the two weeks spend and if the previous week spend is &gt;$500 then&nbsp;</li>
+	<li>
+		Compare the two weeks spend and if the previous week spend is &lt;$500 then&nbsp;</li>
+</ol>
+]]></actions>
+	<expectedresults><![CDATA[<ol>
+	<li>
+		Alert should Trigger and user should be directed to the Campaign Bid/Budget Page</li>
+	<li>
+		Alert should not trigger</li>
+</ol>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="48133" name="Check the Functionality of Additional Funds to Campaign Alert">
+	<node_order><![CDATA[5]]></node_order>
+	<externalid><![CDATA[11]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[]]></summary>
+	<preconditions><![CDATA[]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<ol>
+	<li>
+		Verify the reasons for the Additional Funds to Account Alert to trigger</li>
+</ol>
+]]></actions>
+	<expectedresults><![CDATA[<ol>
+	<li>
+		Additional Funds Alert should trigger if the Campaign funds are&nbsp;</li>
+</ol>
+<ul>
+	<li>
+		If the Campaign funds remaining are &lt;$100</li>
+</ul>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>
+	Check for Alert trigger when the Campaign fund is &lt;100 by</p>
+<ol>
+	<li>
+		Modify the &quot;Totalspendlimit&quot; and &quot;Totalspent&quot; fields for a Campaign&nbsp; in the QA&nbsp; Mongo DB so that Budget Remaining field on the UI will be&nbsp; &lt;100 or zero or negative .</li>
+	<li>
+		Login to Grow and check for the Alert</li>
+</ol>
+<p>
+	Calculation of Budget Remaining :&nbsp;</p>
+<p>
+	totalSpendLimit - totalSpent</p>
+<p>
+	&nbsp;</p>
+]]></actions>
+	<expectedresults><![CDATA[<ol>
+	<li>
+		Alert should trigger for the Campaign for which the funds are less than 100 and user should be directed to the Campaign Bid/Budget Page when clicked on Alert.</li>
+</ol>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="48135" name="Check the Functionality of Upload new Creatives Alert">
+	<node_order><![CDATA[6]]></node_order>
+	<externalid><![CDATA[12]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>
+	Test the functionality of new Creatives Alert</p>
+]]></summary>
+	<preconditions><![CDATA[<p>
+	Campaign should not have new Creatives</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<ol>
+	<li>
+		Verify the reasons for Upload new Creatives Alert to trigger</li>
+</ol>
+]]></actions>
+	<expectedresults><![CDATA[<ol>
+	<li>
+		Upload new Creatives Alert should trigger when no new creative has been added in 60 days.
+		<div>
+			&nbsp;</div>
+		<ul>
+		</ul>
+	</li>
+</ol>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>
+	Check for Alert trigger when no new Creatives has been added to the Application&nbsp; in 60 days by</p>
+<ol>
+	<li>
+		If this value of theis query&nbsp; comes back 0 that means there were 0 creatives created in the last 60 days for the defined Application.</li>
+</ol>
+<p>
+	db.creatives.find({application: ObjectId(&quot;50f043f9f96aab216b00e6ee&quot;), created: {$gte: new Date(new Date().setDate(new Date().getDate() - 60))}}).count()</p>
+<ol>
+	<li>
+		Finding all the Applications with zero Creatives in last 60 days by using following query</li>
+</ol>
+<p>
+	var recent = db.creatives.distinct(&quot;application&quot;, {created: {$gte: new Date(new Date().setDate(new Date().getDate() - 60))}});</p>
+]]></actions>
+	<expectedresults><![CDATA[<ol>
+	<li>
+		Alert should trigger for the Applicatio, user should be directed to Creative upload page.</li>
+</ol>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="48137" name="Check the Functionality of Daily Cap Hit Alert">
+	<node_order><![CDATA[7]]></node_order>
+	<externalid><![CDATA[13]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>
+	Check the Functionality of Daily Cap Hit Alert</p>
+]]></summary>
+	<preconditions><![CDATA[]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<ol>
+	<li>
+		Verify the reasons for the Daily Cap Hit Alert to trigger</li>
+</ol>
+]]></actions>
+	<expectedresults><![CDATA[<ol>
+	<li>
+		Daily Cap Alert should trigger&nbsp;</li>
+</ol>
+<ul>
+	<li>
+		if the Campaign has reached the Daily Spend Limit</li>
+</ul>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>
+	Check for the Daily Cap Alert</p>
+<ol>
+	<li>
+		Create a Campaign in Grow with Daily Spend limit as 100.</li>
+	<li>
+		Pull above created Campaign in DB Mongo and modify the value of the field &quot;dailySpent&quot; to be greater than Daily Spend Limit, 100 or&nbsp; dailySpendLimit - dailySpent &lt;= 0</li>
+</ol>
+]]></actions>
+	<expectedresults><![CDATA[<ol>
+	<li>
+		Campaign should be created</li>
+	<li>
+		Daily spent value should be updated in DB and Daily Cap Alert should trigger in the Dashboard.</li>
+</ol>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="48387" name="Verify the Daily Cap Alert for uncappped daily cap">
+	<node_order><![CDATA[8]]></node_order>
+	<externalid><![CDATA[21]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>
+	Verify the Daily Cap Alert for uncappped daily cap</p>
+]]></summary>
+	<preconditions><![CDATA[<p>
+	Daily Cap should be uncapped</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+	<span style="font-family: &quot;Trebuchet MS&quot;, Arial, Verdana, sans-serif; font-size: 11.7px; background-color: rgb(238, 238, 238);">Verify the Daily Cap Alert for uncappped daily cap</span></p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	Daily CAp Alert should not trigger for the Campaign&nbsp; whose Daily CAp limit is uncapped.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="48390" name="Verify the Alerts for Inactive Campaigns and Apps">
+	<node_order><![CDATA[9]]></node_order>
+	<externalid><![CDATA[22]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>
+	Verify the Alerts for Inactive Campaigns and Apps</p>
+]]></summary>
+	<preconditions><![CDATA[<p>
+	Campaigns and Apps should be Inactive</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+	<span style="font-family: &quot;Trebuchet MS&quot;, Arial, Verdana, sans-serif; font-size: 11.7px; background-color: rgb(238, 238, 238);">Verify the Alerts for Inactive Campaigns and Apps</span></p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	Alerts should not trigger for Inactive/Archived CAmpaigns and Applications.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+</testsuite></testsuite>

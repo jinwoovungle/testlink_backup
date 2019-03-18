@@ -1,0 +1,747 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite id="" name="" >
+<node_order><![CDATA[]]></node_order>
+<details><![CDATA[]]></details> 
+<testsuite id="37637" name="UI Test Cases" >
+<node_order><![CDATA[1]]></node_order>
+<details><![CDATA[]]></details> 
+
+<testcase internalid="37639" name="Check for the new Ad Format in the Publisher App">
+	<node_order><![CDATA[1000]]></node_order>
+	<externalid><![CDATA[1]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>
+	New Adformat at the Publisher level.</p>
+]]></summary>
+	<preconditions><![CDATA[<p>
+	Login to Legacy Dashboard as Vungle Admin.</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<ol>
+	<li>
+		Login to DAshboard as Admin</li>
+	<li>
+		Create New Application</li>
+	<li>
+		Verify the Pub App details page</li>
+</ol>
+]]></actions>
+	<expectedresults><![CDATA[<ol>
+	<li>
+		Logged into Dashboard</li>
+	<li>
+		Pub App should be created</li>
+	<li>
+		Pub App should have following Ad Formats</li>
+</ol>
+<ul>
+	<li>
+		Vungle ads</li>
+	<li>
+		Dynamic Templates</li>
+	<li>
+		Exchange</li>
+	<li>
+		All ads</li>
+	<li>
+		3rd party ads</li>
+	<li>
+		Short-form</li>
+</ul>
+<ol>
+	<li>
+		Short-from should not be enabled for existing Apps</li>
+	<li>
+		New Ad format should show for all new Pub Apps</li>
+</ol>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="37641" name="Verify the Placement level New Ad Format setting - Interstitial">
+	<node_order><![CDATA[1001]]></node_order>
+	<externalid><![CDATA[2]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>
+	Placement level New Ad Format setting</p>
+]]></summary>
+	<preconditions><![CDATA[<p>
+	Publisher App must be created with &quot;Short Form&quot; as Supported Ad Format&nbsp;</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<ol>
+	<li>
+		Login to DAshboard as Admin</li>
+	<li>
+		Create New Pub Application with &quot;Short Form&quot; Supported Ad Format Type</li>
+	<li>
+		Verify the the Default Placement Ad Formats</li>
+</ol>
+]]></actions>
+	<expectedresults><![CDATA[<ol>
+	<li>
+		Logged into Dashboard</li>
+	<li>
+		Publisher App must be created</li>
+	<li>
+		If the Placement Type in Interstitial then&nbsp; the Placement supported Ad Format are&nbsp;</li>
+</ol>
+<ul>
+	<li>
+		<span id="docs-internal-guid-821ee000-659c-9966-597f-d782dd30206d"><span style="font-size: 12pt; font-family: &quot;Droid Sans Mono&quot;; font-variant-numeric: normal; font-variant-east-asian: normal; vertical-align: baseline; white-space: pre-wrap;">vungle_local, </span></span></li>
+	<li>
+		<span><span style="font-size: 12pt; font-family: &quot;Droid Sans Mono&quot;; font-variant-numeric: normal; font-variant-east-asian: normal; vertical-align: baseline; white-space: pre-wrap;">vungle_mraid, </span></span></li>
+	<li>
+		<span><span style="font-size: 12pt; font-family: &quot;Droid Sans Mono&quot;; font-variant-numeric: normal; font-variant-east-asian: normal; vertical-align: baseline; white-space: pre-wrap;">third_party, </span></span></li>
+	<li>
+		<span><span style="font-size: 12pt; font-family: &quot;Droid Sans Mono&quot;; background-color: rgb(255, 255, 0); font-variant-numeric: normal; font-variant-east-asian: normal; vertical-align: baseline; white-space: pre-wrap;">Short Form</span></span></li>
+</ul>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="37643" name="Verify the 'Skippable' checkbox for Rewarded Placements">
+	<node_order><![CDATA[1002]]></node_order>
+	<externalid><![CDATA[3]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>
+	Skippable checkbox for Rewarded Placements</p>
+]]></summary>
+	<preconditions><![CDATA[<p>
+	Login user must be Admin</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<ol>
+	<li>
+		Login to Dashboard</li>
+	<li>
+		Create a Publisher App and a Placement of type &quot;Rewarded&quot;</li>
+	<li>
+		Verify the &#39;Skippable&#39; check box</li>
+</ol>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	By default for Rewarded Type Placement Skippable is unchecked is&nbsp; and not editable.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="37645" name="Verify the 'Skippable' checkbox for Interstitial Placements">
+	<node_order><![CDATA[1003]]></node_order>
+	<externalid><![CDATA[4]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>
+	&#39;Skippable&#39; checkbox for Interstitial Placements</p>
+]]></summary>
+	<preconditions><![CDATA[<p>
+	Login user must be Admin</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<ol>
+	<li>
+		Login to Dashboard</li>
+	<li>
+		Create a Publisher App and a Placement of type &quot;Interstitial&quot;</li>
+	<li>
+		Verify the &#39;Skippable&#39; check box</li>
+</ol>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	By default for&nbsp; Interstitial Placement Skippable checkbox must be is Checked and editable by the users</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="37649" name="Verify the 'Skippable'checkbox for Native(Flex View) Palcements">
+	<node_order><![CDATA[1005]]></node_order>
+	<externalid><![CDATA[6]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>
+	&#39;Skippable&#39;checkbox for Native(Flex View) Palcements</p>
+]]></summary>
+	<preconditions><![CDATA[<p>
+	Login user must be Admin</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<ol>
+	<li>
+		Login to Dashboard</li>
+	<li>
+		Create a Publisher App and a Placement of type &quot; Flex View&quot;</li>
+	<li>
+		Verify the &#39;Skippable&#39; check box</li>
+</ol>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	Skippable checkbox should not be available to the native placements</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="37663" name="Verify the Creative level New Ad Format setting">
+	<node_order><![CDATA[1006]]></node_order>
+	<externalid><![CDATA[7]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[]]></summary>
+	<preconditions><![CDATA[]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[]]></actions>
+	<expectedresults><![CDATA[<p>
+	Creative modal window must have following options to select from</p>
+<ul>
+	<li>
+		Legacy Creative</li>
+	<li>
+		Dynamic Template Creative</li>
+	<li>
+		Short Form Creative</li>
+</ul>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="37695" name="Verify the Placement level New Ad Format setting - Rewarded">
+	<node_order><![CDATA[1011]]></node_order>
+	<externalid><![CDATA[20]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>
+	Placement Level Ad Format</p>
+]]></summary>
+	<preconditions><![CDATA[<p>
+	<span style="font-family: &quot;Trebuchet MS&quot;, Arial, Verdana, sans-serif; font-size: 11.7px; background-color: rgb(238, 238, 238);">Publisher App must be created with &quot;Short Form&quot; as Supported Ad Format&nbsp;</span></p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<ol>
+	<li>
+		Login to DAshboard as Admin</li>
+	<li>
+		Create New Pub Application with &quot;Short Form&quot; Supported Ad Format Type</li>
+	<li>
+		Verify the the Rewarded Placement Ad Formats</li>
+</ol>
+]]></actions>
+	<expectedresults><![CDATA[<ol>
+	<li>
+		Logged into Dashboard</li>
+	<li>
+		Publisher App must be created</li>
+	<li>
+		If the Placement Type in Interstitial then&nbsp; the Placement supported Ad Format are&nbsp;</li>
+</ol>
+<ul>
+	<li>
+		<span id="docs-internal-guid-821ee000-659c-9966-597f-d782dd30206d"><span style="font-size: 12pt; font-family: &quot;Droid Sans Mono&quot;; font-variant-numeric: normal; font-variant-east-asian: normal; vertical-align: baseline; white-space: pre-wrap;">vungle_local, </span></span></li>
+	<li>
+		<span style="font-size: 12pt; font-family: &quot;Droid Sans Mono&quot;; font-variant-numeric: normal; font-variant-east-asian: normal; vertical-align: baseline; white-space: pre-wrap;">vungle_mraid, </span></li>
+	<li>
+		<span style="font-size: 12pt; font-family: &quot;Droid Sans Mono&quot;; font-variant-numeric: normal; font-variant-east-asian: normal; vertical-align: baseline; white-space: pre-wrap;">third_party, </span></li>
+</ul>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="37697" name="Verify the Placement level New Ad Format setting - Native">
+	<node_order><![CDATA[1012]]></node_order>
+	<externalid><![CDATA[21]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>
+	<span style="font-family: &quot;Trebuchet MS&quot;, Arial, Verdana, sans-serif; font-size: 11.7px; background-color: rgb(238, 238, 238);">Placement level New Ad Format setting</span></p>
+]]></summary>
+	<preconditions><![CDATA[<p>
+	<span style="font-family: &quot;Trebuchet MS&quot;, Arial, Verdana, sans-serif; font-size: 11.7px; background-color: rgb(238, 238, 238);">Publisher App must be created with &quot;Short Form&quot; as Supported Ad Format&nbsp;</span></p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<ol>
+	<li>
+		Login to DAshboard as Admin</li>
+	<li>
+		Create New Pub Application with &quot;Short Form&quot; Supported Ad Format Type</li>
+	<li>
+		Create a&nbsp; Native (Flex Feed &amp; Flex View) Placement&nbsp; and verify the Ad Formats</li>
+</ol>
+]]></actions>
+	<expectedresults><![CDATA[<ol>
+	<li>
+		Logged into Dashboard</li>
+	<li>
+		Publisher App must be created</li>
+	<li>
+		If the Placement Type in Interstitial then&nbsp; the Placement supported Ad Format are&nbsp;</li>
+</ol>
+<ul>
+	<li>
+		<span style="font-size: 12pt; font-family: &quot;Droid Sans Mono&quot;; font-variant-numeric: normal; font-variant-east-asian: normal; vertical-align: baseline; white-space: pre-wrap;">vungle_mraid, </span></li>
+</ul>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="37726" name="Verify the 'Skippable'checkbox for Native(Flex Feed) Palcements">
+	<node_order><![CDATA[1013]]></node_order>
+	<externalid><![CDATA[23]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>
+	&#39;Skippable&#39;checkbox for Native(Flex Feed) Palcements</p>
+]]></summary>
+	<preconditions><![CDATA[<p>
+	Login user must be Admin and placement Type muist be Flex Feed</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<ol>
+	<li>
+		Login to Dashboard</li>
+	<li>
+		Create a Publisher App and a Placement of type &quot;Flex Feed &quot;</li>
+	<li>
+		Verify the &#39;Skippable&#39; check box</li>
+</ol>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	Skippable checkbox should not be available for the FlexFeed Placement</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+</testsuite><testsuite id="37638" name="Functional Test Cases" >
+<node_order><![CDATA[2]]></node_order>
+<details><![CDATA[]]></details> 
+
+<testcase internalid="37665" name="No Targeting - ShortForm Ads">
+	<node_order><![CDATA[1000]]></node_order>
+	<externalid><![CDATA[8]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>
+	Campaign Reward Target type is &quot;All&quot; and Creative should be short-form creative</p>
+]]></summary>
+	<preconditions><![CDATA[<p>
+	&nbsp;</p>
+<p>
+	Campaign&nbsp; of tyepe &quot;All&quot;should be created and it should linked to Advertiser App and Creative should be &quot;Short Form&quot; Creative</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<ol>
+	<li>
+		Login to Legacy Dashboard</li>
+	<li>
+		Create a Vungle ads Campaign&nbsp;</li>
+	<li>
+		Target the Campaign to &quot;All&quot; for Reward Targeting</li>
+	<li>
+		Create a ShortForm Creative&nbsp;</li>
+</ol>
+]]></actions>
+	<expectedresults><![CDATA[<ol>
+	<li>
+		<p dir="ltr" style="line-height:1.2;margin-top:0pt;margin-bottom:0pt;">
+			<span id="docs-internal-guid-83703a65-6e72-ed6a-a98e-5ce08b6e1f1b"><span style="font-size: 9pt; font-family: &quot;Droid Sans Mono&quot;; font-variant-numeric: normal; font-variant-east-asian: normal; vertical-align: baseline; white-space: pre-wrap;">Pre-SDK5 apps that support &lsquo;All ads&rsquo; should show Short Form ads as part of &lsquo;All ads&rsquo;. Post-SDK5 placements supporting &lsquo;ShortForm&rsquo; do too. All other apps do not - ShortForm ads should not show anywhere else as they only show where they&rsquo;re proactively eligible.</span></span></p>
+		<div>
+			&nbsp;</div>
+	</li>
+</ol>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="37667" name="Non-Rewarding Targeting Short-Form Ads">
+	<node_order><![CDATA[1001]]></node_order>
+	<externalid><![CDATA[9]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>
+	Campaign is targeting Non-Rewarding Placement</p>
+<p>
+	Creative is a Short-Form Ads</p>
+]]></summary>
+	<preconditions><![CDATA[<p>
+	Short Form Creative must be created</p>
+<p>
+	Interstitial Placement must be created</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<ol>
+	<li>
+		Login to Dashboard</li>
+	<li>
+		Create a Publisher Application with Supported Ad Format type &quot;All ads&quot; &quot;Short Form&quot;</li>
+	<li>
+		Create a CAmpaign and target it to Non Rewarded Targeting</li>
+	<li>
+		Create a Short-Form Creative</li>
+	<li>
+		Verify the results</li>
+</ol>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	Short Form Ad should be served</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="37669" name="Rewarded Targeting Short-Form Ads">
+	<node_order><![CDATA[1002]]></node_order>
+	<externalid><![CDATA[10]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>
+	Campaign targeting Rewarded Placement and&nbsp; Short Form Ads</p>
+]]></summary>
+	<preconditions><![CDATA[<p>
+	Rewarded Placement must be created</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<ol>
+	<li>
+		Login to Dashboard</li>
+	<li>
+		Create a Campaign and target it to Rewarded Placements&nbsp;</li>
+	<li>
+		Create short-form Ads</li>
+	<li>
+		Verify the results</li>
+</ol>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	Short-form not supported for Rewarded Placements</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="37671" name="No Targeting or Rew or Non-Rew Targeting Legacy Ads">
+	<node_order><![CDATA[1003]]></node_order>
+	<externalid><![CDATA[11]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p dir="ltr" style="line-height:1.2;margin-top:0pt;margin-bottom:0pt;">
+	<span id="docs-internal-guid-ad2749d4-6a2b-b899-3714-741e433977f4"><span style="font-size: 10pt; font-family: &quot;Droid Sans Mono&quot;; font-variant-numeric: normal; font-variant-east-asian: normal; vertical-align: baseline; white-space: pre-wrap;">Campaign not targeting to any placement/or targeting rewarded placement/targeting non rewarded placement</span></span></p>
+<p dir="ltr" style="line-height:1.2;margin-top:0pt;margin-bottom:0pt;">
+	<span id="docs-internal-guid-ad2749d4-6a2b-b899-3714-741e433977f4"><span style="font-size: 10pt; font-family: &quot;Droid Sans Mono&quot;; font-variant-numeric: normal; font-variant-east-asian: normal; vertical-align: baseline; white-space: pre-wrap;">Legacy Ads</span></span></p>
+<div>
+	&nbsp;</div>
+]]></summary>
+	<preconditions><![CDATA[<p>
+	Publisher App must be created with&nbsp; &nbsp;type &quot;All Ads &quot; or &quot;Legacy Ads&quot;</p>
+<p>
+	Placement must be created with supported Ad Format &quot;Legacy&quot;</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<ol>
+	<li>
+		Login to Dashboard</li>
+	<li>
+		Create a Publisher App with type &quot;All Ads&quot;</li>
+	<li>
+		Create a Placement of &quot;Legacy&quot; Ad Format and type Rewarded or Interstitial</li>
+	<li>
+		Create a Campaign&nbsp; and target to &quot;All&quot; &quot;Rewarded&quot; &quot;Non- Rewarded&quot;&nbsp;</li>
+	<li>
+		Create a 0-Video Legacy Creative&nbsp;</li>
+	<li>
+		Verify the results</li>
+</ol>
+]]></actions>
+	<expectedresults><![CDATA[<p dir="ltr" style="line-height:1.2;margin-top:0pt;margin-bottom:0pt;">
+	&nbsp;</p>
+<div>
+	&nbsp;Short form ads should play in all Legacy enabled apps, if Ad format is Legacy not Short Form</div>
+<div>
+	&nbsp;</div>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="37673" name="No Targeting- Dynamic Template Ads">
+	<node_order><![CDATA[1004]]></node_order>
+	<externalid><![CDATA[12]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>
+	Campaign is not&nbsp; Targeting any palcement</p>
+<p>
+	Dynamic Template Ads</p>
+]]></summary>
+	<preconditions><![CDATA[<p>
+	Creative should be Dynamic template (Single Page Fullscreen, MultiPage Fullscreen)creative&nbsp;</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<ol>
+	<li>
+		Login to Dashboard</li>
+	<li>
+		Create a Campaign and target to &quot;All&quot;</li>
+	<li>
+		Create a Dynamic template Creative</li>
+	<li>
+		Play the add and verify the results</li>
+</ol>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	DT ads should be served</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="37675" name="Non-Rew Targeting Dynamic Template Ads">
+	<node_order><![CDATA[1005]]></node_order>
+	<externalid><![CDATA[13]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>
+	Campaign targeting Interstitial/Native Placements (Non Rewarding),</p>
+<p>
+	Dynamic Template Creatives</p>
+]]></summary>
+	<preconditions><![CDATA[<p>
+	Creative should be Dynamic Template Creative and Short form Creatives.</p>
+<p>
+	Placement should be Non Rewarded</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<ol>
+	<li>
+		Login to Dashboard</li>
+	<li>
+		Create a Campaign and target to Non Rewarded Placements</li>
+	<li>
+		Create Dynamic Template and shortform Creatives</li>
+	<li>
+		Verify the results</li>
+</ol>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	There should not be any changes to DT Ads (single page fullscreen, multi page fullscreen)and DT eligibility</p>
+<p>
+	Multi page only if Endcards allowed at placement level.</p>
+<p dir="ltr" style="line-height:1.2;margin-top:0pt;margin-bottom:0pt;">
+	&nbsp;</p>
+<div>
+	&nbsp;</div>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="37677" name="Rewarded Targeting Dynamic Template Ads">
+	<node_order><![CDATA[1006]]></node_order>
+	<externalid><![CDATA[14]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>
+	Campaign targeting Rewarded Placements-</p>
+<p>
+	Dynamic Template Ads</p>
+]]></summary>
+	<preconditions><![CDATA[<p>
+	Creative must be Dynamic Template Creative and short form creative</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<ol>
+	<li>
+		Login to Dashboard</li>
+	<li>
+		Create a Campaign and target it to Rewarded&nbsp;</li>
+	<li>
+		Create Dynamic Template and short form creatives</li>
+	<li>
+		Verify the results</li>
+</ol>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	There should not be any changes to DT Ads (single page fullscreen, multi page fullscreen)and DT eligibility</p>
+<p>
+	Short Form ads ashould not be served</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="37679" name="Native Ads">
+	<node_order><![CDATA[1007]]></node_order>
+	<externalid><![CDATA[15]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>
+	Verify the results for Native ads</p>
+]]></summary>
+	<preconditions><![CDATA[<p>
+	Placements type must be Flex Feed or Flex View</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<ol>
+	<li>
+		Navigate to Dashboard</li>
+	<li>
+		Create Campaign with Native Dynamic Template Creatives</li>
+	<li>
+		Target Campaign to &quot;Non Rewarded&quot; Placements and verify</li>
+	<li>
+		Target Campaign to &quot;All&quot; and verify results</li>
+</ol>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	No changes to native campaigns with or without targeting</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="37710" name="Verify the results when DT close button settings">
+	<node_order><![CDATA[1008]]></node_order>
+	<externalid><![CDATA[22]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>
+	Verify the results when DT close button settings override Placement level settings</p>
+]]></summary>
+	<preconditions><![CDATA[<p>
+	&quot; Skippable &quot; must be unchecked at the placement level.</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<ol>
+	<li>
+		Login to Dashboard</li>
+	<li>
+		Create a Pub App and Placement with &quot;Skippable&quot; checkbox unchecked&nbsp;</li>
+	<li>
+		PlayAd</li>
+	<li>
+		Verify ad played (tap &quot;Close &quot; button on top right to close view)</li>
+</ol>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	Ad should get closed when user taps on close option<span style="font-family: &quot;Trebuchet MS&quot;, Arial, Verdana, sans-serif; font-size: 11.7px; background-color: rgb(238, 238, 238);">.</span>DT close button settings must override Placement level settings.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+</testsuite></testsuite>

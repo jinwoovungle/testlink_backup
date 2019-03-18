@@ -1,0 +1,655 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite id="" name="" >
+<node_order><![CDATA[]]></node_order>
+<details><![CDATA[]]></details> 
+<testsuite id="21578" name="Dashboard-SDK-End to End Test Cases" >
+<node_order><![CDATA[1]]></node_order>
+<details><![CDATA[<p>
+	Dashboard SDK End to End Test Cases</p>
+]]></details> 
+
+<testcase internalid="21579" name="Create a Publisher Application">
+	<node_order><![CDATA[1000]]></node_order>
+	<externalid><![CDATA[1]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>
+	Create a Publisher Application</p>
+]]></summary>
+	<preconditions><![CDATA[<p>
+	Login to Dashboard with valid credentials</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+	1. Login to the Dashboard, click on &quot;Add New Application&quot;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	User should be on Create Application page</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>
+	Enter the required below information to create a Publisher Application of different Platforms</p>
+<ul>
+	<li>
+		Select the Platform</li>
+	<li>
+		Enter the name of the Application</li>
+	<li>
+		Check the &quot;my app is live on the app store&quot; check box</li>
+	<li>
+		Enter the URL</li>
+	<li>
+		Enter the other information</li>
+</ul>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	Information entered should be displayed in the appropriate fields</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>
+	Click Submit</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	IOS/Android/Amazon Publisher Applications should be created with Default Placements and user should be on the Application details page</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="21581" name="Create a Placement">
+	<node_order><![CDATA[1001]]></node_order>
+	<externalid><![CDATA[2]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>
+	Create a Placement</p>
+]]></summary>
+	<preconditions><![CDATA[<p>
+	Publisher Application should be available</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+	Login to Dashboard and search the Publisher Application created in DB-SDK-E2E-1from Global search by entering the name of the App or Vungle Application ID</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	Pub App should be available</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>
+	Click details icon</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	User should land on Pub App details page with &quot;Add new Placement&quot; link on the right side</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>
+	Click on &quot;Add New Placement&quot;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	User should be on the cReate Palcement page</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[4]]></step_number>
+	<actions><![CDATA[<p>
+	Enter the required information</p>
+<ul>
+	<li>
+		Name</li>
+	<li>
+		Target CPM Floor</li>
+</ul>
+<p>
+	click Submit</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	Placement should be cretaed with unique reference Id and user should should be on the Placement Grid.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="21583" name="Create an Advertiser Applictraion">
+	<node_order><![CDATA[1002]]></node_order>
+	<externalid><![CDATA[3]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>
+	Create an Advertiser Application</p>
+]]></summary>
+	<preconditions><![CDATA[<p>
+	Login to Dashboard with valid credentials</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+	Login to Dashboard and toggle to Advertiser option by clicking the Hamburger icon</p>
+]]></actions>
+	<expectedresults><![CDATA[]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>
+	Click on Applications tab</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	User should be on the All existing Advertiser Apps should be displayed and &quot;Add New Application&quot;button should be available</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>
+	Click on &quot;Add New Application&quot; link</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	User should be on the Create Application Page</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[4]]></step_number>
+	<actions><![CDATA[<p>
+	Enter the following information</p>
+<ul>
+	<li>
+		Select the Platform</li>
+	<li>
+		Enter the Application Name</li>
+	<li>
+		Check the &quot;My app is live on the appstore&quot; check boc</li>
+	<li>
+		Enter the URL</li>
+	<li>
+		Click Submit</li>
+</ul>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	Advertiser Application should be created and user should be on the Adv App details page</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="21589" name="Whitelist the Apps">
+	<node_order><![CDATA[1003]]></node_order>
+	<externalid><![CDATA[6]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>
+	Whitelist the Apps</p>
+]]></summary>
+	<preconditions><![CDATA[<p>
+	Both Publisher and Advertiser Apps should be available</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+	Login to Dashboard and search the Publisher Application created in the DB-SDK-E2E-1 test case, by entering the name od App ID in the Global search.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	Publisher Application should be available</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>
+	Click on Edit icon</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	User should be on the Update application page of the Publisher Application.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>
+	In the App targeting field of the targeting section of the Publisher Page,</p>
+<ul>
+	<li>
+		Search the Advertiser App created in test case DB-SDK-E2E-3 &nbsp;and select</li>
+	<li>
+		Click Whitelist radio button</li>
+	<li>
+		Submit</li>
+</ul>
+]]></actions>
+	<expectedresults><![CDATA[<ul>
+	<li>
+		User should be able to search and select the Adv App and whitelist it.</li>
+	<li>
+		App should be saved and user should be on the details page of the Pub App</li>
+</ul>
+<p>
+	&nbsp;</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[4]]></step_number>
+	<actions><![CDATA[<p>
+	Now navigate to Global search and search the Advertiser created &nbsp;in the test case DB-SDK-E2E-3</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	App should be available</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[5]]></step_number>
+	<actions><![CDATA[<p>
+	Click Edit icon&nbsp;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	User should be on the Update Application page</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[6]]></step_number>
+	<actions><![CDATA[<p>
+	In the App targeting field of the targeting section of the Advertiser Page,</p>
+<ul>
+	<li>
+		Search the PublisherApp created in test case DB-SDK-E2E-1 &nbsp;and select</li>
+	<li>
+		Click Whitelist radio button</li>
+	<li>
+		Submit</li>
+</ul>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	&nbsp;</p>
+<ul style="margin: 1em 40px; list-style-position: outside; font-family: &quot;Trebuchet MS&quot;, Arial, Verdana, sans-serif; font-size: 11.699999809265137px;">
+	<li>
+		User should be able to search and select the Pub App and whitelist it.</li>
+	<li>
+		App should be saved and user should be on the details page of the Adv App</li>
+</ul>
+<p style="font-family: &quot;Trebuchet MS&quot;, Arial, Verdana, sans-serif; font-size: 11.699999809265137px;">
+	&nbsp;</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[7]]></step_number>
+	<actions><![CDATA[<p>
+	Verify Apps are whitelisted</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	Whitelisted Apps should be displayed in targeting section with hyperlink to the App in details page of both Advertiser and Publisher Page</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="21591" name="Create a Campaign">
+	<node_order><![CDATA[1004]]></node_order>
+	<externalid><![CDATA[7]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>
+	Create a Campaign</p>
+]]></summary>
+	<preconditions><![CDATA[<p>
+	Advertiser App should be available</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+	Login to Dashboard and toggle to Advertiser option &nbsp;by clicking on hamburger</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	User should be on the Advertiser side with Campaigns, Application and Creatives Tabs.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>
+	Click on Details icon</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	User should be on the details page of the Advertiser App</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>
+	Click on &quot;Add New Campaign&quot; button</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	Confirmation for the manual Campaign should pop up and upon selection of Manual Campaign,User should be directed to the Create Camapign page</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[4]]></step_number>
+	<actions><![CDATA[<p>
+	On the Create Campaign page, enter the following info</p>
+<ul>
+	<li>
+		Enter the Campaign Name</li>
+	<li>
+		Search and select the Advertiser Application created in DB-SDK-E2E3 in the Application field</li>
+	<li>
+		Select the type of Campaign</li>
+	<li>
+		Enter Start and End Time</li>
+	<li>
+		Enter the Total Budget</li>
+	<li>
+		Select the countries for country targeting</li>
+	<li>
+		Enter the Advertiser Application nam ein the App targeting field</li>
+	<li>
+		Enter TPAT Event and URL</li>
+</ul>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	Information entered should populate in the appropriate fields</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[5]]></step_number>
+	<actions><![CDATA[<p>
+	Click Submit</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	Campaign should be created and user should land on Campaign details page&nbsp;</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="21593" name="Create a Creative">
+	<node_order><![CDATA[1005]]></node_order>
+	<externalid><![CDATA[8]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>
+	Create a Creative</p>
+]]></summary>
+	<preconditions><![CDATA[<p>
+	Campaign should be available</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+	Login to Dashboard and pull the Campaign created in test case DB-SDK-E2E-7</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	Campaign should be available an duser should be on the Campaign details page</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>
+	Click on &quot;Add New Creative&quot;link on the right and on selection window , Select the type of creative you want to create, say Dynamic Creative</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	Dynamic Template Creative should be selected and user should be on the Create Creative Page</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>
+	Enter the following information on Create Creative Page</p>
+<ul>
+	<li>
+		Creative Name</li>
+	<li>
+		Select the Dynamic Template, say Gradient</li>
+	<li>
+		Video Setup
+		<ol style="margin: 0px; list-style-type: lower-roman; color: rgb(51, 51, 51); font-family: -apple-system, system-ui, &quot;Segoe UI&quot;, Roboto, &quot;Noto Sans&quot;, Ubuntu, &quot;Droid Sans&quot;, &quot;Helvetica Neue&quot;, sans-serif; font-size: 14px; font-variant-ligatures: normal; orphans: 2; widows: 2; background-color: rgb(255, 255, 255);">
+			<li>
+				Choose Add New Video radio button</li>
+			<li>
+				Video Name</li>
+			<li>
+				Local Drive - Search for a Video you downloaded earlier</li>
+			<li>
+				Click Upload video and wait for the video to encode</li>
+		</ol>
+	</li>
+</ul>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	Information entered should be displayed in appropriate fields</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[4]]></step_number>
+	<actions><![CDATA[<p>
+	In the Product Description section, enter the following</p>
+<ul>
+	<li>
+		App Name</li>
+	<li>
+		Company</li>
+	<li>
+		Upload App Icon</li>
+	<li>
+		Enter the CTA URL</li>
+	<li>
+		Upload the Landscape Image</li>
+	<li>
+		UPload the Portrait Image</li>
+	<li>
+		Enter the TPAT and URL</li>
+</ul>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	Information entered should be saved</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[5]]></step_number>
+	<actions><![CDATA[<p>
+	Click Submit</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	Gradient Dynamic Template creative should be cretaed and user should be onthe details page with the ability to preview the video uploaded.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="21595" name="Configure the System">
+	<node_order><![CDATA[1006]]></node_order>
+	<externalid><![CDATA[9]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>
+	Configure the system</p>
+]]></summary>
+	<preconditions><![CDATA[]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+	On the Amazon Fire device, set up the configurations by entering the laptop IP address and port no in the settings&nbsp;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	IP Address and port no should be updated</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>
+	Makesure Laptop and Amazon device both are on the same Wifi.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	Bothe the devies should be on the same Wifi</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>
+	Navigate to chls.pro to download the certificate&nbsp;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	Certificate should be downloaded</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[4]]></step_number>
+	<actions><![CDATA[<p>
+	Clear the cache/existing data on the Amazon device by going Applications/Application manager</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	Existing data should be removed</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="21597" name="Play the Ad">
+	<node_order><![CDATA[1007]]></node_order>
+	<externalid><![CDATA[10]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>
+	Play Ad on the device</p>
+]]></summary>
+	<preconditions><![CDATA[<p>
+	Install app</p>
+<p>
+	Initialize the App</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+	On IOS?Android/Amazon Device,&nbsp;</p>
+<ul>
+	<li>
+		Install the App on amazon device and set charles Proxy.</li>
+	<li>
+		Enter the Application ID</li>
+	<li>
+		Enter the Placement ID&#39;s</li>
+	<li>
+		Initialize the SDK.</li>
+	<li>
+		Observe the charles.</li>
+</ul>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	&nbsp;</p>
+<ul>
+	<li>
+		App should get initialized.</li>
+	<li>
+		Config API should get called.</li>
+	<li>
+		SDK should download an Ad for the placement id when auto cache flag is enabled.</li>
+</ul>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>
+	Click Play</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	&nbsp;IOS/Android/ Amazon&nbsp; placement ID should serve the Ad and Ad should play normally on TestApp with respect to the &nbsp;placement id.</p>
+<p>
+	&nbsp;</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+</testsuite></testsuite>

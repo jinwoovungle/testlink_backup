@@ -1,0 +1,632 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite id="" name="" >
+<node_order><![CDATA[]]></node_order>
+<details><![CDATA[]]></details> 
+<testsuite id="37101" name="UI TestCases" >
+<node_order><![CDATA[1]]></node_order>
+<details><![CDATA[]]></details> 
+
+<testcase internalid="37103" name="Verify the UI of the Placement for DDL">
+	<node_order><![CDATA[1000]]></node_order>
+	<externalid><![CDATA[1]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>
+	Check fir the DDL field at Placement level</p>
+]]></summary>
+	<preconditions><![CDATA[<p>
+	Logged in user must be Admin</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<ol>
+	<li>
+		Login to Dashboard as Vungle Admin</li>
+	<li>
+		Create a Publisher Application</li>
+	<li>
+		Verify the Default Placement fields by clicking on the placement link.</li>
+</ol>
+]]></actions>
+	<expectedresults><![CDATA[<ol>
+	<li>
+		User must logged into Dashboard</li>
+	<li>
+		Publisher App must be created</li>
+	<li>
+		Default Placement should have the following fields</li>
+</ol>
+<ul>
+	<li>
+		Application Name</li>
+	<li>
+		Placement Type</li>
+	<li>
+		Placement Name</li>
+	<li>
+		Reference ID</li>
+	<li>
+		Allow Endcards check box</li>
+	<li>
+		Default CPM Floor</li>
+	<li>
+		Add Geo Level CPM Floor</li>
+	<li>
+		Supported Ad Formats</li>
+	<li>
+		Video Orientation Override</li>
+	<li>
+		DVL (it must set to null)</li>
+</ul>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="37105" name="Verify the current behavior of DVL in Legacy Dashboard">
+	<node_order><![CDATA[1001]]></node_order>
+	<externalid><![CDATA[2]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>
+	Verify the current behavior of DVL in Legacy Dashboard</p>
+]]></summary>
+	<preconditions><![CDATA[<p>
+	Legacy Dashboard Logged in user must be Admin User</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<ol>
+	<li>
+		Login to Dashboard as Admin with Vungle domain</li>
+	<li>
+		Create a Publisher App</li>
+	<li>
+		View&nbsp; &amp; Verify the details of the Publisher App</li>
+</ol>
+]]></actions>
+	<expectedresults><![CDATA[<ol>
+	<li>
+		User must logged in Dashboard</li>
+	<li>
+		Publisher Applictaion must be created</li>
+	<li>
+		The default DVL must be 20,&nbsp;</li>
+</ol>
+<p>
+	&nbsp;</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+</testsuite><testsuite id="37102" name="V6 Functional TestCases" >
+<node_order><![CDATA[2]]></node_order>
+<details><![CDATA[]]></details> 
+
+<testcase internalid="37107" name="Check the result if the App &amp; Placement level DVL is 0">
+	<node_order><![CDATA[1000]]></node_order>
+	<externalid><![CDATA[3]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>
+	Verify the results if the&nbsp;App &amp; Placement level DVL is 0</p>
+]]></summary>
+	<preconditions><![CDATA[<p>
+	Publisher App and Placement should be created.</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<ol>
+	<li>
+		Login to Legacy dashboard</li>
+	<li>
+		Create a Publisher App and set the DVL to 0</li>
+	<li>
+		Make sure the Default Placement, DVL is 0.</li>
+	<li>
+		Verify the results using Postman by looking at the response payload of RequestAd API by performing the following steps</li>
+</ol>
+<ul>
+	<li>
+		&nbsp;</li>
+</ul>
+]]></actions>
+	<expectedresults><![CDATA[<ol>
+	<li>
+		User must logged into Dashboard</li>
+	<li>
+		Publisher App must be created and Default Placement should be created</li>
+	<li>
+		Default placement DVL must be 0</li>
+	<li>
+		Unlimited no of ads must be served in 24 Hrs.</li>
+</ol>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="37109" name="Check the result if App level DVL is 10 &amp; Placement level DVL is 1">
+	<node_order><![CDATA[1001]]></node_order>
+	<externalid><![CDATA[4]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>
+	<span style="font-family: &quot;Trebuchet MS&quot;, Arial, Verdana, sans-serif; font-size: 11.7px; background-color: rgb(238, 238, 238);">Verify the results if the&nbsp;App level DVL is 10 &amp; Placement level DVL is 1</span></p>
+]]></summary>
+	<preconditions><![CDATA[<p>
+	Publisher App and Placement must be created</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<ol>
+	<li>
+		Login to Legacy dashboard</li>
+	<li>
+		Create a Publisher App and set the DVL to 10</li>
+	<li>
+		Make sure the Default Placement, DVL is 1.</li>
+	<li>
+		Verify the results</li>
+</ol>
+]]></actions>
+	<expectedresults><![CDATA[<ol>
+	<li>
+		User must logged into Dashboard</li>
+	<li>
+		Publisher App must be created and Default Placement should be created</li>
+	<li>
+		Default placement DVL must be 1</li>
+	<li>
+		User must see 1 ad in 24 Hrs.</li>
+</ol>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="37111" name="Check the results if App level DVL is 1&amp;Placement level is 10">
+	<node_order><![CDATA[1002]]></node_order>
+	<externalid><![CDATA[5]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>
+	<span style="font-family: &quot;Trebuchet MS&quot;, Arial, Verdana, sans-serif; font-size: 11.7px; background-color: rgb(238, 238, 238);">Verify the results if the&nbsp;App level DVL is 1 &amp; Placement level DVL is 10</span></p>
+]]></summary>
+	<preconditions><![CDATA[<p>
+	<span style="font-family: &quot;Trebuchet MS&quot;, Arial, Verdana, sans-serif; font-size: 11.7px; background-color: rgb(238, 238, 238);">Publisher App and Placement must be created</span></p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<ol>
+	<li>
+		Login to Legacy dashboard</li>
+	<li>
+		Create a Publisher App and set the DVL to 1</li>
+	<li>
+		Make sure the Default Placement, DVL is 10.</li>
+	<li>
+		Verify the results</li>
+</ol>
+]]></actions>
+	<expectedresults><![CDATA[<ol>
+	<li>
+		User must logged into Dashboard</li>
+	<li>
+		Publisher App must be created&nbsp; and DVL should set to 1 and Default Placement should be created</li>
+	<li>
+		Default placement DVL must be 10</li>
+	<li>
+		User must see 10 ads in 24 Hrs.</li>
+</ol>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="37113" name="Check the results if the AppLevel DVL is 10 &amp; placement level is 0">
+	<node_order><![CDATA[1003]]></node_order>
+	<externalid><![CDATA[6]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>
+	<span style="font-family: &quot;Trebuchet MS&quot;, Arial, Verdana, sans-serif; font-size: 11.7px; background-color: rgb(238, 238, 238);">Verify the results if the&nbsp;App level DVL is 10 &amp; Placement level DVL is 0</span></p>
+]]></summary>
+	<preconditions><![CDATA[<p>
+	<span style="font-family: &quot;Trebuchet MS&quot;, Arial, Verdana, sans-serif; font-size: 11.7px; background-color: rgb(238, 238, 238);">Publisher App and Placement must be created</span></p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<ol>
+	<li>
+		Login to Legacy dashboard</li>
+	<li>
+		Create a Publisher App and set the DVL to 10</li>
+	<li>
+		Make sure the Default Placement, DVL is 0.</li>
+	<li>
+		Verify the results</li>
+</ol>
+]]></actions>
+	<expectedresults><![CDATA[<ol>
+	<li>
+		User must logged into Dashboard</li>
+	<li>
+		Publisher App must be created and DVL should be 10 and Default Placement should be created</li>
+	<li>
+		Default placement DVL must be 0</li>
+	<li>
+		User must see 10 ad in 24 Hrs.</li>
+</ol>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="37115" name="Check the results if App level DVL is 0 &amp; Placement level is 10">
+	<node_order><![CDATA[1004]]></node_order>
+	<externalid><![CDATA[7]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>
+	<span style="font-family: &quot;Trebuchet MS&quot;, Arial, Verdana, sans-serif; font-size: 11.7px; background-color: rgb(238, 238, 238);">Verify the results if the&nbsp;App level DVL is 0 &amp; Placement level DVL is 10</span></p>
+]]></summary>
+	<preconditions><![CDATA[<p>
+	<span style="font-family: &quot;Trebuchet MS&quot;, Arial, Verdana, sans-serif; font-size: 11.7px; background-color: rgb(238, 238, 238);">Publisher App and Placement must be created</span></p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<ol>
+	<li>
+		Login to Legacy dashboard</li>
+	<li>
+		Create a Publisher App and set the DVL to 0</li>
+	<li>
+		Make sure the Default Placement, DVL is 10.</li>
+	<li>
+		Verify the results</li>
+</ol>
+]]></actions>
+	<expectedresults><![CDATA[<ol>
+	<li>
+		User must logged into Dashboard</li>
+	<li>
+		Publisher App must be created and DVL should be null and Default Placement should be created</li>
+	<li>
+		Default placement DVL must be 10</li>
+	<li>
+		User must see 10 ad in 24 Hrs.</li>
+</ol>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="37119" name="Check the DVL setting after 24Hrs, Server Reset">
+	<node_order><![CDATA[1005]]></node_order>
+	<externalid><![CDATA[8]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>
+	Verify DVL setting after 24Hrs.</p>
+]]></summary>
+	<preconditions><![CDATA[<p>
+	DVL settings should be set</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+
+</testcase>
+</testsuite><testsuite id="37117" name="V5 Functional TestCases" >
+<node_order><![CDATA[3]]></node_order>
+<details><![CDATA[]]></details> 
+
+<testcase internalid="37126" name="Check the result if the App &amp; Placement level DVL is 0">
+	<node_order><![CDATA[1000]]></node_order>
+	<externalid><![CDATA[9]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>
+	<span style="font-family: &quot;Trebuchet MS&quot;, Arial, Verdana, sans-serif; font-size: 11.7px; background-color: rgb(238, 238, 238);">Verify the results if the&nbsp;App &amp; Placement level DVL is 0</span></p>
+]]></summary>
+	<preconditions><![CDATA[<p>
+	<span style="font-family: &quot;Trebuchet MS&quot;, Arial, Verdana, sans-serif; font-size: 11.7px; background-color: rgb(238, 238, 238);">Publisher App and Placement should be created.</span></p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<ol>
+	<li>
+		Login to Legacy dashboard</li>
+	<li>
+		Create a Publisher App and set the DVL to 0</li>
+	<li>
+		Make sure the Default Placement, DVL is 0.</li>
+	<li>
+		Verify the results</li>
+</ol>
+]]></actions>
+	<expectedresults><![CDATA[<ol>
+	<li>
+		User must logged into Dashboard</li>
+	<li>
+		Publisher App must be created and Default Placement should be created</li>
+	<li>
+		Default placement DVL must be 0</li>
+	<li>
+		Unlimited no of ads must be served in 24 Htrs.</li>
+</ol>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="37128" name="Check the result if App level DVL 1s 10 &amp; Placement level DVL is 1">
+	<node_order><![CDATA[1001]]></node_order>
+	<externalid><![CDATA[10]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>
+	<span style="font-family: &quot;Trebuchet MS&quot;, Arial, Verdana, sans-serif; font-size: 11.7px; background-color: rgb(238, 238, 238);">Verify the results if the&nbsp;App level DVL is 10 &amp; Placement level DVL is 1</span></p>
+]]></summary>
+	<preconditions><![CDATA[]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<ol>
+	<li>
+		Login to Legacy dashboard</li>
+	<li>
+		Create a Publisher App and set the DVL to 10</li>
+	<li>
+		Make sure the Default Placement, DVL is 1.</li>
+	<li>
+		Verify the results</li>
+</ol>
+]]></actions>
+	<expectedresults><![CDATA[<ol>
+	<li>
+		User must logged into Dashboard</li>
+	<li>
+		Publisher App must be created and Default Placement should be created</li>
+	<li>
+		Default placement DVL must be 1</li>
+	<li>
+		User must see 1 ad in 24 Hrs.</li>
+</ol>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="37130" name="Check the results if App level DVL is 1&amp;Placement level is 10">
+	<node_order><![CDATA[1002]]></node_order>
+	<externalid><![CDATA[11]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>
+	<span style="font-family: &quot;Trebuchet MS&quot;, Arial, Verdana, sans-serif; font-size: 11.7px; background-color: rgb(238, 238, 238);">Verify the results if the&nbsp;App level DVL is 1 &amp; Placement level DVL is 10</span></p>
+]]></summary>
+	<preconditions><![CDATA[<p>
+	&nbsp;</p>
+<table class="simple" style="background: rgb(238, 238, 238); border-width: thin; border-style: solid; border-color: black; font-size: 11.7px; margin: 5px; width: 906px; font-family: &quot;Trebuchet MS&quot;, Arial, Verdana, sans-serif;">
+	<tbody>
+		<tr>
+			<td colspan="6" style="vertical-align: top;">
+				<p style="margin-top: 0px;">
+					<span style="margin: 0px; padding: 0px; font-size: 11.7px;">Publisher App and Placement must be created</span></p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+<p>
+	&nbsp;</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<ol>
+	<li>
+		Login to Legacy dashboard</li>
+	<li>
+		Create a Publisher App and set the DVL to 1</li>
+	<li>
+		Make sure the Default Placement, DVL is 10.</li>
+	<li>
+		Verify the results</li>
+</ol>
+]]></actions>
+	<expectedresults><![CDATA[<ol>
+	<li>
+		User must logged into Dashboard</li>
+	<li>
+		Publisher App must be created&nbsp; and DVL should set to 1 and Default Placement should be created</li>
+	<li>
+		Default placement DVL must be 10</li>
+	<li>
+		User must see 10 ads in 24 Hrs.</li>
+</ol>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="37132" name="Check the results if the AppLevel DVL is 10 &amp; placement level is 0">
+	<node_order><![CDATA[1003]]></node_order>
+	<externalid><![CDATA[12]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>
+	<span style="font-family: &quot;Trebuchet MS&quot;, Arial, Verdana, sans-serif; font-size: 11.7px; background-color: rgb(238, 238, 238);">Verify the results if the&nbsp;App level DVL is 10 &amp; Placement level DVL is 0</span></p>
+]]></summary>
+	<preconditions><![CDATA[<p>
+	<span style="font-family: &quot;Trebuchet MS&quot;, Arial, Verdana, sans-serif; font-size: 11.7px; background-color: rgb(238, 238, 238);">Publisher App and Placement must be created</span></p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<ol>
+	<li>
+		Login to Legacy dashboard</li>
+	<li>
+		Create a Publisher App and set the DVL to 10</li>
+	<li>
+		Make sure the Default Placement, DVL is 0.</li>
+	<li>
+		Verify the results</li>
+</ol>
+]]></actions>
+	<expectedresults><![CDATA[<ol>
+	<li>
+		User must logged into Dashboard</li>
+	<li>
+		Publisher App must be created and DVL should be 10 and Default Placement should be created</li>
+	<li>
+		Default placement DVL must be 0</li>
+	<li>
+		User must see 10 ad in 24 Hrs.</li>
+</ol>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="37134" name="Check the results if App level DVL is 0 &amp; Placement level is 10">
+	<node_order><![CDATA[1004]]></node_order>
+	<externalid><![CDATA[13]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<table class="simple" style="background: rgb(238, 238, 238); border-width: thin; border-style: solid; border-color: black; font-size: 11.7px; margin: 5px; width: 906px; font-family: &quot;Trebuchet MS&quot;, Arial, Verdana, sans-serif;">
+	<tbody>
+		<tr>
+			<td colspan="6" style="vertical-align: top;">
+				<p style="margin-top: 0px;">
+					<span style="margin: 0px; padding: 0px; font-size: 11.7px;">Verify the results if the&nbsp;App level DVL is 0 &amp; Placement level DVL is 10</span></p>
+				<p>
+					&nbsp;</p>
+			</td>
+		</tr>
+		<tr>
+		</tr>
+	</tbody>
+</table>
+<p>
+	&nbsp;</p>
+]]></summary>
+	<preconditions><![CDATA[<p>
+	<span style="font-family: &quot;Trebuchet MS&quot;, Arial, Verdana, sans-serif; font-size: 11.7px; background-color: rgb(238, 238, 238);">Publisher App and Placement must be created</span></p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<ol>
+	<li>
+		Login to Legacy dashboard</li>
+	<li>
+		Create a Publisher App and set the DVL to 0</li>
+	<li>
+		Make sure the Default Placement, DVL is 10.</li>
+	<li>
+		Verify the results</li>
+</ol>
+]]></actions>
+	<expectedresults><![CDATA[<ol>
+	<li>
+		User must logged into Dashboard</li>
+	<li>
+		Publisher App must be created and DVL should be null and Default Placement should be created</li>
+	<li>
+		Default placement DVL must be 10</li>
+	<li>
+		User must see 10 ad in 24 Hrs.</li>
+</ol>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+</testsuite><testsuite id="37118" name="V4 Functional TestCases" >
+<node_order><![CDATA[4]]></node_order>
+<details><![CDATA[]]></details> 
+
+<testcase internalid="37136" name="Check the result if the App level is 0 &amp; Placement level not supported">
+	<node_order><![CDATA[1000]]></node_order>
+	<externalid><![CDATA[14]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[]]></summary>
+	<preconditions><![CDATA[]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+
+</testcase>
+
+<testcase internalid="37138" name="Check the result if the App level is 10 &amp; Placement level not supported">
+	<node_order><![CDATA[1001]]></node_order>
+	<externalid><![CDATA[15]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[]]></summary>
+	<preconditions><![CDATA[]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+
+</testcase>
+</testsuite></testsuite>

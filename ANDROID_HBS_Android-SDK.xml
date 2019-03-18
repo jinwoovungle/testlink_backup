@@ -1,0 +1,1485 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite id="" name="" >
+<node_order><![CDATA[]]></node_order>
+<details><![CDATA[]]></details> 
+<testsuite id="46133" name="Initialization" >
+<node_order><![CDATA[1]]></node_order>
+<details><![CDATA[]]></details> 
+
+<testcase internalid="46134" name="Pub App id and API URL">
+	<node_order><![CDATA[1000]]></node_order>
+	<externalid><![CDATA[37]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>
+	<span style="font-family: Arial; font-size: 13px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">Check Pub App id and API URL</span></p>
+]]></summary>
+	<preconditions><![CDATA[<p class="p1">
+	<span class="s1">1. Install the app. </span></p>
+<p class="p1">
+	<span class="s1">2. Open the app.</span></p>
+<p>
+	<style type="text/css">
+p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; line-height: 15.0px; font: 13.0px Arial; color: #000000; -webkit-text-stroke: #000000; background-color: #ffffff}
+span.s1 {font-kerning: none}	</style>
+</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+	<span style="font-family: Arial; font-size: 13px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">1. Install the app. </span></p>
+<p>
+	<span style="font-family: Arial; font-size: 13px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">2. Open the app </span></p>
+<p>
+	<span style="font-family: Arial; font-size: 13px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">3. Check Pub App id and API URL</span></p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	<span style="font-family: Arial; font-size: 13px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">Pub app id and API URL should be displayed on app.</span></p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="46137" name="Start button">
+	<node_order><![CDATA[1001]]></node_order>
+	<externalid><![CDATA[38]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>
+	<span style="font-family: Arial; font-size: 13px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">Check start button</span></p>
+]]></summary>
+	<preconditions><![CDATA[<p>
+	<span style="font-family: Arial; font-size: 13px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">1. Install the app. </span></p>
+<p>
+	<span style="font-family: Arial; font-size: 13px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">2. Open the app.</span></p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+	<span style="font-family: Arial; font-size: 13px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">1. Install the app. </span></p>
+<p>
+	<span style="font-family: Arial; font-size: 13px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">2. Open the app </span></p>
+<p>
+	<span style="font-family: Arial; font-size: 13px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">3. Tap on Start button.</span></p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	<span style="font-family: Arial; font-size: 13px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">1.Start button should be displayed on app. </span></p>
+<p>
+	<span style="font-family: Arial; font-size: 13px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">2.After tapping on Start button SDK should get initialized.</span></p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="46140" name="Different tabs">
+	<node_order><![CDATA[1002]]></node_order>
+	<externalid><![CDATA[39]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>
+	<span style="font-family: Arial; font-size: 13px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">Check below tabs on the bottom of app. </span></p>
+<p>
+	<span style="font-family: Arial; font-size: 13px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">1.Vungle </span></p>
+<p>
+	<span style="font-family: Arial; font-size: 13px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">2.Logs </span></p>
+<p>
+	<span style="font-family: Arial; font-size: 13px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">3.Callback</span></p>
+]]></summary>
+	<preconditions><![CDATA[<p>
+	<span style="font-family: Arial; font-size: 13px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">1. Install the app. </span></p>
+<p>
+	<span style="font-family: Arial; font-size: 13px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">2. Open the app.</span></p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+	<span style="font-family: Arial; font-size: 13px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">1. Install the app. </span></p>
+<p>
+	<span style="font-family: Arial; font-size: 13px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">2. Open the app </span></p>
+<p>
+	<span style="font-family: Arial; font-size: 13px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">3. Check Vungle,Logs,Callback tabs on the bottom of app.</span></p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	<span style="font-family: Arial; font-size: 13px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">Check below tabs on the bottom of app. </span></p>
+<p>
+	<span style="font-family: Arial; font-size: 13px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">1.Vungle </span></p>
+<p>
+	<span style="font-family: Arial; font-size: 13px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">2.Logs </span></p>
+<p>
+	<span style="font-family: Arial; font-size: 13px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">3.Callback.</span></p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="46143" name="SDK Parameters">
+	<node_order><![CDATA[1003]]></node_order>
+	<externalid><![CDATA[40]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>
+	<span style="font-family: Arial; font-size: 13px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">Check below Vungle SDK parameters. </span></p>
+<p>
+	<span style="font-family: Arial; font-size: 13px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">1.Log enabled</span></p>
+<p>
+	<span style="font-family: Arial; font-size: 13px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">2.Winner notification </span></p>
+<p>
+	<span style="font-family: Arial; font-size: 13px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">3. Auto Reload</span></p>
+<p>
+	<span style="font-family: Arial; font-size: 13px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">4. User Consent status</span></p>
+]]></summary>
+	<preconditions><![CDATA[<p>
+	<span style="font-family: Calibri; font-size: 13px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">1. Install the app. </span></p>
+<p>
+	<span style="font-family: Calibri; font-size: 13px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">2. Open the app. </span></p>
+<div>
+	&nbsp;</div>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+	<span style="font-family: Arial; font-size: 13px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">1.Open the app .</span></p>
+<p>
+	<span style="font-family: Arial; font-size: 13px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">2.Check UI Parameter.</span></p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	<span style="font-family: Arial; font-size: 13px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">Below parameters should be displayed on app UI. </span></p>
+<p>
+	<span style="font-family: Arial; font-size: 13px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">1.APP ID</span></p>
+<p>
+	<span style="font-family: Arial; font-size: 13px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">2.URL.</span></p>
+<p>
+	<span style="font-family: Arial; font-size: 13px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">3. App version</span></p>
+<p>
+	<span style="font-family: Arial; font-size: 13px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">4. User Consent status</span></p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="46152" name="Check for the Download icon after initialization.">
+	<node_order><![CDATA[1006]]></node_order>
+	<externalid><![CDATA[43]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>
+	<span style="font-family: Arial; font-size: 13px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">Check for the Download icon after initialization.</span></p>
+]]></summary>
+	<preconditions><![CDATA[<p>
+	<span style="font-family: Arial; font-size: 13px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">1. Set a charles proxy. </span></p>
+<p>
+	<span style="font-family: Arial; font-size: 13px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">2. Install the app. </span></p>
+<p>
+	<span style="font-family: Arial; font-size: 13px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">3. Initialize the app.</span></p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+	<style type="text/css">
+<!--td {border: 1px solid #ccc;}br {mso-data-placement:same-cell;}-->	</style>
+	<span data-sheets-userformat="{&quot;2&quot;:5053,&quot;3&quot;:[null,0],&quot;5&quot;:{&quot;1&quot;:[{&quot;1&quot;:2,&quot;2&quot;:0,&quot;5&quot;:[null,2,0]},{&quot;1&quot;:0,&quot;2&quot;:0,&quot;3&quot;:3},{&quot;1&quot;:1,&quot;2&quot;:0,&quot;4&quot;:1}]},&quot;6&quot;:{&quot;1&quot;:[{&quot;1&quot;:2,&quot;2&quot;:0,&quot;5&quot;:[null,2,0]},{&quot;1&quot;:0,&quot;2&quot;:0,&quot;3&quot;:3},{&quot;1&quot;:1,&quot;2&quot;:0,&quot;4&quot;:1}]},&quot;7&quot;:{&quot;1&quot;:[{&quot;1&quot;:2,&quot;2&quot;:0,&quot;5&quot;:[null,2,0]},{&quot;1&quot;:0,&quot;2&quot;:0,&quot;3&quot;:3},{&quot;1&quot;:1,&quot;2&quot;:0,&quot;4&quot;:1}]},&quot;8&quot;:{&quot;1&quot;:[{&quot;1&quot;:2,&quot;2&quot;:0,&quot;5&quot;:[null,2,0]},{&quot;1&quot;:0,&quot;2&quot;:0,&quot;3&quot;:3},{&quot;1&quot;:1,&quot;2&quot;:0,&quot;4&quot;:1}]},&quot;10&quot;:0,&quot;11&quot;:4,&quot;12&quot;:0,&quot;15&quot;:&quot;arial,sans,sans-serif&quot;}" data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;1. Open the app.\n2. Enter valid Pub App id.\n3. Tap on the start button.&quot;}" style="font-size: 10pt; font-family: Arial;">1. Open the app.<br />
+	2. Enter valid Pub App id.<br />
+	3. Tap on the start button.</span></p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	<style type="text/css">
+<!--td {border: 1px solid #ccc;}br {mso-data-placement:same-cell;}-->	</style>
+	<span data-sheets-userformat="{&quot;2&quot;:5053,&quot;3&quot;:[null,0],&quot;5&quot;:{&quot;1&quot;:[{&quot;1&quot;:2,&quot;2&quot;:0,&quot;5&quot;:[null,2,0]},{&quot;1&quot;:0,&quot;2&quot;:0,&quot;3&quot;:3},{&quot;1&quot;:1,&quot;2&quot;:0,&quot;4&quot;:1}]},&quot;6&quot;:{&quot;1&quot;:[{&quot;1&quot;:2,&quot;2&quot;:0,&quot;5&quot;:[null,2,0]},{&quot;1&quot;:0,&quot;2&quot;:0,&quot;3&quot;:3},{&quot;1&quot;:1,&quot;2&quot;:0,&quot;4&quot;:1}]},&quot;7&quot;:{&quot;1&quot;:[{&quot;1&quot;:2,&quot;2&quot;:0,&quot;5&quot;:[null,2,0]},{&quot;1&quot;:0,&quot;2&quot;:0,&quot;3&quot;:3},{&quot;1&quot;:1,&quot;2&quot;:0,&quot;4&quot;:1}]},&quot;8&quot;:{&quot;1&quot;:[{&quot;1&quot;:2,&quot;2&quot;:0,&quot;5&quot;:[null,2,0]},{&quot;1&quot;:0,&quot;2&quot;:0,&quot;3&quot;:3},{&quot;1&quot;:1,&quot;2&quot;:0,&quot;4&quot;:1}]},&quot;10&quot;:0,&quot;11&quot;:4,&quot;12&quot;:0,&quot;15&quot;:&quot;arial,sans,sans-serif&quot;}" data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;1. Download button should display in front of the Placement Id if the Ad is not cached for the respective placement Id.\n2. Play button should displayed in front of the Placement Id is Ad is cached for the respective placement Id. &quot;}" style="font-size: 10pt; font-family: Arial;">1. Download button should display in front of the Placement Id if the Ad is not cached for the respective placement Id.<br />
+	2. Play button should displayed in front of the Placement Id is Ad is cached for the respective placement Id.&nbsp;</span></p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="46155" name="SDK initialize successfully">
+	<node_order><![CDATA[1007]]></node_order>
+	<externalid><![CDATA[44]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>
+	<span style="font-family: Arial; font-size: 13px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">Initialize SDK with valid Pub App id.</span></p>
+]]></summary>
+	<preconditions><![CDATA[<p>
+	<span style="font-family: Arial; font-size: 13px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">1. Set a charles proxy. </span></p>
+<p>
+	<span style="font-family: Arial; font-size: 13px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">2. Install the app. </span></p>
+<p>
+	<span style="font-family: Arial; font-size: 13px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">3. Initialize the app.</span></p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+	<style type="text/css">
+<!--td {border: 1px solid #ccc;}br {mso-data-placement:same-cell;}-->	</style>
+	<span data-sheets-userformat="{&quot;2&quot;:829,&quot;3&quot;:[null,0],&quot;5&quot;:{&quot;1&quot;:[{&quot;1&quot;:2,&quot;2&quot;:0,&quot;5&quot;:[null,2,0]},{&quot;1&quot;:0,&quot;2&quot;:0,&quot;3&quot;:3},{&quot;1&quot;:1,&quot;2&quot;:0,&quot;4&quot;:1}]},&quot;6&quot;:{&quot;1&quot;:[{&quot;1&quot;:2,&quot;2&quot;:0,&quot;5&quot;:[null,2,0]},{&quot;1&quot;:0,&quot;2&quot;:0,&quot;3&quot;:3},{&quot;1&quot;:1,&quot;2&quot;:0,&quot;4&quot;:1}]},&quot;7&quot;:{&quot;1&quot;:[{&quot;1&quot;:2,&quot;2&quot;:0,&quot;5&quot;:[null,2,0]},{&quot;1&quot;:0,&quot;2&quot;:0,&quot;3&quot;:3},{&quot;1&quot;:1,&quot;2&quot;:0,&quot;4&quot;:1}]},&quot;8&quot;:{&quot;1&quot;:[{&quot;1&quot;:2,&quot;2&quot;:0,&quot;5&quot;:[null,2,0]},{&quot;1&quot;:0,&quot;2&quot;:0,&quot;3&quot;:3},{&quot;1&quot;:1,&quot;2&quot;:0,&quot;4&quot;:1}]},&quot;11&quot;:4,&quot;12&quot;:0}" data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;1. Open the app.\n2. Enter valid Pub App Id.\n3. Tap on start button.&quot;}" style="font-size: 10pt; font-family: Arial;">1. Open the app.<br />
+	2. Enter valid Pub App Id.<br />
+	3. Tap on start button.</span></p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	<style type="text/css">
+<!--td {border: 1px solid #ccc;}br {mso-data-placement:same-cell;}-->	</style>
+	<span data-sheets-userformat="{&quot;2&quot;:829,&quot;3&quot;:[null,0],&quot;5&quot;:{&quot;1&quot;:[{&quot;1&quot;:2,&quot;2&quot;:0,&quot;5&quot;:[null,2,0]},{&quot;1&quot;:0,&quot;2&quot;:0,&quot;3&quot;:3},{&quot;1&quot;:1,&quot;2&quot;:0,&quot;4&quot;:1}]},&quot;6&quot;:{&quot;1&quot;:[{&quot;1&quot;:2,&quot;2&quot;:0,&quot;5&quot;:[null,2,0]},{&quot;1&quot;:0,&quot;2&quot;:0,&quot;3&quot;:3},{&quot;1&quot;:1,&quot;2&quot;:0,&quot;4&quot;:1}]},&quot;7&quot;:{&quot;1&quot;:[{&quot;1&quot;:2,&quot;2&quot;:0,&quot;5&quot;:[null,2,0]},{&quot;1&quot;:0,&quot;2&quot;:0,&quot;3&quot;:3},{&quot;1&quot;:1,&quot;2&quot;:0,&quot;4&quot;:1}]},&quot;8&quot;:{&quot;1&quot;:[{&quot;1&quot;:2,&quot;2&quot;:0,&quot;5&quot;:[null,2,0]},{&quot;1&quot;:0,&quot;2&quot;:0,&quot;3&quot;:3},{&quot;1&quot;:1,&quot;2&quot;:0,&quot;4&quot;:1}]},&quot;11&quot;:4,&quot;12&quot;:0}" data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;1. SDk should get initialize successfully with 'SDk initialize successfully' message on screen.\n2. Get the sdkDidInitialize callback called.\r\n&quot;}" style="font-size: 10pt; font-family: Arial;">1. SDk should get initialize successfully with &#39;SDk initialize successfully&#39; message on screen.<br />
+	2. Get the sdkDidInitialize callback called.&nbsp;</span></p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="46158" name="SDK initialize with empty app id.">
+	<node_order><![CDATA[1008]]></node_order>
+	<externalid><![CDATA[45]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>
+	<span style="font-family: Arial; font-size: 13px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">Initialize SDK with blank pub app id.</span></p>
+]]></summary>
+	<preconditions><![CDATA[<p>
+	<style type="text/css">
+<!--td {border: 1px solid #ccc;}br {mso-data-placement:same-cell;}-->	</style>
+	<span data-sheets-userformat="{&quot;2&quot;:829,&quot;3&quot;:[null,0],&quot;5&quot;:{&quot;1&quot;:[{&quot;1&quot;:2,&quot;2&quot;:0,&quot;5&quot;:[null,2,0]},{&quot;1&quot;:0,&quot;2&quot;:0,&quot;3&quot;:3},{&quot;1&quot;:1,&quot;2&quot;:0,&quot;4&quot;:1}]},&quot;6&quot;:{&quot;1&quot;:[{&quot;1&quot;:2,&quot;2&quot;:0,&quot;5&quot;:[null,2,0]},{&quot;1&quot;:0,&quot;2&quot;:0,&quot;3&quot;:3},{&quot;1&quot;:1,&quot;2&quot;:0,&quot;4&quot;:1}]},&quot;7&quot;:{&quot;1&quot;:[{&quot;1&quot;:2,&quot;2&quot;:0,&quot;5&quot;:[null,2,0]},{&quot;1&quot;:0,&quot;2&quot;:0,&quot;3&quot;:3},{&quot;1&quot;:1,&quot;2&quot;:0,&quot;4&quot;:1}]},&quot;8&quot;:{&quot;1&quot;:[{&quot;1&quot;:2,&quot;2&quot;:0,&quot;5&quot;:[null,2,0]},{&quot;1&quot;:0,&quot;2&quot;:0,&quot;3&quot;:3},{&quot;1&quot;:1,&quot;2&quot;:0,&quot;4&quot;:1}]},&quot;11&quot;:4,&quot;12&quot;:0}" data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;1. Set a charles proxy.\n2. Install the app.\n3. Initialize the app.&quot;}" style="font-size: 10pt; font-family: Arial;">1. Set a charles proxy.<br />
+	2. Install the app.<br />
+	3. Initialize the app.</span></p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+	<style type="text/css">
+<!--td {border: 1px solid #ccc;}br {mso-data-placement:same-cell;}-->	</style>
+	<span data-sheets-userformat="{&quot;2&quot;:829,&quot;3&quot;:[null,0],&quot;5&quot;:{&quot;1&quot;:[{&quot;1&quot;:2,&quot;2&quot;:0,&quot;5&quot;:[null,2,0]},{&quot;1&quot;:0,&quot;2&quot;:0,&quot;3&quot;:3},{&quot;1&quot;:1,&quot;2&quot;:0,&quot;4&quot;:1}]},&quot;6&quot;:{&quot;1&quot;:[{&quot;1&quot;:2,&quot;2&quot;:0,&quot;5&quot;:[null,2,0]},{&quot;1&quot;:0,&quot;2&quot;:0,&quot;3&quot;:3},{&quot;1&quot;:1,&quot;2&quot;:0,&quot;4&quot;:1}]},&quot;7&quot;:{&quot;1&quot;:[{&quot;1&quot;:2,&quot;2&quot;:0,&quot;5&quot;:[null,2,0]},{&quot;1&quot;:0,&quot;2&quot;:0,&quot;3&quot;:3},{&quot;1&quot;:1,&quot;2&quot;:0,&quot;4&quot;:1}]},&quot;8&quot;:{&quot;1&quot;:[{&quot;1&quot;:2,&quot;2&quot;:0,&quot;5&quot;:[null,2,0]},{&quot;1&quot;:0,&quot;2&quot;:0,&quot;3&quot;:3},{&quot;1&quot;:1,&quot;2&quot;:0,&quot;4&quot;:1}]},&quot;11&quot;:4,&quot;12&quot;:0}" data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;1. Open the app.\n2. Do not enter pub app Id(leave pub app id blank).\n3. Tap on start button.&quot;}" style="font-size: 10pt; font-family: Arial;">1. Open the app.<br />
+	2. Do not enter pub app Id(leave pub app id blank).<br />
+	3. Tap on start button.</span></p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	<span style="font-family: Arial; font-size: 13px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">Get the sdkFailedToInitialize callback called. with correct error information. </span></p>
+<div>
+	&nbsp;</div>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="46161" name="SDK initialize with invalid app id.">
+	<node_order><![CDATA[1009]]></node_order>
+	<externalid><![CDATA[46]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>
+	<span style="font-family: Arial; font-size: 13px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">Initialize SDK with invalid pub app id.</span></p>
+]]></summary>
+	<preconditions><![CDATA[<p>
+	<span style="font-family: Arial; font-size: 10pt;">1. Set a charles proxy.</span></p>
+<p>
+	<span style="font-family: Arial; font-size: 10pt;">2. Install the app.</span></p>
+<p>
+	<span data-sheets-userformat="{&quot;2&quot;:829,&quot;3&quot;:[null,0],&quot;5&quot;:{&quot;1&quot;:[{&quot;1&quot;:2,&quot;2&quot;:0,&quot;5&quot;:[null,2,0]},{&quot;1&quot;:0,&quot;2&quot;:0,&quot;3&quot;:3},{&quot;1&quot;:1,&quot;2&quot;:0,&quot;4&quot;:1}]},&quot;6&quot;:{&quot;1&quot;:[{&quot;1&quot;:2,&quot;2&quot;:0,&quot;5&quot;:[null,2,0]},{&quot;1&quot;:0,&quot;2&quot;:0,&quot;3&quot;:3},{&quot;1&quot;:1,&quot;2&quot;:0,&quot;4&quot;:1}]},&quot;7&quot;:{&quot;1&quot;:[{&quot;1&quot;:2,&quot;2&quot;:0,&quot;5&quot;:[null,2,0]},{&quot;1&quot;:0,&quot;2&quot;:0,&quot;3&quot;:3},{&quot;1&quot;:1,&quot;2&quot;:0,&quot;4&quot;:1}]},&quot;8&quot;:{&quot;1&quot;:[{&quot;1&quot;:2,&quot;2&quot;:0,&quot;5&quot;:[null,2,0]},{&quot;1&quot;:0,&quot;2&quot;:0,&quot;3&quot;:3},{&quot;1&quot;:1,&quot;2&quot;:0,&quot;4&quot;:1}]},&quot;11&quot;:4,&quot;12&quot;:0}" data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;1. Set a charles proxy.\n2. Install the app.\n3. Initialize the app.&quot;}" style="font-size: 10pt; font-family: Arial;">3. Initialize the app.</span></p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+	<style type="text/css">
+<!--td {border: 1px solid #ccc;}br {mso-data-placement:same-cell;}-->	</style>
+	<span data-sheets-userformat="{&quot;2&quot;:829,&quot;3&quot;:[null,0],&quot;5&quot;:{&quot;1&quot;:[{&quot;1&quot;:2,&quot;2&quot;:0,&quot;5&quot;:[null,2,0]},{&quot;1&quot;:0,&quot;2&quot;:0,&quot;3&quot;:3},{&quot;1&quot;:1,&quot;2&quot;:0,&quot;4&quot;:1}]},&quot;6&quot;:{&quot;1&quot;:[{&quot;1&quot;:2,&quot;2&quot;:0,&quot;5&quot;:[null,2,0]},{&quot;1&quot;:0,&quot;2&quot;:0,&quot;3&quot;:3},{&quot;1&quot;:1,&quot;2&quot;:0,&quot;4&quot;:1}]},&quot;7&quot;:{&quot;1&quot;:[{&quot;1&quot;:2,&quot;2&quot;:0,&quot;5&quot;:[null,2,0]},{&quot;1&quot;:0,&quot;2&quot;:0,&quot;3&quot;:3},{&quot;1&quot;:1,&quot;2&quot;:0,&quot;4&quot;:1}]},&quot;8&quot;:{&quot;1&quot;:[{&quot;1&quot;:2,&quot;2&quot;:0,&quot;5&quot;:[null,2,0]},{&quot;1&quot;:0,&quot;2&quot;:0,&quot;3&quot;:3},{&quot;1&quot;:1,&quot;2&quot;:0,&quot;4&quot;:1}]},&quot;11&quot;:4,&quot;12&quot;:0}" data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;1. Open the app.\n2. Enter invalid Pub app id.\n3. Tap on start button.&quot;}" style="font-size: 10pt; font-family: Arial;">1. Open the app.<br />
+	2. Enter invalid Pub app id.<br />
+	3. Tap on start button.</span></p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	<span style="font-family: Arial; font-size: 13px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">1. Get the sdkFailedToInitialize callback called with correct error information. </span></p>
+<p>
+	<span style="font-family: Arial; font-size: 13px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">2. Server will give a 400 http code(for config response) and some error information. </span></p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="46164" name="Initialize SDK on below old devices(non supportive OS)">
+	<node_order><![CDATA[1010]]></node_order>
+	<externalid><![CDATA[47]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>
+	<span style="font-family: Arial; font-size: 13px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">Initialize the SDk on old devices(non supportive OS)</span></p>
+]]></summary>
+	<preconditions><![CDATA[<p>
+	<style type="text/css">
+<!--td {border: 1px solid #ccc;}br {mso-data-placement:same-cell;}-->	</style>
+	<span data-sheets-userformat="{&quot;2&quot;:829,&quot;3&quot;:[null,0],&quot;5&quot;:{&quot;1&quot;:[{&quot;1&quot;:2,&quot;2&quot;:0,&quot;5&quot;:[null,2,0]},{&quot;1&quot;:0,&quot;2&quot;:0,&quot;3&quot;:3},{&quot;1&quot;:1,&quot;2&quot;:0,&quot;4&quot;:1}]},&quot;6&quot;:{&quot;1&quot;:[{&quot;1&quot;:2,&quot;2&quot;:0,&quot;5&quot;:[null,2,0]},{&quot;1&quot;:0,&quot;2&quot;:0,&quot;3&quot;:3},{&quot;1&quot;:1,&quot;2&quot;:0,&quot;4&quot;:1}]},&quot;7&quot;:{&quot;1&quot;:[{&quot;1&quot;:2,&quot;2&quot;:0,&quot;5&quot;:[null,2,0]},{&quot;1&quot;:0,&quot;2&quot;:0,&quot;3&quot;:3},{&quot;1&quot;:1,&quot;2&quot;:0,&quot;4&quot;:1}]},&quot;8&quot;:{&quot;1&quot;:[{&quot;1&quot;:2,&quot;2&quot;:0,&quot;5&quot;:[null,2,0]},{&quot;1&quot;:0,&quot;2&quot;:0,&quot;3&quot;:3},{&quot;1&quot;:1,&quot;2&quot;:0,&quot;4&quot;:1}]},&quot;11&quot;:4,&quot;12&quot;:0}" data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;1. Set a charles proxy.\n2. Install the app.\n3. Initialize the app.&quot;}" style="font-size: 10pt; font-family: Arial;">1. Set a charles proxy.<br />
+	2. Install the app.<br />
+	3. Initialize the app.</span></p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+	<style type="text/css">
+<!--td {border: 1px solid #ccc;}br {mso-data-placement:same-cell;}-->	</style>
+	<span data-sheets-userformat="{&quot;2&quot;:829,&quot;3&quot;:[null,0],&quot;5&quot;:{&quot;1&quot;:[{&quot;1&quot;:2,&quot;2&quot;:0,&quot;5&quot;:[null,2,0]},{&quot;1&quot;:0,&quot;2&quot;:0,&quot;3&quot;:3},{&quot;1&quot;:1,&quot;2&quot;:0,&quot;4&quot;:1}]},&quot;6&quot;:{&quot;1&quot;:[{&quot;1&quot;:2,&quot;2&quot;:0,&quot;5&quot;:[null,2,0]},{&quot;1&quot;:0,&quot;2&quot;:0,&quot;3&quot;:3},{&quot;1&quot;:1,&quot;2&quot;:0,&quot;4&quot;:1}]},&quot;7&quot;:{&quot;1&quot;:[{&quot;1&quot;:2,&quot;2&quot;:0,&quot;5&quot;:[null,2,0]},{&quot;1&quot;:0,&quot;2&quot;:0,&quot;3&quot;:3},{&quot;1&quot;:1,&quot;2&quot;:0,&quot;4&quot;:1}]},&quot;8&quot;:{&quot;1&quot;:[{&quot;1&quot;:2,&quot;2&quot;:0,&quot;5&quot;:[null,2,0]},{&quot;1&quot;:0,&quot;2&quot;:0,&quot;3&quot;:3},{&quot;1&quot;:1,&quot;2&quot;:0,&quot;4&quot;:1}]},&quot;11&quot;:4,&quot;12&quot;:0}" data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;1. Open the app.\n2. Enter Pub app id.\n3. Tap on start button.&quot;}" style="font-size: 10pt; font-family: Arial;">1. Open the app.<br />
+	2. Enter Pub app id.<br />
+	3. Tap on start button.</span></p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	<span style="font-family: Arial; font-size: 13px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">Get the sdkFailedToInitialize callback called with correct error information.</span></p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="46167" name="Initialize sdk with network disconnection">
+	<node_order><![CDATA[1011]]></node_order>
+	<externalid><![CDATA[48]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>
+	<span style="font-family: Arial; font-size: 13px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">Verify initialization of SDK with network disconnection</span></p>
+]]></summary>
+	<preconditions><![CDATA[<p>
+	<style type="text/css">
+<!--td {border: 1px solid #ccc;}br {mso-data-placement:same-cell;}-->	</style>
+	<span data-sheets-userformat="{&quot;2&quot;:829,&quot;3&quot;:[null,0],&quot;5&quot;:{&quot;1&quot;:[{&quot;1&quot;:2,&quot;2&quot;:0,&quot;5&quot;:[null,2,0]},{&quot;1&quot;:0,&quot;2&quot;:0,&quot;3&quot;:3},{&quot;1&quot;:1,&quot;2&quot;:0,&quot;4&quot;:1}]},&quot;6&quot;:{&quot;1&quot;:[{&quot;1&quot;:2,&quot;2&quot;:0,&quot;5&quot;:[null,2,0]},{&quot;1&quot;:0,&quot;2&quot;:0,&quot;3&quot;:3},{&quot;1&quot;:1,&quot;2&quot;:0,&quot;4&quot;:1}]},&quot;7&quot;:{&quot;1&quot;:[{&quot;1&quot;:2,&quot;2&quot;:0,&quot;5&quot;:[null,2,0]},{&quot;1&quot;:0,&quot;2&quot;:0,&quot;3&quot;:3},{&quot;1&quot;:1,&quot;2&quot;:0,&quot;4&quot;:1}]},&quot;8&quot;:{&quot;1&quot;:[{&quot;1&quot;:2,&quot;2&quot;:0,&quot;5&quot;:[null,2,0]},{&quot;1&quot;:0,&quot;2&quot;:0,&quot;3&quot;:3},{&quot;1&quot;:1,&quot;2&quot;:0,&quot;4&quot;:1}]},&quot;11&quot;:4,&quot;12&quot;:0}" data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;1. Set a charles proxy.\n2. Install the app.\n3. Initialize the app.&quot;}" style="font-size: 10pt; font-family: Arial;">1. Set a charles proxy.<br />
+	2. Install the app.<br />
+	3. Initialize the app.</span></p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+	<style type="text/css">
+<!--td {border: 1px solid #ccc;}br {mso-data-placement:same-cell;}-->	</style>
+	<span data-sheets-userformat="{&quot;2&quot;:829,&quot;3&quot;:[null,0],&quot;5&quot;:{&quot;1&quot;:[{&quot;1&quot;:2,&quot;2&quot;:0,&quot;5&quot;:[null,2,0]},{&quot;1&quot;:0,&quot;2&quot;:0,&quot;3&quot;:3},{&quot;1&quot;:1,&quot;2&quot;:0,&quot;4&quot;:1}]},&quot;6&quot;:{&quot;1&quot;:[{&quot;1&quot;:2,&quot;2&quot;:0,&quot;5&quot;:[null,2,0]},{&quot;1&quot;:0,&quot;2&quot;:0,&quot;3&quot;:3},{&quot;1&quot;:1,&quot;2&quot;:0,&quot;4&quot;:1}]},&quot;7&quot;:{&quot;1&quot;:[{&quot;1&quot;:2,&quot;2&quot;:0,&quot;5&quot;:[null,2,0]},{&quot;1&quot;:0,&quot;2&quot;:0,&quot;3&quot;:3},{&quot;1&quot;:1,&quot;2&quot;:0,&quot;4&quot;:1}]},&quot;8&quot;:{&quot;1&quot;:[{&quot;1&quot;:2,&quot;2&quot;:0,&quot;5&quot;:[null,2,0]},{&quot;1&quot;:0,&quot;2&quot;:0,&quot;3&quot;:3},{&quot;1&quot;:1,&quot;2&quot;:0,&quot;4&quot;:1}]},&quot;11&quot;:4,&quot;12&quot;:0}" data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;1. Open the app.\n2. Enter Pub app id.\n3. Tap on start button.\n4. Disconnect the wifi network during the initialization.&quot;}" style="font-size: 10pt; font-family: Arial;">1. Open the app.<br />
+	2. Enter Pub app id.<br />
+	3. Tap on start button.<br />
+	4. Disconnect the wifi network during the initialization.</span></p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	<style type="text/css">
+<!--td {border: 1px solid #ccc;}br {mso-data-placement:same-cell;}-->	</style>
+	<span data-sheets-userformat="{&quot;2&quot;:829,&quot;3&quot;:[null,0],&quot;5&quot;:{&quot;1&quot;:[{&quot;1&quot;:2,&quot;2&quot;:0,&quot;5&quot;:[null,2,0]},{&quot;1&quot;:0,&quot;2&quot;:0,&quot;3&quot;:3},{&quot;1&quot;:1,&quot;2&quot;:0,&quot;4&quot;:1}]},&quot;6&quot;:{&quot;1&quot;:[{&quot;1&quot;:2,&quot;2&quot;:0,&quot;5&quot;:[null,2,0]},{&quot;1&quot;:0,&quot;2&quot;:0,&quot;3&quot;:3},{&quot;1&quot;:1,&quot;2&quot;:0,&quot;4&quot;:1}]},&quot;7&quot;:{&quot;1&quot;:[{&quot;1&quot;:2,&quot;2&quot;:0,&quot;5&quot;:[null,2,0]},{&quot;1&quot;:0,&quot;2&quot;:0,&quot;3&quot;:3},{&quot;1&quot;:1,&quot;2&quot;:0,&quot;4&quot;:1}]},&quot;8&quot;:{&quot;1&quot;:[{&quot;1&quot;:2,&quot;2&quot;:0,&quot;5&quot;:[null,2,0]},{&quot;1&quot;:0,&quot;2&quot;:0,&quot;3&quot;:3},{&quot;1&quot;:1,&quot;2&quot;:0,&quot;4&quot;:1}]},&quot;11&quot;:4,&quot;12&quot;:0}" data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;1. The SDK will keep trying to access the /hbConfig with a predefined time intervals.\n2. Get the sdkFailedToInitialize callback called until it reach to the maximum count(15).&quot;}" style="font-size: 10pt; font-family: Arial;">1. The SDK will keep trying to access the /hbConfig with a predefined time intervals.<br />
+	2. Get the sdkFailedToInitialize callback called until it reach to the maximum count(15).</span></p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="46170" name="Verify sdk refresh configuration(/hbConfig refresh timeout)">
+	<node_order><![CDATA[1012]]></node_order>
+	<externalid><![CDATA[49]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>
+	<span style="font-family: Arial; font-size: 13px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">Verify sdk refresh configuration(/hbConfig refresh timeout)</span></p>
+]]></summary>
+	<preconditions><![CDATA[<p>
+	<style type="text/css">
+<!--td {border: 1px solid #ccc;}br {mso-data-placement:same-cell;}-->	</style>
+	<span data-sheets-userformat="{&quot;2&quot;:829,&quot;3&quot;:[null,0],&quot;5&quot;:{&quot;1&quot;:[{&quot;1&quot;:2,&quot;2&quot;:0,&quot;5&quot;:[null,2,0]},{&quot;1&quot;:0,&quot;2&quot;:0,&quot;3&quot;:3},{&quot;1&quot;:1,&quot;2&quot;:0,&quot;4&quot;:1}]},&quot;6&quot;:{&quot;1&quot;:[{&quot;1&quot;:2,&quot;2&quot;:0,&quot;5&quot;:[null,2,0]},{&quot;1&quot;:0,&quot;2&quot;:0,&quot;3&quot;:3},{&quot;1&quot;:1,&quot;2&quot;:0,&quot;4&quot;:1}]},&quot;7&quot;:{&quot;1&quot;:[{&quot;1&quot;:2,&quot;2&quot;:0,&quot;5&quot;:[null,2,0]},{&quot;1&quot;:0,&quot;2&quot;:0,&quot;3&quot;:3},{&quot;1&quot;:1,&quot;2&quot;:0,&quot;4&quot;:1}]},&quot;8&quot;:{&quot;1&quot;:[{&quot;1&quot;:2,&quot;2&quot;:0,&quot;5&quot;:[null,2,0]},{&quot;1&quot;:0,&quot;2&quot;:0,&quot;3&quot;:3},{&quot;1&quot;:1,&quot;2&quot;:0,&quot;4&quot;:1}]},&quot;11&quot;:4,&quot;12&quot;:0}" data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;1. Set a charles proxy.\n2. Install the app.\n3. Initialize the app.&quot;}" style="font-size: 10pt; font-family: Arial;">1. Set a charles proxy.<br />
+	2. Install the app.<br />
+	3. Initialize the app.</span></p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+	<style type="text/css">
+<!--td {border: 1px solid #ccc;}br {mso-data-placement:same-cell;}-->	</style>
+	<span data-sheets-userformat="{&quot;2&quot;:829,&quot;3&quot;:[null,0],&quot;5&quot;:{&quot;1&quot;:[{&quot;1&quot;:2,&quot;2&quot;:0,&quot;5&quot;:[null,2,0]},{&quot;1&quot;:0,&quot;2&quot;:0,&quot;3&quot;:3},{&quot;1&quot;:1,&quot;2&quot;:0,&quot;4&quot;:1}]},&quot;6&quot;:{&quot;1&quot;:[{&quot;1&quot;:2,&quot;2&quot;:0,&quot;5&quot;:[null,2,0]},{&quot;1&quot;:0,&quot;2&quot;:0,&quot;3&quot;:3},{&quot;1&quot;:1,&quot;2&quot;:0,&quot;4&quot;:1}]},&quot;7&quot;:{&quot;1&quot;:[{&quot;1&quot;:2,&quot;2&quot;:0,&quot;5&quot;:[null,2,0]},{&quot;1&quot;:0,&quot;2&quot;:0,&quot;3&quot;:3},{&quot;1&quot;:1,&quot;2&quot;:0,&quot;4&quot;:1}]},&quot;8&quot;:{&quot;1&quot;:[{&quot;1&quot;:2,&quot;2&quot;:0,&quot;5&quot;:[null,2,0]},{&quot;1&quot;:0,&quot;2&quot;:0,&quot;3&quot;:3},{&quot;1&quot;:1,&quot;2&quot;:0,&quot;4&quot;:1}]},&quot;11&quot;:4,&quot;12&quot;:0}" data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;1. Manipulate refresh parameter value in /hbConfig response.\n2. Open the app.\n3. Enter Pub app id.\n4. Tap on start button.\n&quot;}" style="font-size: 10pt; font-family: Arial;">1. Manipulate refresh parameter value in /hbConfig response.<br />
+	2. Open the app.<br />
+	3. Enter Pub app id.<br />
+	4. Tap on start button.</span></p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	<span style="font-family: Arial; font-size: 13px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">1.SDK should keep accessing /hbConfig by a predefined time interval(5 min)</span></p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="46176" name="Check for the Ad network status">
+	<node_order><![CDATA[1014]]></node_order>
+	<externalid><![CDATA[51]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>
+	<span style="font-family: Arial; font-size: 13px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">Check for the Ad network status</span></p>
+]]></summary>
+	<preconditions><![CDATA[<p>
+	<style type="text/css">
+<!--td {border: 1px solid #ccc;}br {mso-data-placement:same-cell;}-->	</style>
+	<span data-sheets-userformat="{&quot;2&quot;:4540,&quot;5&quot;:{&quot;1&quot;:[{&quot;1&quot;:2,&quot;2&quot;:0,&quot;5&quot;:[null,2,0]},{&quot;1&quot;:0,&quot;2&quot;:0,&quot;3&quot;:3},{&quot;1&quot;:1,&quot;2&quot;:0,&quot;4&quot;:1}]},&quot;6&quot;:{&quot;1&quot;:[{&quot;1&quot;:2,&quot;2&quot;:0,&quot;5&quot;:[null,2,0]},{&quot;1&quot;:0,&quot;2&quot;:0,&quot;3&quot;:3},{&quot;1&quot;:1,&quot;2&quot;:0,&quot;4&quot;:1}]},&quot;7&quot;:{&quot;1&quot;:[{&quot;1&quot;:2,&quot;2&quot;:0,&quot;5&quot;:[null,2,0]},{&quot;1&quot;:0,&quot;2&quot;:0,&quot;3&quot;:3},{&quot;1&quot;:1,&quot;2&quot;:0,&quot;4&quot;:1}]},&quot;8&quot;:{&quot;1&quot;:[{&quot;1&quot;:2,&quot;2&quot;:0,&quot;5&quot;:[null,2,0]},{&quot;1&quot;:0,&quot;2&quot;:0,&quot;3&quot;:3},{&quot;1&quot;:1,&quot;2&quot;:0,&quot;4&quot;:1}]},&quot;10&quot;:0,&quot;11&quot;:4,&quot;15&quot;:&quot;arial,sans,sans-serif&quot;}" data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;1. Install the app.\n2. Open the app.&quot;}" style="font-size: 10pt; font-family: Arial;">1. Install the app.<br />
+	2. Open the app.</span></p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+	<style type="text/css">
+<!--td {border: 1px solid #ccc;}br {mso-data-placement:same-cell;}-->	</style>
+	<span data-sheets-userformat="{&quot;2&quot;:5053,&quot;3&quot;:[null,0],&quot;5&quot;:{&quot;1&quot;:[{&quot;1&quot;:2,&quot;2&quot;:0,&quot;5&quot;:[null,2,0]},{&quot;1&quot;:0,&quot;2&quot;:0,&quot;3&quot;:3},{&quot;1&quot;:1,&quot;2&quot;:0,&quot;4&quot;:1}]},&quot;6&quot;:{&quot;1&quot;:[{&quot;1&quot;:2,&quot;2&quot;:0,&quot;5&quot;:[null,2,0]},{&quot;1&quot;:0,&quot;2&quot;:0,&quot;3&quot;:3},{&quot;1&quot;:1,&quot;2&quot;:0,&quot;4&quot;:1}]},&quot;7&quot;:{&quot;1&quot;:[{&quot;1&quot;:2,&quot;2&quot;:0,&quot;5&quot;:[null,2,0]},{&quot;1&quot;:0,&quot;2&quot;:0,&quot;3&quot;:3},{&quot;1&quot;:1,&quot;2&quot;:0,&quot;4&quot;:1}]},&quot;8&quot;:{&quot;1&quot;:[{&quot;1&quot;:2,&quot;2&quot;:0,&quot;5&quot;:[null,2,0]},{&quot;1&quot;:0,&quot;2&quot;:0,&quot;3&quot;:3},{&quot;1&quot;:1,&quot;2&quot;:0,&quot;4&quot;:1}]},&quot;10&quot;:0,&quot;11&quot;:4,&quot;12&quot;:0,&quot;15&quot;:&quot;arial,sans,sans-serif&quot;}" data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;1. Install the app.\n2. Open the app\n3. Enter Pub App id and API URL\n4. Tap on Start tab.&quot;}" style="font-size: 10pt; font-family: Arial;">1. Install the app.<br />
+	2. Open the app<br />
+	3. Enter Pub App id and API URL<br />
+	4. Tap on Start tab.</span></p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	<style type="text/css">
+<!--td {border: 1px solid #ccc;}br {mso-data-placement:same-cell;}-->	</style>
+	<span data-sheets-userformat="{&quot;2&quot;:5053,&quot;3&quot;:[null,0],&quot;5&quot;:{&quot;1&quot;:[{&quot;1&quot;:2,&quot;2&quot;:0,&quot;5&quot;:[null,2,0]},{&quot;1&quot;:0,&quot;2&quot;:0,&quot;3&quot;:3},{&quot;1&quot;:1,&quot;2&quot;:0,&quot;4&quot;:1}]},&quot;6&quot;:{&quot;1&quot;:[{&quot;1&quot;:2,&quot;2&quot;:0,&quot;5&quot;:[null,2,0]},{&quot;1&quot;:0,&quot;2&quot;:0,&quot;3&quot;:3},{&quot;1&quot;:1,&quot;2&quot;:0,&quot;4&quot;:1}]},&quot;7&quot;:{&quot;1&quot;:[{&quot;1&quot;:2,&quot;2&quot;:0,&quot;5&quot;:[null,2,0]},{&quot;1&quot;:0,&quot;2&quot;:0,&quot;3&quot;:3},{&quot;1&quot;:1,&quot;2&quot;:0,&quot;4&quot;:1}]},&quot;8&quot;:{&quot;1&quot;:[{&quot;1&quot;:2,&quot;2&quot;:0,&quot;5&quot;:[null,2,0]},{&quot;1&quot;:0,&quot;2&quot;:0,&quot;3&quot;:3},{&quot;1&quot;:1,&quot;2&quot;:0,&quot;4&quot;:1}]},&quot;10&quot;:0,&quot;11&quot;:4,&quot;12&quot;:0,&quot;15&quot;:&quot;arial,sans,sans-serif&quot;}" data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;1.Ad should load successfully with different Ad Networks status such as  \nInMobi - Success\nfacebook - Fail\nVungle - Success\nAdmob - Fail\n&quot;}" style="font-size: 10pt; font-family: Arial;">1.Ad should load successfully with different Ad Networks status such as<br />
+	InMobi - Success<br />
+	facebook - Fail<br />
+	Vungle - Success<br />
+	Admob - Fail</span></p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="46179" name="API hbConfig request">
+	<node_order><![CDATA[1015]]></node_order>
+	<externalid><![CDATA[52]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>
+	<span style="font-family: Arial; font-size: 13px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">Check request payload of hbconfig API</span></p>
+]]></summary>
+	<preconditions><![CDATA[<p>
+	<style type="text/css">
+<!--td {border: 1px solid #ccc;}br {mso-data-placement:same-cell;}-->	</style>
+	<span data-sheets-userformat="{&quot;2&quot;:4524,&quot;5&quot;:{&quot;1&quot;:[{&quot;1&quot;:2,&quot;2&quot;:0,&quot;5&quot;:[null,2,0]},{&quot;1&quot;:0,&quot;2&quot;:0,&quot;3&quot;:3},{&quot;1&quot;:1,&quot;2&quot;:0,&quot;4&quot;:1}]},&quot;6&quot;:{&quot;1&quot;:[{&quot;1&quot;:2,&quot;2&quot;:0,&quot;5&quot;:[null,2,0]},{&quot;1&quot;:0,&quot;2&quot;:0,&quot;3&quot;:3},{&quot;1&quot;:1,&quot;2&quot;:0,&quot;4&quot;:1}]},&quot;8&quot;:{&quot;1&quot;:[{&quot;1&quot;:2,&quot;2&quot;:0,&quot;5&quot;:[null,2,0]},{&quot;1&quot;:0,&quot;2&quot;:0,&quot;3&quot;:3},{&quot;1&quot;:1,&quot;2&quot;:0,&quot;4&quot;:1}]},&quot;10&quot;:0,&quot;11&quot;:4,&quot;15&quot;:&quot;arial,sans,sans-serif&quot;}" data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;1. Install the app.\n2. Open the app.\n3. Initialize the app&quot;}" style="font-size: 10pt; font-family: Arial;">1. Install the app.<br />
+	2. Open the app.<br />
+	3. Initialize the app</span></p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+	<style type="text/css">
+<!--td {border: 1px solid #ccc;}br {mso-data-placement:same-cell;}-->	</style>
+	<span data-sheets-userformat="{&quot;2&quot;:5037,&quot;3&quot;:[null,0],&quot;5&quot;:{&quot;1&quot;:[{&quot;1&quot;:2,&quot;2&quot;:0,&quot;5&quot;:[null,2,0]},{&quot;1&quot;:0,&quot;2&quot;:0,&quot;3&quot;:3},{&quot;1&quot;:1,&quot;2&quot;:0,&quot;4&quot;:1}]},&quot;6&quot;:{&quot;1&quot;:[{&quot;1&quot;:2,&quot;2&quot;:0,&quot;5&quot;:[null,2,0]},{&quot;1&quot;:0,&quot;2&quot;:0,&quot;3&quot;:3},{&quot;1&quot;:1,&quot;2&quot;:0,&quot;4&quot;:1}]},&quot;8&quot;:{&quot;1&quot;:[{&quot;1&quot;:2,&quot;2&quot;:0,&quot;5&quot;:[null,2,0]},{&quot;1&quot;:0,&quot;2&quot;:0,&quot;3&quot;:3},{&quot;1&quot;:1,&quot;2&quot;:0,&quot;4&quot;:1}]},&quot;10&quot;:0,&quot;11&quot;:4,&quot;12&quot;:0,&quot;15&quot;:&quot;arial,sans,sans-serif&quot;}" data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;1. Open the app.\n2. Enter valid pub app Id.\n3. Tap on start button.\n4. Observe the hbConfig in charles.&quot;}" style="font-size: 10pt; font-family: Arial;">1. Open the app.<br />
+	2. Enter valid pub app Id.<br />
+	3. Tap on start button.<br />
+	4. Observe the hbConfig in charles.</span></p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	<span style="font-family: Arial; font-size: 13px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">hbConfig request should contain app info and device information.</span></p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="46182" name="API hbConfig response .">
+	<node_order><![CDATA[1016]]></node_order>
+	<externalid><![CDATA[53]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>
+	<span style="font-family: Arial; font-size: 13px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">Check response payload of hbconfig API</span></p>
+]]></summary>
+	<preconditions><![CDATA[<p>
+	<style type="text/css">
+<!--td {border: 1px solid #ccc;}br {mso-data-placement:same-cell;}-->	</style>
+	<span data-sheets-userformat="{&quot;2&quot;:4524,&quot;5&quot;:{&quot;1&quot;:[{&quot;1&quot;:2,&quot;2&quot;:0,&quot;5&quot;:[null,2,0]},{&quot;1&quot;:0,&quot;2&quot;:0,&quot;3&quot;:3},{&quot;1&quot;:1,&quot;2&quot;:0,&quot;4&quot;:1}]},&quot;6&quot;:{&quot;1&quot;:[{&quot;1&quot;:2,&quot;2&quot;:0,&quot;5&quot;:[null,2,0]},{&quot;1&quot;:0,&quot;2&quot;:0,&quot;3&quot;:3},{&quot;1&quot;:1,&quot;2&quot;:0,&quot;4&quot;:1}]},&quot;8&quot;:{&quot;1&quot;:[{&quot;1&quot;:2,&quot;2&quot;:0,&quot;5&quot;:[null,2,0]},{&quot;1&quot;:0,&quot;2&quot;:0,&quot;3&quot;:3},{&quot;1&quot;:1,&quot;2&quot;:0,&quot;4&quot;:1}]},&quot;10&quot;:0,&quot;11&quot;:4,&quot;15&quot;:&quot;arial,sans,sans-serif&quot;}" data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;1. Install the app.\n2. Open the app.\n3. Initialize the app&quot;}" style="font-size: 10pt; font-family: Arial;">1. Install the app.<br />
+	2. Open the app.<br />
+	3. Initialize the app</span></p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+	<style type="text/css">
+<!--td {border: 1px solid #ccc;}br {mso-data-placement:same-cell;}-->	</style>
+	<span data-sheets-userformat="{&quot;2&quot;:5037,&quot;3&quot;:[null,0],&quot;5&quot;:{&quot;1&quot;:[{&quot;1&quot;:2,&quot;2&quot;:0,&quot;5&quot;:[null,2,0]},{&quot;1&quot;:0,&quot;2&quot;:0,&quot;3&quot;:3},{&quot;1&quot;:1,&quot;2&quot;:0,&quot;4&quot;:1}]},&quot;6&quot;:{&quot;1&quot;:[{&quot;1&quot;:2,&quot;2&quot;:0,&quot;5&quot;:[null,2,0]},{&quot;1&quot;:0,&quot;2&quot;:0,&quot;3&quot;:3},{&quot;1&quot;:1,&quot;2&quot;:0,&quot;4&quot;:1}]},&quot;8&quot;:{&quot;1&quot;:[{&quot;1&quot;:2,&quot;2&quot;:0,&quot;5&quot;:[null,2,0]},{&quot;1&quot;:0,&quot;2&quot;:0,&quot;3&quot;:3},{&quot;1&quot;:1,&quot;2&quot;:0,&quot;4&quot;:1}]},&quot;10&quot;:0,&quot;11&quot;:4,&quot;12&quot;:0,&quot;15&quot;:&quot;arial,sans,sans-serif&quot;}" data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;1. Open the app.\n2. Enter valid pub app Id.\n3. Tap on start button.\n4. Observe the hbConfig in charles.&quot;}" style="font-size: 10pt; font-family: Arial;">1. Open the app.<br />
+	2. Enter valid pub app Id.<br />
+	3. Tap on start button.<br />
+	4. Observe the hbConfig in charles.</span></p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	<span style="font-family: Arial; font-size: 13px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">hbConfig response should contain information about placements and End points.</span></p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="46185" name="Response payload of hbConfig">
+	<node_order><![CDATA[1017]]></node_order>
+	<externalid><![CDATA[54]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>
+	<span style="font-family: Arial; font-size: 13px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">To check response payload of hbConfig</span></p>
+]]></summary>
+	<preconditions><![CDATA[<p>
+	<style type="text/css">
+<!--td {border: 1px solid #ccc;}br {mso-data-placement:same-cell;}-->	</style>
+	<span data-sheets-userformat="{&quot;2&quot;:4524,&quot;5&quot;:{&quot;1&quot;:[{&quot;1&quot;:2,&quot;2&quot;:0,&quot;5&quot;:[null,2,0]},{&quot;1&quot;:0,&quot;2&quot;:0,&quot;3&quot;:3},{&quot;1&quot;:1,&quot;2&quot;:0,&quot;4&quot;:1}]},&quot;6&quot;:{&quot;1&quot;:[{&quot;1&quot;:2,&quot;2&quot;:0,&quot;5&quot;:[null,2,0]},{&quot;1&quot;:0,&quot;2&quot;:0,&quot;3&quot;:3},{&quot;1&quot;:1,&quot;2&quot;:0,&quot;4&quot;:1}]},&quot;8&quot;:{&quot;1&quot;:[{&quot;1&quot;:2,&quot;2&quot;:0,&quot;5&quot;:[null,2,0]},{&quot;1&quot;:0,&quot;2&quot;:0,&quot;3&quot;:3},{&quot;1&quot;:1,&quot;2&quot;:0,&quot;4&quot;:1}]},&quot;10&quot;:0,&quot;11&quot;:4,&quot;15&quot;:&quot;arial,sans,sans-serif&quot;}" data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;1.Install the app.\n2.Open the app.\n3.Initialize the app&quot;}" style="font-size: 10pt; font-family: Arial;">1.Install the app.<br />
+	2.Open the app.<br />
+	3.Initialize the app</span></p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+	<style type="text/css">
+<!--td {border: 1px solid #ccc;}br {mso-data-placement:same-cell;}-->	</style>
+	<span data-sheets-userformat="{&quot;2&quot;:4524,&quot;5&quot;:{&quot;1&quot;:[{&quot;1&quot;:2,&quot;2&quot;:0,&quot;5&quot;:[null,2,0]},{&quot;1&quot;:0,&quot;2&quot;:0,&quot;3&quot;:3},{&quot;1&quot;:1,&quot;2&quot;:0,&quot;4&quot;:1}]},&quot;6&quot;:{&quot;1&quot;:[{&quot;1&quot;:2,&quot;2&quot;:0,&quot;5&quot;:[null,2,0]},{&quot;1&quot;:0,&quot;2&quot;:0,&quot;3&quot;:3},{&quot;1&quot;:1,&quot;2&quot;:0,&quot;4&quot;:1}]},&quot;8&quot;:{&quot;1&quot;:[{&quot;1&quot;:2,&quot;2&quot;:0,&quot;5&quot;:[null,2,0]},{&quot;1&quot;:0,&quot;2&quot;:0,&quot;3&quot;:3},{&quot;1&quot;:1,&quot;2&quot;:0,&quot;4&quot;:1}]},&quot;10&quot;:0,&quot;11&quot;:4,&quot;15&quot;:&quot;arial,sans,sans-serif&quot;}" data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;1) Install the App on device and set charles Proxy.  \n2) Manually initialise the App.\n3) Observe response payload of hb config API in the charles Proxy.&quot;}" style="font-size: 10pt; font-family: Arial;">1) Install the App on device and set charles Proxy.<br />
+	2) Manually initialise the App.<br />
+	3) Observe response payload of hb config API in the charles Proxy.</span></p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	<span style="font-family: Arial; font-size: 13px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">hbconfig response payload should contains following parameters hb_enabled&quot;: true, &quot;config&quot;: { &quot;refresh_time&quot;: 0, &quot;auction_timeout&quot;: 0 hb_endpoints&quot; bid_endpoint&quot;: &quot;string&quot;, &quot;report_endpoint&quot;: &quot;string&quot;, &quot;log_endpoint&quot;: &quot;string&quot; &quot;placements&quot;: [ { &quot;reference_id&quot;: &quot;string&quot;, &quot;ad_networks&quot;:</span></p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="46188" name="User Agent of the build.">
+	<node_order><![CDATA[1018]]></node_order>
+	<externalid><![CDATA[55]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>
+	Verify User agent of the build.</p>
+]]></summary>
+	<preconditions><![CDATA[<p>
+	<style type="text/css">
+<!--td {border: 1px solid #ccc;}br {mso-data-placement:same-cell;}-->	</style>
+	<span data-sheets-userformat="{&quot;2&quot;:829,&quot;3&quot;:[null,0],&quot;5&quot;:{&quot;1&quot;:[{&quot;1&quot;:2,&quot;2&quot;:0,&quot;5&quot;:[null,2,0]},{&quot;1&quot;:0,&quot;2&quot;:0,&quot;3&quot;:3},{&quot;1&quot;:1,&quot;2&quot;:0,&quot;4&quot;:1}]},&quot;6&quot;:{&quot;1&quot;:[{&quot;1&quot;:2,&quot;2&quot;:0,&quot;5&quot;:[null,2,0]},{&quot;1&quot;:0,&quot;2&quot;:0,&quot;3&quot;:3},{&quot;1&quot;:1,&quot;2&quot;:0,&quot;4&quot;:1}]},&quot;7&quot;:{&quot;1&quot;:[{&quot;1&quot;:2,&quot;2&quot;:0,&quot;5&quot;:[null,2,0]},{&quot;1&quot;:0,&quot;2&quot;:0,&quot;3&quot;:3},{&quot;1&quot;:1,&quot;2&quot;:0,&quot;4&quot;:1}]},&quot;8&quot;:{&quot;1&quot;:[{&quot;1&quot;:2,&quot;2&quot;:0,&quot;5&quot;:[null,2,0]},{&quot;1&quot;:0,&quot;2&quot;:0,&quot;3&quot;:3},{&quot;1&quot;:1,&quot;2&quot;:0,&quot;4&quot;:1}]},&quot;11&quot;:4,&quot;12&quot;:0}" data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;1. Set a charles proxy.\n2. Install the app.\n3. Initialize the app.&quot;}" style="font-size: 10pt; font-family: Arial;">1. Set a charles proxy.<br />
+	2. Install the app.<br />
+	3. Initialize the app.</span></p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+	<style type="text/css">
+<!--td {border: 1px solid #ccc;}br {mso-data-placement:same-cell;}-->	</style>
+	<span data-sheets-userformat="{&quot;2&quot;:829,&quot;3&quot;:[null,0],&quot;5&quot;:{&quot;1&quot;:[{&quot;1&quot;:2,&quot;2&quot;:0,&quot;5&quot;:[null,2,0]},{&quot;1&quot;:0,&quot;2&quot;:0,&quot;3&quot;:3},{&quot;1&quot;:1,&quot;2&quot;:0,&quot;4&quot;:1}]},&quot;6&quot;:{&quot;1&quot;:[{&quot;1&quot;:2,&quot;2&quot;:0,&quot;5&quot;:[null,2,0]},{&quot;1&quot;:0,&quot;2&quot;:0,&quot;3&quot;:3},{&quot;1&quot;:1,&quot;2&quot;:0,&quot;4&quot;:1}]},&quot;7&quot;:{&quot;1&quot;:[{&quot;1&quot;:2,&quot;2&quot;:0,&quot;5&quot;:[null,2,0]},{&quot;1&quot;:0,&quot;2&quot;:0,&quot;3&quot;:3},{&quot;1&quot;:1,&quot;2&quot;:0,&quot;4&quot;:1}]},&quot;8&quot;:{&quot;1&quot;:[{&quot;1&quot;:2,&quot;2&quot;:0,&quot;5&quot;:[null,2,0]},{&quot;1&quot;:0,&quot;2&quot;:0,&quot;3&quot;:3},{&quot;1&quot;:1,&quot;2&quot;:0,&quot;4&quot;:1}]},&quot;11&quot;:4,&quot;12&quot;:0}" data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;1. Open the app.\n2. Enter valid Pub App Id.\n3. Tap on start button.&quot;}" style="font-size: 10pt; font-family: Arial;">1. Open the app.</span></p>
+<p>
+	<span data-sheets-userformat="{&quot;2&quot;:829,&quot;3&quot;:[null,0],&quot;5&quot;:{&quot;1&quot;:[{&quot;1&quot;:2,&quot;2&quot;:0,&quot;5&quot;:[null,2,0]},{&quot;1&quot;:0,&quot;2&quot;:0,&quot;3&quot;:3},{&quot;1&quot;:1,&quot;2&quot;:0,&quot;4&quot;:1}]},&quot;6&quot;:{&quot;1&quot;:[{&quot;1&quot;:2,&quot;2&quot;:0,&quot;5&quot;:[null,2,0]},{&quot;1&quot;:0,&quot;2&quot;:0,&quot;3&quot;:3},{&quot;1&quot;:1,&quot;2&quot;:0,&quot;4&quot;:1}]},&quot;7&quot;:{&quot;1&quot;:[{&quot;1&quot;:2,&quot;2&quot;:0,&quot;5&quot;:[null,2,0]},{&quot;1&quot;:0,&quot;2&quot;:0,&quot;3&quot;:3},{&quot;1&quot;:1,&quot;2&quot;:0,&quot;4&quot;:1}]},&quot;8&quot;:{&quot;1&quot;:[{&quot;1&quot;:2,&quot;2&quot;:0,&quot;5&quot;:[null,2,0]},{&quot;1&quot;:0,&quot;2&quot;:0,&quot;3&quot;:3},{&quot;1&quot;:1,&quot;2&quot;:0,&quot;4&quot;:1}]},&quot;11&quot;:4,&quot;12&quot;:0}" data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;1. Open the app.\n2. Enter valid Pub App Id.\n3. Tap on start button.&quot;}" style="font-size: 10pt; font-family: Arial;">2. Enter valid Pub app Id.</span></p>
+<p>
+	<span data-sheets-userformat="{&quot;2&quot;:829,&quot;3&quot;:[null,0],&quot;5&quot;:{&quot;1&quot;:[{&quot;1&quot;:2,&quot;2&quot;:0,&quot;5&quot;:[null,2,0]},{&quot;1&quot;:0,&quot;2&quot;:0,&quot;3&quot;:3},{&quot;1&quot;:1,&quot;2&quot;:0,&quot;4&quot;:1}]},&quot;6&quot;:{&quot;1&quot;:[{&quot;1&quot;:2,&quot;2&quot;:0,&quot;5&quot;:[null,2,0]},{&quot;1&quot;:0,&quot;2&quot;:0,&quot;3&quot;:3},{&quot;1&quot;:1,&quot;2&quot;:0,&quot;4&quot;:1}]},&quot;7&quot;:{&quot;1&quot;:[{&quot;1&quot;:2,&quot;2&quot;:0,&quot;5&quot;:[null,2,0]},{&quot;1&quot;:0,&quot;2&quot;:0,&quot;3&quot;:3},{&quot;1&quot;:1,&quot;2&quot;:0,&quot;4&quot;:1}]},&quot;8&quot;:{&quot;1&quot;:[{&quot;1&quot;:2,&quot;2&quot;:0,&quot;5&quot;:[null,2,0]},{&quot;1&quot;:0,&quot;2&quot;:0,&quot;3&quot;:3},{&quot;1&quot;:1,&quot;2&quot;:0,&quot;4&quot;:1}]},&quot;11&quot;:4,&quot;12&quot;:0}" data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;1. Open the app.\n2. Enter valid Pub App Id.\n3. Tap on start button.&quot;}" style="font-size: 10pt; font-family: Arial;">3. tap on start button.</span></p>
+<p>
+	<span data-sheets-userformat="{&quot;2&quot;:829,&quot;3&quot;:[null,0],&quot;5&quot;:{&quot;1&quot;:[{&quot;1&quot;:2,&quot;2&quot;:0,&quot;5&quot;:[null,2,0]},{&quot;1&quot;:0,&quot;2&quot;:0,&quot;3&quot;:3},{&quot;1&quot;:1,&quot;2&quot;:0,&quot;4&quot;:1}]},&quot;6&quot;:{&quot;1&quot;:[{&quot;1&quot;:2,&quot;2&quot;:0,&quot;5&quot;:[null,2,0]},{&quot;1&quot;:0,&quot;2&quot;:0,&quot;3&quot;:3},{&quot;1&quot;:1,&quot;2&quot;:0,&quot;4&quot;:1}]},&quot;7&quot;:{&quot;1&quot;:[{&quot;1&quot;:2,&quot;2&quot;:0,&quot;5&quot;:[null,2,0]},{&quot;1&quot;:0,&quot;2&quot;:0,&quot;3&quot;:3},{&quot;1&quot;:1,&quot;2&quot;:0,&quot;4&quot;:1}]},&quot;8&quot;:{&quot;1&quot;:[{&quot;1&quot;:2,&quot;2&quot;:0,&quot;5&quot;:[null,2,0]},{&quot;1&quot;:0,&quot;2&quot;:0,&quot;3&quot;:3},{&quot;1&quot;:1,&quot;2&quot;:0,&quot;4&quot;:1}]},&quot;11&quot;:4,&quot;12&quot;:0}" data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;1. Open the app.\n2. Enter valid Pub App Id.\n3. Tap on start button.&quot;}" style="font-size: 10pt; font-family: Arial;">4. Verify the user agent of the build in the header of APi.</span></p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	User agent should display properly.</p>
+<p>
+	eg.&nbsp;User-Agent - VungleHBS/0.9.0;native</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="46212" name="Load interstitial successfully after sdk initialized">
+	<node_order><![CDATA[1026]]></node_order>
+	<externalid><![CDATA[63]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>
+	<span style="font-family: docs-Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">Call sdk api to load interstitial.</span></p>
+]]></summary>
+	<preconditions><![CDATA[<p>
+	<span style="font-family: docs-Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">Setup accounts correctly.(vungle, inmobi, admob, facebook, applovin, unity, mopub) The sdk is initialized successfully. (Get sdkDidInitialize called) </span></p>
+<div>
+	&nbsp;</div>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+	<span style="font-family: docs-Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">Create an interstitial object with a valid placement id. Call api to load interstitial.</span></p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	<span style="font-family: docs-Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">The InterstitialDidLoad callback called with each ad network. (The callback should be called in the main thread)</span></p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="46215" name="Load rewarded video ad successfully after sdk initalized">
+	<node_order><![CDATA[1027]]></node_order>
+	<externalid><![CDATA[64]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>
+	<span style="font-family: docs-Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">Call sdk api to load rewarded video ad.</span></p>
+]]></summary>
+	<preconditions><![CDATA[<p>
+	<span style="font-family: docs-Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">Setup accounts correctly.(vungle, inmobi, admob, facebook, applovin, unity, mopub) The sdk is initalized successfully. (Get sdkDidInitialize called) </span></p>
+<div>
+	&nbsp;</div>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+	<span style="font-family: docs-Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">Create an Interstitial object with a valid placement id. Call api to load interstitial.</span></p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	<span style="font-family: docs-Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">The InterstitialDidLoad callback called with each ad network.</span></p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+</testsuite><testsuite id="46021" name="GDPR" >
+<node_order><![CDATA[3]]></node_order>
+<details><![CDATA[]]></details> 
+
+<testcase internalid="46022" name="User consent status is unknown  in non EU countries.">
+	<node_order><![CDATA[1000]]></node_order>
+	<externalid><![CDATA[1]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>
+	<span style="color: rgb(0, 0, 0); font-family: Arial; font-size: 15px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; white-space: pre-wrap; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;">User consent status is unknown in non EU countries.</span></p>
+]]></summary>
+	<preconditions><![CDATA[<p>
+	<br />
+	<span style="color: rgb(0, 0, 0); font-family: docs-Cambria; font-size: 15px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; white-space: pre-wrap; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;">Device IP is a non EU country IP. User consent status is unknown.</span></p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+	1. Change device IP to a non EU country IP.<br />
+	2. In TestApp, choose &ldquo;User consent status&quot; to unknown (Default)<br />
+	3. Start Vungle Advanced Auction SDK.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	1. In /v1/hbConfig request, parameter &rdquo;consent_status&ldquo; is unknown: &quot;user&quot;: { &quot;gdpr&quot;: { &quot;consent_source&quot;: &quot;publisher&quot;, &quot;consent_status&quot;: &quot;unknown&quot;, &quot;consent_timestamp&quot;: 0 } }<br />
+	2. In /v1/hbConfig response, parameter &quot;is_country_data_protected&quot; is false &quot;gdpr&quot;: { &quot;is_country_data_protected&quot;: false } }</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="46025" name="User consent status is accepted  in non EU countries.">
+	<node_order><![CDATA[1001]]></node_order>
+	<externalid><![CDATA[2]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>
+	User consent status is accepted in non EU countries.</p>
+]]></summary>
+	<preconditions><![CDATA[<p>
+	<span style="color: rgb(0, 0, 0); font-family: docs-Cambria; font-size: 15px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; white-space: pre-wrap; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;">Device IP is a non EU country IP. User consetn status is accepted.</span></p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+	1. Change device IP to a non EU country IP.<br />
+	2. In TestApp, choose&nbsp; &ldquo;User consent status&quot; to accepted<br />
+	3. Start Vungle Advanced Auction SDK.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	1. In /v1/hbConfig request,&nbsp;&nbsp; parameter<br />
+	&rdquo;consent_status&ldquo; is opted_in:<br />
+	&quot;user&quot;: {<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;gdpr&quot;: {<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;consent_source&quot;: &quot;publisher&quot;,<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;consent_status&quot;: &quot;opted_in&quot;,<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;consent_timestamp&quot;: 1536732869<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }<br />
+	2. In&nbsp; /v1/hbConfig&nbsp; response,<br />
+	parameter &quot;is_country_data_protected&quot;&nbsp; is false<br />
+	&quot;gdpr&quot;: {<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;is_country_data_protected&quot;: false<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }<br />
+	}</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="46028" name="User consent status is denied  in non EU countries.">
+	<node_order><![CDATA[1002]]></node_order>
+	<externalid><![CDATA[3]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>
+	<span style="color: rgb(0, 0, 0); font-family: Arial; font-size: 15px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; white-space: pre-wrap; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;">User consent status is denied in non EU countries.</span></p>
+]]></summary>
+	<preconditions><![CDATA[<p>
+	<span style="color: rgb(0, 0, 0); font-family: docs-Cambria; font-size: 15px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; white-space: pre-wrap; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;">Device IP is a non EU country IP. User consent status is denied.</span></p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+	1. Change device IP to a non EU country IP.<br />
+	2. In TestApp, choose&nbsp; &ldquo;User consent status&quot;<br />
+	to denied<br />
+	3. Start Vungle Advanced Auction SDK.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	1. In /v1/hbConfig request,&nbsp;&nbsp; parameter<br />
+	&rdquo;consent_status&ldquo; is opted_out:<br />
+	&quot;user&quot;: {<br />
+	&quot;gdpr&quot;: {<br />
+	&quot;consent_source&quot;: &quot;publisher&quot;,<br />
+	&quot;consent_status&quot;: &quot;opted_out&quot;,<br />
+	&quot;consent_timestamp&quot;: 1536733015<br />
+	}<br />
+	}<br />
+	<br />
+	2. In&nbsp; /v1/hbConfig&nbsp; response,<br />
+	parameter &quot;is_country_data_protected&quot;&nbsp; is false<br />
+	&quot;gdpr&quot;: {<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;is_country_data_protected&quot;: false<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }<br />
+	}</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="46031" name="User consent status is unknown  in EU countries.">
+	<node_order><![CDATA[1003]]></node_order>
+	<externalid><![CDATA[4]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>
+	<span style="color: rgb(0, 0, 0); font-family: Arial; font-size: 15px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; white-space: pre-wrap; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;">User consent status is unknown in EU countries.</span></p>
+]]></summary>
+	<preconditions><![CDATA[<p>
+	<span style="color: rgb(0, 0, 0); font-family: docs-Cambria; font-size: 15px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; white-space: pre-wrap; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;">Device IP is a EU country IP. User consetn status is unknown.</span></p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+	1. Change device IP to a EU country IP<br />
+	(We could use Astrill to switch to Germany IP).<br />
+	2. In TestApp, choose&nbsp; &ldquo;User consent status&quot;<br />
+	to unknown （Default）<br />
+	3. Start Vungle Advanced Auction SDK.<br />
+	&nbsp;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	1. In /v1/hbConfig request,&nbsp;&nbsp; parameter<br />
+	&rdquo;consent_status&ldquo; is unknown:<br />
+	&quot;user&quot;: {<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;gdpr&quot;: {<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;consent_source&quot;: &quot;publisher&quot;,<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;consent_status&quot;: &quot;unknown&quot;,<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;consent_timestamp&quot;: 0<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }<br />
+	2. In&nbsp; /v1/hbConfig&nbsp; response,<br />
+	parameter &quot;is_country_data_protected&quot;&nbsp; is false<br />
+	&quot;gdpr&quot;: {<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;is_country_data_protected&quot;: true<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="46034" name="User consent status is accepted  in EU countries.">
+	<node_order><![CDATA[1004]]></node_order>
+	<externalid><![CDATA[5]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>
+	<span style="color: rgb(0, 0, 0); font-family: Arial; font-size: 15px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; white-space: pre-wrap; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;">User consent status is accepted in EU countries.</span></p>
+]]></summary>
+	<preconditions><![CDATA[<p>
+	<span style="color: rgb(0, 0, 0); font-family: docs-Cambria; font-size: 15px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; white-space: pre-wrap; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;">Device IP is a EU country IP. User consetn status is accepted.</span></p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+	1. Change device IP to a EU country IP<br />
+	(We could use Astrill to switch to Germany IP).<br />
+	2. In TestApp, choose&nbsp; &ldquo;User consent status&quot;<br />
+	to accepted<br />
+	3. Start Vungle Advanced Auction SDK.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	1. In /v1/hbConfig request,&nbsp;&nbsp; parameter<br />
+	&rdquo;consent_status&ldquo; is opted_in:<br />
+	&quot;user&quot;: {<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;gdpr&quot;: {<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;consent_source&quot;: &quot;publisher&quot;,<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;consent_status&quot;: &quot;opted_in&quot;,<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;consent_timestamp&quot;: 1536732869<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }<br />
+	2. In&nbsp; /v1/hbConfig&nbsp; response,<br />
+	parameter &quot;is_country_data_protected&quot;&nbsp; is false<br />
+	&quot;gdpr&quot;: {<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;is_country_data_protected&quot;: true<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="46037" name="User consent status is denied  in EU countries.">
+	<node_order><![CDATA[1005]]></node_order>
+	<externalid><![CDATA[6]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>
+	<span style="color: rgb(0, 0, 0); font-family: Arial; font-size: 15px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; white-space: pre-wrap; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;">User consent status is denied in EU countries.</span></p>
+]]></summary>
+	<preconditions><![CDATA[<p>
+	<span style="color: rgb(0, 0, 0); font-family: docs-Cambria; font-size: 15px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; white-space: pre-wrap; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;">Device IP is a EU country IP. User consent status is denied.</span></p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+	1. Change device IP to a EU country IP<br />
+	(We could use Astrill to switch to Germany IP).<br />
+	2. In TestApp, choose&nbsp; &ldquo;User consent status&quot;<br />
+	to denied<br />
+	3. Start Vungle Advanced Auction SDK.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	1. In /v1/hbConfig request,&nbsp;&nbsp; parameter<br />
+	&rdquo;consent_status&ldquo; is opted_out:<br />
+	&quot;user&quot;: {<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;gdpr&quot;: {<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;consent_source&quot;: &quot;publisher&quot;,<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;consent_status&quot;: &quot;opted_out&quot;,<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;consent_timestamp&quot;: 1536733015<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }<br />
+	2. In&nbsp; /v1/hbConfig&nbsp; response,<br />
+	parameter &quot;is_country_data_protected&quot;&nbsp; is false<br />
+	&quot;gdpr&quot;: {<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;is_country_data_protected&quot;: true<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+</testsuite><testsuite id="46040" name="Log" >
+<node_order><![CDATA[4]]></node_order>
+<details><![CDATA[]]></details> 
+
+<testcase internalid="46041" name="Log function enabled">
+	<node_order><![CDATA[1000]]></node_order>
+	<externalid><![CDATA[7]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>
+	<span style="color: rgb(0, 0, 0); font-family: docs-Cambria; font-size: 15px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; white-space: pre-wrap; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;">Log function enabled</span></p>
+]]></summary>
+	<preconditions><![CDATA[<p>
+	<span style="color: rgb(0, 0, 0); font-family: docs-Cambria; font-size: 15px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; white-space: pre-wrap; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;">Parameter &quot;logging&quot; is enabled in the response of /v1/hbConfig </span></p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+	1. Start Vungle Advanced Auction SDK successfulfly<br />
+	2. Parameter&nbsp; &quot;logging&quot; is enabled in the response of&nbsp; /v1/hbConfig<br />
+	&quot;logging&quot;: {<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;enabled&quot;: true<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; },</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	<span style="color: rgb(0, 0, 0); font-family: docs-Cambria; font-size: 15px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; white-space: pre-wrap; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;">Vungle Advanced Auction SDK will send the log items to the log endpoint(For qa environment is https://qa-hb.api.vungle.com/v1/logging) ; Each field of metadata in every log item is correct and does not have raw data</span></p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="46044" name="Log function disabled">
+	<node_order><![CDATA[1001]]></node_order>
+	<externalid><![CDATA[8]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>
+	Log function disabled</p>
+]]></summary>
+	<preconditions><![CDATA[<p>
+	<span style="color: rgb(0, 0, 0); font-family: docs-Cambria; font-size: 15px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; white-space: pre-wrap; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;">Parameter &quot;logging&quot; is disabled in the response of /v1/hbConfig </span></p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+	1. Start Vungle Advanced Auction SDK successfulfly<br />
+	2. Parameter&nbsp; &quot;logging&quot; is disabled in the response of&nbsp; /v1/hbConfig<br />
+	&quot;logging&quot;: {<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;enabled&quot;: false<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; },</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	<br />
+	Vungle Advanced Auction SDK will not send the log items to the log endpoint(For qa environment is https://qa-hb.api.vungle.com/v1/logging)</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+</testsuite><testsuite id="46396" name="ads" >
+<node_order><![CDATA[5]]></node_order>
+<details><![CDATA[]]></details> 
+
+<testcase internalid="46397" name="Play intersitital after ad loaded(single ad network)">
+	<node_order><![CDATA[1000]]></node_order>
+	<externalid><![CDATA[123]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>
+	<style type="text/css">
+<!--td {border: 1px solid #ccc;}br {mso-data-placement:same-cell;}-->	</style>
+	<span data-sheets-userformat="{&quot;2&quot;:8961,&quot;3&quot;:[null,0],&quot;11&quot;:4,&quot;12&quot;:0,&quot;16&quot;:11}" data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;Call sdk api to play interstitial after single ad network loaded.&quot;}" style="font-size: 11pt; font-family: Arial;">Call sdk api to play interstitial after single ad network loaded.</span></p>
+]]></summary>
+	<preconditions><![CDATA[<p>
+	<style type="text/css">
+<!--td {border: 1px solid #ccc;}br {mso-data-placement:same-cell;}-->	</style>
+	<span data-sheets-userformat="{&quot;2&quot;:8961,&quot;3&quot;:[null,0],&quot;11&quot;:4,&quot;12&quot;:0,&quot;16&quot;:11}" data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;network is connected.&quot;}" style="font-size: 11pt; font-family: Arial;">network is connected.</span></p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+	<style type="text/css">
+<!--td {border: 1px solid #ccc;}br {mso-data-placement:same-cell;}-->	</style>
+	<span data-sheets-userformat="{&quot;2&quot;:8961,&quot;3&quot;:[null,0],&quot;11&quot;:4,&quot;12&quot;:0,&quot;16&quot;:11}" data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;1.Create the interstitial object.\n2.Load the ad\n3.After ad loaded for one ad network, play the ad&quot;}" style="font-size: 11pt; font-family: Arial;">1.Create the interstitial object.<br />
+	2.Load the ad<br />
+	3.After ad loaded for one ad network, play the ad</span></p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	<style type="text/css">
+<!--td {border: 1px solid #ccc;}br {mso-data-placement:same-cell;}-->	</style>
+	<span data-sheets-userformat="{&quot;2&quot;:8961,&quot;3&quot;:[null,0],&quot;11&quot;:4,&quot;12&quot;:0,&quot;16&quot;:11}" data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;The first ad network of /bid response should be played&quot;}" style="font-size: 11pt; font-family: Arial;">The first ad network of /bid response should be played</span></p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="46400" name="Play interstitial with network , check play ad report">
+	<node_order><![CDATA[1001]]></node_order>
+	<externalid><![CDATA[124]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>
+	<span style="font-size:15px;color:#000000;font-weight:400;text-decoration:none;font-family:'docs-Calibri';font-style:normal;text-decoration-skip-ink:none;">Play interstitial with network , check play ad report</span></p>
+]]></summary>
+	<preconditions><![CDATA[<p>
+	<span style="font-size:15px;color:#000000;font-weight:400;text-decoration:none;font-family:'docs-Calibri';font-style:normal;text-decoration-skip-ink:none;">1.The interstitial is loaded.</span></p>
+<p>
+	<span style="font-size:15px;color:#000000;font-weight:400;text-decoration:none;font-family:'docs-Calibri';font-style:normal;text-decoration-skip-ink:none;">2.Network is connected. </span></p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+	<span style="font-size:15px;color:#000000;font-weight:400;text-decoration:none;font-family:'docs-Calibri';font-style:normal;text-decoration-skip-ink:none;">Call sdk api to play the interstitial</span></p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	<span style="font-size:15px;color:#000000;font-weight:400;text-decoration:none;font-family:'docs-Calibri';font-style:normal;text-decoration-skip-ink:none;">1.The play report will be sent when ad start to play. </span></p>
+<p>
+	<span style="font-size:15px;color:#000000;font-weight:400;text-decoration:none;font-family:'docs-Calibri';font-style:normal;text-decoration-skip-ink:none;">2.Check the report fields are correct.</span></p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="46403" name="Play intersitital after ad loaded(multiple ad network)">
+	<node_order><![CDATA[1002]]></node_order>
+	<externalid><![CDATA[125]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>
+	<style type="text/css">
+<!--td {border: 1px solid #ccc;}br {mso-data-placement:same-cell;}-->	</style>
+	<span data-sheets-userformat="{&quot;2&quot;:8961,&quot;3&quot;:[null,0],&quot;11&quot;:4,&quot;12&quot;:0,&quot;16&quot;:11}" data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;Call sdk api to play interstitial after mutiple ad network loaded.&quot;}" style="font-size: 11pt; font-family: Arial;">Call sdk api to play interstitial after mutiple ad network loaded.</span></p>
+]]></summary>
+	<preconditions><![CDATA[<p>
+	<style type="text/css">
+<!--td {border: 1px solid #ccc;}br {mso-data-placement:same-cell;}-->	</style>
+	<span data-sheets-userformat="{&quot;2&quot;:8961,&quot;3&quot;:[null,0],&quot;11&quot;:4,&quot;12&quot;:0,&quot;16&quot;:11}" data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;network is connected.&quot;}" style="font-size: 11pt; font-family: Arial;">network is connected.</span></p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+	<style type="text/css">
+<!--td {border: 1px solid #ccc;}br {mso-data-placement:same-cell;}-->	</style>
+	<span data-sheets-userformat="{&quot;2&quot;:8961,&quot;3&quot;:[null,0],&quot;11&quot;:4,&quot;12&quot;:0,&quot;16&quot;:11}" data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;1.Create the interstitial object.\n2.Load the ad\n3.After interstitial loaded for mutiple ad network, play the ad&quot;}" style="font-size: 11pt; font-family: Arial;">1.Create the interstitial object.<br />
+	2.Load the ad<br />
+	3.After interstitial loaded for mutiple ad network, play the ad</span></p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	<style type="text/css">
+<!--td {border: 1px solid #ccc;}br {mso-data-placement:same-cell;}-->	</style>
+	<span data-sheets-userformat="{&quot;2&quot;:8961,&quot;3&quot;:[null,0],&quot;11&quot;:4,&quot;12&quot;:0,&quot;16&quot;:11}" data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;The first ad network of /bid response should be played&quot;}" style="font-size: 11pt; font-family: Arial;">The first ad network of /bid response should be played</span></p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="46406" name="Play interstitial without network , check play ad report">
+	<node_order><![CDATA[1003]]></node_order>
+	<externalid><![CDATA[126]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>
+	Play interstitial without network , check play ad report</p>
+]]></summary>
+	<preconditions><![CDATA[<p>
+	<span style="font-size:15px;color:#000000;font-weight:400;text-decoration:none;font-family:'docs-Calibri';font-style:normal;text-decoration-skip-ink:none;">The interstitial is loaded. Network is disconnected. </span></p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+	<span style="font-size:15px;color:#000000;font-weight:400;text-decoration:none;font-family:'docs-Calibri';font-style:normal;text-decoration-skip-ink:none;">Call sdk api to play the interstitial</span></p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	<span style="font-size:15px;color:#000000;font-weight:400;text-decoration:none;font-family:'docs-Calibri';font-style:normal;text-decoration-skip-ink:none;">1.The play report will not be sent, and will be sent with next report after network is connected.</span></p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="46408" name="Play interstitial with network disconnected">
+	<node_order><![CDATA[1004]]></node_order>
+	<externalid><![CDATA[127]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>
+	<style type="text/css">
+<!--td {border: 1px solid #ccc;}br {mso-data-placement:same-cell;}-->	</style>
+	<span data-sheets-userformat="{&quot;2&quot;:8961,&quot;3&quot;:[null,0],&quot;11&quot;:4,&quot;12&quot;:0,&quot;16&quot;:11}" data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;Call sdk api to play interstitial when network disconnected&quot;}" style="font-size: 11pt; font-family: Arial;">Call sdk api to play interstitial when network disconnected</span></p>
+]]></summary>
+	<preconditions><![CDATA[<p>
+	<style type="text/css">
+<!--td {border: 1px solid #ccc;}br {mso-data-placement:same-cell;}-->	</style>
+	<span data-sheets-userformat="{&quot;2&quot;:8961,&quot;3&quot;:[null,0],&quot;11&quot;:4,&quot;12&quot;:0,&quot;16&quot;:11}" data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;network connected.&quot;}" style="font-size: 11pt; font-family: Arial;">network connected.</span></p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+	<style type="text/css">
+<!--td {border: 1px solid #ccc;}br {mso-data-placement:same-cell;}-->	</style>
+	<span data-sheets-userformat="{&quot;2&quot;:8961,&quot;3&quot;:[null,0],&quot;11&quot;:4,&quot;12&quot;:0,&quot;16&quot;:11}" data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;1.Create the interstitial object.\n2.Load the ad\n3.Disconnect the network\n4.Play the ad&quot;}" style="font-size: 11pt; font-family: Arial;">1.Create the interstitial object.<br />
+	2.Load the ad<br />
+	3.Disconnect the network<br />
+	4.Play the ad</span></p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	<style type="text/css">
+<!--td {border: 1px solid #ccc;}br {mso-data-placement:same-cell;}-->	</style>
+	<span data-sheets-userformat="{&quot;2&quot;:8961,&quot;3&quot;:[null,0],&quot;11&quot;:4,&quot;12&quot;:0,&quot;16&quot;:11}" data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;The first loaded ad network in the configuration should be played&quot;}" style="font-size: 11pt; font-family: Arial;">The first loaded ad network in the configuration should be played</span></p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="46412" name="Play rewarded video ad after loaded(single ad network)">
+	<node_order><![CDATA[1005]]></node_order>
+	<externalid><![CDATA[128]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>
+	<style type="text/css">
+<!--td {border: 1px solid #ccc;}br {mso-data-placement:same-cell;}-->	</style>
+	<span data-sheets-userformat="{&quot;2&quot;:8961,&quot;3&quot;:[null,0],&quot;11&quot;:4,&quot;12&quot;:0,&quot;16&quot;:11}" data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;Call sdk api to play rewarded video ad after single ad network loaded.&quot;}" style="font-size: 11pt; font-family: Arial;">Call sdk api to play rewarded video ad after single ad network loaded.</span></p>
+]]></summary>
+	<preconditions><![CDATA[<p>
+	<style type="text/css">
+<!--td {border: 1px solid #ccc;}br {mso-data-placement:same-cell;}-->	</style>
+	<span data-sheets-userformat="{&quot;2&quot;:12672,&quot;10&quot;:2,&quot;11&quot;:4,&quot;15&quot;:&quot;arial,sans,sans-serif&quot;,&quot;16&quot;:11}" data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;network is connected.&quot;}" style="font-size: 11pt; font-family: Arial;">network is connected.</span></p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+	<style type="text/css">
+<!--td {border: 1px solid #ccc;}br {mso-data-placement:same-cell;}-->	</style>
+	<span data-sheets-userformat="{&quot;2&quot;:13185,&quot;3&quot;:[null,0],&quot;10&quot;:2,&quot;11&quot;:4,&quot;12&quot;:0,&quot;15&quot;:&quot;arial,sans,sans-serif&quot;,&quot;16&quot;:11}" data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;1.Create the rewarded video ad object.\n2.load the ad\n3.after ad loaded for one ad network, play the ad&quot;}" style="font-size: 11pt; font-family: Arial;">1.Create the rewarded video ad object.<br />
+	2.load the ad<br />
+	3.after ad loaded for one ad network, play the ad</span></p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	<style type="text/css">
+<!--td {border: 1px solid #ccc;}br {mso-data-placement:same-cell;}-->	</style>
+	<span data-sheets-userformat="{&quot;2&quot;:12672,&quot;10&quot;:2,&quot;11&quot;:4,&quot;15&quot;:&quot;arial,sans,sans-serif&quot;,&quot;16&quot;:11}" data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;The first ad network of /bid response should be played&quot;}" style="font-size: 11pt; font-family: Arial;">The first ad network of /bid response should be played</span></p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="46415" name="Play rewarded video with network, check play ad report">
+	<node_order><![CDATA[1006]]></node_order>
+	<externalid><![CDATA[129]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>
+	<span style="font-size:15px;color:#000000;font-weight:400;text-decoration:none;font-family:'docs-Calibri';font-style:normal;text-decoration-skip-ink:none;">Play rewarded video with network, check play ad report</span></p>
+]]></summary>
+	<preconditions><![CDATA[<p>
+	<span style="font-size:15px;color:#000000;font-weight:400;text-decoration:none;font-family:'docs-Calibri';font-style:normal;text-decoration-skip-ink:none;">The rewarded video ad is loaded Network is connected</span></p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+	<span style="font-size:15px;color:#000000;font-weight:400;text-decoration:none;font-family:'docs-Calibri';font-style:normal;text-decoration-skip-ink:none;">Call sdk api to play the rewarded video ad</span></p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	<span style="font-size:15px;color:#000000;font-weight:400;text-decoration:none;font-family:'docs-Calibri';font-style:normal;text-decoration-skip-ink:none;">1.The play report will be sent when ad start to play. </span></p>
+<p>
+	<span style="font-size:15px;color:#000000;font-weight:400;text-decoration:none;font-family:'docs-Calibri';font-style:normal;text-decoration-skip-ink:none;">2.Check the report fields are correct.</span></p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="46418" name="Play rewarded video ad after ad loaded(multiple ad network)">
+	<node_order><![CDATA[1007]]></node_order>
+	<externalid><![CDATA[130]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>
+	<style type="text/css">
+<!--td {border: 1px solid #ccc;}br {mso-data-placement:same-cell;}-->	</style>
+	<span data-sheets-userformat="{&quot;2&quot;:8961,&quot;3&quot;:[null,0],&quot;11&quot;:4,&quot;12&quot;:0,&quot;16&quot;:11}" data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;Call sdk api to play rewarded video ad after mutiple ad network loaded.&quot;}" style="font-size: 11pt; font-family: Arial;">Call sdk api to play rewarded video ad after mutiple ad network loaded.</span></p>
+]]></summary>
+	<preconditions><![CDATA[<p>
+	<style type="text/css">
+<!--td {border: 1px solid #ccc;}br {mso-data-placement:same-cell;}-->	</style>
+	<span data-sheets-userformat="{&quot;2&quot;:8961,&quot;3&quot;:[null,0],&quot;11&quot;:4,&quot;12&quot;:0,&quot;16&quot;:11}" data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;network is connected.&quot;}" style="font-size: 11pt; font-family: Arial;">network is connected.</span></p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+	<style type="text/css">
+<!--td {border: 1px solid #ccc;}br {mso-data-placement:same-cell;}-->	</style>
+	<span data-sheets-userformat="{&quot;2&quot;:8961,&quot;3&quot;:[null,0],&quot;11&quot;:4,&quot;12&quot;:0,&quot;16&quot;:11}" data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;1.Create the rewarded video ad object.\n2.load the ad\n3.after interstitial loaded for mutiple ad network, play the ad&quot;}" style="font-size: 11pt; font-family: Arial;">1.Create the rewarded video ad object.<br />
+	2.load the ad<br />
+	3.after interstitial loaded for mutiple ad network, play the ad</span></p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	<style type="text/css">
+<!--td {border: 1px solid #ccc;}br {mso-data-placement:same-cell;}-->	</style>
+	<span data-sheets-userformat="{&quot;2&quot;:8961,&quot;3&quot;:[null,0],&quot;11&quot;:4,&quot;12&quot;:0,&quot;16&quot;:11}" data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;The first ad network of /bid response should be played&quot;}" style="font-size: 11pt; font-family: Arial;">The first ad network of /bid response should be played</span></p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="46421" name="Play rewarded video without network, check play ad report">
+	<node_order><![CDATA[1008]]></node_order>
+	<externalid><![CDATA[131]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>
+	<span style="font-size:15px;color:#000000;font-weight:400;text-decoration:none;font-family:'docs-Calibri';font-style:normal;text-decoration-skip-ink:none;">Play rewarded video without network, check play ad report</span></p>
+]]></summary>
+	<preconditions><![CDATA[<p>
+	<span style="font-size:15px;color:#000000;font-weight:400;text-decoration:none;font-family:'docs-Calibri';font-style:normal;text-decoration-skip-ink:none;">The rewarded video ad is loaded Network is disconnected</span></p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+	<span style="font-size:15px;color:#000000;font-weight:400;text-decoration:none;font-family:'docs-Calibri';font-style:normal;text-decoration-skip-ink:none;">Call sdk api to play the rewarded video ad</span></p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	<span style="font-size:15px;color:#000000;font-weight:400;text-decoration:none;font-family:'docs-Calibri';font-style:normal;text-decoration-skip-ink:none;">The play report will not be sent, and will be sent with next report after network is connected.</span></p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="46424" name="Play rewarded video with network disconnected">
+	<node_order><![CDATA[1009]]></node_order>
+	<externalid><![CDATA[132]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>
+	<style type="text/css">
+<!--td {border: 1px solid #ccc;}br {mso-data-placement:same-cell;}-->	</style>
+	<span data-sheets-userformat="{&quot;2&quot;:13185,&quot;3&quot;:[null,0],&quot;10&quot;:2,&quot;11&quot;:4,&quot;12&quot;:0,&quot;15&quot;:&quot;arial,sans,sans-serif&quot;,&quot;16&quot;:11}" data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;Call sdk api to play rewarded video ad when network disconnected&quot;}" style="font-size: 11pt; font-family: Arial;">Call sdk api to play rewarded video ad when network disconnected</span></p>
+]]></summary>
+	<preconditions><![CDATA[<p>
+	<style type="text/css">
+<!--td {border: 1px solid #ccc;}br {mso-data-placement:same-cell;}-->	</style>
+	<span data-sheets-userformat="{&quot;2&quot;:13185,&quot;3&quot;:[null,0],&quot;10&quot;:2,&quot;11&quot;:4,&quot;12&quot;:0,&quot;15&quot;:&quot;arial,sans,sans-serif&quot;,&quot;16&quot;:11}" data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;network disconnected.&quot;}" style="font-size: 11pt; font-family: Arial;">network disconnected.</span></p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+	<style type="text/css">
+<!--td {border: 1px solid #ccc;}br {mso-data-placement:same-cell;}-->	</style>
+	<span data-sheets-userformat="{&quot;2&quot;:13185,&quot;3&quot;:[null,0],&quot;10&quot;:2,&quot;11&quot;:4,&quot;12&quot;:0,&quot;15&quot;:&quot;arial,sans,sans-serif&quot;,&quot;16&quot;:11}" data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;1.Create the  rewarded video object.\n2.Load the ad\n3.Disconnect the network\n4.Play the ad&quot;}" style="font-size: 11pt; font-family: Arial;">1.Create the rewarded video object.<br />
+	2.Load the ad<br />
+	3.Disconnect the network<br />
+	4.Play the ad</span></p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	<style type="text/css">
+<!--td {border: 1px solid #ccc;}br {mso-data-placement:same-cell;}-->	</style>
+	<span data-sheets-userformat="{&quot;2&quot;:12672,&quot;10&quot;:2,&quot;11&quot;:4,&quot;15&quot;:&quot;arial,sans,sans-serif&quot;,&quot;16&quot;:11}" data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;The first loaded ad network in the configuration should be played&quot;}" style="font-size: 11pt; font-family: Arial;">The first loaded ad network in the configuration should be played</span></p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="46427" name="Send unsent play ad report when sdk initialized">
+	<node_order><![CDATA[1010]]></node_order>
+	<externalid><![CDATA[133]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>
+	<span style="font-size:15px;color:#000000;font-weight:400;text-decoration:none;font-family:'docs-Calibri';font-style:normal;text-decoration-skip-ink:none;">Send unsent play ad report when sdk initialized</span></p>
+]]></summary>
+	<preconditions><![CDATA[<p>
+	<span style="font-size:15px;color:#000000;font-weight:400;text-decoration:none;font-family:'docs-Calibri';font-style:normal;text-decoration-skip-ink:none;">There are some play ad report failed to sent, include interstititial and rewarded video ad. The network is connected.</span></p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+	<span style="font-size:15px;color:#000000;font-weight:400;text-decoration:none;font-family:'docs-Calibri';font-style:normal;text-decoration-skip-ink:none;">Initialize sdk successfully.</span></p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	<span style="font-size:15px;color:#000000;font-weight:400;text-decoration:none;font-family:'docs-Calibri';font-style:normal;text-decoration-skip-ink:none;">The unsent play report should be sent by the order they generated.</span></p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="46429" name="Close the playing rewarded video ad when ad completes">
+	<node_order><![CDATA[1011]]></node_order>
+	<externalid><![CDATA[134]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>
+	<style type="text/css">
+<!--td {border: 1px solid #ccc;}br {mso-data-placement:same-cell;}-->	</style>
+	<span data-sheets-userformat="{&quot;2&quot;:8961,&quot;3&quot;:[null,0],&quot;11&quot;:4,&quot;12&quot;:0,&quot;16&quot;:11}" data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;Close the playing rewarded video ad when ad finished&quot;}" style="font-size: 11pt; font-family: Arial;">Close the playing rewarded video ad when ad finished</span></p>
+]]></summary>
+	<preconditions><![CDATA[<p>
+	<style type="text/css">
+<!--td {border: 1px solid #ccc;}br {mso-data-placement:same-cell;}-->	</style>
+	<span data-sheets-userformat="{&quot;2&quot;:8961,&quot;3&quot;:[null,0],&quot;11&quot;:4,&quot;12&quot;:0,&quot;16&quot;:11}" data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;network connected&quot;}" style="font-size: 11pt; font-family: Arial;">network connected</span></p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+	<style type="text/css">
+<!--td {border: 1px solid #ccc;}br {mso-data-placement:same-cell;}-->	</style>
+	<span data-sheets-userformat="{&quot;2&quot;:15233,&quot;3&quot;:[null,0],&quot;10&quot;:2,&quot;11&quot;:4,&quot;12&quot;:0,&quot;14&quot;:[null,2,0],&quot;15&quot;:&quot;arial,sans,sans-serif&quot;,&quot;16&quot;:11}" data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;1.Create the rewarded video ad object.\n2.Load the ad\n3.Play tha ad\n4.Close the ad when ad finished&quot;}" style="font-size: 11pt; font-family: Arial;">1.Create the rewarded video ad object.<br />
+	2.Load the ad<br />
+	3.Play tha ad<br />
+	4.Close the ad when ad finished</span></p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	<style type="text/css">
+<!--td {border: 1px solid #ccc;}br {mso-data-placement:same-cell;}-->	</style>
+	<span data-sheets-userformat="{&quot;2&quot;:8961,&quot;3&quot;:[null,0],&quot;11&quot;:4,&quot;12&quot;:0,&quot;16&quot;:11}" data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;The event callback onRewarded should be triggered;&quot;}" style="font-size: 11pt; font-family: Arial;">The event callback onRewarded should be triggered;</span></p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="46433" name="Close the playing rewarded video ad before ad complete">
+	<node_order><![CDATA[1012]]></node_order>
+	<externalid><![CDATA[135]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>
+	<style type="text/css">
+<!--td {border: 1px solid #ccc;}br {mso-data-placement:same-cell;}-->	</style>
+	<span data-sheets-userformat="{&quot;2&quot;:8961,&quot;3&quot;:[null,0],&quot;11&quot;:4,&quot;12&quot;:0,&quot;16&quot;:11}" data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;Close the playing rewarded video ad before ad finished&quot;}" style="font-size: 11pt; font-family: Arial;">Close the playing rewarded video ad before ad finished</span></p>
+]]></summary>
+	<preconditions><![CDATA[<p>
+	<style type="text/css">
+<!--td {border: 1px solid #ccc;}br {mso-data-placement:same-cell;}-->	</style>
+	<span data-sheets-userformat="{&quot;2&quot;:8961,&quot;3&quot;:[null,0],&quot;11&quot;:4,&quot;12&quot;:0,&quot;16&quot;:11}" data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;network connected&quot;}" style="font-size: 11pt; font-family: Arial;">network connected</span></p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+	<style type="text/css">
+<!--td {border: 1px solid #ccc;}br {mso-data-placement:same-cell;}-->	</style>
+	<span data-sheets-userformat="{&quot;2&quot;:15233,&quot;3&quot;:[null,0],&quot;10&quot;:2,&quot;11&quot;:4,&quot;12&quot;:0,&quot;14&quot;:[null,2,0],&quot;15&quot;:&quot;arial,sans,sans-serif&quot;,&quot;16&quot;:11}" data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;1.Create the interstitial object.\n2.Load the ad\n3.Call api to play the ad in a thread other than main thread&quot;}" style="font-size: 11pt; font-family: Arial;">1.Create the interstitial object.<br />
+	2.Load the ad<br />
+	3.Call api to play the ad in a thread other than main thread</span></p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	<style type="text/css">
+<!--td {border: 1px solid #ccc;}br {mso-data-placement:same-cell;}-->	</style>
+	<span data-sheets-userformat="{&quot;2&quot;:8961,&quot;3&quot;:[null,0],&quot;11&quot;:4,&quot;12&quot;:0,&quot;16&quot;:11}" data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;The event callback onRewarded should be triggered;&quot;}" style="font-size: 11pt; font-family: Arial;">The event callback onRewarded should be triggered;</span></p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+</testsuite></testsuite>

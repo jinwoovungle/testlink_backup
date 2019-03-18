@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite id="" name="" >
+<node_order><![CDATA[]]></node_order>
+<details><![CDATA[]]></details> 
+<testsuite id="48433" name="Mtest Suite for testing" >
+<node_order><![CDATA[1]]></node_order>
+<details><![CDATA[<p>
+	This is First test suite created for Android platform testing.</p>
+]]></details> 
+
+<testcase internalid="48436" name="Mtest Case 02">
+	<node_order><![CDATA[0]]></node_order>
+	<externalid><![CDATA[2]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>
+	This is a second test case for testing</p>
+]]></summary>
+	<preconditions><![CDATA[<p>
+	Need to have build for Android platform.</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration>10.00</estimated_exec_duration>
+	<status>1</status>
+
+</testcase>
+
+<testcase internalid="48434" name="Mtest Case 01">
+	<node_order><![CDATA[1]]></node_order>
+	<externalid><![CDATA[1]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>
+	This is a first test case for testing</p>
+]]></summary>
+	<preconditions><![CDATA[<p>
+	Need to have build first for Android platform.</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration>10.00</estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+	Enter URL &quot;www.url.com&quot;.</p>
+<p>
+	Reach to Login page.</p>
+<p>
+	&nbsp;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	User should to reach to Login page.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="48441" name="Mtest Case 03">
+	<node_order><![CDATA[2]]></node_order>
+	<externalid><![CDATA[3]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>
+	Test for add operation</p>
+]]></summary>
+	<preconditions><![CDATA[<p>
+	Application should be installed</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration>10.00</estimated_exec_duration>
+	<status>1</status>
+
+</testcase>
+
+<testcase internalid="48443" name="Mtest Case 04">
+	<node_order><![CDATA[3]]></node_order>
+	<externalid><![CDATA[4]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>
+	Test for Edit operation</p>
+]]></summary>
+	<preconditions><![CDATA[<p>
+	Application should be installed.</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+
+</testcase>
+
+<testcase internalid="48445" name="Mtest Case 04-A">
+	<node_order><![CDATA[4]]></node_order>
+	<externalid><![CDATA[5]]></externalid>
+	<version><![CDATA[2]]></version>
+	<summary><![CDATA[<p>
+	This test case is sibling of Mtest case 04</p>
+]]></summary>
+	<preconditions><![CDATA[<p>
+	Application should be installed.</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[1]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+
+</testcase>
+	<relation>
+		<source>M-4</source>
+		<destination>M-3</destination>
+		<type>3</type>
+	</relation>
+</testsuite></testsuite>

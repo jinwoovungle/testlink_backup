@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite id="" name="" >
+<node_order><![CDATA[]]></node_order>
+<details><![CDATA[]]></details> 
+<testsuite id="22215" name="Geo-level CPM E2E Test Cases" >
+<node_order><![CDATA[1]]></node_order>
+<details><![CDATA[<p>
+	Geo-level CPM E2E Test Cases</p>
+]]></details> 
+
+<testcase internalid="22218" name="Verify Ad is playing Globally at different Geo-CPM-Floors">
+	<node_order><![CDATA[1001]]></node_order>
+	<externalid><![CDATA[2]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>
+	Verify Ad is playing with default CPM Floor at the Placement level.</p>
+]]></summary>
+	<preconditions><![CDATA[<p>
+	Test data (Publisher App(Placements)/Advertiser App/Campaign/Creatives) should be ready</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+	1.Login to Dashboard</p>
+<p>
+	2. Create an Android and IOS Publisher Applications.</p>
+<p>
+	3.Create Rewarded, Flex-Feed and Flex-View Placements</p>
+<p>
+	4.Create Advertiser Application and whitelist the Publisher Application created in step 2.</p>
+<p>
+	5.Now navigate to Publisher Application and Whitelist the Advertiser Application created in step 4.</p>
+<p>
+	6.Create a Campaign with Bid Type &quot;Impression&quot; and the Rate 0.02 and with no Geo location.</p>
+<p>
+	7.Create a Dynamic Creative</p>
+<p>
+	8.Verify the Ad is served on the respective device</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	1.User should logged into the Dashboard and be on the Publisher Mangaement Page</p>
+<p>
+	2.Publisher App should be created and with a Default Placement</p>
+<p>
+	3.Rewarded, Flex-Feed and Flex-View placements should be created&nbsp;</p>
+<p>
+	4.Advertiser App&nbsp; in step2 should be created and Publisher App should be whitelisted in the App targeting section.</p>
+<p>
+	5.Advertiser App should be whitelisted in Publisher App</p>
+<p>
+	6.Camapign should be created&nbsp;</p>
+<p>
+	7.Dynamic CReative should be created</p>
+<p>
+	8.Ad should serve on Android and iOS Devices.</p>
+<p>
+	&nbsp;</p>
+<p>
+	&nbsp;</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="22220" name="Verify Ad playing at specified locations with diff CPM Floors">
+	<node_order><![CDATA[1002]]></node_order>
+	<externalid><![CDATA[3]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>
+	Verify Ad is serving at locations specified at the Geo Level CPM Floor</p>
+]]></summary>
+	<preconditions><![CDATA[<p>
+	test data should be ready</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<div>
+	&nbsp;</div>
+<div>
+	1..Login to Dashboard</div>
+<div>
+	&nbsp;</div>
+<div>
+	2. Create an Android and IOS Publisher Applications.</div>
+<div>
+	&nbsp;</div>
+<div>
+	3. Edit the Default Placement with Default CPM 0.25 and add Geo CPM Floor as $1000 for United States and save the Default Placement</div>
+<div>
+	&nbsp;</div>
+<div>
+	4.Create Advertiser Application and whitelist the Publisher Application created in step 2.</div>
+<div>
+	&nbsp;</div>
+<div>
+	5.Now navigate to Publisher Application and Whitelist the Advertiser Application created in step 4.</div>
+<div>
+	&nbsp;</div>
+<div>
+	6.Create a Campaign with Bid Type &quot;Impression&quot; and the Rate 0.02 and with no Geo location.</div>
+<div>
+	&nbsp;</div>
+<div>
+	7.Create a Dynamic Creative</div>
+<div>
+	&nbsp;</div>
+<div>
+	8.Verify the Ad is served on the respective device</div>
+<p>
+	&nbsp;</p>
+]]></actions>
+	<expectedresults><![CDATA[<div>
+	1.User should logged into the Dashboard and be on the Publisher Mangaement Page</div>
+<div>
+	&nbsp;</div>
+<div>
+	2.Publisher App should be created and with a Default Placement</div>
+<div>
+	&nbsp;</div>
+<div>
+	3.Default placement with Geo CPM Floor Level should be created</div>
+<div>
+	&nbsp;</div>
+<div>
+	4.Advertiser App&nbsp; in step2 should be created and Publisher App should be whitelisted in the App targeting section.</div>
+<div>
+	&nbsp;</div>
+<div>
+	5.Advertiser App should be whitelisted in Publisher App</div>
+<div>
+	&nbsp;</div>
+<div>
+	6.Camapign should be created&nbsp;</div>
+<div>
+	&nbsp;</div>
+<div>
+	7.Dynamic CReative should be created</div>
+<div>
+	&nbsp;</div>
+<div>
+	8.Ad should not serve on Android and iOS Devices.</div>
+<div>
+	&nbsp;</div>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="22222" name="Verify Ad is playing-City at Campaign-CPM floor at Placement">
+	<node_order><![CDATA[1003]]></node_order>
+	<externalid><![CDATA[4]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>
+	Verify Ad is playing by setting city location at Campaign level and setting the different Geos for countries at placement level.</p>
+]]></summary>
+	<preconditions><![CDATA[<p>
+	Test data should be ready</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<div>
+	1.Login to Dashboard</div>
+<div>
+	&nbsp;</div>
+<div>
+	2. Create an Android and IOS Publisher Applications.</div>
+<div>
+	&nbsp;</div>
+<div>
+	3.Create Rewarded, Flex-Feed and Flex-View Placements</div>
+<div>
+	&nbsp;</div>
+<div>
+	4.Create Advertiser Application and whitelist the Publisher Application created in step 2.</div>
+<div>
+	&nbsp;</div>
+<div>
+	5.Now navigate to Publisher Application and Whitelist the Advertiser Application created in step 4.</div>
+<div>
+	&nbsp;</div>
+<div>
+	6.Create a Campaign with default settings and with City Geo Location.</div>
+<div>
+	&nbsp;</div>
+<div>
+	7.Create a Dynamic Creative</div>
+<div>
+	&nbsp;</div>
+<div>
+	8.Verify the Ad is served on the respective device</div>
+]]></actions>
+	<expectedresults><![CDATA[<div>
+	1.User should logged into the Dashboard and be on the Publisher Mangaement Page</div>
+<div>
+	&nbsp;</div>
+<div>
+	2.Publisher App should be created and with a Default Placement</div>
+<div>
+	&nbsp;</div>
+<div>
+	3.Rewarded, Flex-Feed and Flex-View placements should be created&nbsp;</div>
+<div>
+	&nbsp;</div>
+<div>
+	4.Advertiser App&nbsp; in step2 should be created and Publisher App should be whitelisted in the App targeting section.</div>
+<div>
+	&nbsp;</div>
+<div>
+	5.Advertiser App should be whitelisted in Publisher App</div>
+<div>
+	&nbsp;</div>
+<div>
+	6.Camapign should be created&nbsp;</div>
+<div>
+	&nbsp;</div>
+<div>
+	7.Dynamic CReative should be created</div>
+<div>
+	&nbsp;</div>
+<div>
+	8.Ad should serve&nbsp; in only City specified in step 6 of step actions.</div>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+</testsuite></testsuite>

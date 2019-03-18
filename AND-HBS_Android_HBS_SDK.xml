@@ -1,0 +1,2806 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite id="" name="" >
+<node_order><![CDATA[]]></node_order>
+<details><![CDATA[]]></details> 
+<testsuite id="46674" name="Functional" >
+<node_order><![CDATA[1]]></node_order>
+<details><![CDATA[]]></details> 
+<testsuite id="46675" name="Initialization" >
+<node_order><![CDATA[1]]></node_order>
+<details><![CDATA[]]></details> 
+
+<testcase internalid="46680" name="Initialize SDK successfully">
+	<node_order><![CDATA[0]]></node_order>
+	<externalid><![CDATA[2]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>
+	Initialize sdk with a valid app id</p>
+]]></summary>
+	<preconditions><![CDATA[<p>
+	1. The network (Wifi/Cellular network) is connected.</p>
+<p>
+	2. Device OS version &gt;= 4.0.4 (API 15)</p>
+]]></preconditions>
+	<execution_type><![CDATA[2]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[]]></actions>
+	<expectedresults><![CDATA[<p>
+	The callback SdkInitializationListener<span style="font-family: &quot;Helvetica Neue&quot;; font-size: 12px;">.onSuccess should be triggered.</span></p>
+<style type="text/css">
+p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px 'Helvetica Neue'}</style>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="46683" name="Initialize SDK with an empty app id">
+	<node_order><![CDATA[1]]></node_order>
+	<externalid><![CDATA[3]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>
+	<span style="font-family: docs-Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">Initialize sdk with an empty app id</span></p>
+]]></summary>
+	<preconditions><![CDATA[<p>
+	<span style="font-family: docs-Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">The network (Wifi/Cellular network) is connected</span></p>
+]]></preconditions>
+	<execution_type><![CDATA[2]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[]]></actions>
+	<expectedresults><![CDATA[<p>
+	<span style="font-family: docs-Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">1. The callback VungleAuctionInitLister.onFailed should be triggered with correct error information;</span></p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="46686" name="Initialize SDK with an invalid app id">
+	<node_order><![CDATA[2]]></node_order>
+	<externalid><![CDATA[4]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[Initialize sdk with an invalid app id.]]></summary>
+	<preconditions><![CDATA[<p>The network (Wifi/Cellular network) is connected</p>]]></preconditions>
+	<execution_type><![CDATA[2]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[]]></actions>
+	<expectedresults><![CDATA[<p>
+	1. The callback VungleAuctionInitLister.onFailed should be triggered with correct error information;</p>
+<p>
+	2. The service should return HTTP 400 error;</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="47562" name="Initialize SDK with a null app id">
+	<node_order><![CDATA[3]]></node_order>
+	<externalid><![CDATA[109]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>
+	Initialize SDK with a null app id</p>
+]]></summary>
+	<preconditions><![CDATA[]]></preconditions>
+	<execution_type><![CDATA[2]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[]]></actions>
+	<expectedresults><![CDATA[<p>
+	1. The event callback onFailure should be triggered;</p>
+<p>
+	2. The method isInitialized() should return False;</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[]]></actions>
+	<expectedresults><![CDATA[]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="46689" name="Initialize SDK on old OS version (lower than 4.0.3)">
+	<node_order><![CDATA[4]]></node_order>
+	<externalid><![CDATA[5]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[Initialize sdk on a device which version is lower than required(Android 4.0.3)]]></summary>
+	<preconditions><![CDATA[<p>The android OS version of the test device is lower than Android 4.0.3</p>]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[]]></actions>
+	<expectedresults><![CDATA[<p>1. Test app should not be installed successfully.</p>]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="46692" name="Initialize SDK with the network disconnected">
+	<node_order><![CDATA[5]]></node_order>
+	<externalid><![CDATA[6]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>
+	Initialize sdk with network disconnected to verify the retry mechanism</p>
+]]></summary>
+	<preconditions><![CDATA[<p>
+	Disconnect the Wifi/Cellular network;</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[]]></actions>
+	<expectedresults><![CDATA[<p>
+	1. The retry mechanism should be triggered, the SDK should try to initialize the SDK by sending request /hbConfig periodly;&nbsp;&nbsp;</p>
+<p>
+	2. Once it reaches the maximize retry time, the callback VungleAuctionInitListener.onFailed should be triggered.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="46696" name="Initialize SDK with a null event callback">
+	<node_order><![CDATA[6]]></node_order>
+	<externalid><![CDATA[7]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[Initialize SDK with a valid app id;]]></summary>
+	<preconditions><![CDATA[<p>1. The network (Wifi/Cellular network) is connected;</p>]]></preconditions>
+	<execution_type><![CDATA[2]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[]]></actions>
+	<expectedresults><![CDATA[<p>
+	1. The SDK should be initialized successfully;</p>
+<p>
+	2. The method isInitialized should return true;</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="46700" name="Verify the refresh configuration of the SDK">
+	<node_order><![CDATA[7]]></node_order>
+	<externalid><![CDATA[8]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>
+	The sdk will refresh its configuration(/hbConfig) by a pre-defined time interval.( 5mins by default, to reduce the test execution time, we mock a response whose refersh_time is set to 1min)</p>
+]]></summary>
+	<preconditions><![CDATA[<p>
+	The network (WIFI/3G) is connected</p>
+]]></preconditions>
+	<execution_type><![CDATA[2]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>1. Initialize SDK with a valid app id;</p>]]></actions>
+	<expectedresults><![CDATA[<p>the sdk should keep accessing /hbConfig by a pre-defined time interval(5min)</p>]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="46703" name="Initialize sdk on the thread other than main thread">
+	<node_order><![CDATA[8]]></node_order>
+	<externalid><![CDATA[9]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[Initialize api should be called on main thread.
+Call api to initialize sdk in a thread other than main thread.]]></summary>
+	<preconditions><![CDATA[]]></preconditions>
+	<execution_type><![CDATA[2]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>1. Initialize the HBS SDK in non UI thread.</p>]]></actions>
+	<expectedresults><![CDATA[<p>1. The callback VungleActionInitListener.onFailed should be triggered.</p>]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="46839" name="Placement type parameter for an interstitial placement does not pass">
+	<node_order><![CDATA[9]]></node_order>
+	<externalid><![CDATA[50]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>
+	Parameter &quot;placement_type&quot; does not pass in the response of /v1/hbConfig for a interstitial placement</p>
+]]></summary>
+	<preconditions><![CDATA[<p>
+	1、Parameter &quot;placement_type&quot; does not pass in the response of /v1/hbConfig</p>
+<p>
+	2、The placement is interstitial</p>
+]]></preconditions>
+	<execution_type><![CDATA[2]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>1、Start Vungle Advanced Auction SDK successfulfly</p><p>2、Parameter "placement_type" does not pass in the response of /v1/hbConfig (we could use mock service or change qa environment ‘s MongoDB)</p><p>3、The placement is interstitial</p>]]></actions>
+	<expectedresults><![CDATA[<p>The interstitial placement can load successfully</p>]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="46842" name="Placement type parameter for an interstitial placement is invalid">
+	<node_order><![CDATA[10]]></node_order>
+	<externalid><![CDATA[51]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>
+	Parameter &quot;placement_type&quot; is invalid in the response of /v1/hbConfig for a interstitial placement</p>
+]]></summary>
+	<preconditions><![CDATA[<p>
+	1、Parameter &quot;placement_type&quot; is invalid in the response of /v1/hbConfig</p>
+<p>
+	2、The placement is interstitial</p>
+]]></preconditions>
+	<execution_type><![CDATA[2]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+	1、Start Vungle Advanced Auction SDK successfulfly</p>
+<p>
+	2、Parameter &quot;placement_type&quot; is invalid (for example is 3) in the response of /v1/hbConfig (we could use mock service or change qa environment &lsquo;s MongoDB)</p>
+<p>
+	3、The placement is interstitial</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	The interstitial placement should be able to load and play the ad</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="46845" name="Placement type is interstitial for an interstitial placement">
+	<node_order><![CDATA[11]]></node_order>
+	<externalid><![CDATA[52]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>
+	Parameter &quot;placement_type&quot; is interstitial in the response of /v1/hbConfig for a interstitial placement</p>
+]]></summary>
+	<preconditions><![CDATA[<p>
+	1、Parameter &quot;placement_type&quot; is interstitial in the response of /v1/hbConfig</p>
+<p>
+	2、The placement is interstitial</p>
+]]></preconditions>
+	<execution_type><![CDATA[2]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+	1、Start Vungle Advanced Auction SDK successfully</p>
+<p>
+	2、Parameter &quot;placement_type&quot; is 0 in the response of /v1/hbConfig (we could use mock service or change qa environment &lsquo;s MongoDB)</p>
+<p>
+	3、The placement is interstitial</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	The interstitial placement can load successfully</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="46851" name="Placement type parameter for a rewarded video placement does not pass">
+	<node_order><![CDATA[13]]></node_order>
+	<externalid><![CDATA[54]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[Parameter "placement_type" does not pass in the response of /v1/hbConfig for a rewarded video placement]]></summary>
+	<preconditions><![CDATA[<p>1、Parameter "placement_type" does not pass in the response of /v1/hbConfig </p><p>2、The placement is rewarded video</p>]]></preconditions>
+	<execution_type><![CDATA[2]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+	1、Start Vungle Advanced Auction SDK successfully</p>
+<p>
+	2、Parameter &quot;placement_type&quot; does not pass in the response of /v1/hbConfig (we could use mock service or change qa environment &lsquo;s MongoDB)</p>
+<p>
+	3、The placement is rewarded video</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	The rewarded video placement can load successfully</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="46854" name="Placement type parameter for a rewarded video placement is invalid">
+	<node_order><![CDATA[14]]></node_order>
+	<externalid><![CDATA[55]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[Parameter "placement_type" is invalid in the response of /v1/hbConfig for a rewarded video placement]]></summary>
+	<preconditions><![CDATA[<p>1、Parameter "placement_type" is invalid in the response of /v1/hbConfig </p><p>2、The placement is rewarded video</p>]]></preconditions>
+	<execution_type><![CDATA[2]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+	1、Start Vungle Advanced Auction SDK successfully</p>
+<p>
+	2、Parameter &quot;placement_type&quot; is invalid (for examle is 3) in the response of /v1/hbConfig (we could use mock service or change qa environment &lsquo;s MongoDB)</p>
+<p>
+	3、The placement is rewarded video</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	The rewarded video placement should be able to load and play the ad</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="46857" name="Placement type is rewarded video for a rewarded video placement">
+	<node_order><![CDATA[15]]></node_order>
+	<externalid><![CDATA[56]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[Parameter "placement_type" is rewarded video in the response of /v1/hbConfig for a rewarded video placement]]></summary>
+	<preconditions><![CDATA[<p>1、Parameter "placement_type" is rewarded video in the response of /v1/hbConfig </p><p>2、The placement is rewarded video</p>]]></preconditions>
+	<execution_type><![CDATA[2]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+	1、Start Vungle Advanced Auction SDK successfully</p>
+<p>
+	2、Parameter &quot;placement_type&quot; is 1 in the response of /v1/hbConfig (we could use mock service or change qa environment &lsquo;s MongoDB)</p>
+<p>
+	3、The placement is rewarded video</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	The rewarded video placement can load successfully</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="47600" name="Get default consent status before initializing the sdk">
+	<node_order><![CDATA[17]]></node_order>
+	<externalid><![CDATA[116]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[]]></summary>
+	<preconditions><![CDATA[]]></preconditions>
+	<execution_type><![CDATA[2]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+
+</testcase>
+
+<testcase internalid="47602" name="Set consent status before initializing the sdk">
+	<node_order><![CDATA[18]]></node_order>
+	<externalid><![CDATA[117]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[]]></summary>
+	<preconditions><![CDATA[]]></preconditions>
+	<execution_type><![CDATA[2]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+
+</testcase>
+
+<testcase internalid="47604" name="Set consent status after initializing the sdk">
+	<node_order><![CDATA[19]]></node_order>
+	<externalid><![CDATA[118]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[]]></summary>
+	<preconditions><![CDATA[]]></preconditions>
+	<execution_type><![CDATA[2]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+
+</testcase>
+
+<testcase internalid="47634" name="Check the callback OnFailure should be triggered if the hbs_enabled is toggled off">
+	<node_order><![CDATA[20]]></node_order>
+	<externalid><![CDATA[119]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[]]></summary>
+	<preconditions><![CDATA[]]></preconditions>
+	<execution_type><![CDATA[2]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+
+</testcase>
+
+<testcase internalid="47900" name="Check the SDK version in the UA of the hbConfig request">
+	<node_order><![CDATA[21]]></node_order>
+	<externalid><![CDATA[121]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[]]></summary>
+	<preconditions><![CDATA[]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+	1. Launch and initialize the test app;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	1. In the user-agent of the /hbConfig request, the SDK version should be updated to the correct one;&nbsp;</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+</testsuite><testsuite id="46676" name="LoadAd" >
+<node_order><![CDATA[2]]></node_order>
+<details><![CDATA[]]></details> 
+
+<testcase internalid="46707" name="Load interstitial successfully after sdk gets initialized">
+	<node_order><![CDATA[0]]></node_order>
+	<externalid><![CDATA[10]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[Call sdk api to load interstitial.]]></summary>
+	<preconditions><![CDATA[<p>Setup accounts correctly.(vungle, inmobi, admob, facebook, applovin, unity, mopub)</p><p>The sdk is initialized successfully;</p><p></p>]]></preconditions>
+	<execution_type><![CDATA[2]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>1. Create an interstitial object with a valid placement id.</p><p>2. Load interstitial ads by invoking the method loadAd();</p>]]></actions>
+	<expectedresults><![CDATA[<p>1. The callback onAdLoadSuccess should be triggered for each Ad network;</p><p></p>]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="46711" name="Load interstitial with an invalid placement id">
+	<node_order><![CDATA[1]]></node_order>
+	<externalid><![CDATA[11]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>
+	Call sdk api to load interstitial with an invalid placement id. (empty or a placement id not belong to this app.)</p>
+]]></summary>
+	<preconditions><![CDATA[<p>
+	1. Setup accounts correctly.(vungle, inmobi, admob, facebook, applovin, unity, mopub)</p>
+<p>
+	2. The sdk is initalized successfully;</p>
+<p>
+	&nbsp;</p>
+]]></preconditions>
+	<execution_type><![CDATA[2]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>1. Create an Interstitial object with a invalid interstitial id;</p><p>2. Load the interstitial ads by invoking the method loadAd();</p>]]></actions>
+	<expectedresults><![CDATA[<p>1. The callback onAdLoadFailed should be triggered only once;</p><p>2. The parameter AdNetowrkInfo should be be a null value;</p><p>3. The parameter Throwable should contain correct error info;</p>]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="46719" name="Load interstitial without sdk initialized">
+	<node_order><![CDATA[2]]></node_order>
+	<externalid><![CDATA[13]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[Call sdk api to load interstitial before sdk did initialized]]></summary>
+	<preconditions><![CDATA[<p>The sdk is initializing.</p>]]></preconditions>
+	<execution_type><![CDATA[2]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>1. Create an Interstitial object with a valid interstitial id.</p><p>2. Load the interstitial ads by invoking the method loadAd();</p>]]></actions>
+	<expectedresults><![CDATA[<p>1. The callback onAdLoadFailed should be triggered only once;</p><p>2. The parameter AdNetowrkInfo should be be a null value;</p><p>3. The parameter Throwable should contain correct error info;</p>]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="46723" name="Call sdk api to load interstitial when sdk failed to initialized">
+	<node_order><![CDATA[3]]></node_order>
+	<externalid><![CDATA[14]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>
+	<span style="color: rgb(0, 0, 255); font-family: docs-Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">Initialize sdk with an invalid app id to fail the initialization;</span></p>
+]]></summary>
+	<preconditions><![CDATA[]]></preconditions>
+	<execution_type><![CDATA[2]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+	<span style="color: rgb(0, 0, 255); font-family: docs-Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">1. Create an Interstitial object with a valid interstitial id.</span></p>
+<p>
+	<span style="color: rgb(0, 0, 255); font-family: docs-Calibri; font-size: 15px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">2. Load the interstitial ads by invoking the method loadAd();</span></p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	<span style="color: rgb(255, 0, 0); font-family: Arial; font-size: 13px; font-weight: 700; white-space: pre-wrap; background-color: rgb(255, 255, 255);">1. The callback onAdLoadFailed should be triggered only once; </span></p>
+<p>
+	<span style="color: rgb(255, 0, 0); font-family: Arial; font-size: 13px; font-weight: 700; white-space: pre-wrap; background-color: rgb(255, 255, 255);">2. The parameter AdNetowrkInfo should be be a null value; </span></p>
+<p>
+	<span style="color: rgb(255, 0, 0); font-family: Arial; font-size: 13px; font-weight: 700; white-space: pre-wrap; background-color: rgb(255, 255, 255);">3. The parameter Throwable should contain correct error info; </span></p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[]]></actions>
+	<expectedresults><![CDATA[]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="46848" name="Placement is actually interstitial, but we use this placement as rewarded video">
+	<node_order><![CDATA[4]]></node_order>
+	<externalid><![CDATA[53]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[Placement is actually interstitial, but we use this placement as rewarded video]]></summary>
+	<preconditions><![CDATA[<p>The placement is interstitial</p><p></p>]]></preconditions>
+	<execution_type><![CDATA[2]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+	1、Configure a interstitial placement</p>
+<p>
+	2、Start Vungle Advanced Auction SDK successfully</p>
+<p>
+	3、Use this interstitial placement to load rewarded video ads</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	The placement can not load successfully.</p>
+<p>
+	Error &quot;The placement type is mismatched&quot; will be shown</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="46860" name="Placement is actually rewarded video, but we use this placement as interstitial">
+	<node_order><![CDATA[5]]></node_order>
+	<externalid><![CDATA[57]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[Placement is actually rewarded video, but we use this placement as interstitial]]></summary>
+	<preconditions><![CDATA[<p>Placement is actually rewarded video</p>]]></preconditions>
+	<execution_type><![CDATA[2]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+	1、Configure a rewarded video placement</p>
+<p>
+	2、Start Vungle Advanced Auction SDK successfully</p>
+<p>
+	3、Use this rewarded video placement to load interstitial ad</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	The placement can not load successfully.</p>
+<p>
+	Error &quot;The placement type is mismatched&quot; will be shown</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="46867" name="Load interstitial with sdk initialize failed">
+	<node_order><![CDATA[6]]></node_order>
+	<externalid><![CDATA[58]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>
+	Call sdk api to load interstitial when sdk failed to initialized</p>
+]]></summary>
+	<preconditions><![CDATA[<p>
+	Initialize sdk with an invalid app id to fail the initialization;</p>
+]]></preconditions>
+	<execution_type><![CDATA[2]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>1. Create an Interstitial object with a valid interstitial id.</p><p>2. Load the interstitial ads by invoking the method loadAd();</p>]]></actions>
+	<expectedresults><![CDATA[<p>1. The callback onAdLoadFailed should be triggered only once;</p><p>2. The parameter AdNetowrkInfo should be be a null value;</p><p>3. The parameter Throwable should contain correct error info;</p>]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="46870" name="Load interstitial in a thread other than main thread">
+	<node_order><![CDATA[7]]></node_order>
+	<externalid><![CDATA[59]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[Call sdk api to load interstitial in a thread other than main thread]]></summary>
+	<preconditions><![CDATA[<p>The sdk is initalized successfully. (Get sdkDidInitialize called)</p><p></p>]]></preconditions>
+	<execution_type><![CDATA[2]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Create an Interstitial object with a valid interstitial id.</p><p>Call api to load interstitial in a thread other than main thread.</p>]]></actions>
+	<expectedresults><![CDATA[<p>For debug version, there will be a crash.</p><p>For release version, there will be a error returned by interstitial:didFailToLoadWithError:withAdNetwork:.</p>]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="46873" name="Check the method Intersitial.isReady during ad lifecycle">
+	<node_order><![CDATA[8]]></node_order>
+	<externalid><![CDATA[60]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[Check the method "isReady" when load ad & play ad]]></summary>
+	<preconditions><![CDATA[<p>The sdk is initalized successfully. (Get sdkDidInitialize called)</p><p></p>]]></preconditions>
+	<execution_type><![CDATA[2]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Create an interstitial object with a valid placement id.</p><p>1. Check the property "isReady".</p><p>2. Load the ad, check the "isReady".</p><p>3. Play the ad, check the "isReady".</p>]]></actions>
+	<expectedresults><![CDATA[<p>1. "isReady" should be NO</p><p>2. "isReady" should be YES when first ad network loaded ad</p><p>3. "isReady" should be NO when ad finished play.</p>]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="46876" name="Check interstitial.getPreparedAdNetworks">
+	<node_order><![CDATA[9]]></node_order>
+	<externalid><![CDATA[61]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>
+	Check the method &quot;getPreparedAdNetworks&quot; when loading ad</p>
+]]></summary>
+	<preconditions><![CDATA[<p>
+	The sdk is initalized successfully.</p>
+]]></preconditions>
+	<execution_type><![CDATA[2]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+	1. Create an interstitial object with a valid placement id, check the method &quot;getPreparedAdNetworks&quot;</p>
+<p>
+	2. Load the ad, check the method &quot;getPreparedAdNetworks&quot;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	1. In step 1, the method &quot;getPreparedAdNetworks&quot; should return an empty list;</p>
+<p>
+	2. In step 2, the method &quot;getPreparedAdNetworks&quot; should return a list with all successfully loaded ad networks;</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="46879" name="Invoke loadAd again in the same interstitial instance when loading the ads">
+	<node_order><![CDATA[10]]></node_order>
+	<externalid><![CDATA[62]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[Call sdk api to load interstitial during loading (use old one)]]></summary>
+	<preconditions><![CDATA[<p>The sdk is initalized successfully.</p>]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Create an interstitial object with a valid placement id.</p><p>1. Invoke loadAd() to load the ads;</p><p>2. invoke loadAd() again in ad loading state;</p>]]></actions>
+	<expectedresults><![CDATA[<p>The second load should not trigger ad loading operation;</p><p>the second load should not trigger the real loading, there is debugging log about it.</p>]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="46882" name="Invoke loadAd again in a new interstitial instance when loading the ads">
+	<node_order><![CDATA[11]]></node_order>
+	<externalid><![CDATA[63]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[Call sdk api to load interstitial during loading (use new one)]]></summary>
+	<preconditions><![CDATA[<p>The sdk is initalized successfully.</p>]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Create an interstitial object with a valid placement id.</p><p>Create another interstitial object with a valid placement id;</p><p>1. For the first interstitial object, invoke loadAd() to load the ads;</p><p>2. For the second interstitial object, invoke loadAd() to load the ads;</p>]]></actions>
+	<expectedresults><![CDATA[<p>the second load should succeed</p>]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="46885" name="Load interstitial after loaded">
+	<node_order><![CDATA[12]]></node_order>
+	<externalid><![CDATA[64]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[Call sdk api to load rewarded video after all ad networks loaded(use old one)]]></summary>
+	<preconditions><![CDATA[<p>The sdk is initalized successfully.</p>]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Create an rewarded video object with a valid placement id.</p><p>1. load the ad</p><p>2. load the ad after all ad newtorks loaded</p>]]></actions>
+	<expectedresults><![CDATA[<p>the second load should be successful and can play the ad</p>]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="46888" name="Load rewarded video ads successfully after sdk gets initialized">
+	<node_order><![CDATA[13]]></node_order>
+	<externalid><![CDATA[65]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>
+	Call sdk api to load rewarded video ad.</p>
+]]></summary>
+	<preconditions><![CDATA[<p>
+	Setup accounts correctly.(vungle, inmobi, admob, facebook, applovin, unity, mopub)</p>
+<p>
+	The sdk is initalized successfully. (Get sdkDidInitialize called)</p>
+<p>
+	&nbsp;</p>
+]]></preconditions>
+	<execution_type><![CDATA[2]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+	1. Create a RewardedVideoAd object with a valid placement id;</p>
+<p>
+	2. Invoke RewardedViewAd.loadAd() to load the interstitial;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	The event callback onAdLoadSuccess() should be triggered for each ad network.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="46894" name="Load rewarded video ad with a invalid placement id">
+	<node_order><![CDATA[14]]></node_order>
+	<externalid><![CDATA[67]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>
+	Call sdk api to load rewarded video ad with a invalid placement id. (empty or a placement id not belong to this app.)</p>
+]]></summary>
+	<preconditions><![CDATA[<p>
+	Setup accounts correctly.(vungle, inmobi, admob, facebook, applovin, unity, mopub)</p>
+<p>
+	The sdk is initalized successfully. (Get sdkDidInitialize called)</p>
+<p>
+	&nbsp;</p>
+]]></preconditions>
+	<execution_type><![CDATA[2]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Create an rewarded video ad object with a invalid placement id.</p><p>Call api to load interstitial.</p>]]></actions>
+	<expectedresults><![CDATA[<p>1. The callback onAdLoadFailed should be triggered only once;</p><p>2. The parameter AdNetowrkInfo should be be a null value;</p><p>3. The parameter Throwable should contain correct error info;</p>]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="46897" name="Load rewarded video ad without sdk initialized">
+	<node_order><![CDATA[15]]></node_order>
+	<externalid><![CDATA[68]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[Call sdk api to load rewarded video ad before sdk did initialized]]></summary>
+	<preconditions><![CDATA[<p>The sdk is initializing.</p>]]></preconditions>
+	<execution_type><![CDATA[2]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Create an rewarded video ad object with a valid placement id.</p><p>Call api to load reward video ad</p>]]></actions>
+	<expectedresults><![CDATA[<p>1. The callback onAdLoadFailed should be triggered only once;</p><p>2. The parameter AdNetowrkInfo should be be a null value;</p><p>3. The parameter Throwable should contain correct error info;</p>]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="46900" name="Load rewarded video ad with sdk initalize failed">
+	<node_order><![CDATA[16]]></node_order>
+	<externalid><![CDATA[69]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>
+	Call sdk api to load rewarded video ad when sdk failed to initialized</p>
+]]></summary>
+	<preconditions><![CDATA[<p>
+	Initialize sdk with a empty app id. Get sdkDidFailedtoInitiallize called.</p>
+<p>
+	&nbsp;</p>
+]]></preconditions>
+	<execution_type><![CDATA[2]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Create an rewarded video ad object with a valid placement id.</p><p>Call api to load rewarded video ad</p>]]></actions>
+	<expectedresults><![CDATA[<p>1. The callback onAdLoadFailed should be triggered only once;</p><p>2. The parameter AdNetowrkInfo should be be a null value;</p><p>3. The parameter Throwable should contain correct error info;</p>]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="46903" name="Load rewarded video ad in a thread other than main thread">
+	<node_order><![CDATA[17]]></node_order>
+	<externalid><![CDATA[70]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[Call sdk api to load rewarded video ad in a thread other than main thread]]></summary>
+	<preconditions><![CDATA[<p>The sdk is initalized successfully. (Get sdkDidInitialize called)</p><p></p>]]></preconditions>
+	<execution_type><![CDATA[2]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Create an rewarded video ad object with a valid placement id.</p><p>Call api to load rewarded video ad in a thread other than main thread.</p>]]></actions>
+	<expectedresults><![CDATA[<p>For debug version, there will be a crash.</p><p>For release version, there will be a error returned by rewardedVideoAd:didFailToLoadWithError:withAdNetwork:.</p>]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="46906" name="Check rewardedVideoAd.isReady during ad lifecycle">
+	<node_order><![CDATA[18]]></node_order>
+	<externalid><![CDATA[71]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[Check the method "isReady" when load ad & play ad]]></summary>
+	<preconditions><![CDATA[<p>The sdk is initalized successfully.</p>]]></preconditions>
+	<execution_type><![CDATA[2]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Create a rewarded video ad object with a valid placement id.</p><p>1. Check the property "isReady".</p><p>2. Load the ad, check the "isReady".</p><p>3. Play the ad, check the "isReady".</p>]]></actions>
+	<expectedresults><![CDATA[<p>1. "isReady" should be NO</p><p>2. "isReady" should be YES when first ad network loaded ad</p><p>3. "isReady" should be NO when ad finished play.</p>]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="46909" name="Check rewardedVideoAd.getPreparedAdNetworks()">
+	<node_order><![CDATA[19]]></node_order>
+	<externalid><![CDATA[72]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>
+	Check the method &quot;getPrepparedAdNetworks&quot; when loading ad</p>
+]]></summary>
+	<preconditions><![CDATA[<p>
+	The sdk is initalized successfully.</p>
+]]></preconditions>
+	<execution_type><![CDATA[2]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+	Create a rewarded video ad object with a valid placement id.</p>
+<p>
+	1. Check the method &quot;getPreparedAdNetworks&quot;</p>
+<p>
+	2. Load the ad, check the method &quot;getPreparedAdNetworks&quot;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	1. the &quot;getPreparedAdNetworks&quot; should return an null list;</p>
+<p>
+	2. The method &quot;preparedAdNetworks&quot; should contain the ad networks which load ad successfully.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="46912" name="Load rewarded video ad when loading">
+	<node_order><![CDATA[20]]></node_order>
+	<externalid><![CDATA[73]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[Call sdk api to load rewarded video ad during loading (use new one)]]></summary>
+	<preconditions><![CDATA[<p>The sdk is initalized successfully.</p>]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+	Create an rewarded video ad object with a valid placement id.</p>
+<p>
+	1. load the ad</p>
+<p>
+	2. load the ad during ad loading</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	the second ad should load successfully</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="47636" name="Placement is actually interstitial, but we use this placement as rewarded video">
+	<node_order><![CDATA[20]]></node_order>
+	<externalid><![CDATA[120]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[]]></summary>
+	<preconditions><![CDATA[]]></preconditions>
+	<execution_type><![CDATA[2]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+
+</testcase>
+
+<testcase internalid="48407" name="Callback method InterstitialListener.onAdLoadSuccess  verification">
+	<node_order><![CDATA[21]]></node_order>
+	<externalid><![CDATA[124]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>
+	Callback method InterstitialListener.onAdLoadSuccess verification</p>
+]]></summary>
+	<preconditions><![CDATA[<div>
+	1.The sdk is initalized successfully. (Get SdkInitializationListener.onSuccess called)</div>
+<div>
+	2.At least one ad network has loaded the interstitial</div>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+	<style type="text/css">
+<!--td {border: 1px solid #ccc;}br {mso-data-placement:same-cell;}-->	</style>
+	<span data-sheets-userformat="{&quot;2&quot;:15105,&quot;3&quot;:{&quot;1&quot;:0},&quot;11&quot;:4,&quot;12&quot;:0,&quot;14&quot;:[null,2,0],&quot;15&quot;:&quot;Calibri&quot;,&quot;16&quot;:11}" data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;Create an Interstitial object with an invalid interstitial id.\n1、Call api to load interstitial.\n2、At least one ad network has loaded the interstitial.&quot;}" style="font-size: 11pt; font-family: Calibri, Arial;">Create an Interstitial object with an valid interstitial id.<br />
+	1、Call api to load interstitial.<br />
+	2、At least one ad network has loaded the interstitial.</span></p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	<style type="text/css">
+<!--td {border: 1px solid #ccc;}br {mso-data-placement:same-cell;}-->	</style>
+	<span data-sheets-userformat="{&quot;2&quot;:15105,&quot;3&quot;:{&quot;1&quot;:0},&quot;11&quot;:4,&quot;12&quot;:0,&quot;14&quot;:[null,2,0],&quot;15&quot;:&quot;Calibri&quot;,&quot;16&quot;:11}" data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;1、Callback method interstitialDidLoad will be called.\n2、 We could see this callback log in the callbacks tab of TestApp&quot;}" style="font-size: 11pt; font-family: Calibri, Arial;">1、Callback method onAdLoadSuccess will be called.<br />
+	2、 We could see &#39;INTERSTITIAL AD onAdLoadSuccess.&#39; message in Callback tab of VGATestApp</span></p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="48411" name="Callback method InterstitialListener.onAdLoadFailed verification">
+	<node_order><![CDATA[22]]></node_order>
+	<externalid><![CDATA[125]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>
+	Callback method InterstitialListener.onAdLoadFailed:&nbsp; verification when some ad networks load ad failed</p>
+]]></summary>
+	<preconditions><![CDATA[<p>
+	<style type="text/css">
+<!--td {border: 1px solid #ccc;}br {mso-data-placement:same-cell;}-->	</style>
+	<span data-sheets-userformat="{&quot;2&quot;:15105,&quot;3&quot;:{&quot;1&quot;:0},&quot;11&quot;:4,&quot;12&quot;:0,&quot;14&quot;:[null,2,0],&quot;15&quot;:&quot;Calibri&quot;,&quot;16&quot;:11}" data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;The sdk is initalized successfully. (Get sdkDidInitialize called)\nSome ad networks load ad failed and some ad networks load ad successfully.&quot;}" style="font-size: 11pt; font-family: Calibri, Arial;">1.The sdk is initalized successfully. (Get SdkInitializationListener.onSuccess called)<br />
+	2.Some ad networks load ad failed and some ad networks load ad successfully.</span></p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+	<style type="text/css">
+<!--td {border: 1px solid #ccc;}br {mso-data-placement:same-cell;}-->	</style>
+	<span data-sheets-userformat="{&quot;2&quot;:15105,&quot;3&quot;:{&quot;1&quot;:0},&quot;11&quot;:4,&quot;12&quot;:0,&quot;14&quot;:[null,2,0],&quot;15&quot;:&quot;Calibri&quot;,&quot;16&quot;:11}" data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;Create an Interstitial object with a valid interstitial id.\n1、Call api to load interstitial.\n2、Some ad networks load ad failed and some ad networks load ad successfully.&quot;}" style="font-size: 11pt; font-family: Calibri, Arial;">Create an Interstitial object with a valid interstitial id.<br />
+	1、Call api to load interstitial.<br />
+	2、Some ad networks load ad failed and some ad networks load ad successfully.</span></p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	<style type="text/css">
+<!--td {border: 1px solid #ccc;}br {mso-data-placement:same-cell;}-->	</style>
+	<span data-sheets-userformat="{&quot;2&quot;:15105,&quot;3&quot;:{&quot;1&quot;:0},&quot;11&quot;:4,&quot;12&quot;:0,&quot;14&quot;:[null,2,255],&quot;15&quot;:&quot;Calibri&quot;,&quot;16&quot;:11}" data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;1、Callback method  interstitial:didFailToLoadWithError:   will not  be called.\n2、 We could not see this callback log in the callbacks tab of TestApp.&quot;}" style="font-size: 11pt; font-family: Calibri, Arial; color: rgb(0, 0, 255);"><span style="font-size: 11pt; color: rgb(0, 0, 0);">1、Callback method InterstitialListener.onAdLoadFailed&nbsp;</span><span style="font-size: 11pt; font-weight: bold; color: rgb(166, 77, 121);">will not be called.</span><br />
+	<span style="font-size: 11pt; color: rgb(0, 0, 0);">2、 We</span><span style="font-size: 11pt;"> </span><span style="font-size: 11pt; font-weight: bold; color: rgb(166, 77, 121);">could not</span><span style="font-size: 11pt;"> </span><span style="font-size: 11pt; color: rgb(0, 0, 0);">see &#39;INTERSTITAL AD onAdLoadFailed.&#39; message in Callback tab of VGATestApp.</span></span></p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="48414" name="Callback method RewardedVideoAdListener.onAdLoadSuccess  verification">
+	<node_order><![CDATA[23]]></node_order>
+	<externalid><![CDATA[126]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>
+	Callback method RewardedVideoAdListener.onAdLoadSuccess&nbsp; verification</p>
+]]></summary>
+	<preconditions><![CDATA[<p>
+	<style type="text/css">
+<!--td {border: 1px solid #ccc;}br {mso-data-placement:same-cell;}-->	</style>
+	<span data-sheets-userformat="{&quot;2&quot;:15105,&quot;3&quot;:{&quot;1&quot;:0},&quot;11&quot;:4,&quot;12&quot;:0,&quot;14&quot;:[null,2,0],&quot;15&quot;:&quot;Calibri&quot;,&quot;16&quot;:11}" data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;The sdk is initalized successfully. (Get sdkDidInitialize called)\nAt least one ad network has loaded the rewarded video &quot;}" style="font-size: 11pt; font-family: Calibri, Arial;">1.The sdk is initalized successfully. (Get SdkInitializationListener.onSuccess called)<br />
+	2.At least one ad network has loaded the rewarded video&nbsp;</span></p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+	<style type="text/css">
+<!--td {border: 1px solid #ccc;}br {mso-data-placement:same-cell;}-->	</style>
+	<span data-sheets-userformat="{&quot;2&quot;:15105,&quot;3&quot;:{&quot;1&quot;:0},&quot;11&quot;:4,&quot;12&quot;:0,&quot;14&quot;:[null,2,0],&quot;15&quot;:&quot;Calibri&quot;,&quot;16&quot;:11}" data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;Create a rewarded video object with a valid rewarded video id.\n1、Call api to load rewarded video.\n2、At least one ad network has loaded the rewarded video.&quot;}" style="font-size: 11pt; font-family: Calibri, Arial;">Create a rewarded video object with a valid rewarded video id.<br />
+	1、Call api to load rewarded video.<br />
+	2、At least one ad network has loaded the rewarded video.</span></p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	<style type="text/css">
+<!--td {border: 1px solid #ccc;}br {mso-data-placement:same-cell;}-->	</style>
+	<span data-sheets-userformat="{&quot;2&quot;:15105,&quot;3&quot;:{&quot;1&quot;:0},&quot;11&quot;:4,&quot;12&quot;:0,&quot;14&quot;:[null,2,0],&quot;15&quot;:&quot;Calibri&quot;,&quot;16&quot;:11}" data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;1、Callback method rewardedVideoAdDidLoad will be called.\n2、 We could see this callback log in the callbacks tab of TestApp&quot;}" style="font-size: 11pt; font-family: Calibri, Arial;">1、Callback method RewardedVideoAdListener.onAdLoadSuccess will be called.<br />
+	2、 We could see &#39;REWARDED AD onAdLoadSuccess.&#39; message in Callback tab of TestApp</span></p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="48417" name="Callback method RewardedVideoAdListener.onAdLoadFailed  verification">
+	<node_order><![CDATA[24]]></node_order>
+	<externalid><![CDATA[127]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>
+	<style type="text/css">
+<!--td {border: 1px solid #ccc;}br {mso-data-placement:same-cell;}-->	</style>
+	<span data-sheets-userformat="{&quot;2&quot;:15105,&quot;3&quot;:{&quot;1&quot;:0},&quot;11&quot;:4,&quot;12&quot;:0,&quot;14&quot;:[null,2,0],&quot;15&quot;:&quot;Calibri&quot;,&quot;16&quot;:11}" data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;Callback method rewardedVideoAd:didFailToLoadWithError: verification when some ad networks load ad failed&quot;}" style="font-size: 11pt; font-family: Calibri, Arial;">Callback method RewardedVideoAdListener.onAdLoadFailed: verification when some ad networks load ad failed</span></p>
+]]></summary>
+	<preconditions><![CDATA[<p>
+	<style type="text/css">
+<!--td {border: 1px solid #ccc;}br {mso-data-placement:same-cell;}-->	</style>
+	<span data-sheets-userformat="{&quot;2&quot;:15105,&quot;3&quot;:{&quot;1&quot;:0},&quot;11&quot;:4,&quot;12&quot;:0,&quot;14&quot;:[null,2,0],&quot;15&quot;:&quot;Calibri&quot;,&quot;16&quot;:11}" data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;The sdk is initalized successfully. (Get sdkDidInitialize called)\nSome ad networks load ad failed and some ad networks load ad successfully.&quot;}" style="font-size: 11pt; font-family: Calibri, Arial;">1.The sdk is initalized successfully. (Get SdkInitializationListener.onSuccess called)<br />
+	2.Some ad networks load ad failed and some ad networks load ad successfully.</span></p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+	<style type="text/css">
+<!--td {border: 1px solid #ccc;}br {mso-data-placement:same-cell;}-->	</style>
+	<span data-sheets-userformat="{&quot;2&quot;:15105,&quot;3&quot;:{&quot;1&quot;:0},&quot;11&quot;:4,&quot;12&quot;:0,&quot;14&quot;:[null,2,0],&quot;15&quot;:&quot;Calibri&quot;,&quot;16&quot;:11}" data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;Create a rewarded video object with a valid rewarded video id.\n1、Call api to load rewarded video.\n2、Some ad networks load ad failed and some ad networks load ad successfully.&quot;}" style="font-size: 11pt; font-family: Calibri, Arial;">Create a rewarded video object with a valid rewarded video id.<br />
+	1、Call api to load rewarded video.<br />
+	2、Some ad networks load ad failed and some ad networks load ad successfully.</span></p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	<style type="text/css">
+<!--td {border: 1px solid #ccc;}br {mso-data-placement:same-cell;}-->	</style>
+	<span data-sheets-userformat="{&quot;2&quot;:15105,&quot;3&quot;:{&quot;1&quot;:0},&quot;11&quot;:4,&quot;12&quot;:0,&quot;14&quot;:[null,2,255],&quot;15&quot;:&quot;Calibri&quot;,&quot;16&quot;:11}" data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;1、Callback method rewardedVideoAd:didFailToLoadWithError: will not  be called.\n2、 We could not see this callback log in the callbacks tab of TestApp.&quot;}" style="font-size: 11pt; font-family: Calibri, Arial; color: rgb(0, 0, 255);"><span style="font-size: 11pt; color: rgb(0, 0, 0);">1、Callback method RewardedVideoAdListener.onAdLoadFailed: </span><span style="font-size: 11pt; font-weight: bold; color: rgb(166, 77, 121);">will not be called.</span><br />
+	<span style="font-size: 11pt; color: rgb(0, 0, 0);">2、 We</span><span style="font-size: 11pt;"> </span><span style="font-size: 11pt; font-weight: bold; color: rgb(166, 77, 121);">could not</span><span style="font-size: 11pt;"> </span><span style="font-size: 11pt; color: rgb(0, 0, 0);">see &#39;REWARDED AD onAdLoadFailed&#39; message in Callback tab of TestApp.</span></span></p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+</testsuite><testsuite id="46677" name="PlayAd" >
+<node_order><![CDATA[3]]></node_order>
+<details><![CDATA[]]></details> 
+
+<testcase internalid="46730" name="Play interstitial before loadAd">
+	<node_order><![CDATA[0]]></node_order>
+	<externalid><![CDATA[16]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>
+	Call sdk api to play interstitial before loaded.</p>
+]]></summary>
+	<preconditions><![CDATA[<p>
+	The SDK is initialized;</p>
+]]></preconditions>
+	<execution_type><![CDATA[2]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Create the interstitial object with a valid placement id;</p><p>a)Call api to play the interstitial.</p><p>or</p><p>b)Call api to load the interstitial and play the interstitial together.</p>]]></actions>
+	<expectedresults><![CDATA[<p>1. The callback onAdLoadFailed should be triggered only once;</p><p>2. The parameter AdNetowrkInfo should be be a null value;</p><p>3. The parameter Throwable should contain correct error info;</p>]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="46733" name="Play intersitital after ad loaded(single ad network)">
+	<node_order><![CDATA[1]]></node_order>
+	<externalid><![CDATA[17]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[Call sdk api to play interstitial after single ad network loaded.]]></summary>
+	<preconditions><![CDATA[<p>network is connected.</p>]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>1.Create the interstitial object.</p><p>2.Load the ad</p><p>3.After ad loaded for one ad network, play the ad</p>]]></actions>
+	<expectedresults><![CDATA[<p>The first ad network of /bid response should be played</p>]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="46736" name="Play intersitital after ad loaded(multiple ad network)">
+	<node_order><![CDATA[2]]></node_order>
+	<externalid><![CDATA[18]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[Call sdk api to play interstitial after mutiple ad network loaded.]]></summary>
+	<preconditions><![CDATA[<p>network is connected.</p>]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>1.Create the interstitial object.</p><p>2.Load the ad</p><p>3.After interstitial loaded for mutiple ad network, play the ad</p>]]></actions>
+	<expectedresults><![CDATA[<p>The first ad network of /bid response should be played</p>]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="46739" name="Play interstitial with network disconnected">
+	<node_order><![CDATA[3]]></node_order>
+	<externalid><![CDATA[19]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[Call sdk api to play interstitial when network disconnected]]></summary>
+	<preconditions><![CDATA[<p>network connected.</p>]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>1.Create the interstitial object.</p><p>2.Load the ad</p><p>3.Disconnect the network</p><p>4.Play the ad</p>]]></actions>
+	<expectedresults><![CDATA[<p>The first loaded ad network in the configuration should be played</p>]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="46742" name="Play interstitial in a thread other than main thread">
+	<node_order><![CDATA[4]]></node_order>
+	<externalid><![CDATA[20]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[Call sdk api to play interstitial in a thread other than main thread]]></summary>
+	<preconditions><![CDATA[]]></preconditions>
+	<execution_type><![CDATA[2]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Create the interstitial object.</p><p>load the ad</p><p>call api to play the ad in a thread other than main thread</p>]]></actions>
+	<expectedresults><![CDATA[<p>For debug version, there will be a crash.</p><p>For release version,The interstitial:didFailToPresentWithError called with correct error.</p>]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="46745" name="Reload intersitial after interstitial finished play(on the same insterstitial instance)">
+	<node_order><![CDATA[5]]></node_order>
+	<externalid><![CDATA[21]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[Call sdk api to reload interstitial when ad play finished(reuse old object)]]></summary>
+	<preconditions><![CDATA[<p>network is connected</p>]]></preconditions>
+	<execution_type><![CDATA[2]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>1. Create the interstitial object, load & play the ad to the end;</p><p>2. Invoke loadAd() again after the callback onAdDismissed is triggered;</p>]]></actions>
+	<expectedresults><![CDATA[<p>The callback onAdLoadFailed should be triggered</p>]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="46748" name="Reload intersitial after interstitial finished play(on a new insterstial instance)">
+	<node_order><![CDATA[6]]></node_order>
+	<externalid><![CDATA[22]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[Call sdk api to reload interstitial when ad play finished(new object)]]></summary>
+	<preconditions><![CDATA[<p>network is connected</p>]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>1. Create the interstitial object, load & play the ad to the end;</p><p>2. After the callback onAdDismissed is triggered, create a new interstitial object, load & play the ad to the end;</p>]]></actions>
+	<expectedresults><![CDATA[<p>The new intersitial instance should play ad successfully</p>]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="46751" name="Invoke loadAd() method during the ad is being played back">
+	<node_order><![CDATA[7]]></node_order>
+	<externalid><![CDATA[23]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>
+	---- Warning ----<br />
+	TestLink Warning<br />
+	test case name is too long (106 chars) &gt; 100 =&gt; has been truncated<br />
+	Original name<br />
+	Invoke loadAd() method during the ad is being played backinterstitial play(on the same insterstitial inst)<br />
+	---- *** ----<br />
+	Call sdk api to reload interstitial when ad play finished(reuse old object)</p>
+]]></summary>
+	<preconditions><![CDATA[<p>
+	network is connected</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>1. Create the interstitial object, load & play the ad</p><p>2. Invoke loadAd() method in below eventcallbacks:</p><p>(1). onAdWillDisplay</p><p>(2). onAdDisplayed</p><p>(3). onAdWillDismiss</p>]]></actions>
+	<expectedresults><![CDATA[<p>The callback onAdlLoadFailed() should be triggered with correct error message.</p>]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="46757" name="Play rewarded video ad before loaded">
+	<node_order><![CDATA[8]]></node_order>
+	<externalid><![CDATA[25]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[Call sdk api to play rewarded video ad before loaded.]]></summary>
+	<preconditions><![CDATA[<p>1. The SDK is initialized;</p>]]></preconditions>
+	<execution_type><![CDATA[2]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+	1. Create the rewarded video ad object and invoke playAd method() directly to playback the Ads;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	1. The event callback onAdPlayFailed should be triggered with correct error message;</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="46760" name="Play rewarded video ad after loaded(single ad network)">
+	<node_order><![CDATA[9]]></node_order>
+	<externalid><![CDATA[26]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[Call sdk api to play rewarded video ad after single ad network loaded.]]></summary>
+	<preconditions><![CDATA[<p>network is connected.</p>]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>1.Create the rewarded video ad object.</p><p>2.load the ad</p><p>3.after ad loaded for one ad network, play the ad</p>]]></actions>
+	<expectedresults><![CDATA[<p>The first ad network of /bid response should be played</p>]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="46763" name="Play rewarded video ad after ad loaded(multiple ad network)">
+	<node_order><![CDATA[10]]></node_order>
+	<externalid><![CDATA[27]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[Call sdk api to play rewarded video ad after mutiple ad network loaded.]]></summary>
+	<preconditions><![CDATA[<p>network is connected.</p>]]></preconditions>
+	<execution_type><![CDATA[2]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>1.Create the rewarded video ad object.</p><p>2.load the ad</p><p>3.after interstitial loaded for mutiple ad network, play the ad</p>]]></actions>
+	<expectedresults><![CDATA[<p>The first ad network of /bid response should be played</p>]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="46766" name="Play rewarded video with network disconnected">
+	<node_order><![CDATA[11]]></node_order>
+	<externalid><![CDATA[28]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[Call sdk api to play rewarded video ad when network disconnected]]></summary>
+	<preconditions><![CDATA[<p>network disconnected.</p>]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>1.Create the rewarded video object.</p><p>2.Load the ad</p><p>3.Disconnect the network</p><p>4.Play the ad</p>]]></actions>
+	<expectedresults><![CDATA[<p>The first loaded ad network in the configuration should be played</p>]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="46769" name="Play rewarded video in a thread other than main thread">
+	<node_order><![CDATA[12]]></node_order>
+	<externalid><![CDATA[29]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[Call sdk api to play rewarded video ad in a thread other than main thread]]></summary>
+	<preconditions><![CDATA[]]></preconditions>
+	<execution_type><![CDATA[2]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>1.Create the rewarded video ad object.</p><p>2.Load the ad</p><p>3.Call api to play the ad in a thread other than main thread</p>]]></actions>
+	<expectedresults><![CDATA[<p>For debug version, there will be a crash.</p><p>For release version,The rewardedVideoAd:didFailToPresentWithError called with correct error.</p>]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="46772" name="Close the playing rewarded video ad when ad completes">
+	<node_order><![CDATA[13]]></node_order>
+	<externalid><![CDATA[30]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[Close the playing rewarded video ad when ad finished]]></summary>
+	<preconditions><![CDATA[<p>network connected</p>]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>1.Create the rewarded video ad object.</p><p>2.Load the ad</p><p>3.Play tha ad</p><p>4.Close the ad when ad finished</p>]]></actions>
+	<expectedresults><![CDATA[<p>The event callback onRewarded should be triggered;</p>]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="46775" name="Close the playing rewarded video ad before ad complete">
+	<node_order><![CDATA[14]]></node_order>
+	<externalid><![CDATA[31]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[Close the playing rewarded video ad before ad finished]]></summary>
+	<preconditions><![CDATA[<p>network connected</p>]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+	1.Create the interstitial object.</p>
+<p>
+	2.Load the ad</p>
+<p>
+	3.Call api to play the ad in a thread other than main thread</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	The event callback onRewarded should NOT be triggered;</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="46778" name="Reload rewarded video ad after ad finished play(on the same instance)">
+	<node_order><![CDATA[15]]></node_order>
+	<externalid><![CDATA[32]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[Call sdk api to reload rewarded video ad when ad play finished(reuse old object)]]></summary>
+	<preconditions><![CDATA[<p>network is connected</p>]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Create the rewarded video ad object</p><p>load & play the ad</p><p>reload the ad when get didDismiss event with the existed object.(do not create new instance)</p>]]></actions>
+	<expectedresults><![CDATA[<p>the event callback onAdLoadFailed should be called with correct error</p>]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="46781" name="Reload rewarded video ad after ad finished play(on a new instance)">
+	<node_order><![CDATA[16]]></node_order>
+	<externalid><![CDATA[33]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[Call sdk api to reload rewarded video ad when ad play finished(new object)]]></summary>
+	<preconditions><![CDATA[<p>network is connected</p>]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>1. Create the rewarded video ad object, load & play the ad</p><p>2. After the callback onAdDismissed is triggered, create a new interstitial object, load & play the ad to the end;</p>]]></actions>
+	<expectedresults><![CDATA[<p>The new rewarded video ad should be load & play ad successfully</p>]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="46784" name="Reload rewarded video ad during ad play">
+	<node_order><![CDATA[17]]></node_order>
+	<externalid><![CDATA[34]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>
+	Call sdk api to reload rewarded video ad when ad play finished</p>
+]]></summary>
+	<preconditions><![CDATA[<p>
+	network is connected</p>
+]]></preconditions>
+	<execution_type><![CDATA[2]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+	1. Create the rewarded video ad object, load &amp; play the ad</p>
+<p>
+	2. Quit the ad playback and then invoke the loadAd() method;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	The callback onAdLoadFailed() should be triggered with correct error message</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="46790" name="Bid strategy is auction for a interstitial placement">
+	<node_order><![CDATA[18]]></node_order>
+	<externalid><![CDATA[36]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[Parameter "bid_strategy" is auction in the response of /v1/hbConfig for a interstitial placement]]></summary>
+	<preconditions><![CDATA[<p>1、Parameter "bid_strategy" is auction in the response of /v1/hbConfig </p><p>2、The placement is interstitial</p>]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+	1、Start Vungle Advanced Auction SDK successfully</p>
+<p>
+	2、Parameter &quot;bid_strategy&quot; is 0 in the response of /v1/hbConfig (we could use mock service or change qa environment &lsquo;s MongoDB)</p>
+<p>
+	3、The placement is interstitial</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	The first ad network of /bid response should be played</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="46793" name="Bid strategy is waterfall for a interstitial placement">
+	<node_order><![CDATA[19]]></node_order>
+	<externalid><![CDATA[37]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[Parameter "bid_strategy" is waterfall in the response of /v1/hbConfig for a interstitial placement]]></summary>
+	<preconditions><![CDATA[<p>1、Parameter "bid_strategy" is waterfall in the response of /v1/hbConfig </p><p>2、The placement is interstitial</p>]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+	1、Start Vungle Advanced Auction SDK successfully</p>
+<p>
+	2、Parameter &quot;bid_strategy&quot; is 1 in the response of /v1/hbConfig (we could use mock service or change qa environment &lsquo;s MongoDB)</p>
+<p>
+	3、The placement is interstitial</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	The /bid request will not call</p>
+<p>
+	The first ad network of ad networks array returned in the /v1/hbConfig response should be played</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="46796" name="Bid strategy parameter does not pass for a interstitial placement">
+	<node_order><![CDATA[20]]></node_order>
+	<externalid><![CDATA[38]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[Parameter "bid_strategy" does not pass in the response of /v1/hbConfig for a interstitial placement]]></summary>
+	<preconditions><![CDATA[<p>1、Parameter "bid_strategy" does not pass in the response of /v1/hbConfig </p><p>2、The placement is interstitial</p>]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>1、Start Vungle Advanced Auction SDK successfulfly</p><p>2、Parameter "bid_strategy" does not pass in the response of /v1/hbConfig (we could use mock service or change qa environment ‘s MongoDB)</p><p>3、The placement is interstitial</p>]]></actions>
+	<expectedresults><![CDATA[<p>The first ad network of /bid response should be played</p>]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="46799" name="Bid strategy parameter is invalid for a interstitial placement">
+	<node_order><![CDATA[21]]></node_order>
+	<externalid><![CDATA[39]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[Parameter "bid_strategy" is invalid in the response of /v1/hbConfig for a interstitial placement]]></summary>
+	<preconditions><![CDATA[<p>1、Parameter "bid_strategy" is invalid in the response of /v1/hbConfig </p><p>2、The placement is interstitial</p>]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>1、Start Vungle Advanced Auction SDK successfulfly</p><p>2、Parameter "bid_strategy" is invalid(for example is -1 or 2) in the response of /v1/hbConfig (we could use mock service or change qa environment ‘s MongoDB)</p><p>3、The placement is interstitial</p>]]></actions>
+	<expectedresults><![CDATA[<p>The first ad network of /bid response should be played</p>]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="46802" name="Bid strategy is auction for a rewarded video placement">
+	<node_order><![CDATA[22]]></node_order>
+	<externalid><![CDATA[40]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[Parameter "bid_strategy" is auction in the response of /v1/hbConfig for a rewarded video placement]]></summary>
+	<preconditions><![CDATA[<p>1、Parameter "bid_strategy" is auction in the response of /v1/hbConfig </p><p>2、The placement is rewarded video</p>]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>1、Start Vungle Advanced Auction SDK successfulfly</p><p>2、Parameter "bid_strategy" is 0 in the response of /v1/hbConfig (we could use mock service or change qa environment ‘s MongoDB)</p><p>3、The placement is rewarded video</p>]]></actions>
+	<expectedresults><![CDATA[<p>The first ad network of /bid response should be played</p>]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="46805" name="Bid strategy is waterfall for a rewarded video placement">
+	<node_order><![CDATA[23]]></node_order>
+	<externalid><![CDATA[41]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[Parameter "bid_strategy" is waterfall in the response of /v1/hbConfig for a rewarded video placement]]></summary>
+	<preconditions><![CDATA[<p>1、Parameter "bid_strategy" is waterfall in the response of /v1/hbConfig </p><p>2、The placement is rewarded video</p>]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>1、Start Vungle Advanced Auction SDK successfulfly</p><p>2、Parameter "bid_strategy" is 1 in the response of /v1/hbConfig (we could use mock service or change qa environment ‘s MongoDB)</p><p>3、The placement is rewarded video</p>]]></actions>
+	<expectedresults><![CDATA[<p>The /bid request will not call</p><p>The first ad network of ad networks array returned in the /v1/hbConfig response should be played</p>]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="46808" name="Bid strategy parameter does not pass for a rewarded video placement">
+	<node_order><![CDATA[24]]></node_order>
+	<externalid><![CDATA[42]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[Parameter "bid_strategy" does not pass in the response of /v1/hbConfig for a rewarded video placement]]></summary>
+	<preconditions><![CDATA[<p>1、Parameter "bid_strategy" does not pass in the response of /v1/hbConfig </p><p>2、The placement is rewarded video</p>]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>1、Start Vungle Advanced Auction SDK successfulfly</p><p>2、Parameter "bid_strategy" does not pass in the response of /v1/hbConfig (we could use mock service or change qa environment ‘s MongoDB)</p><p>3、The placement is rewarded video</p>]]></actions>
+	<expectedresults><![CDATA[<p>The first ad network of /bid response should be played</p>]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="46811" name="Bid strategy parameter is invalid for a rewarded video placement">
+	<node_order><![CDATA[25]]></node_order>
+	<externalid><![CDATA[43]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[Parameter "bid_strategy" is invalid in the response of /v1/hbConfig for a rewarded video placement]]></summary>
+	<preconditions><![CDATA[<p>1、Parameter "bid_strategy" is invalid in the response of /v1/hbConfig </p><p>2、The placement is rewarded video</p>]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>1、Start Vungle Advanced Auction SDK successfulfly</p><p>2、Parameter "bid_strategy" is invalid(for example is -1 or 2) in the response of /v1/hbConfig (we could use mock service or change qa environment ‘s MongoDB)</p><p>3、The placement is rewarded video</p>]]></actions>
+	<expectedresults><![CDATA[<p>The first ad network of /bid response should be played</p>]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="46820" name="Overwrite rewards parameters does not pass &quot;item&quot; parameter">
+	<node_order><![CDATA[26]]></node_order>
+	<externalid><![CDATA[46]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[Parameter "item" of "reward_override" does not pass in the response of /v1/hbConfig for a rewarded video placement]]></summary>
+	<preconditions><![CDATA[<p>1、Parameter "item" of "reward_override" does not pass in the response of /v1/hbConfig </p><p>2、The placement is rewarded video</p>]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>1、Start Vungle Advanced Auction SDK successfulfly</p><p>2、Parameter "item" of "reward_override" does not pass in the response of /v1/hbConfig (we could use mock service or change qa environment ‘s MongoDB)</p><p>3、The placement is rewarded video</p>]]></actions>
+	<expectedresults><![CDATA[<p>The reward will use the configuration of ad network that played the ad after watching the rewarded video completely; The "amount" paramter does not take effect</p>]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="46814" name="Overwrite rewards parameters with valid value">
+	<node_order><![CDATA[27]]></node_order>
+	<externalid><![CDATA[44]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[Parameter "reward_override" is valid in the response of /v1/hbConfig for a rewarded video placement]]></summary>
+	<preconditions><![CDATA[<p>1、Parameter "reward_override" is valid in the response of /v1/hbConfig </p><p>2、The placement is rewarded video</p>]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>1、Start Vungle Advanced Auction SDK successfulfly</p><p>2、Parameter "reward_override" is valid with correct value of "item" and "amount" in the response of /v1/hbConfig (we could use mock service or change qa environment ‘s MongoDB)</p><p>3、The placement is rewarded video</p>]]></actions>
+	<expectedresults><![CDATA[<p>The reward could be override successfully with correct type and amount after watching the rewarded video completely</p>]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="46817" name="Overwrite rewards parameters does not pass">
+	<node_order><![CDATA[28]]></node_order>
+	<externalid><![CDATA[45]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[Parameter "reward_override" does not pass in the response of /v1/hbConfig for a rewarded video placement]]></summary>
+	<preconditions><![CDATA[<p>1、Parameter "reward_override" does not pass in the response of /v1/hbConfig </p><p>2、The placement is rewarded video</p>]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>1、Start Vungle Advanced Auction SDK successfulfly</p><p>2、Parameter "reward_override" does not pass in the response of /v1/hbConfig (we could use mock service or change qa environment ‘s MongoDB)</p><p>3、The placement is rewarded video</p>]]></actions>
+	<expectedresults><![CDATA[<p>The reward will use the configuration of ad network that played the ad after watching the rewarded video completely</p>]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="46823" name="Overwrite rewards parameters does not pass &quot;amount&quot; parameter">
+	<node_order><![CDATA[29]]></node_order>
+	<externalid><![CDATA[47]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[Parameter "amount" of "reward_override" does not pass in the response of /v1/hbConfig for a rewarded video placement]]></summary>
+	<preconditions><![CDATA[<p>1、Parameter "amount" of "reward_override" does not pass in the response of /v1/hbConfig </p><p>2、The placement is rewarded video</p>]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>1、Start Vungle Advanced Auction SDK successfulfly</p><p>2、Parameter "amount" of "reward_override" does not pass in the response of /v1/hbConfig (we could use mock service or change qa environment ‘s MongoDB)</p><p>3、The placement is rewarded video</p>]]></actions>
+	<expectedresults><![CDATA[<p>The reward will use the configuration of ad network that played the ad after watching the rewarded video completely; The "item" paramter does not take effect</p>]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="46826" name="&quot;Amount&quot; parameter of Overwrite rewards parameters is negative">
+	<node_order><![CDATA[30]]></node_order>
+	<externalid><![CDATA[48]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[Parameter "amount" of "reward_override" is negative in the response of /v1/hbConfig for a rewarded video placement]]></summary>
+	<preconditions><![CDATA[<p>1、Parameter "amount" of "reward_override" is negative in the response of /v1/hbConfig </p><p>2、The placement is rewarded video</p>]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+	1、Start Vungle Advanced Auction SDK successfulfly</p>
+<p>
+	2、Parameter &quot;amount&quot; of &quot;reward_override&quot; is negative in the response of /v1/hbConfig (we could use mock service or change qa environment &lsquo;s MongoDB)</p>
+<p>
+	3、The placement is rewarded video</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	The reward parameters passed in the onRewarded callback should not be overrided.(Using the values set in the adnetworks)</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="47585" name="RewardedVideoAd: Check getPreparedAdNetworks before load the ad">
+	<node_order><![CDATA[31]]></node_order>
+	<externalid><![CDATA[110]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[]]></summary>
+	<preconditions><![CDATA[]]></preconditions>
+	<execution_type><![CDATA[2]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+	1. Create an instance of rewarded video ad;</p>
+<p>
+	2. Check the default status before invoking loadAd():</p>
+<p>
+	- isReady();</p>
+<p>
+	- hasBeenPlayed();</p>
+<p>
+	- getPreparedAdNetworks();</p>
+<p>
+	- getPlayingNetwork();</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	1. isReady() should return False;</p>
+<p>
+	2. hasBeenPlayed() should return False;</p>
+<p>
+	3. getPareparedAdNetworks should return an empty list;</p>
+<p>
+	4. getPlayingNetwork() shoul return null;</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="47588" name="RewardedVideoAd: Check getPlayingNetwork before load the ad">
+	<node_order><![CDATA[32]]></node_order>
+	<externalid><![CDATA[111]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[]]></summary>
+	<preconditions><![CDATA[]]></preconditions>
+	<execution_type><![CDATA[2]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[]]></actions>
+	<expectedresults><![CDATA[<p>
+	1. It should return null;</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="47591" name="RewardedVideoAd: Check hasBeenPlayed before load the ad">
+	<node_order><![CDATA[33]]></node_order>
+	<externalid><![CDATA[112]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[]]></summary>
+	<preconditions><![CDATA[]]></preconditions>
+	<execution_type><![CDATA[2]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[]]></actions>
+	<expectedresults><![CDATA[<p>
+	1. The method hasBeenPlayed() should return False;</p>
+]]></expectedresults>
+	<execution_type><![CDATA[2]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="47594" name="Interstitial: Check getPreparedAdNetworks before load the ad">
+	<node_order><![CDATA[34]]></node_order>
+	<externalid><![CDATA[113]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[]]></summary>
+	<preconditions><![CDATA[]]></preconditions>
+	<execution_type><![CDATA[2]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+
+</testcase>
+
+<testcase internalid="47596" name="Interstitial: Check getPlayingNetwork before load the ad">
+	<node_order><![CDATA[35]]></node_order>
+	<externalid><![CDATA[114]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[]]></summary>
+	<preconditions><![CDATA[]]></preconditions>
+	<execution_type><![CDATA[2]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+
+</testcase>
+
+<testcase internalid="47598" name="Interstitial: Check hasBeenPlayed before load the ad">
+	<node_order><![CDATA[36]]></node_order>
+	<externalid><![CDATA[115]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[]]></summary>
+	<preconditions><![CDATA[]]></preconditions>
+	<execution_type><![CDATA[2]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+
+</testcase>
+
+<testcase internalid="47903" name="Interstitial: Disconnect the network, the bid strategy should fallback to waterfall when play the ad">
+	<node_order><![CDATA[37]]></node_order>
+	<externalid><![CDATA[122]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[]]></summary>
+	<preconditions><![CDATA[<p>
+	1. The test app is launched and initialized;</p>
+<p>
+	2. The bid strategy of the interstitial placement should be 0;</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+	1. In the interstitial section, click on the download button to trigger ad netoworks to load interstitial ads;</p>
+<p>
+	2. Wait for a while, then disconnect the network connection;</p>
+<p>
+	3. Click on the play button;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	1. In the charles, the /bid request should not be sent out;&nbsp;</p>
+<p>
+	2. The bid strategy should fallback to the waterfall, based on the configuration of the /bhConfig response, the first successful loaded ad network should be chosen as the winner;&nbsp;</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="47906" name="RewardedAd: Disconnect the network, the bid strategy should fallback to waterfall when play the ad">
+	<node_order><![CDATA[38]]></node_order>
+	<externalid><![CDATA[123]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[]]></summary>
+	<preconditions><![CDATA[<p style="margin-top: 0px; font-family: &quot;Trebuchet MS&quot;, Arial, Verdana, sans-serif; font-size: 11.7px; background-color: rgb(238, 238, 238);">
+	1. The test app is launched and initialized;</p>
+<p style="font-family: &quot;Trebuchet MS&quot;, Arial, Verdana, sans-serif; font-size: 11.7px; background-color: rgb(238, 238, 238);">
+	2. The bid strategy of the interstitial placement should be 0;</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+	1. In the rewardedAd section, click on the download button to trigger ad netoworks to load rewarded video ads;</p>
+<p>
+	2. Wait for a while, then disconnect the network connection;</p>
+<p>
+	3. Click on the play button;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	1. In the charles, the /bid request should not be sent out;&nbsp;</p>
+<p>
+	2. The bid strategy should fallback to the waterfall, based on the configuration of the /bhConfig response, the first successful loaded ad network should be chosen as the winner;&nbsp;</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+</testsuite><testsuite id="46917" name="PlayAd Report" >
+<node_order><![CDATA[4]]></node_order>
+<details><![CDATA[]]></details> 
+
+<testcase internalid="46918" name="Play interstitial with network , check play ad report">
+	<node_order><![CDATA[1]]></node_order>
+	<externalid><![CDATA[74]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[-]]></summary>
+	<preconditions><![CDATA[<p>The interstitial is loaded.</p><p>Network is connected.</p>]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Call sdk api to play the interstitial</p>]]></actions>
+	<expectedresults><![CDATA[<p>The play report will be sent when ad start to play.</p><p>Check the report fields are correct.</p>]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="46921" name="Play interstitial without network , check play ad report">
+	<node_order><![CDATA[2]]></node_order>
+	<externalid><![CDATA[75]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[-]]></summary>
+	<preconditions><![CDATA[<p>The interstitial is loaded. Network is disconnected.</p>]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Call sdk api to play the interstitial</p>]]></actions>
+	<expectedresults><![CDATA[<p>The play report will not be sent, and will be sent with next report after network is connected.</p>]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="46924" name="Play rewarded video with network, check play ad report">
+	<node_order><![CDATA[3]]></node_order>
+	<externalid><![CDATA[76]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[-]]></summary>
+	<preconditions><![CDATA[<p>The rewarded video ad is loaded</p><p>Network is connected</p>]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Call sdk api to play the rewarded video ad</p>]]></actions>
+	<expectedresults><![CDATA[<p>The play report will be sent when ad start to play.</p><p>Check the report fields are correct.</p>]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="46927" name="Play rewarded video without network, check play ad report">
+	<node_order><![CDATA[4]]></node_order>
+	<externalid><![CDATA[77]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[-]]></summary>
+	<preconditions><![CDATA[<p>The rewarded video ad is loaded</p><p>Network is disconnected</p>]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Call sdk api to play the rewarded video ad</p>]]></actions>
+	<expectedresults><![CDATA[<p>The play report will not be sent, and will be sent with next report after network is connected.</p>]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="46930" name="Send unsent play ad report when sdk initialized">
+	<node_order><![CDATA[5]]></node_order>
+	<externalid><![CDATA[78]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[-]]></summary>
+	<preconditions><![CDATA[<p>There are some play ad report failed to sent, include interstititial and rewarded video ad.</p><p>The network is connected.</p>]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Initialize sdk successfully.</p>]]></actions>
+	<expectedresults><![CDATA[<p>The unsent play report should be sent by the order they generated.</p>]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+</testsuite><testsuite id="46933" name="Logging" >
+<node_order><![CDATA[5]]></node_order>
+<details><![CDATA[]]></details> 
+
+<testcase internalid="46934" name="Log fuction enabled">
+	<node_order><![CDATA[1]]></node_order>
+	<externalid><![CDATA[79]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[Log fuction enabled]]></summary>
+	<preconditions><![CDATA[<p>Parameter "logging" is enabled in the response of /v1/hbConfig </p><p></p>]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>1、Start Vungle Advanced Auction SDK successfulfly</p><p>2、Parameter "logging" is enabled in the response of /v1/hbConfig </p><p>"logging": {</p><p>"enabled": true</p><p>},</p>]]></actions>
+	<expectedresults><![CDATA[<p>Vungle Advanced Auction SDK will send the log items to the log endpoint(For qa environment is https://qa-hb.api.vungle.com/v1/logging) ; </p><p>Each field of metadata in every log item is correct and does not have raw data</p>]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="46937" name="Log fuction disabled">
+	<node_order><![CDATA[2]]></node_order>
+	<externalid><![CDATA[80]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[Log fuction disabled]]></summary>
+	<preconditions><![CDATA[<p>Parameter "logging" is disabled in the response of /v1/hbConfig </p><p></p>]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>1、Start Vungle Advanced Auction SDK successfulfly</p><p>2、Parameter "logging" is disabled in the response of /v1/hbConfig </p><p>"logging": {</p><p>"enabled": false</p><p>},</p>]]></actions>
+	<expectedresults><![CDATA[<p>Vungle Advanced Auction SDK will not send the log items to the log endpoint(For qa environment is https://qa-hb.api.vungle.com/v1/logging) ; </p><p></p>]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+</testsuite><testsuite id="46941" name="GDPR" >
+<node_order><![CDATA[6]]></node_order>
+<details><![CDATA[]]></details> 
+
+<testcase internalid="46942" name="User consent status is unknown  in non EU countries.">
+	<node_order><![CDATA[1]]></node_order>
+	<externalid><![CDATA[81]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[User consent status is unknown 
+in non EU countries.]]></summary>
+	<preconditions><![CDATA[<p>Device IP is a non EU country IP.</p><p>User consetn status is unknown.</p>]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>1、Change device IP to a non EU country IP.</p><p>2、In TestApp, choose “User consent status" </p><p>to unknown （Default）</p><p>3、Start Vungle Advanced Auction SDK.</p>]]></actions>
+	<expectedresults><![CDATA[<p>1、In /v1/hbConfig request, parameter </p><p>”consent_status“ is unknown:</p><p>"user": {</p><p>"gdpr": {</p><p>"consent_source": "publisher",</p><p>"consent_status": "unknown",</p><p>"consent_timestamp": 0</p><p>}</p><p>}</p><p>2、In /v1/hbConfig response, </p><p>parameter "is_country_data_protected" is false</p><p>"gdpr": {</p><p>"is_country_data_protected": false</p><p>}</p><p>}</p>]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="46945" name="User consent status is accepted  in non EU countries.">
+	<node_order><![CDATA[2]]></node_order>
+	<externalid><![CDATA[82]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[User consent status is accepted 
+in non EU countries.]]></summary>
+	<preconditions><![CDATA[<p>Device IP is a non EU country IP.</p><p>User consetn status is accepted.</p>]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>1、Change device IP to a non EU country IP.</p><p>2、In TestApp, choose “User consent status" </p><p>to accepted </p><p>3、Start Vungle Advanced Auction SDK.</p>]]></actions>
+	<expectedresults><![CDATA[<p>1、In /v1/hbConfig request, parameter </p><p>”consent_status“ is opted_in:</p><p>"user": {</p><p>"gdpr": {</p><p>"consent_source": "publisher",</p><p>"consent_status": "opted_in",</p><p>"consent_timestamp": 1536732869</p><p>}</p><p>}</p><p>2、In /v1/hbConfig response, </p><p>parameter "is_country_data_protected" is false</p><p>"gdpr": {</p><p>"is_country_data_protected": false</p><p>}</p><p>}</p>]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="46948" name="User consent status is denied  in non EU countries.">
+	<node_order><![CDATA[3]]></node_order>
+	<externalid><![CDATA[83]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[User consent status is denied 
+in non EU countries.]]></summary>
+	<preconditions><![CDATA[<p>Device IP is a non EU country IP.</p><p>User consetn status is denied.</p>]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>1、Change device IP to a non EU country IP.</p><p>2、In TestApp, choose “User consent status" </p><p>to denied </p><p>3、Start Vungle Advanced Auction SDK.</p>]]></actions>
+	<expectedresults><![CDATA[<p>1、In /v1/hbConfig request, parameter </p><p>”consent_status“ is opted_out:</p><p>"user": {</p><p>"gdpr": {</p><p>"consent_source": "publisher",</p><p>"consent_status": "opted_out",</p><p>"consent_timestamp": 1536733015</p><p>}</p><p>}</p><p>2、In /v1/hbConfig response, </p><p>parameter "is_country_data_protected" is false</p><p>"gdpr": {</p><p>"is_country_data_protected": false</p><p>}</p><p>}</p>]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="46951" name="User consent status is unknown  in EU countries.">
+	<node_order><![CDATA[4]]></node_order>
+	<externalid><![CDATA[84]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[User consent status is unknown 
+in EU countries.]]></summary>
+	<preconditions><![CDATA[<p>Device IP is a EU country IP.</p><p>User consetn status is unknown.</p>]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>1、Change device IP to a EU country IP </p><p>(We could use Astrill to switch to Germany IP).</p><p>2、In TestApp, choose “User consent status" </p><p>to unknown （Default）</p><p>3、Start Vungle Advanced Auction SDK.</p>]]></actions>
+	<expectedresults><![CDATA[<p>1、In /v1/hbConfig request, parameter </p><p>”consent_status“ is unknown:</p><p>"user": {</p><p>"gdpr": {</p><p>"consent_source": "publisher",</p><p>"consent_status": "unknown",</p><p>"consent_timestamp": 0</p><p>}</p><p>}</p><p>2、In /v1/hbConfig response, </p><p>parameter "is_country_data_protected" is false</p><p>"gdpr": {</p><p>"is_country_data_protected": true</p><p>}</p>]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="46954" name="User consent status is accepted  in EU countries.">
+	<node_order><![CDATA[5]]></node_order>
+	<externalid><![CDATA[85]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[User consent status is accepted 
+in EU countries.]]></summary>
+	<preconditions><![CDATA[<p>Device IP is a EU country IP.</p><p>User consetn status is accepted.</p>]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>1、Change device IP to a EU country IP </p><p>(We could use Astrill to switch to Germany IP).</p><p>2、In TestApp, choose “User consent status" </p><p>to accepted </p><p>3、Start Vungle Advanced Auction SDK.</p>]]></actions>
+	<expectedresults><![CDATA[<p>1、In /v1/hbConfig request, parameter </p><p>”consent_status“ is opted_in:</p><p>"user": {</p><p>"gdpr": {</p><p>"consent_source": "publisher",</p><p>"consent_status": "opted_in",</p><p>"consent_timestamp": 1536732869</p><p>}</p><p>}</p><p>2、In /v1/hbConfig response, </p><p>parameter "is_country_data_protected" is false</p><p>"gdpr": {</p><p>"is_country_data_protected": true</p><p>}</p>]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="46957" name="User consent status is denied  in EU countries.">
+	<node_order><![CDATA[6]]></node_order>
+	<externalid><![CDATA[86]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[User consent status is denied 
+in EU countries.]]></summary>
+	<preconditions><![CDATA[<p>Device IP is a EU country IP.</p><p>User consetn status is denied.</p>]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>1、Change device IP to a EU country IP </p><p>(We could use Astrill to switch to Germany IP).</p><p>2、In TestApp, choose “User consent status" </p><p>to denied </p><p>3、Start Vungle Advanced Auction SDK.</p>]]></actions>
+	<expectedresults><![CDATA[<p>1、In /v1/hbConfig request, parameter </p><p>”consent_status“ is opted_out:</p><p>"user": {</p><p>"gdpr": {</p><p>"consent_source": "publisher",</p><p>"consent_status": "opted_out",</p><p>"consent_timestamp": 1536733015</p><p>}</p><p>}</p><p>2、In /v1/hbConfig response, </p><p>parameter "is_country_data_protected" is false</p><p>"gdpr": {</p><p>"is_country_data_protected": true</p><p>}</p>]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+</testsuite><testsuite id="47505" name="View Count Tracking" >
+<node_order><![CDATA[7]]></node_order>
+<details><![CDATA[]]></details> 
+
+<testcase internalid="47506" name="Check the view numbers by day should be sent to the /bid endpoint and the /repor">
+	<node_order><![CDATA[1]]></node_order>
+	<externalid><![CDATA[102]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[---- Warning ----<br />
+TestLink Warning<br />
+test case name is too long (103 chars) > 100 => has been truncated<br />
+Original name<br />
+Check the view numbers by day should be sent to the /bid endpoint and the /report endpoint respectively<br />
+---- *** ----<br />
+-]]></summary>
+	<preconditions><![CDATA[<p>1. Clear the cache;</p><p>2. The bid strategy of the placement is set to header bidding auction (0-autction);</p>]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>1. Launch the test app and play an ad;</p><p>2. Quit from the ad playback;</p>]]></actions>
+	<expectedresults><![CDATA[<p>1. When the test app sends the request to the /bid endpoint, the request payload should include a parameter view_number_day to track the view numbers by day;</p><p>2. When the test app sends the request to the /report endpoint, the request payload should include a parameter view_number_day to track the view numbers by day;</p>]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="47509" name="Check the view numbers by session should be sent to the /bid endpoint and the /report endpoint">
+	<node_order><![CDATA[2]]></node_order>
+	<externalid><![CDATA[103]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[-]]></summary>
+	<preconditions><![CDATA[<p>1. The bid strategy of the placement is set to header bidding auction (0-auction)</p>]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>1. Launch the test app and play an ad;</p><p>2. Quit from the ad playback;</p>]]></actions>
+	<expectedresults><![CDATA[<p>1. When the test app sends the request to the /bid endpoint, the request payload should include a parameter view_number_day to track the view numbers by day;</p><p>2. When the test app sends the request to the /report endpoint, the request payload should include a parameter view_number_day to track the view numbers by day;</p>]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="47512" name="The view numbers by day should NOT reset to 0 after relaunching the process">
+	<node_order><![CDATA[3]]></node_order>
+	<externalid><![CDATA[104]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[-]]></summary>
+	<preconditions><![CDATA[<p>1. The bid strategy of the placement is set to header bidding auciton (0-auction);</p><p>2. Play ads for several times;</p>]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>1. Kill the process of test app;</p><p>2. Launch the test app and play the ad;</p>]]></actions>
+	<expectedresults><![CDATA[<p>1. When the /bid API is called, the parameter view_number_day should NOT be set to 0;</p><p>2. When the /report API is called, the parameter view_number_day should NOT be set to 0;</p>]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="47515" name="The view numbers by session should reset to 0 after relaunching the process">
+	<node_order><![CDATA[4]]></node_order>
+	<externalid><![CDATA[105]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[-]]></summary>
+	<preconditions><![CDATA[<p>1. The bid strategy of the placement is set to header bidding auction (0-auction)</p><p>2. Play ads for several times;</p>]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>1. Kill the process of test app;</p>]]></actions>
+	<expectedresults><![CDATA[<p>1. When the /bid API is called, the parameter view_number_session should be set to 0;</p><p>2. When the /report API is called, the parameter view_number_session should be set to 0;</p>]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="47518" name="The view numbers by day should reset to 0 after 6:00 AM">
+	<node_order><![CDATA[5]]></node_order>
+	<externalid><![CDATA[106]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[-]]></summary>
+	<preconditions><![CDATA[<p>1. The bid strategy of the placement is set to header bidding auction (0-auction)</p>]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>1. Set the system time before 06:00 AM, play the ads for several times;</p><p>2. Wait until the time after 06:00 AM, play the ad;</p>]]></actions>
+	<expectedresults><![CDATA[<p>In the /bid endpoint and /report endpoint:</p><p>1. The parameter view_number_day should be set to 0 after 06:00 AM;</p><p>2. The parameter view_number_session should NOT be set to 0 after 06:00 AM;</p>]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="47521" name="Check the view count tracking should support the interstitial ads;">
+	<node_order><![CDATA[6]]></node_order>
+	<externalid><![CDATA[107]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[-]]></summary>
+	<preconditions><![CDATA[<p>-</p>]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>1. Play an interstitial ad;</p>]]></actions>
+	<expectedresults><![CDATA[<p>In the /bid endpoint and /report endpoint:</p><p>1. The parameters view_number_day and view_number_session should be increased;</p><p></p>]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="47524" name="Check the view count tracking shiould support the rewarded ads;">
+	<node_order><![CDATA[7]]></node_order>
+	<externalid><![CDATA[108]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[-]]></summary>
+	<preconditions><![CDATA[<p>-</p>]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>1. Play a rewarded ad;</p>]]></actions>
+	<expectedresults><![CDATA[<p>In the /bid endpoint and the /report endpoint:</p><p>1. The parameters view_number_day and view_number_session should be increased;</p>]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+</testsuite></testsuite><testsuite id="46960" name="Non-Functional" >
+<node_order><![CDATA[2]]></node_order>
+<details><![CDATA[]]></details> 
+<testsuite id="46961" name="Performance" >
+<node_order><![CDATA[1]]></node_order>
+<details><![CDATA[]]></details> 
+
+<testcase internalid="46963" name="CPU">
+	<node_order><![CDATA[1]]></node_order>
+	<externalid><![CDATA[87]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[-]]></summary>
+	<preconditions><![CDATA[<p>-</p>]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>-</p>]]></actions>
+	<expectedresults><![CDATA[<p>The SDK should not have abnormal CPU usage(consumption)</p>]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="46966" name="Memory Leak">
+	<node_order><![CDATA[2]]></node_order>
+	<externalid><![CDATA[88]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[-]]></summary>
+	<preconditions><![CDATA[<p>-</p>]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>-</p>]]></actions>
+	<expectedresults><![CDATA[<p>The SDK should not have abnormal memory usage(consumption)</p>]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+</testsuite><testsuite id="46962" name="Platform Compatibility" >
+<node_order><![CDATA[2]]></node_order>
+<details><![CDATA[]]></details> 
+
+<testcase internalid="46969" name="Android 4.0.3 - 4.0.4 (API Level 15)">
+	<node_order><![CDATA[1]]></node_order>
+	<externalid><![CDATA[89]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[Android 4.0.3 - 4.0.4 (API Level 15)]]></summary>
+	<preconditions><![CDATA[<p>-</p>]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>-</p>]]></actions>
+	<expectedresults><![CDATA[<p>1. The SDK should behave correctly on target OS;</p><p>2. The SDK should not crash;</p>]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="46972" name="Android 4.1.x Jelly Bean (API Level 16)">
+	<node_order><![CDATA[2]]></node_order>
+	<externalid><![CDATA[90]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[Android 4.1.x Jelly Bean (API Level 16)]]></summary>
+	<preconditions><![CDATA[<p>-</p>]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>-</p>]]></actions>
+	<expectedresults><![CDATA[<p>1. The SDK should behave correctly on target OS;</p><p>2. The SDK should not crash;</p>]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="46975" name="Android 4.2.x Jelly Bean (API Level 17)">
+	<node_order><![CDATA[3]]></node_order>
+	<externalid><![CDATA[91]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[Android 4.2.x Jelly Bean (API Level 17)]]></summary>
+	<preconditions><![CDATA[<p>-</p>]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>-</p>]]></actions>
+	<expectedresults><![CDATA[<p>1. The SDK should behave correctly on target OS;</p><p>2. The SDK should not crash;</p>]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="46978" name="Android 4.3.x Jelly Bean (API Level 18)">
+	<node_order><![CDATA[4]]></node_order>
+	<externalid><![CDATA[92]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[Android 4.3.x Jelly Bean (API Level 18)]]></summary>
+	<preconditions><![CDATA[<p>-</p>]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>-</p>]]></actions>
+	<expectedresults><![CDATA[<p>1. The SDK should behave correctly on target OS;</p><p>2. The SDK should not crash;</p>]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="46981" name="Android 4.4 KitKat (API Level 19)">
+	<node_order><![CDATA[5]]></node_order>
+	<externalid><![CDATA[93]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[Android 4.4 KitKat (API Level 19)]]></summary>
+	<preconditions><![CDATA[<p>-</p>]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>-</p>]]></actions>
+	<expectedresults><![CDATA[<p>1. The SDK should behave correctly on target OS;</p><p>2. The SDK should not crash;</p>]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="46984" name="Android 5.0 Lollipop (API Level 21)">
+	<node_order><![CDATA[6]]></node_order>
+	<externalid><![CDATA[94]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[Android 5.0 Lollipop (API Level 21)]]></summary>
+	<preconditions><![CDATA[<p>-</p>]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>-</p>]]></actions>
+	<expectedresults><![CDATA[<p>1. The SDK should behave correctly on target OS;</p><p>2. The SDK should not crash;</p>]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="46987" name="Android 5.1 Lollipop (API Level 22)">
+	<node_order><![CDATA[7]]></node_order>
+	<externalid><![CDATA[95]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[Android 5.1 Lollipop (API Level 22)]]></summary>
+	<preconditions><![CDATA[<p>-</p>]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>-</p>]]></actions>
+	<expectedresults><![CDATA[<p>1. The SDK should behave correctly on target OS;</p><p>2. The SDK should not crash;</p>]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="46990" name="Android 6.0 Marshmallow (API Level 23)">
+	<node_order><![CDATA[8]]></node_order>
+	<externalid><![CDATA[96]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[Android 6.0 Marshmallow (API Level 23)]]></summary>
+	<preconditions><![CDATA[<p>-</p>]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>-</p>]]></actions>
+	<expectedresults><![CDATA[<p>1. The SDK should behave correctly on target OS;</p><p>2. The SDK should not crash;</p>]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="46993" name="Android 7.0 Nougat (API Level 24)">
+	<node_order><![CDATA[9]]></node_order>
+	<externalid><![CDATA[97]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[Android 7.0 Nougat (API Level 24)]]></summary>
+	<preconditions><![CDATA[<p>-</p>]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>-</p>]]></actions>
+	<expectedresults><![CDATA[<p>1. The SDK should behave correctly on target OS;</p><p>2. The SDK should not crash;</p>]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="46996" name="Android 7.1 Nougat (API Level 25)">
+	<node_order><![CDATA[10]]></node_order>
+	<externalid><![CDATA[98]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[Android 7.1 Nougat (API Level 25)]]></summary>
+	<preconditions><![CDATA[<p>-</p>]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>-</p>]]></actions>
+	<expectedresults><![CDATA[<p>1. The SDK should behave correctly on target OS;</p><p>2. The SDK should not crash;</p>]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="46999" name="Android 8.0.0 Oreo (API Level 26)">
+	<node_order><![CDATA[11]]></node_order>
+	<externalid><![CDATA[99]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[Android 8.0.0 Oreo (API Level 26)]]></summary>
+	<preconditions><![CDATA[<p>-</p>]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>-</p>]]></actions>
+	<expectedresults><![CDATA[<p>1. The SDK should behave correctly on target OS;</p><p>2. The SDK should not crash;</p>]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="47002" name="Android 8.1.0 Oreo (API Level 27)">
+	<node_order><![CDATA[12]]></node_order>
+	<externalid><![CDATA[100]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[Android 8.1.0 Oreo (API Level 27)]]></summary>
+	<preconditions><![CDATA[<p>-</p>]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>-</p>]]></actions>
+	<expectedresults><![CDATA[<p>1. The SDK should behave correctly on target OS;</p><p>2. The SDK should not crash;</p>]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="47005" name="Android 9 Pie (API Level 28)">
+	<node_order><![CDATA[13]]></node_order>
+	<externalid><![CDATA[101]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[Android 9 Pie (API Level 28)]]></summary>
+	<preconditions><![CDATA[<p>-</p>]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>-</p>]]></actions>
+	<expectedresults><![CDATA[<p>1. The SDK should behave correctly on target OS;</p><p>2. The SDK should not crash;</p>]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+</testsuite></testsuite></testsuite>

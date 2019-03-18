@@ -1,0 +1,3869 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite id="" name="" >
+<node_order><![CDATA[]]></node_order>
+<details><![CDATA[]]></details> 
+<testsuite id="18834" name="Dashboard Amazon" >
+<node_order><![CDATA[1]]></node_order>
+<details><![CDATA[<p>
+	This test suite contains test cases related to Amazon as platform on Dashboard.</p>
+]]></details> 
+
+<testcase internalid="18838" name="Create an Amazon Publisher App">
+	<node_order><![CDATA[1000]]></node_order>
+	<externalid><![CDATA[1]]></externalid>
+	<version><![CDATA[2]]></version>
+	<summary><![CDATA[<p>
+	This test case is to check the creation of Amazon Publisher Application.</p>
+]]></summary>
+	<preconditions><![CDATA[<p>
+	1.User should Login with Vungle domain or Publisher and should have a valid user#id and password</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[3]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+	<span style="color: rgb(51, 51, 51); font-family: Arial, sans-serif; font-size: 14px; background-color: rgb(255, 255, 255);">Login into the dashboard&nbsp;as a Vungle Admin (with a&nbsp;@vungle.com domain)</span></p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	User should be on the Management page of the Dashboard</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>
+	In the hamburger, click on the publisher option of the toggle</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	User should be onthe Management Page with Applications and Placements Tab</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p style="margin-left:.5in;">
+	Click on &quot;Add new Application&quot; tab</p>
+<p style="margin-left:.5in;">
+	&nbsp;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	User should be on the Create Application Page</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[4]]></step_number>
+	<actions><![CDATA[<p style="margin-left: 0.5in;">
+	On Create Application Page, enter the required information</p>
+<ul>
+	<li style="margin-left: 0.5in;">
+		Select the Amazon Platform&nbsp;</li>
+	<li style="margin-left: 0.5in;">
+		Enter the Application Name</li>
+	<li style="margin-left: 0.5in;">
+		Check the check box od My app is live on the Appstore</li>
+	<li style="margin-left: 0.5in;">
+		Enter the Appstore URL</li>
+	<li style="margin-left: 0.5in;">
+		Select the Category from the drop list</li>
+	<li style="margin-left: 0.5in;">
+		In the Application targeting section, select the App-tags and Tag base filtering</li>
+</ul>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	Entered information should be displayed</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[5]]></step_number>
+	<actions><![CDATA[<p>
+	Click Submit button</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	Publisher Application should be created and user should be directed to the details page of the Publisher Application.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="18854" name="Modify Amazon Publisher Application and Verify">
+	<node_order><![CDATA[1001]]></node_order>
+	<externalid><![CDATA[2]]></externalid>
+	<version><![CDATA[2]]></version>
+	<summary><![CDATA[<p>
+	Modify any field of the Amazon Publisher Application, submit and verify</p>
+]]></summary>
+	<preconditions><![CDATA[<p>
+	Amazon Publisher Application should be created&nbsp;</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[3]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+	Login to the Application</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	User should be on the Management page</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>
+	Click on Global search and enter the Application ID of the Amazon Publisher Application</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	Application name with details and edit icon should be displayed</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>
+	Click on edit icon</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	User should land on update application page</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[4]]></step_number>
+	<actions><![CDATA[<p>
+	Modify the Category of the application</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	Modified Category should be displayed</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[5]]></step_number>
+	<actions><![CDATA[<p>
+	Click Submit</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	Application should be saved and user should be diredted to the details page with modified &nbsp;category information</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="18861" name="Verify SDK Page">
+	<node_order><![CDATA[1002]]></node_order>
+	<externalid><![CDATA[3]]></externalid>
+	<version><![CDATA[2]]></version>
+	<summary><![CDATA[<p>
+	Verify SDK Page for Amazon Updates</p>
+]]></summary>
+	<preconditions><![CDATA[]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[3]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+
+</testcase>
+
+<testcase internalid="18863" name="Verify Amazon App  Logo in table view">
+	<node_order><![CDATA[1003]]></node_order>
+	<externalid><![CDATA[4]]></externalid>
+	<version><![CDATA[2]]></version>
+	<summary><![CDATA[<p>
+	Verify the Amazon App Logo in the table view</p>
+]]></summary>
+	<preconditions><![CDATA[<p>
+	Should have an Amazon Publisher App</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+	Login to the application</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	User should be on the Publisher Managemnet Page</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>
+	On the Publisher Management Page, look for the Amazon Publisher Application created by entering the name in the Application column funnel.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	Amazon Publisher Application should show up with Platform, Date modified, views, completes, revenue, eCPM and edit and details icon</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>
+	Verify the Amazon Logo &nbsp;is present in the Platform column of the table view</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	Amazon icon should present in the platform column</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[4]]></step_number>
+	<actions><![CDATA[<p>
+	Verify the Amazon Logo on the table view of the advertisement side, by clicking on Advertiser on Hamburger icon and then navigating to Applications page by clicking Applications tab on the Advertiser.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	The table list of the Applications should have the Amazon Logo in the platform column of the applications</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="18865" name="Verify Amazon Appstore Icon">
+	<node_order><![CDATA[1004]]></node_order>
+	<externalid><![CDATA[5]]></externalid>
+	<version><![CDATA[2]]></version>
+	<summary><![CDATA[<p>
+	<style type="text/css">
+p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 14.0px Arial; color: #323333; -webkit-text-stroke: #323333}
+span.s1 {font-kerning: none}	</style>
+</p>
+<p class="p1">
+	<span class="s1">Verify Amazon Appstore Icon Support (various pages)</span></p>
+]]></summary>
+	<preconditions><![CDATA[]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+
+</testcase>
+
+<testcase internalid="18867" name="Create an Amazon Advertiser App">
+	<node_order><![CDATA[1005]]></node_order>
+	<externalid><![CDATA[6]]></externalid>
+	<version><![CDATA[2]]></version>
+	<summary><![CDATA[<p>
+	Create an Amazon Advertiser Application and verify</p>
+]]></summary>
+	<preconditions><![CDATA[<p>
+	Login to the application with valid credentials and Login user should be Admin user</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[3]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+	<span style="color: rgb(51, 51, 51); font-family: Arial, sans-serif; font-size: 14px; background-color: rgb(255, 255, 255);">Login into the dashboard&nbsp;as a Vungle Admin (with a&nbsp;@vungle.com domain)</span></p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	User should be on the Management Page</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>
+	<span style="color: rgb(51, 51, 51); font-family: Arial, sans-serif; font-size: 14px; background-color: rgb(255, 255, 255);">In the hamburger, click on the Advertiser option of the toggle&nbsp;</span></p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	User should be on the Advertiser side with Campaigns, Applications and Creatives tabs.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>
+	Click on Applicatons tab and then &quot;Add New Application&quot;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	User should be directed to the Create Application page</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[4]]></step_number>
+	<actions><![CDATA[<p>
+	Enter the required information</p>
+<ul>
+	<li>
+		Select the Amazon Platform</li>
+	<li>
+		Enter the name of teh Application</li>
+	<li>
+		Select the Category from the available list</li>
+	<li>
+		Select the values for App targeting</li>
+</ul>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	Entered values should be displayed</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[5]]></step_number>
+	<actions><![CDATA[<p>
+	Enter Submit button</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	Advertiser Application should be created and user should be on the details page of the Advertiser App with the following info</p>
+<ul>
+	<li>
+		Application Name</li>
+	<li>
+		Vungle Application ID</li>
+	<li>
+		Platform</li>
+	<li>
+		Appstore URL</li>
+	<li>
+		Type</li>
+	<li>
+		Orientation</li>
+	<li>
+		Logging</li>
+	<li>
+		Advertiser setings</li>
+	<li>
+		Ad App targeing and edit icon</li>
+</ul>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="18869" name="Update Amazon Advertiser Application">
+	<node_order><![CDATA[1006]]></node_order>
+	<externalid><![CDATA[7]]></externalid>
+	<version><![CDATA[2]]></version>
+	<summary><![CDATA[<p>
+	Update Amazon Advertiser Application and Verify</p>
+]]></summary>
+	<preconditions><![CDATA[<p>
+	Advertiser Application should be ready</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+	Login to the application</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	User should be on the Management page</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>
+	Navigate to Global search and enter the Application ID of the Advertiser Application created in the VDBA-6 and click enter</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	Amazon Advertiser Application created should be displayed with edit and details icon and also Logo&nbsp;</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>
+	Click on Edit icon</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	User should be directed to the Update Application page</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[4]]></step_number>
+	<actions><![CDATA[<p>
+	Navigate to the Category field and change the value by scrolling throughthe drop list</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	Selected value should be displayed</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[5]]></step_number>
+	<actions><![CDATA[<p>
+	Click Submit</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	Advertiser Application should be saved and the user should be on the details page with the modified value of the Category.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="18871" name="Create a Vungle ads Campaign for Amazon Application">
+	<node_order><![CDATA[1007]]></node_order>
+	<externalid><![CDATA[8]]></externalid>
+	<version><![CDATA[2]]></version>
+	<summary><![CDATA[<p>
+	Create a Vungle ads Campaign for Amazon Application and Verify</p>
+]]></summary>
+	<preconditions><![CDATA[<p>
+	Should have an Advertiser Application &nbsp;and Login user should be Admin user</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[3]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+	Login to the Dashboard Application and click on the Advertiser option of the toggle</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	User should be on the Advertiser page</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>
+	Click on Add New Campaign tab and then Select Campaign manually in the Campaign selection pop up</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	User should be on the Create Campaign page</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>
+	Enter the following information</p>
+<ul>
+	<li>
+		Name</li>
+	<li>
+		Choose the Amazon Advertiser Application created in VDBA-6</li>
+	<li>
+		End Time</li>
+	<li>
+		Total Budget</li>
+	<li>
+		OS Version Limit</li>
+	<li>
+		SDK Version Limit</li>
+	<li>
+		Select the countries from the list available</li>
+	<li>
+		Enter the TPAT Event and the URL</li>
+	<li>
+		Check the MOAT Check box</li>
+</ul>
+]]></actions>
+	<expectedresults><![CDATA[<ul>
+	<li>
+		Entered information should be displayed</li>
+	<li>
+		The Application should have Amazon Logo next to the Application field</li>
+	<li>
+		Device Type selection should not be present</li>
+</ul>
+<p>
+	TPAT URL:https://pixel.mtrcs.samba.tv/v2/vtr/vtrcertification/vtrcertification/vungle/impression?c={{{timestamp}}}&amp;sa_deviceid={{{device_id}}}&amp;sa_cr={{{creative}}}&amp;sa_pl={{{vungle_id}}}&amp;sa_li={{{eid}}}</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[5]]></step_number>
+	<actions><![CDATA[<p>
+	Click Submit</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	Campaign should be created and user should be directed to the details page of the Campaign with Status(Active/Inactive) and Clone the Campaign link and all the entered data.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="18873" name="Edit Vungle ads Campaign">
+	<node_order><![CDATA[1008]]></node_order>
+	<externalid><![CDATA[9]]></externalid>
+	<version><![CDATA[2]]></version>
+	<summary><![CDATA[<p>
+	Edit Vungle ads Campaign and Verify on the details page</p>
+]]></summary>
+	<preconditions><![CDATA[<p>
+	Dashboard Should have a Vungle ads Campaign for Amazon App</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+	Login to the Dashboard Application&nbsp;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	User should be on the Management Page</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>
+	Navigate to Global search and enter the Campaign name created in the testcase VDBA-8</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	Campaign name with edit and details icon should be dispalyed</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>
+	Modify the Campaign by&nbsp;</p>
+<ul>
+	<li>
+		Checking the Auto Pacing checkbox checked and enter the Pacing Overage percentage as 25</li>
+	<li>
+		Change the geo location from CountryTargeting to City Targetingradio button and select the cities from the list available</li>
+	<li>
+		Uncheck the MOAT Campaign</li>
+</ul>
+]]></actions>
+	<expectedresults><![CDATA[<ul>
+	<li>
+		Auto Pacing checkbox should be checked and entered percentage should be displayed</li>
+	<li>
+		City Targeting Radio button should be selected and entered cities should be displayed</li>
+	<li>
+		MOAT Checkbox should be unchecked</li>
+</ul>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[4]]></step_number>
+	<actions><![CDATA[<p>
+	Click Submit</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	Campaign should be saved and user should be on the details page and all the modifed values should be displayed</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="18875" name="Create an Exchange Campaign for Amazon App">
+	<node_order><![CDATA[1009]]></node_order>
+	<externalid><![CDATA[10]]></externalid>
+	<version><![CDATA[2]]></version>
+	<summary><![CDATA[<p>
+	Create an Exchange Campaign for Amazon App and verify</p>
+]]></summary>
+	<preconditions><![CDATA[<p>
+	Dashboard should have an Amazon Advertiser App</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+	Login to the Dashboard Application and click on the Advertiser option of the toggle</p>
+<p>
+	&nbsp;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	User should be on the Advertiser page</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>
+	Click on Add New Campaign tab and then Select Campaign manually in the Campaign selection pop up</p>
+]]></actions>
+	<expectedresults><![CDATA[]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>
+	Enter the following information</p>
+<ul>
+	<li style="margin-left: 30pt;">
+		&nbsp;Name</li>
+	<li style="margin-left: 30pt;">
+		Choose the Amazon Advertiser Application created in VDBA-6</li>
+	<li style="margin-left: 30pt;">
+		Select the Campaign TYpe as Exchange</li>
+	<li style="margin-left: 30pt;">
+		End Time</li>
+	<li style="margin-left: 30pt;">
+		&nbsp;Total Budget</li>
+	<li style="margin-left: 30pt;">
+		OS Version Limit</li>
+	<li style="margin-left: 30pt;">
+		&nbsp;SDK Version Limit</li>
+	<li style="margin-left: 30pt;">
+		Select the Optimization Type as Dynamic and enter the values for Default Bid/Target Bid and Horizon</li>
+	<li style="margin-left: 30pt;">
+		&nbsp;Select the countries from the list available</li>
+	<li style="margin-left: 30pt;">
+		Enter the TPAT Event and the URL</li>
+</ul>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	Entered information should be displayed</p>
+<p>
+	TPAT URL:https://pixel.mtrcs.samba.tv/v2/vtr/vtrcertification/vtrcertification/vungle/impression?c={{{timestamp}}}&amp;sa_deviceid={{{device_id}}}&amp;sa_cr={{{creative}}}&amp;sa_pl={{{vungle_id}}}&amp;sa_li={{{eid}}}</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[4]]></step_number>
+	<actions><![CDATA[<p>
+	Click Submit</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	Campaign should be created and user should be directed to the details page of the Campaign with Status(Active/Inactive) and Clone the Campaign link and all the entered data.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="18877" name="Update Exchange Campaign">
+	<node_order><![CDATA[1010]]></node_order>
+	<externalid><![CDATA[11]]></externalid>
+	<version><![CDATA[2]]></version>
+	<summary><![CDATA[<p>
+	Update Exchange Campaign and verify</p>
+]]></summary>
+	<preconditions><![CDATA[<p>
+	Dashboard should have an Amazon Advertiser App</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+	Login to the Dashboard Application&nbsp;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	User should be on the Management Page</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>
+	Navigate to Global search and enter the Campaign name created in the testcase VDBA-10</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	Campaign name with edit and details should show up</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>
+	Modify the Campaign by&nbsp;</p>
+<ul>
+	<li style="margin-left: 30pt;">
+		Checking the Auto Pacing checkbox checked and enter the Pacing Overage percentage as 25</li>
+	<li style="margin-left: 30pt;">
+		Change the geo location from CountryTargeting to City Targeting radio button and select the cities from the list available</li>
+	<li style="margin-left: 30pt;">
+		Enter the Exchange/3rd party URL in the Excahnge settings section</li>
+</ul>
+]]></actions>
+	<expectedresults><![CDATA[<ul>
+	<li style="margin-left: 30pt;">
+		Auto Pacing checkbox should be checked and entered percentage should be displayed</li>
+	<li style="margin-left: 30pt;">
+		City Targeting Radio button should be selected and entered cities should&nbsp;</li>
+	<li style="margin-left: 30pt;">
+		Entered URL should be displayed</li>
+</ul>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[4]]></step_number>
+	<actions><![CDATA[<p>
+	Click Submit</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	Campaign should be saved and user should be on the details page of the Exchange Campaign and all the modifed values should be displayed</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="18879" name="Create a Legacy Creative  with new Endcard and Verify">
+	<node_order><![CDATA[1011]]></node_order>
+	<externalid><![CDATA[12]]></externalid>
+	<version><![CDATA[2]]></version>
+	<summary><![CDATA[<p>
+	Create a Legacy creative with a new Endcard &nbsp;and Verify</p>
+]]></summary>
+	<preconditions><![CDATA[<p>
+	Should have an Amazon Campaign</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[3]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+	Login to the application</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	User should be on the management page</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>
+	Navigtae to Advertiser option of the toggle and click on Campaigns tab</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	All the available Campaigns should be listed</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>
+	Now search the Campaign created in the testcase VDBA-8 and click on details icon in the table view</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	User should be on the details page of the Campaign and &quot;Add new Creative&quot; link should be available on the right side.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[4]]></step_number>
+	<actions><![CDATA[<p>
+	Click on Add new Creative</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	User should be directed to the type of creative selection pop up window, after selecting Legacy Creative, user should be on the Creative setup page</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[5]]></step_number>
+	<actions><![CDATA[<p>
+	Enter the following information on the Creative setup page,</p>
+<ul>
+	<li>
+		Name</li>
+	<li>
+		Check the Streaming creative check box checked</li>
+	<li>
+		Note that &quot;Select Campaigns to attach&quot; radio button is selected and all the Campaigns under the Advertiser Application created in testcase VDBA-6 are listed.</li>
+	<li>
+		In the Ad Payload section, select &quot;Add New Video&quot; radio button and enter the name of the Video</li>
+	<li>
+		Click on the card setup link</li>
+	<li>
+		Select Create new radio button</li>
+	<li>
+		Enter the Endcard name and select the Template Type</li>
+	<li>
+		Upload the portrait and landscape images from local folder</li>
+	<li>
+		Upload Application icon</li>
+	<li>
+		Enter the TPAT Event and URL &nbsp;
+		<style type="text/css">
+p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 14.0px 'Helvetica Neue'; color: #808080; -webkit-text-stroke: #808080}
+span.s1 {font-kerning: none}		</style>
+		<p class="p1">
+			<span class="s1">https://pixel.mtrcs.samba.tv/v2/vtr/vtrcertification/vtrcertification/vungle/impression?c={{{timestamp}}}&amp;sa_deviceid={{{device_id}}}&amp;sa_cr={{{creative}}}&amp;sa_pl={{{vungle_id}}}&amp;sa_li={{{eid}}}</span></p>
+	</li>
+</ul>
+]]></actions>
+	<expectedresults><![CDATA[<ul>
+	<li>
+		Entered information should be dispalyed</li>
+	<li>
+		&quot;Select Campaigns to attach&quot; radio button be default should be selected</li>
+	<li>
+		Images should be uploaded</li>
+</ul>
+<p>
+	&nbsp;</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[6]]></step_number>
+	<actions><![CDATA[<p>
+	Click Submit</p>
+]]></actions>
+	<expectedresults><![CDATA[<ul>
+	<li>
+		Legacy Creative should be created and user should be on the details page with all the entered information displayed and also with Clone this Creative Link.</li>
+	<li>
+		In the Video ad section on the details page, Video for preview should not be available as Video is not uploaded while creating the Creative.</li>
+</ul>
+<p>
+	&nbsp;</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="18881" name="Create a Legacy Creative without Endcard and Verify">
+	<node_order><![CDATA[1012]]></node_order>
+	<externalid><![CDATA[13]]></externalid>
+	<version><![CDATA[2]]></version>
+	<summary><![CDATA[<p>
+	Create a Legacy Creative without Endcard and Verify</p>
+]]></summary>
+	<preconditions><![CDATA[<p>
+	Should have an Amazon Campaign</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+	Login to tha Dashboard&nbsp;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	User should be on the management page</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>
+	Navigtae to Advertiser option of the toggle and click on Campaigns tab</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	All the available Campaigns should be listed .</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>
+	Now search the Campaign created in the testcase VDBA-8 and click on details icon in the table view</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	User should be on the Details page of the Campaign with &quot;Add new Creative&quot; link onthe right</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[4]]></step_number>
+	<actions><![CDATA[<p>
+	Click on Add new Creative</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	&nbsp;</p>
+<p>
+	User should be directed to the type of creative selection pop up window, after selecting Legacy Creative, user should be on the Creative setup page</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[5]]></step_number>
+	<actions><![CDATA[<p>
+	Enter the following information on the Creative setup page,</p>
+<ul>
+	<li style="margin-left: 30pt;">
+		&nbsp;Name</li>
+	<li style="margin-left: 30pt;">
+		Check the Streaming creative check box checked</li>
+	<li style="margin-left: 30pt;">
+		Note that &quot;Select Campaigns to attach&quot; radio button is selected and all the Campaigns under the Advertiser Application created in testcase VDBA-6 are listed.</li>
+	<li style="margin-left: 30pt;">
+		In the Ad Payload section, select &quot;Add New Video&quot; radio button and enter the name of the Video</li>
+	<li style="margin-left: 30pt;">
+		Click on the card setup link</li>
+	<li style="margin-left: 30pt;">
+		Check the &quot;No Endcard Required&quot; checkbox</li>
+	<li style="margin-left: 30pt;">
+		Enter the TPAT Event and URL &nbsp;</li>
+</ul>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	Entered information should be dispalyed</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[6]]></step_number>
+	<actions><![CDATA[<p>
+	Click Submit</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	Legacy Creative should be createdand user should be on the details page of the Creative with s3 URL blank in the Endcard section.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="18883" name="Create a Legacy Creative with an existing Endcard">
+	<node_order><![CDATA[1013]]></node_order>
+	<externalid><![CDATA[14]]></externalid>
+	<version><![CDATA[2]]></version>
+	<summary><![CDATA[<p>
+	Create a Legacy Creative with an existing Endcard and Verify</p>
+]]></summary>
+	<preconditions><![CDATA[<p>
+	Should have an Endcard to choose.</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+	Login to Dashboard</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	User should be on the Mangement page</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>
+	Go to the Advertiser option of the Dashboard</p>
+]]></actions>
+	<expectedresults><![CDATA[]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>
+	Search the Campaign that was created in testcase VDBA-8 in the Campaigns list and click on details link</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	Campaign created should be available and user should be on the details page of the Campaign</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[4]]></step_number>
+	<actions><![CDATA[<p>
+	Click on Add new Creative link located to the right of the Campaign</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	User should be on the Creative setup page</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[5]]></step_number>
+	<actions><![CDATA[<p>
+	Enter the following information</p>
+<ul>
+	<li style="margin-left: 30pt;">
+		Name</li>
+	<li style="margin-left: 30pt;">
+		&nbsp;Check the Streaming creative check box checked</li>
+	<li style="margin-left: 30pt;">
+		Note that &quot;Select Campaigns to attach&quot; radio button is selected and all the Campaigns under the Advertiser Application created in testcase VDBA-6 are listed.</li>
+	<li style="margin-left: 30pt;">
+		In the Ad Payload section, select &quot;Add New Video&quot; radio button and enter the name of the Video</li>
+	<li style="margin-left: 30pt;">
+		Click on the card setup link</li>
+	<li style="margin-left: 30pt;">
+		&nbsp;Select &quot;Select from existing endcard&quot; radio button</li>
+	<li style="margin-left: 30pt;">
+		Enter the TPAT Event and URL &nbsp;</li>
+</ul>
+<p>
+	&nbsp;</p>
+]]></actions>
+	<expectedresults><![CDATA[<ul>
+	<li>
+		Entered information should be displayed</li>
+	<li>
+		All the CAmpaigns in the App should be displayed</li>
+	<li>
+		Existing Endcard names should be displayed for selection, once selected the all the related data should be filled</li>
+</ul>
+<p>
+	&nbsp;</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[6]]></step_number>
+	<actions><![CDATA[<p>
+	Click Submit</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	Legacy Creative with existing Endcard should be created and user should be on the Creative details page.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="18885" name="Create a Legacy Creative with a new Video and Verify">
+	<node_order><![CDATA[1014]]></node_order>
+	<externalid><![CDATA[15]]></externalid>
+	<version><![CDATA[2]]></version>
+	<summary><![CDATA[<p>
+	Create a Legacy Creative with a new Video and Verify</p>
+]]></summary>
+	<preconditions><![CDATA[<p>
+	Should have an Amazon Campaign</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+	Execute the steps 1 to 4 of testcase VDBA-14</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	User should be on the Creative setup page</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>
+	Enter the following information on the Creative setup page</p>
+<ul>
+	<li>
+		Name</li>
+	<li>
+		Select one or more tags</li>
+	<li>
+		In the Video setup section, select &quot;Add new video&quot; radio button</li>
+	<li>
+		Enter the unique name of the video</li>
+	<li>
+		Upload the video by clicking on &quot;Select file to upload&quot; and navigating to local folder and then click on Upload video</li>
+	<li>
+		Chek the &quot;Endcard not required&quot; checkbox in the card setup section</li>
+	<li>
+		Enter the TPAT Event and URL</li>
+</ul>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	Entered information should be displayed, uploaded video name should be displayed</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>
+	Click Submit</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	Legacy Creative should be created and user should be on the details page with the preview of the video uploaded.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="18887" name="Create a Legacy Creative with an existing Video and Verify">
+	<node_order><![CDATA[1015]]></node_order>
+	<externalid><![CDATA[16]]></externalid>
+	<version><![CDATA[2]]></version>
+	<summary><![CDATA[<p>
+	Create a Legacy Creative with existing Video and Verify</p>
+]]></summary>
+	<preconditions><![CDATA[<p>
+	Should have an Amazon Campaign</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+	Execute the steps 1 to 4 of testcase VDBA-14</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	User should be on the Creative setup page</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>
+	Enter the following information on the Creative setup page,</p>
+<ul>
+	<li style="margin-left: 30pt;">
+		&nbsp;&nbsp;&nbsp; Name</li>
+	<li style="margin-left: 30pt;">
+		Check the Streaming creative check box checked</li>
+	<li style="margin-left: 30pt;">
+		Note that &quot;Select Campaigns to attach&quot; radio button is selected and all the Campaigns under the Advertiser Application created in testcase VDBA-6 are listed.</li>
+	<li style="margin-left: 30pt;">
+		In the Ad Payload section, select &quot;Choose from an existing video&quot; radio button and select from the list.</li>
+	<li style="margin-left: 30pt;">
+		Click on the card setup link</li>
+	<li style="margin-left: 30pt;">
+		&nbsp;Select Create new radio button</li>
+	<li style="margin-left: 30pt;">
+		Enter the Endcard name and select the Template Type</li>
+	<li style="margin-left: 30pt;">
+		Upload the portrait and landscape images from local folder</li>
+	<li style="margin-left: 30pt;">
+		Upload Application icon</li>
+	<li style="margin-left: 30pt;">
+		Enter the TPAT Event and URL &nbsp;</li>
+</ul>
+]]></actions>
+	<expectedresults><![CDATA[<ul>
+	<li>
+		Entered information should be displayed</li>
+	<li>
+		Selected Video should be displayed</li>
+	<li>
+		New Endcard should be created</li>
+</ul>
+<p>
+	&nbsp;</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>
+	Click Submit</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	Legacy Creative should be created</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="18889" name="Update a Legacy creative with a new Endcard  and Verify">
+	<node_order><![CDATA[1016]]></node_order>
+	<externalid><![CDATA[17]]></externalid>
+	<version><![CDATA[2]]></version>
+	<summary><![CDATA[<p>
+	<span style="font-family: &quot;Trebuchet MS&quot;, Arial, Verdana, sans-serif; font-size: 11.7px; background-color: rgb(238, 238, 238);">Update a Legacy creative with a new Endcard &nbsp;and Verify</span></p>
+]]></summary>
+	<preconditions><![CDATA[<p>
+	Legacy Creative should exist</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+	Login to the Dashboard</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	User should be on the Management page</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>
+	Navigate to Global search and search for the Creative created in test case VDBA-12</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	Creative should show up with details an dedit icons</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>
+	Click on Edit icon</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	User should be directed to the Update Creative page</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[4]]></step_number>
+	<actions><![CDATA[<p>
+	Change the Portrait and Landscape images in the endcard section</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	Modified image files and images should be displayed</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[5]]></step_number>
+	<actions><![CDATA[<p>
+	Click Submit</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	Legacy creative with modified Endcard images should saved and user should be on the details page.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="18891" name="Modify a Legacy Creative without Endcard and Verify">
+	<node_order><![CDATA[1017]]></node_order>
+	<externalid><![CDATA[18]]></externalid>
+	<version><![CDATA[2]]></version>
+	<summary><![CDATA[<p>
+	<span style="font-family: &quot;Trebuchet MS&quot;, Arial, Verdana, sans-serif; font-size: 11.7px; background-color: rgb(238, 238, 238);">Modify Legacy Creative without Endcard and Verify</span></p>
+]]></summary>
+	<preconditions><![CDATA[<p>
+	<span style="font-family: &quot;Trebuchet MS&quot;, Arial, Verdana, sans-serif; font-size: 11.7px; background-color: rgb(238, 238, 238);">Should have &nbsp;a Legacy Creative without Endcard&nbsp;</span></p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+	Login to th application</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	User should be on the Management page</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>
+	Navigate to Global search and search the Legacy Creative created in testcase VDBA-13</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	Creative name should be displayed with details and edit icons .</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>
+	Add a new Endcard &nbsp;or select from an existing endcards by unchecking the &quot;Endcard not required&quot; check box &nbsp;by selecting the Appropriate radio buttons and click Submit</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	Now creative should be saved and it should have an Endcard</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="18893" name="Modify a Legacy Creative with an existing Endcard and Verify">
+	<node_order><![CDATA[1018]]></node_order>
+	<externalid><![CDATA[19]]></externalid>
+	<version><![CDATA[2]]></version>
+	<summary><![CDATA[<p>
+	Modify a Legacy Creative with an existing Endcard and Verify</p>
+]]></summary>
+	<preconditions><![CDATA[<p>
+	Should have a Legacy Creative with an exsiting Endcard</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+	Login to the Dashboard</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	User should be on the Management page</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>
+	Navigate to the Global search and search for the Legacy creative created in test case VDBA-14</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	Creative should be displayed</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>
+	Click on Edit icon</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	User should be onthe Update Creative page</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[4]]></step_number>
+	<actions><![CDATA[<p>
+	Navigate to Endcard section, and select &quot;Add new Endcard&quot; and enter the data and upload the images for the new endcard and click Submit</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	Creative should be modified with new Endcard and user should be on the details page of the Creative.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="18895" name="Update a Legacy Creative with a new Video and Verify">
+	<node_order><![CDATA[1019]]></node_order>
+	<externalid><![CDATA[20]]></externalid>
+	<version><![CDATA[2]]></version>
+	<summary><![CDATA[<p>
+	Update a Legacy Creative with a new Video and Verify</p>
+]]></summary>
+	<preconditions><![CDATA[<p>
+	Should have a Legacy Creative with a new Video&nbsp;</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+	Login to Dashboard</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	User should be onthe Mangaemnet Page</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>
+	Navigate to Global search and search the Creative created in test case VDBA-15</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	Creative should be available</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>
+	Click on Edit icon</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	User should be on the Update Creative page</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[4]]></step_number>
+	<actions><![CDATA[<ul>
+	<li>
+		Remove Exchange Campaign from Attached Campaigns list</li>
+	<li>
+		Add one more TPAT Event and URL</li>
+</ul>
+]]></actions>
+	<expectedresults><![CDATA[<ul>
+	<li>
+		Exchange Campaign should be removed from the list of attached Campaigns</li>
+	<li>
+		TPAT Event and URL should be displayed</li>
+</ul>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[5]]></step_number>
+	<actions><![CDATA[<p>
+	Click Submit</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	Creative with modifications should be saved and displayed on the details page</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="18897" name="Modify a Legacy Creative with an existing Video and Verify">
+	<node_order><![CDATA[1020]]></node_order>
+	<externalid><![CDATA[21]]></externalid>
+	<version><![CDATA[2]]></version>
+	<summary><![CDATA[<p>
+	Modify a Legacy Creative with an existing Video and Verify</p>
+]]></summary>
+	<preconditions><![CDATA[<p>
+	Should have a Legacy Creative with an existing Video</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+	Login to Dashboard</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	User should be on the Management page</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>
+	Navigate to Global search and search the cReative created in VDBA-16</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	Creative should be available with details and edit icons</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>
+	Click Edit icon&nbsp;</p>
+<p>
+	&nbsp;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	User should be on the Update Creative page</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[4]]></step_number>
+	<actions><![CDATA[<p>
+	In the Video Setup section, &nbsp;change the existing video file and click Submit</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	Creative should be created with updated video file</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="18899" name="Clone a Legacy Creative with a new Endcard and Verify">
+	<node_order><![CDATA[1021]]></node_order>
+	<externalid><![CDATA[22]]></externalid>
+	<version><![CDATA[2]]></version>
+	<summary><![CDATA[<p>
+	Clone a Legacy Creative with a new Endcard and Verify</p>
+]]></summary>
+	<preconditions><![CDATA[<p>
+	Should have a Legacy Creative with a new Endcard</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+	Login to the Dashboard</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	User should be on the Management Page</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>
+	Navigate to Global search and search for the Legacy Creative created in VDBA-12 and click on details icon located next to it</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	User should be directed to the Legacy Creative details page</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>
+	Click on &quot;Clone This Creative&quot; Link on the Creative details Page</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	User should be directed to the Creative setup page with all pre existing information of the Creative created in VDBA-12 except Name</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[4]]></step_number>
+	<actions><![CDATA[<p>
+	Enter the name of the Clone Creative and click Submit</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	Clone Creative with a new name and with a new Endcard as the original Creative should be created and user should be on the details page&nbsp;</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="18901" name="Clone a Legacy Creative with an existing Endcard and Verify">
+	<node_order><![CDATA[1022]]></node_order>
+	<externalid><![CDATA[23]]></externalid>
+	<version><![CDATA[2]]></version>
+	<summary><![CDATA[<p>
+	Clone a Legacy Creative with an existing Endcard and Verify</p>
+]]></summary>
+	<preconditions><![CDATA[<p>
+	Should have a Legacy Creative with an existing Endcard</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+	Login to the Dashboard</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	User should be onthe Management Page</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>
+	Navigate to the Global search and search for the Creative created in the testcase VDBA-14&nbsp;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	Legacy Creative should be displayed with Details and edit icons.&nbsp;</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>
+	Click on &quot;Clone This Creative&quot; link</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	User should be on the Creative setup page with all the information of the Creative created in te testcase VDBA-14 except Name</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[4]]></step_number>
+	<actions><![CDATA[<p>
+	Enter the name of the clone Creative</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	Name should be displayed</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[5]]></step_number>
+	<actions><![CDATA[<p>
+	Click Submit</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	Clone of the Legacy Creative should be created with new name and with the existing Endcard as in the Original Legacy Creative</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="18903" name="Clone a Legacy Creative without Endcard and Verify">
+	<node_order><![CDATA[1023]]></node_order>
+	<externalid><![CDATA[24]]></externalid>
+	<version><![CDATA[2]]></version>
+	<summary><![CDATA[<p>
+	Clone a Legacy Creative without Endcard and Verify</p>
+]]></summary>
+	<preconditions><![CDATA[<p>
+	Should have a&nbsp;Legacy Creative without Endcard&nbsp;</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+	Login to the Dashboard</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	User should be on the Management Page</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>
+	Navigate to Global Search and enter the Creative name created in the test case VDBA-18</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	Creative should be available with details and edit icons</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>
+	Click on details icon</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	User should be on the detials page of the Creative</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[4]]></step_number>
+	<actions><![CDATA[<p>
+	Click on &quot;Clone This Creative&quot; Link</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	User should be directed to the Creative setup page of the clone Creative with all the pre existing information except the Name of the Craetive</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[5]]></step_number>
+	<actions><![CDATA[<p>
+	Enter the Name of the Creative and Click Submit</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	Clone of the Creative without a Endcard should be created and user should be on the details page.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="18905" name="Clone a Legacy Creative with a new Video and Verify">
+	<node_order><![CDATA[1024]]></node_order>
+	<externalid><![CDATA[25]]></externalid>
+	<version><![CDATA[2]]></version>
+	<summary><![CDATA[<p>
+	Clone a Legacy Creative with a new Video and Verify</p>
+]]></summary>
+	<preconditions><![CDATA[<p>
+	Should have&nbsp;a Legacy Creative with a new Video&nbsp;</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+	Login to the Dashboard</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	User should be on the Management page</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>
+	Navigate to Global search and search for the Creative created in test case VDBA-15</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	Creative should be available&nbsp;</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>
+	Click on details icon located next to the Creative name in the Global search result</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	User should be onthe Craetive setup page with all the preexisting information of the Creatiuve created in the testcase VDBA-15 except Name.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[4]]></step_number>
+	<actions><![CDATA[<p>
+	Enter the Creative Name and click Submit</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	Clone of the Creative with a new video should be created and user should be directed to the Detailspage of the Creative.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="18907" name="Clone a Legacy Creative with an existing Video and Verify">
+	<node_order><![CDATA[1025]]></node_order>
+	<externalid><![CDATA[26]]></externalid>
+	<version><![CDATA[2]]></version>
+	<summary><![CDATA[<p>
+	Clone a Legacy Creative with an existing Video and Verify</p>
+]]></summary>
+	<preconditions><![CDATA[<p>
+	Should have&nbsp;a Legacy Creative with an existing Video&nbsp;</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+	Login to the Dashboard</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	User should be on the Management page</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>
+	Navigate to the Global Search and search for a Creative created in the testcase VDBA-16&nbsp;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	Legacy Creative with existing Video should be available with details and edit &nbsp;icons</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>
+	Click on Details icon</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	User should be on the Creative details page with &quot;Clone This Creative&quot; link</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[4]]></step_number>
+	<actions><![CDATA[<p>
+	Click on &quot;Clone This Creative&quot; link</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	User shoule be directed to the Creative setup page with preexisting information of the Creative created in test case VDBA-16 except Name</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[5]]></step_number>
+	<actions><![CDATA[<p>
+	Enter the name of the Creative and Click Submit</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	Clone of the Original Creative in testcase VDBA-16 should be created with the new name given and user should be on the details page of te Creative with the preview of the Video</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="18909" name="Create a Dynamic Template Creative and Verify">
+	<node_order><![CDATA[1026]]></node_order>
+	<externalid><![CDATA[27]]></externalid>
+	<version><![CDATA[2]]></version>
+	<summary><![CDATA[<p>
+	Create a Dynamic Template Creative and Verify</p>
+]]></summary>
+	<preconditions><![CDATA[<p>
+	Should have an Amazon Campaign</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+	Login to the Dashboard</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	User should be on the Management page.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>
+	Navigate to Advertiser option of the Dashboard</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	User should be on the Accounts page with Campaigns, Applications and Creatives tab.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>
+	Search the Campaign created in the testcase VDBA-8 in the Campaigns list table view</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	Campaign should be available</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[4]]></step_number>
+	<actions><![CDATA[<p>
+	Click on details icon of the Campaign</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	User should be on the details page of the Campaign with &quot;Add New Creative&quot; Link to the right</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[5]]></step_number>
+	<actions><![CDATA[<p>
+	Click on &quot;Add New Creative&quot; and then Dynamic creative on the Creative selection pop up window</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	User should be on the Creative setup page</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[6]]></step_number>
+	<actions><![CDATA[<p>
+	Enter the following information forthe Dynamic Template Creative</p>
+<ul>
+	<li>
+		Name</li>
+	<li>
+		Select the Dynamic Template as Carousel from the list Templates available</li>
+	<li>
+		Check the streaming Creative checkbox</li>
+	<li>
+		In the Video setup section, select the &quot;Add new video&quot; checkbox and enter the Video name</li>
+	<li>
+		Upload the video&nbsp;</li>
+	<li>
+		Enter the Name, Company in the Product Description</li>
+	<li>
+		Upload an App icon image</li>
+	<li>
+		Enter the CTA URL</li>
+	<li>
+		Upload three images for Carousel Image1/Image2/Image3 fields</li>
+	<li>
+		Enter the TPAT Event and URL</li>
+</ul>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	Entered information should be displayed</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[7]]></step_number>
+	<actions><![CDATA[<p>
+	Click Submit</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	Dynamic Template Creative should be created and user should be on the detials page with the video preview</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="18911" name="Clone a Dynamic Template Creative and Verify">
+	<node_order><![CDATA[1027]]></node_order>
+	<externalid><![CDATA[28]]></externalid>
+	<version><![CDATA[2]]></version>
+	<summary><![CDATA[<p>
+	Clone a Dynamic Template Creative and Verify</p>
+]]></summary>
+	<preconditions><![CDATA[<p>
+	Should have&nbsp;a Dynamic Template Creative</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+	Login to the Application</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	User should be on the Mangement page</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>
+	Navigate to Global search and search for the Dynamic Template Creative created in the test case VDBA-27</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	Dynamic Template cReative should be displayed</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>
+	Click on the details icon</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	User should be on the details page of the Creative</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[4]]></step_number>
+	<actions><![CDATA[<p>
+	Click on &quot;Clone This Creative&quot; link</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	User should land on the Creative setup page with the preexisting information of the Dynamic Template Creative created in test case VDBA-27 except name</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[5]]></step_number>
+	<actions><![CDATA[<p>
+	Enter the Name od the clone Creative and Click Submit</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	Clone of the Dynamic Template Creative should be created witha new name with all the information same as &nbsp;the Creative in test case VDBA-27</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="18913" name="Clone a Vungle Ads Campaign and Verify">
+	<node_order><![CDATA[1028]]></node_order>
+	<externalid><![CDATA[29]]></externalid>
+	<version><![CDATA[2]]></version>
+	<summary><![CDATA[<p>
+	Clone a Vungle Ads Campaign and Verify</p>
+]]></summary>
+	<preconditions><![CDATA[<p>
+	Should have&nbsp;a Vungle Ads Campaign</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+	Login to the Dashboard</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	Usere should be on the Management page</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>
+	Navigate to Global search and search the Campaign cretaed in the test case VDBA-8</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	Campaign should be available</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>
+	Click on Details icon nxt to the Campaign</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	User should be on the details page of the Campaign</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[4]]></step_number>
+	<actions><![CDATA[<p>
+	Click on &quot;Clone The Campaign&quot; Link</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	User should be on the Create Campaign page with all the existing information of the Campaign cretaed in VDBA-8 except the Name of the Campaign</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[5]]></step_number>
+	<actions><![CDATA[<p>
+	Enter the name of the Campaign and Click Submit</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	Clone Campaign should be created with a new name with exactly same information as the campaign in VDBA-8 testcase.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="18915" name="Clone a Exchange Campaign and Verify">
+	<node_order><![CDATA[1029]]></node_order>
+	<externalid><![CDATA[30]]></externalid>
+	<version><![CDATA[2]]></version>
+	<summary><![CDATA[<p>
+	Clone a Exchange Campaign and Verify</p>
+]]></summary>
+	<preconditions><![CDATA[<p>
+	Should have an Exchange Campaign</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+	Login to Dashboard</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	User should be on the Management Page</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>
+	Navigate to Global search and search the Campaign created in testcase VDBA-10</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	Campaign should be avilable with details and edit icons</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>
+	Click on Details icon</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	User should be on the details page of the Campaign with &quot;Clone This Campaign&quot; link</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[4]]></step_number>
+	<actions><![CDATA[<p>
+	Click on &quot;Clone This Camoaign&quot; link</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	user should be directed to the new Create Campaign page with all the preexisting information of the Campaign in test case VDBA-10 except name</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[5]]></step_number>
+	<actions><![CDATA[<p>
+	Enter the Name and click Submit</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	Clone of the Exchange &nbsp;campaign should be created &nbsp;with all the information same as Exchange Campaign of test case VDBA-10.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="18917" name="Modify a Cloned Legacy Creative and Verify">
+	<node_order><![CDATA[1030]]></node_order>
+	<externalid><![CDATA[31]]></externalid>
+	<version><![CDATA[2]]></version>
+	<summary><![CDATA[<p>
+	Modify a Cloned Legacy Creative and Verify</p>
+]]></summary>
+	<preconditions><![CDATA[<p>
+	Should have&nbsp;a Cloned Legacy Creative</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+	Login to Dashboard</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	User should be on the Mangement page</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>
+	Navigate to the Global search and search the Cloned Legacy Creative created in test caseVDBA-22</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	Creative should be available</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>
+	Click on Edit icon</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	User should be on the Update Creative Page</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[4]]></step_number>
+	<actions><![CDATA[<p>
+	Goto Endcard section and change the images for Potrait and Landscape</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	Change image files should appear along with the images</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[5]]></step_number>
+	<actions><![CDATA[<p>
+	Click Submit</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	User should be on the details page with modified information</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="18919" name="Modify a Cloned Dynamic Creative and Verify">
+	<node_order><![CDATA[1031]]></node_order>
+	<externalid><![CDATA[32]]></externalid>
+	<version><![CDATA[2]]></version>
+	<summary><![CDATA[<p>
+	Modify a Cloned Dynamic Creative and Verify</p>
+]]></summary>
+	<preconditions><![CDATA[<p>
+	<strong>&nbsp;</strong>a Cloned Dynamic Creative</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+	Login to Dashboard</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	User should be on the Management page</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>
+	Navigate to Global search and enter the Creative name created in the test case VDBA-27</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	Dynamic Template Creative should be available</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>
+	Click on Edit button</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	User should be on the Update Creative page</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[4]]></step_number>
+	<actions><![CDATA[<p>
+	Now change the template from Carousel to Gradient &nbsp;inthe Dynamic Template drop down field</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	Template should be changed and the Carousel template fields should disappear and all the Gradient template fields should be displayed</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[5]]></step_number>
+	<actions><![CDATA[<p>
+	Enter the Gradient Template Information for Product Description like App name, Company name, CTA URL, Landscape and Portrait Images</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	Entered information should be displayed</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[6]]></step_number>
+	<actions><![CDATA[<p>
+	Click Submit</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	User should land on details page of the Creative with modified information</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="18921" name="Create a Vungle ads Campaign without TPAT and Verify">
+	<node_order><![CDATA[1032]]></node_order>
+	<externalid><![CDATA[33]]></externalid>
+	<version><![CDATA[2]]></version>
+	<summary><![CDATA[<p>
+	Create a Campaign without TPAT and Verify</p>
+]]></summary>
+	<preconditions><![CDATA[<p>
+	Should have an Amazon Advertiser App</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+	Execute the steps of test case VDBA-8 except the TPAT Event and URL</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	Entered information should be displayed but the TPAT field should be blank</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>
+	Click Submit</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	Vungle ads Campaign should be created and user should be on the details page with TPAT field blank.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="18923" name="Create an Exchange Campaign without TPAT and Verify">
+	<node_order><![CDATA[1033]]></node_order>
+	<externalid><![CDATA[34]]></externalid>
+	<version><![CDATA[2]]></version>
+	<summary><![CDATA[<p>
+	Create an Exchange Campaign without TPAT and Verify</p>
+]]></summary>
+	<preconditions><![CDATA[<p>
+	Should have an Amazon Advertiser Application</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+	Execute the steps 1 to 3 of test case VDBA-10 except TPAT</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	Entered informaton should be displayed and TPAT field should left blank</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>
+	Click Submit</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	Exchange Campaign should be created and user should be on the details page with TPAT field blank.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="18925" name="Create a Legacy Creative without TPAT and Verify">
+	<node_order><![CDATA[1034]]></node_order>
+	<externalid><![CDATA[35]]></externalid>
+	<version><![CDATA[2]]></version>
+	<summary><![CDATA[<p>
+	Create a Legacy Creative without TPAT and Verify</p>
+]]></summary>
+	<preconditions><![CDATA[<p>
+	Should have a Campaign</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+	Execute steps 1 to 5 of test case VDBA-13 except TPAT</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	Entered information should be displayed and the TPAT field should be blank</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>
+	Click Submit</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	Legacy Creative without TPAT should be created and user should be onthe details page with no TPAT URL.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="18927" name="Create a Dynamic Template Creative without TPAT and Verify">
+	<node_order><![CDATA[1035]]></node_order>
+	<externalid><![CDATA[36]]></externalid>
+	<version><![CDATA[2]]></version>
+	<summary><![CDATA[<p>
+	Create a Dynamic Template Creative without TPAT and Verify</p>
+]]></summary>
+	<preconditions><![CDATA[<p>
+	Should have&nbsp;a Dynamic Template Creative without TPAT</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+	Execute steps 1 to 6 of test case VDBA-27 except TPAT</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	Entered information should be displayed and TPAT field should be blank</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>
+	Click Submit</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	Dynamic Template Creative without TPAT should be created</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="18929" name="Verify the Default Placement of the Publisher App">
+	<node_order><![CDATA[1036]]></node_order>
+	<externalid><![CDATA[37]]></externalid>
+	<version><![CDATA[2]]></version>
+	<summary><![CDATA[<p>
+	Verify the Default Placement of the Publisher App</p>
+]]></summary>
+	<preconditions><![CDATA[<p>
+	Publisher App should be created</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+	Execute the test case VDBA-1</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	Amazon Publisher App should be created and a Default Placement should be created and dispalyed onthe right side of the details page of the App withe name Default and Add new Placement link</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>
+	Click on Default Placement&nbsp;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	User should be on the Placemnt page with Placment Status, Placement details and Advanced settings</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[]]></actions>
+	<expectedresults><![CDATA[]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="18931" name="Create a new Placement a for Amazon App and Verify">
+	<node_order><![CDATA[1037]]></node_order>
+	<externalid><![CDATA[38]]></externalid>
+	<version><![CDATA[2]]></version>
+	<summary><![CDATA[<p>
+	Create a new Placement a for Amazon App and Verify</p>
+]]></summary>
+	<preconditions><![CDATA[<p>
+	Should have an Amazon Publisher App</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+	Login to Dashboard</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	User should be on the Mangement page</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>
+	Navigate to Global search and search the Amazon App created in testcase VDBA-1</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	App should be available</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>
+	Click on Details icon</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	User should be on the details pag eof the Amazon App</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[4]]></step_number>
+	<actions><![CDATA[<p>
+	Click on &quot;Add New Placemnt&quot; link located right of the Amazon App details page</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	User should be directed to the Create Placement page</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[5]]></step_number>
+	<actions><![CDATA[<p>
+	Enter the following information on Placement Page</p>
+<ul>
+	<li>
+		Name</li>
+	<li>
+		Target CP Floor</li>
+	<li>
+		Check the Rewarded check box</li>
+	<li>
+		Select the supported Template Types</li>
+</ul>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	Entered information should be displayed</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[6]]></step_number>
+	<actions><![CDATA[<p>
+	Click Submit</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	Placement should be created and user be directed to the table view of the placement with Status, Placement name, Reference ID, View, Revenue, Auto Cached and Target CPM Floor information.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="18933" name="Modify a Placement and Verify">
+	<node_order><![CDATA[1038]]></node_order>
+	<externalid><![CDATA[39]]></externalid>
+	<version><![CDATA[2]]></version>
+	<summary><![CDATA[<p>
+	Modify a Placement and Verify</p>
+]]></summary>
+	<preconditions><![CDATA[<p>
+	Should have a Placement</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+	Lgon to Dashboard</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	User should be on the Mangement page</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>
+	Navigate to Global search and enter the Reference ID of the placement created in test case VDBA-38</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	Placement should be available&nbsp;</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>
+	Click on edit icon</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	User should be on the Edit Placement page</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[4]]></step_number>
+	<actions><![CDATA[<p>
+	Change the Target CPM Floor Value and click Submit</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	New entered value of the CPM Floor should be displayed and user should be on the table view of the placement with the new Target CPM Floor value.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="18935" name="Verify Unknown Sources Checkbox checked">
+	<node_order><![CDATA[1039]]></node_order>
+	<externalid><![CDATA[40]]></externalid>
+	<version><![CDATA[2]]></version>
+	<summary><![CDATA[<p>
+	Verify Unknown Sources Checkbox checked</p>
+]]></summary>
+	<preconditions><![CDATA[<p>
+	Should have an Amazon App</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+
+</testcase>
+
+<testcase internalid="18937" name="Verify Unknown Sources Checkbox unchecked">
+	<node_order><![CDATA[1040]]></node_order>
+	<externalid><![CDATA[41]]></externalid>
+	<version><![CDATA[2]]></version>
+	<summary><![CDATA[<p>
+	Verify Unknown Sources Checkbox unchecked</p>
+]]></summary>
+	<preconditions><![CDATA[<p>
+	Should have an Amazon app</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+
+</testcase>
+
+<testcase internalid="18939" name="Create a Deal with Amazon App for App Targeting">
+	<node_order><![CDATA[1041]]></node_order>
+	<externalid><![CDATA[42]]></externalid>
+	<version><![CDATA[2]]></version>
+	<summary><![CDATA[<p>
+	Create a Deal with Amazon &nbsp;Publisher App &nbsp;for App Targeting.</p>
+]]></summary>
+	<preconditions><![CDATA[<p>
+	Amazon Publisher Application should exist</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+	Login to Dashboard</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	user should be on the Management Page</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>
+	Click on Hamburger icon</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	Menu of Dashboard should be dispalyed</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>
+	Click on Deals link</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	User should be directed to the Table view of all available Deals</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[4]]></step_number>
+	<actions><![CDATA[<p>
+	Click on New Deal Tab&nbsp;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	User should land on Create Deal page</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[5]]></step_number>
+	<actions><![CDATA[<p>
+	Enter the following information:</p>
+<ul>
+	<li>
+		Name</li>
+	<li>
+		Bid Floor</li>
+	<li>
+		Seat IDs</li>
+	<li>
+		In App Targeting field, search the Amazon App created in test case VDBA-1 and select it</li>
+</ul>
+]]></actions>
+	<expectedresults><![CDATA[<ul>
+	<li>
+		Entered information should be displayed</li>
+	<li>
+		Amazon App should be available for selection&nbsp;</li>
+</ul>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[6]]></step_number>
+	<actions><![CDATA[<p>
+	Click Submit</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	Deal should be cretaed and user should be directed to the Deals Table view page</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="18941" name="Create a Template with a Amazon App and Verify">
+	<node_order><![CDATA[1042]]></node_order>
+	<externalid><![CDATA[43]]></externalid>
+	<version><![CDATA[2]]></version>
+	<summary><![CDATA[<p>
+	Create a Template with a Amazon App for Publisher Whitelist and Verify</p>
+]]></summary>
+	<preconditions><![CDATA[<p>
+	Amazon Publisher App should exist</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+	Login to Dashboard</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	User should be on the Management page</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>
+	Click on Hamburger icon</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	Dashboatd menu should be displayed</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>
+	Click on Templates</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	User should be on the Templates page, with all the available Templates and a New Template button</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[4]]></step_number>
+	<actions><![CDATA[<p>
+	Click on &quot;New Template&quot;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	User should land on Create Template page</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[5]]></step_number>
+	<actions><![CDATA[<p>
+	Entre the following information</p>
+<ul>
+	<li>
+		Select the Template Type from the drop down list</li>
+	<li>
+		Enter the name</li>
+	<li>
+		For Publisher Whitelist, search for the Amazon App created in test case VDBA-1 and select</li>
+	<li>
+		Upload a template zip file</li>
+	<li>
+		https://cdn-lb.vungle.com/templates/57f812d93e4d63c13c000038-v0/CloudUX-Carousel-v.1.3.4.zip</li>
+</ul>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	File should be uploaded and all the replacements should be displayed.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[6]]></step_number>
+	<actions><![CDATA[<p>
+	Click Submit</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	Template should be created and user should be on the table view of the Templates</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="18943" name="Verify Amazon Platform is included in Search Filter">
+	<node_order><![CDATA[1043]]></node_order>
+	<externalid><![CDATA[44]]></externalid>
+	<version><![CDATA[2]]></version>
+	<summary><![CDATA[<p>
+	Verify Amazon Platform is included in Search Filter</p>
+]]></summary>
+	<preconditions><![CDATA[<p>
+	Amazon Publication App should exist</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+
+</testcase>
+
+<testcase internalid="18945" name="Verify Amazon App is included in Specific App on Reports Page">
+	<node_order><![CDATA[1044]]></node_order>
+	<externalid><![CDATA[45]]></externalid>
+	<version><![CDATA[2]]></version>
+	<summary><![CDATA[<p>
+	Verify Amazon App is included in Specific App field on Reports Page</p>
+]]></summary>
+	<preconditions><![CDATA[<p>
+	Amazon App should exist</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+	Login to Dashboard</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	User should be on the Management Page</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>
+	Click on Hamburger icon</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	All the dashboard menu should be displayed</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>
+	Click on Reports&nbsp;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	User should land on the Reports Page</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[4]]></step_number>
+	<actions><![CDATA[<p>
+	On Reports page, click on Specific Application and select the Amazon App by scrolling down or search the Application name</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	Amazon App should be displayed</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[5]]></step_number>
+	<actions><![CDATA[<p>
+	Click on Download Report</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	Report should be downloaded and the information related to the Amazon App selected should be displayed</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="18947" name="Verify Amazon App is added to Reports Content">
+	<node_order><![CDATA[1045]]></node_order>
+	<externalid><![CDATA[46]]></externalid>
+	<version><![CDATA[2]]></version>
+	<summary><![CDATA[<p>
+	Verify Amazon App is added to Reports Content</p>
+]]></summary>
+	<preconditions><![CDATA[<p>
+	Report should contain Amazon Publisher Apps.</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+	Login to the application</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	User should be on the Management page</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>
+	Click on Hamburger icon and navigtae to Reports tab</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	Dashboard menu should be displayed and user should be directed to the Reports page</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>
+	On the Reports page, select the Timeframe and clickon Download Report</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	Report should be downloaded.</p>
+<p>
+	The report should have the Amazon Pub Apps listed that was added &nbsp;during the time frame given.</p>
+<p>
+	Report should have Amazon OS.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="18949" name="Verify Amazon  is in Platform field on Reports Page">
+	<node_order><![CDATA[1046]]></node_order>
+	<externalid><![CDATA[47]]></externalid>
+	<version><![CDATA[2]]></version>
+	<summary><![CDATA[<p>
+	Verify Amazon Platform &nbsp; is added to the &nbsp;Platform field on Reports Page</p>
+]]></summary>
+	<preconditions><![CDATA[<p>
+	Amazon App should exist</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+	Login to Dashboard</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	User should be on the Mangement Page</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>
+	Click on Hamburger icon</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	All the menu items should bedispalyed</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>
+	Click on Reports tab</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	Rewports page should open.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[4]]></step_number>
+	<actions><![CDATA[<p>
+	Click on Platform drop list</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	Following options should be available</p>
+<ul>
+	<li>
+		All</li>
+	<li>
+		ios</li>
+	<li>
+		Android</li>
+	<li>
+		Windows</li>
+	<li>
+		Amazon</li>
+</ul>
+<p>
+	&nbsp;</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+</testsuite><testsuite id="20743" name="Amazon End to End Testing" >
+<node_order><![CDATA[2]]></node_order>
+<details><![CDATA[<p>
+	Amazon end to End testing to verify the adds are playing on Amazon Fire</p>
+]]></details> 
+
+<testcase internalid="20744" name="Create Amazon Publisher Application">
+	<node_order><![CDATA[0]]></node_order>
+	<externalid><![CDATA[49]]></externalid>
+	<version><![CDATA[2]]></version>
+	<summary><![CDATA[<p>
+	Amazon publisher Application should be created.</p>
+]]></summary>
+	<preconditions><![CDATA[<p>
+	Login as Admin user</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+	Login to Dashboard as Admin user</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	User should be on the Mangement Page</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>
+	Click on &quot;Add New Application&quot; button&nbsp;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	User should be on the Create Application page</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[4]]></step_number>
+	<actions><![CDATA[<p>
+	On the Create Application page, enter the following information</p>
+<ul>
+	<li>
+		Select the Amazon Platform radio button</li>
+	<li>
+		Enter the nam eo fthe Application</li>
+	<li>
+		Check the box &quot;My app is live on the app store&quot;</li>
+	<li>
+		Enter the Amazon url</li>
+	<li>
+		Enter the required information</li>
+</ul>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	Entered information should be saved in the appropriate fields</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[5]]></step_number>
+	<actions><![CDATA[<p>
+	Click Submit</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	Publisher Application should be created and user should be on the details page</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[6]]></step_number>
+	<actions><![CDATA[<p>
+	Verify the Default palcement is created</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	Default Placement should be created</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="20746" name="Create Amazon Advertiser Application">
+	<node_order><![CDATA[1]]></node_order>
+	<externalid><![CDATA[50]]></externalid>
+	<version><![CDATA[2]]></version>
+	<summary><![CDATA[<p>
+	Create an Advertiser application</p>
+]]></summary>
+	<preconditions><![CDATA[<p>
+	User should be Admin user</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+	Login to the Dashboard</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	User should be on the Management page</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>
+	Click on Hamburger icon and toggle to the Advertiser option</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	User should beon the Advertiser side of the application</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>
+	Click on &quot;Applications&quot; tab and then &quot;Add New Application&quot; button</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	User should be on the Create Advertiser Application page</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[4]]></step_number>
+	<actions><![CDATA[<p>
+	Enter the required information and click submit</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	Advertiser Application should be created and user should lane on details page</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="20748" name="Whitelist the Applications">
+	<node_order><![CDATA[2]]></node_order>
+	<externalid><![CDATA[51]]></externalid>
+	<version><![CDATA[2]]></version>
+	<summary><![CDATA[<p>
+	Whitelist the Advertiser Application</p>
+]]></summary>
+	<preconditions><![CDATA[<p>
+	Advertiser and Publisher should be available</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+	Navigate to Global serach and searcjh for the Publisher Application created in test case VDBA-49</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	Application should be available</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>
+	Click on Edit icon</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	User should be onthe update page</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>
+	In the targer application field, search and select the Advertiser application created in VDBA-50 and select whitelist radio button</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	Advertiser application should be whitelisted</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[4]]></step_number>
+	<actions><![CDATA[<p>
+	Click Submit</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	Publisher Application should be saved oand on the details page, amazon advertiser application should be displayed as whitelisted</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[5]]></step_number>
+	<actions><![CDATA[<p>
+	Click onthe Advertiser Application</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	User should be on the Advertiser Application details page</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[6]]></step_number>
+	<actions><![CDATA[<p>
+	Click Edit and in the target application field search the Publisher Application created in VDBA-49 and whitelist</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	Application should be available and should be whitelisted</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[7]]></step_number>
+	<actions><![CDATA[<p>
+	Click Submit</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	Advertiser Application should be saved with Amaxzon Publisher Application whitelisted</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[8]]></step_number>
+	<actions><![CDATA[]]></actions>
+	<expectedresults><![CDATA[]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="20750" name="Create a Campaign">
+	<node_order><![CDATA[3]]></node_order>
+	<externalid><![CDATA[52]]></externalid>
+	<version><![CDATA[2]]></version>
+	<summary><![CDATA[<p>
+	Create a Campaign</p>
+]]></summary>
+	<preconditions><![CDATA[<p>
+	Advertiser Application should be available</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+	Navigate to Advertiser Application created in test case VDBA-50 and click on &quot;add new campaign&quot; on the right</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	User should be on the cReate Campaign page</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>
+	Enter the name of the Campaign and search and select the Advertiser Application created in test case VDBA-50</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	Application should be available</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>
+	Enter the total Amount and the other required information</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	Entered information should be saved in the appropriate fields</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[4]]></step_number>
+	<actions><![CDATA[<p>
+	Click Submit</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	Campaign should be created and user should land on the details page</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="20752" name="Create a Dynamic Template Creative">
+	<node_order><![CDATA[4]]></node_order>
+	<externalid><![CDATA[53]]></externalid>
+	<version><![CDATA[2]]></version>
+	<summary><![CDATA[<p>
+	Create a Dynamic Template creative for Gradient tempalte</p>
+]]></summary>
+	<preconditions><![CDATA[<p>
+	Campaign should be available</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+	Login to Dashboard and navigate to Global searc and search fo rthe Campaign created in the test case VDBA-52</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	Campaign should be available</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>
+	From the details page of the Campaign, click on &quot;add new creative&quot; link onthe right</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	User should be on the cReate Craetive Page</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>
+	On the Create Creative page, enter the</p>
+<ul>
+	<li>
+		Name of the Creative</li>
+	<li>
+		Select the Gradient Dynamic Template&nbsp;</li>
+	<li>
+		Enter the required information</li>
+	<li>
+		Select the Campaign to attach</li>
+	<li>
+		In the Video section,select add new video radio button and upload a video</li>
+	<li>
+		In the card section, check the box for Endcard not required</li>
+</ul>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	Entered information should be saved</p>
+<p>
+	Video should be uploaded and ready for preview</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[4]]></step_number>
+	<actions><![CDATA[<p>
+	Click Submit</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	Dynamic CReative should be created</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="20754" name="Create a legacy Creative">
+	<node_order><![CDATA[5]]></node_order>
+	<externalid><![CDATA[54]]></externalid>
+	<version><![CDATA[2]]></version>
+	<summary><![CDATA[<p>
+	Create a Legacy Creative</p>
+]]></summary>
+	<preconditions><![CDATA[<p>
+	Campaign should be available</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+	Login to Dashboard ans search the Campaign created in VDBA-52 from the Global search</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	Campaign should be available</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>
+	Click on Details icon</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	User should be on the Campaign Details page</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>
+	From the Campaign details page, cklick on &quot;Add New Creative&quot; and then select Legacy Creative in the pop up window</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	User should land on the create Creative page</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[4]]></step_number>
+	<actions><![CDATA[<p>
+	On the cReate Creative page, Enter the following</p>
+<ul>
+	<li>
+		Name</li>
+	<li>
+		In the Video section, select the add new video radio button</li>
+	<li>
+		Enter the name of the Video and upload the Video</li>
+	<li>
+		In the card section, check the Endcard required check box</li>
+	<li>
+		Select the Campaign&nbsp;</li>
+	<li>
+		Enter the TPAT URL</li>
+</ul>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	Enetered information should be saved&nbsp;</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[5]]></step_number>
+	<actions><![CDATA[<p>
+	Click Submit</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	Creative should be created and user should be directed to the Creative details page with the video preview.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="20756" name="Configure the system to play the ad">
+	<node_order><![CDATA[6]]></node_order>
+	<externalid><![CDATA[55]]></externalid>
+	<version><![CDATA[2]]></version>
+	<summary><![CDATA[<p>
+	Configure the Amazon fire to play the add</p>
+]]></summary>
+	<preconditions><![CDATA[<p>
+	Amazon device should be ready with the test app</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+	On the Amazon Fire device, set up the configurations by entering the laptop IP address and port no in the settings&nbsp;</p>
+<p>
+	&nbsp;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	IP Address and port no should be updated</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>
+	Makesure Laptop and Amazon device both are on the same Wifi.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	Bothe the devies should be on the same Wifi</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[4]]></step_number>
+	<actions><![CDATA[<p>
+	Navigate to chls.pro to download the certificate&nbsp;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	Certificate should be downloaded</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[5]]></step_number>
+	<actions><![CDATA[<p>
+	Clear the cache/existing data on the Amazon device by going Applications/Application manager</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	Existing data should be removed</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[6]]></step_number>
+	<actions><![CDATA[]]></actions>
+	<expectedresults><![CDATA[]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="20758" name="Play the Ad">
+	<node_order><![CDATA[7]]></node_order>
+	<externalid><![CDATA[56]]></externalid>
+	<version><![CDATA[2]]></version>
+	<summary><![CDATA[<p>
+	Play the add on the Amazon device</p>
+]]></summary>
+	<preconditions><![CDATA[<p>
+	Install app</p>
+<p>
+	Initialize the app</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+	On the Amazon Fire,&nbsp;</p>
+<ul>
+	<li>
+		Install the App on amazon device and set charles Proxy.</li>
+	<li>
+		Enter the Application ID</li>
+	<li>
+		Enter the Placement ID&#39;s</li>
+	<li>
+		Initialize the SDK.</li>
+	<li>
+		Observe the charles.</li>
+</ul>
+]]></actions>
+	<expectedresults><![CDATA[<ul>
+	<li style="margin-left: 30pt;">
+		&nbsp;App should get initialized.</li>
+	<li style="margin-left: 30pt;">
+		Config API should get called.</li>
+	<li style="margin-left: 30pt;">
+		SDK should download an Ad for the placement id when auto cache flag is enabled.</li>
+</ul>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>
+	Click Play</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	Amazon&nbsp; placement ID should serve the Ad and Ad should play normally on TestApp with respect to the amazon placement id.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="20760" name="Create a Manual Placement">
+	<node_order><![CDATA[8]]></node_order>
+	<externalid><![CDATA[57]]></externalid>
+	<version><![CDATA[2]]></version>
+	<summary><![CDATA[<p>
+	Create a placement manually</p>
+]]></summary>
+	<preconditions><![CDATA[<p>
+	Publisher Application should be availabe</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+	Login to Dashboard and search the Publisher Application creaed in test case VDBA-49</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	User should be on the details page</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>
+	Click on Add new Placemet on the right side</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	User should be on the Create Placement Page</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>
+	Enter the required information</p>
+<ul>
+	<li>
+		Name of the Placement</li>
+	<li>
+		Check th erewarded check box</li>
+	<li>
+		Enter the Target CPM Floor</li>
+	<li>
+		Note, in the Supported Ad formats field, Vungle Local, Vungle Mraid and third party displayed</li>
+</ul>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	Entered information should be saved</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[4]]></step_number>
+	<actions><![CDATA[<p>
+	click Submit</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	Placement should be created with a unique reference ID .</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+</testsuite></testsuite>
